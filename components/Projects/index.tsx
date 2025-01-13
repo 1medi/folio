@@ -5,30 +5,39 @@ import ACG from "/public/ACG-Logo.png";
 import Aether from "/public/aetherLogo.png";
 import LB from "/public/LH_logo.svg";
 import Oscar from "/public/Oscar.png";
+import Link from "next/link";
 const projects = [
   {
     id: 1,
     title: "Aether",
     description: "Description for Project 1",
     image: Aether,
+    backgroundColor: "#0abaef",
+    pathName:"/Aether"
   },
   {
     id: 2,
     title: "Pocket Prof",
     description: "Description for Project 2",
     image: Oscar,
+    backgroundColor: "#656384",
+    pathName:"/Pocket-Prof"
   },
   {
     id: 3,
     title: "Lutong Bahay",
     description: "Description for Project 3",
     image: LB,
+    backgroundColor: "#f0ab1a",
+    pathName:"/Lutong-Bahay"
   },
   {
     id: 4,
     title: "ACG (Awesome Card Game)",
     description: "Description for Project 4",
     image: ACG,
+    backgroundColor: "#DD8143",
+    pathName:"/ACG"
   },
 ];
 
@@ -38,18 +47,20 @@ const Projects = () => {
     title: string;
     description: string;
     image: string;
+    backgroundColor: string;
+    pathName: string;
   } | null>(null);
 
   return (
     <>
       <div className="flex flex-col items-center gap-14 mt-4">
         <div className="flex flex-col gap-14 mt-8">
-        <h1 className="text-7xl text-center">Projects</h1>
+          <h1 className="text-7xl text-center">Projects</h1>
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              className="p-14 gap-12 flex flex-row border rounded cursor-pointer"
-              style={{ margin: 14, padding: 100 }}
+              className="p-14 h-4 gap-12 flex flex-row border rounded cursor-pointer"
+              style={{ margin: 14, padding: 100, backgroundColor: project.backgroundColor}}
               onClick={() => setSelectedProject(project)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -57,9 +68,9 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="mb-2"
-                width={200}
-                height={200}
+                width={0}
+                height={100}
+                className="w-full h-auto"
               />
               <h2 className="text-xl font-semibold">{project.title}</h2>
             </motion.div>
@@ -91,6 +102,12 @@ const Projects = () => {
               >
                 Close
               </button>
+              <Link
+                className="px-4 py-2 bg-blue-500 text-white rounded"
+                href={selectedProject.pathName}
+              >
+                See More
+              </Link>
             </motion.div>
           </motion.div>
         )}

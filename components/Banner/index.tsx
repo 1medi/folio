@@ -49,7 +49,7 @@ const Banner = () => {
             <FaLinkedin size={64} />
           </motion.a>
           <motion.a
-            href="/app/resume"
+            href="/resume"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
