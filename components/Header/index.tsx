@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 const Header = () => {
   return (
     <motion.header
-      className="flex justify-around items-center p-4 bg-green-900 text-white"
-      style={{ position: "relative", justifyContent: "space-between" }}
+      className="flex relative justify-between items-center p-4 bg-green-900 text-white"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 50 }}

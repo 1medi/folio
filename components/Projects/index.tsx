@@ -58,7 +58,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-14 mt-4">
+      <div id="projects" className="flex flex-col items-center gap-14 mt-4">
         <div className=" gap-14 mt-8">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <h1 className="text-7xl font-bold text-center">Projects</h1>

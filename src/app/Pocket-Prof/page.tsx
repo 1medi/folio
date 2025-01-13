@@ -1,9 +1,15 @@
+"use client";
+import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
+
 const PocketProf = () => {
   return (
     <>
-    HEHEH
+      <Header />
+      <main></main>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
 export default PocketProf;
