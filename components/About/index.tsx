@@ -9,9 +9,9 @@ const About = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-4xl font-bold mb-8 text-center">About</h2>
-      <div className="flex flex-col md:flex-row justify-center items-center">
-        <div className="md:w-1/2 mb-8 md:mb-0">
+      <h2 className="text-6xl font-bold mb-8 text-center">About</h2>
+      <div className="flex flex-col md:flex-row justify-center text-center">
+        <div className="md:w-1/4 mb-8 md:mb-0">
           <h3 className="text-2xl font-semibold mb-4">A Bit About Me!</h3>
           <p className="text-lg text-white mb-4">
             I'm deeply passionate about technology, My curiosity drives me to
@@ -34,9 +34,9 @@ const About = () => {
         </div>
         <div className="md:w-1/2">
           <h3 className="text-2xl font-semibold mb-4">
-            The tech stack I primarily work in are:
+           I primarily work with:
           </h3>
-          <div className="flex">
+          <div className="flex flex-row">
             <div className="w-1/2">
               <h4 className="font-semibold">Frontend</h4>
               <ul className="list-disc list-inside">
@@ -46,6 +46,8 @@ const About = () => {
                 <li>Styled-Components</li>
                 <li>TailwindCSS</li>
               </ul>
+            </div>
+            <div className="w-1/2">
               <h4 className="font-semibold mt-4">Frameworks</h4>
               <ul className="list-disc list-inside">
                 <li>React</li>
