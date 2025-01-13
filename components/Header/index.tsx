@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function Header() {
   return (
     <motion.header
-  className="flex justify-around items-center p-4 bg-gray-800 text-white"
+  className="flex justify-around items-center p-4 bg-green-900 text-white"
   style={{position:"relative", justifyContent: "space-between"}}
   initial={{ y: -100 }}
   animate={{ y: 0 }}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -20,7 +21,13 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <motion.div
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
         <form onSubmit={handleSubmit}>
@@ -47,7 +54,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
           Close
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

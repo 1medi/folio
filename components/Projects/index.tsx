@@ -43,8 +43,8 @@ const Projects = () => {
   return (
     <>
       <div className="flex flex-col items-center gap-14 mt-4">
-        <h1 className="text-xl">Projects</h1>
         <div className="flex flex-col gap-14 mt-8">
+        <h1 className="text-7xl text-center">Projects</h1>
           {projects.map((project) => (
             <motion.div
               key={project.id}
@@ -75,7 +75,7 @@ const Projects = () => {
             transition={{ duration: 0.3 }}
           >
             <motion.div
-              className="bg-white p-8 rounded shadow-lg"
+              className="bg-slate-400 p-8 rounded shadow-lg"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
