@@ -10,7 +10,7 @@ const Banner = () => {
     <>
       <ContactModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
       <motion.section
-        className="about-section min-h-20 p-8"
+        className="about-section min-h-screen relative justify-center"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -26,12 +26,12 @@ const Banner = () => {
         >
           Hi! I'm Madi
         </h1>
-        <p className="text-2xl text-center text-gray-700">
+        <p className="text-2xl m-12 text-center text-white">
           Experienced front-end developer with expertise in modern web
           technologies. Passionate about user-friendly designs and pushing
           boundaries.
         </p>
-        <div className="flex justify-center gap-4 mt-16 p-4">
+        <div className="flex justify-center gap-4 p-4">
           <motion.a
             href="https://github.com/1medi"
             target="_blank"
