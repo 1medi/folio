@@ -1,23 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ContactModal from "../ContactModal";
-import { motion } from "framer-motion";
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  animate,
+} from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from "react-icons/fa";
 
+const COLORS = ["#a49e8d", "#004f2d", "#713E5A", "#A8C686"];
 const Banner = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   // rounded-lg shadow-md text-center
+  const color = useMotionValue(COLORS[0]);
+  const backgroundImage = useMotionTemplate`radial-gradient(100% 100% at 25% 0%, #AABD8C 25%, ${color}`;
+
+  useEffect(() => {
+    animate(color, COLORS, {
+      ease: "easeInOut",
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
+  }, []);
   return (
     <>
       <ContactModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
       <motion.section
+      key={"banner"}
+      exit={{ opacity:0 }}
         className="about-section min-h-screen relative justify-center"
         style={{
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
+          backgroundImage,
         }}
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        animate={{
+          opacity: 1,
+        }}
         transition={{ duration: 1 }}
       >
         <h1

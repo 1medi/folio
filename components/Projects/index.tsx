@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import ACG from "/public/ACG-Logo.png";
 import Aether from "/public/aetherLogo.png";
-import LB from "/public/LH_logo.svg";
+import Bahay from "/public/lutong.png"
 import Oscar from "/public/Oscar.png";
 import Link from "next/link";
 const projects = [
@@ -29,7 +29,7 @@ const projects = [
     id: 3,
     title: "Lutong Bahay",
     description: "Description for Project 3",
-    image: LB,
+    image: Bahay,
     backgroundColor: "#f0ab1a",
     transform: "translateX(1000px)",
     pathName: "/Lutong-Bahay",
@@ -67,11 +67,11 @@ const Projects = () => {
           {projects.map((project) => (
             <motion.div
               key={project.id}
-              className="p-20 m-12 h-full flex-row border rounded cursor-pointer"
+              className="grid grid-cols-2 h-72 m-12 gap-4 rounded cursor-pointer"
               style={{ backgroundColor: project.backgroundColor }}
               onClick={() => setSelectedProject(project)}
-              initial={{ transform: project.transform }}
-              animate={{ transform: "translateX(0px)" }}
+              // initial={{ transform: project.transform }}
+              // animate={{ transform: "translateX(0px)" }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -82,7 +82,7 @@ const Projects = () => {
                 height={150}
                 width={150}
               />
-              <h2 className="text-2xl text-center font-semibold">
+              <h2 className="text-2xl text-center m-auto font-semibold">
                 {project.title}
               </h2>
             </motion.div>
@@ -111,14 +111,14 @@ const Projects = () => {
                 {selectedProject.description}
               </p>
               <motion.button
-                className="px-4 py-2 bg-blue-500 text-white rounded"
+                className="px-4 py-2 m-auto bg-blue-500 text-white rounded"
                 onClick={() => setSelectedProject(null)}
                 whileTap={{ scale: 0.9 }}
               >
                 Close
               </motion.button>
               <Link
-                className="px-4 py-2 bg-blue-500 text-white rounded"
+                className="px-4 py-2 m-auto bg-blue-500 text-white rounded"
                 href={selectedProject.pathName}
               >
                 See More
