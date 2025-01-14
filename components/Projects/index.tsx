@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import ACG from "/public/ACG-Logo.png";
 import Aether from "/public/aetherLogo.png";
-import Bahay from "/public/lutong.png"
+import Bahay from "/public/LH_logo.svg"
 import Oscar from "/public/Oscar.png";
 import Link from "next/link";
 const projects = [
