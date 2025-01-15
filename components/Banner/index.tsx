@@ -30,7 +30,6 @@ const Banner = () => {
 
   return (
     <>
-      <ContactModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
       <motion.section
         key={"banner"}
         exit={{ opacity: 0 }}
@@ -59,7 +58,7 @@ const Banner = () => {
           technologies. Passionate about user-friendly designs and pushing
           boundaries.
         </p>
-        <div className="flex justify-center gap-4 p-4">
+        <div className="flex justify-center gap-5 p-3">
           <motion.a
             href="https://github.com/1medi"
             target="_blank"
@@ -84,12 +83,6 @@ const Banner = () => {
           >
             <FaFileAlt size={64} />
           </motion.a>
-          <motion.button
-            onClick={() => setModalOpen(true)}
-            whileHover={{ scale: 1.2 }}
-          >
-            <FaEnvelope size={64} />
-          </motion.button>
         </div>
       </motion.section>
     </>

@@ -24,6 +24,9 @@ const Header = () => {
         <Link href="#projects" className="hover:underline">
           Projects
         </Link>
+        <Link href="#contact" className="hover:underline">
+          Contact
+        </Link>
       </nav>
     </motion.header>
   );
