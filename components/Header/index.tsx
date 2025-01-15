@@ -11,7 +11,7 @@ const Header = () => {
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 50 }}
     >
-      <div className="m-2">
+      <div className="m-2 ">
       <Wordmark
     className="w-12 h-12"/>
       </div>

@@ -82,7 +82,7 @@ const Projects = () => {
                 height={150}
                 width={150}
               />
-              <h2 className="text-2xl text-center m-auto font-semibold">
+              <h2 className="text-2xl text-center m-auto p-4 font-semibold">
                 {project.title}
               </h2>
             </motion.div>
