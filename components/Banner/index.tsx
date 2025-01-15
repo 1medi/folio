@@ -10,11 +10,11 @@ import {
 } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from "react-icons/fa";
 
-const COLORS = ["#a49e8d", "#004f2d", "#713E5A", "#A8C686"];
+const COLORS = ["#473B1F", "#1A281F", "#FFFFFF"];
 const Banner = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const color = useMotionValue(COLORS[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(100% 100% at 25% 0%, #AABD8C 25%, ${color}`;
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #004f2d 50%, ${color}`;
 
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
