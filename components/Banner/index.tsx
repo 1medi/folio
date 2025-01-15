@@ -4,6 +4,8 @@ import {
   motion,
   useMotionTemplate,
   useMotionValue,
+  useScroll,
+  useTransform,
   animate,
 } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from "react-icons/fa";
@@ -11,9 +13,11 @@ import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from "react-icons/fa";
 const COLORS = ["#a49e8d", "#004f2d", "#713E5A", "#A8C686"];
 const Banner = () => {
   const [isModalOpen, setModalOpen] = useState(false);
-  // rounded-lg shadow-md text-center
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(100% 100% at 25% 0%, #AABD8C 25%, ${color}`;
+
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   useEffect(() => {
     animate(color, COLORS, {
@@ -23,18 +27,20 @@ const Banner = () => {
       repeatType: "mirror",
     });
   }, []);
+
   return (
     <>
       <ContactModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
       <motion.section
-      key={"banner"}
-      exit={{ opacity:0 }}
+        key={"banner"}
+        exit={{ opacity: 0 }}
         className="about-section min-h-screen relative justify-center"
         style={{
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
           backgroundImage,
+          opacity,
         }}
         initial={{ opacity: 0 }}
         animate={{

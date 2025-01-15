@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-center items-center p-4 bg-green-900 text-white">
+    <footer className="flex flex-col justify-center items-center p-4 bg-black text-white">
       <div className="flex flex-row p-4 gap-6">
         <motion.a
           href="https://github.com/1medi"
