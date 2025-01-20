@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ContactModal from "../ContactModal";
 import {
   motion,
   useMotionTemplate,
@@ -10,7 +9,7 @@ import {
 } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from "react-icons/fa";
 
-const COLORS = ["#473B1F", "#1A281F", "#FFFFFF"];
+const COLORS = ["#473B1F", "#51432A", "#FFFFFF"];
 const Banner = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const color = useMotionValue(COLORS[0]);
