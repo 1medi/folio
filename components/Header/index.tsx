@@ -18,7 +18,7 @@ const Header = () => {
 
       <Link href="/" className="text-2xl font-bold">Madi Tabon</Link>
       <nav className="ml-auto space-x-4">
-        <Link href="#about" className="hover:underline">
+        <Link href="/#about" className="hover:underline">
           About
         </Link>
         <Link href="#projects" className="hover:underline">

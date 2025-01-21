@@ -32,7 +32,7 @@ const Banner = () => {
       <motion.section
         key={"banner"}
         exit={{ opacity: 0 }}
-        className="about-section min-h-screen relative justify-center"
+        className="about-section min-h-screen relative justify-center shadow-2xl"
         style={{
           display: "flex",
           flexDirection: "column",

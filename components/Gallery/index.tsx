@@ -1,6 +1,6 @@
 "use client";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { Projects } from "@/app/utils/data";
+import { AetherGallery } from "@/app/utils/data";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -12,14 +12,14 @@ export default function Gallery() {
   });
   const xLeft = useTransform(scrollYProgress, [0, 1], [250, -500]);
   const xRight = useTransform(scrollYProgress, [0, 1], [-250, 500]);
-  const y = useTransform(scrollYProgress, [0, 1], ["0rem", "50rem"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0rem", "25rem"]);
   const xLeftSpring = useSpring(xLeft, { stiffness: 1000, damping: 200 });
   const xRightSpring = useSpring(xRight, { stiffness: 1000, damping: 200 });
 
   return (
     <>
       <section ref={ref} className="overflow-hidden pt-[5lvh] pb-[5lvh]">
-        {Projects.map((img, i) => {
+        {AetherGallery.map((img, i) => {
           return (
             <motion.div
               key={i}
@@ -38,18 +38,18 @@ export default function Gallery() {
                   src={img.image}
                   key={i}
                   fill
-                  className="object-cover"
+                  className="object-none my-12"
                   loading="lazy"
                 />
-                <div className="absolute left-2/4 top-2/4 translate-y-[-50%] translate-x-[-50%] flex flex-col gap-4 text-center">
+                {/* <div className="absolute left-2/4 top-2/4 translate-y-[-50%] translate-x-[-50%] flex flex-col gap-4 text-center">
                   <p className="h3 uppercase">{img.title}</p>
-                </div>
+                </div> */}
               </motion.div>
             </motion.div>
           );
         })}
       </section>
-      );
+      
     </>
   );
 }
