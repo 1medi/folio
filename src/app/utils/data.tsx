@@ -12,7 +12,7 @@ export const Projects = [
     id: 1,
     title: "Aether",
     description:
-      "Aether helps you understand complex documents by using AI to rephrase confusing terms. Aether converts confusing language into clear, straightforward language that ensures you fill out your forms with confidence.",
+      "Aether's mission is to empower caretakers through technology that simplifies life's challenges. Aether helps you understand complex documents by using AI to rephrase confusing terms. This technology allows the ability to convert confusing language into clear, straight-forward language that ensures you fill out your forms with confidence.",
     image: Aether,
     backgroundColor: "#0abaef",
     transform: "translateX(-1000px)",
@@ -21,7 +21,7 @@ export const Projects = [
   {
     id: 2,
     title: "Pocket Prof",
-    description: "Description for Project 2",
+    description: "Pocket Prof is a mobile web application goal tracking app that promotes a variety of skills a user can learn by gathering resources through our ai assistant Oscar. Through its interactive user-friendly features, it provides a platform for students and individuals alike to improve on themselves and create new goals. In addition to being an opportunity to educate and develop a wide range of abilities at the convenience of your mobile device.",
     image: Oscar,
     backgroundColor: "#656384",
     transform: "translateX(1000px)",
@@ -30,7 +30,7 @@ export const Projects = [
   {
     id: 3,
     title: "Lutong Bahay",
-    description: "Description for Project 3",
+    description: "“Lutong Bahay”, a Filipino cookbook app that allows users to easily customize recipes. One of the key features is the ability to adjust serving sizes, so when users change the number of servings, the app automatically updates the ingredient amounts. We also included an ingredient substitution feature, which suggests alternatives for items that might be unavailable or need to be replaced due to dietary restrictions. This makes it easier for users to cook Filipino dishes no matter where they are or what ingredients they have on hand.",
     image: Bahay,
     backgroundColor: "#f0ab1a",
     transform: "translateX(1000px)",
@@ -38,8 +38,8 @@ export const Projects = [
   },
   {
     id: 4,
-    title: "ACG (Awesome Card Game)",
-    description: "Description for Project 4",
+    title: "Awesome Card Game (ACG)",
+    description: "In ACG: Aspect of Elements, players engage in a strategic card game where they command elemental forces in turn-based battles. Choose your elemental affinity wisely – fire, water, earth, or air – as each offers unique strengths and abilities. Build your deck strategically, combining spells, creatures, and artifacts to outmaneuver your opponents. ",
     image: ACG,
     backgroundColor: "#DD8143",
     transform: "translateX(1000px)",
