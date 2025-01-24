@@ -30,7 +30,7 @@ export const Projects = [
   {
     id: 3,
     title: "Lutong Bahay",
-    description: "“Lutong Bahay”, a Filipino cookbook app that allows users to easily customize recipes. One of the key features is the ability to adjust serving sizes, so when users change the number of servings, the app automatically updates the ingredient amounts. We also included an ingredient substitution feature, which suggests alternatives for items that might be unavailable or need to be replaced due to dietary restrictions. This makes it easier for users to cook Filipino dishes no matter where they are or what ingredients they have on hand.",
+    description: "Lutong Bahay is a Filipino cookbook app that allows users to easily customize recipes. One of the key features is the ability to adjust serving sizes, so when users change the number of servings, the app automatically updates the ingredient amounts. We also included an ingredient substitution feature, which suggests alternatives for items that might be unavailable or need to be replaced due to dietary restrictions. This makes it easier for users to cook Filipino dishes no matter where they are or what ingredients they have on hand.",
     image: Bahay,
     backgroundColor: "#f0ab1a",
     transform: "translateX(1000px)",
