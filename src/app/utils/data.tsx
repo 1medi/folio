@@ -21,7 +21,7 @@ export const Projects = [
   {
     id: 2,
     title: "Pocket Prof",
-    description: "Pocket Prof is a mobile web application goal tracking app that promotes a variety of skills a user can learn by gathering resources through our ai assistant Oscar. Through its interactive user-friendly features, it provides a platform for students and individuals alike to improve on themselves and create new goals. In addition to being an opportunity to educate and develop a wide range of abilities at the convenience of your mobile device.",
+    description: "Pocket Prof is a mobile web application goal tracking app that promotes a variety of skills a user can learn by gathering resources through our ai assistant Oscar. Through its interactive user-friendly features, it provides a platform for students and individuals alike to improve on themselves and create new goals.",
     image: Oscar,
     backgroundColor: "#656384",
     transform: "translateX(1000px)",
@@ -30,7 +30,7 @@ export const Projects = [
   {
     id: 3,
     title: "Lutong Bahay",
-    description: "Lutong Bahay is a Filipino cookbook app that allows users to easily customize recipes. One of the key features is the ability to adjust serving sizes, so when users change the number of servings, the app automatically updates the ingredient amounts. We also included an ingredient substitution feature, which suggests alternatives for items that might be unavailable or need to be replaced due to dietary restrictions. This makes it easier for users to cook Filipino dishes no matter where they are or what ingredients they have on hand.",
+    description: "Lutong Bahay is a Filipino cookbook app that allows users to easily customize recipes. One of the key features is the ability to adjust serving sizes, so when users change the number of servings, the app automatically updates the ingredient amounts. This makes it easier for users to cook Filipino dishes no matter where they are or what ingredients they have on hand.",
     image: Bahay,
     backgroundColor: "#f0ab1a",
     transform: "translateX(1000px)",
