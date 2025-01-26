@@ -4,11 +4,10 @@ import { useState } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import Image from "next/image";
-import Gallery from "../../../components/Gallery";
-import { AcgGallery } from "../utils/data";
-import ACG1 from "/public/ACG/acg1.png";
+import ACGVideo from "../../../components/ACGVideo"
 import { getImageProps } from "next/image";
-
+import NextVideo from "next-video";
+import AcgV from "../../../videos/acgpromo.mp4"
 function getBackgroundImage(srcSet = "") {
   const imageSet = srcSet
     .split(", ")
@@ -85,6 +84,9 @@ const ACG = () => {
 
           <div className="proj-ideation p-12">
             <h2 className="text-3xl">Project Ideation</h2>
+            <div>
+              <NextVideo src={AcgV}/>
+            </div>
           </div>
           <div className="proj-outcome p-12">
             <h2 className="text-3xl">Outcome</h2>
