@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import About from "../../components/About";
 // import Gallery from "../../components/Gallery";
 import Contact from "../../components/Contact";
-import AboutP from "../../components/About-p";
+import AboutP from "../../components/About-p/index";
 
 export default function Home() {
   return (

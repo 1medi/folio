@@ -6,7 +6,7 @@ import Wordmark from "../Wordmark"
 const Header = () => {
   return (
     <motion.header
-      className="flex relative justify-between items-center p-4 bg-black text-white"
+      className="flex justify-between items-center p-4 bg-black text-white"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 50 }}

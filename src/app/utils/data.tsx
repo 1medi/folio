@@ -6,6 +6,7 @@ import Aether1 from "/public/Aether/homepage.png";
 import Aether2 from "/public/Aether/formlibrary.png";
 import Aether3 from "/public/Aether/results.png";
 import Aether4 from "/public/Aether/scan.png";
+import ACG1 from "/public/ACG/acg1.png"
 
 export const Projects = [
   {
@@ -69,3 +70,11 @@ export const AetherGallery = [
     title: "Photo 4",
   },
 ];
+
+export const AcgGallery = [
+  {
+    id:0,
+    image: ACG1,
+    title: "Photo1"
+  }
+]

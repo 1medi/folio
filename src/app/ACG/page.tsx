@@ -5,67 +5,143 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import Image from "next/image";
 import Gallery from "../../../components/Gallery";
-import AetherLogo from "/public/aetherLogo.png";
+import { AcgGallery } from "../utils/data";
+import ACG1 from "/public/ACG/acg1.png";
+import { getImageProps } from "next/image";
+
+function getBackgroundImage(srcSet = "") {
+  const imageSet = srcSet
+    .split(", ")
+    .map((str) => {
+      const [url, dpi] = str.split(" ");
+      return `url("${url}") ${dpi}`;
+    })
+    .join(", ");
+  return `image-set(${imageSet})`;
+}
 
 const ACG = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
+  const {
+    props: { srcSet },
+  } = getImageProps({
+    alt: "",
+    width: 1920,
+    height: 1080,
+    src: "/ACG/acg1.png",
+  });
+  const backgroundImage = getBackgroundImage(srcSet);
+  const style = {
+    height: "100vh",
+    width: "100vw",
+    backgroundImage,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   };
 
-return (
+  return (
     <>
       <Header />
-<main className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#004f2d]">
-  <h1 className="text-6xl font-extrabold mb-8 text-center text-[#b2b2b2]">Awesome Card Game (ACG)</h1>
-  
-  <div className="flex flex-col items-center mb-8">
-    <div className="relative">
-      <Image src={AetherLogo} width={600} height={300} alt="Aether" className="rounded-lg" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <button onClick={toggleModal} className="bg-white p-4 rounded-full shadow-lg">
-          <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M6 4l8 6-8 6V4z" clipRule="evenodd" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 ">
+        <motion.section
+          key={"banner"}
+          exit={{ opacity: 0 }}
+          className="about-section min-h-screen relative justify-center m-4"
+          style={style}
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="text-left p-8 text-8xl font-bold">
+            Awesome Card Game: <br /> Aspects of Elements{" "}
+          </h1>
+        </motion.section>
+        {/* <div className="p-4 m-12  rounded-xl">
+          <Image src={ACG1}  alt="acglogo" />
+        </div> */}
+        <motion.section
+        className="pr-16 pl-16"
+        >
+          <div className="tools-used p-12">
+          <h2 className="text-3xl">Tools Used</h2>
+          <ul className="p-4">
+            <li>Figma</li>
+            <li>Tabletop Simulator</li>
+          </ul>
+          </div>
+          <div className="about p-12">
+            <h2 className="text-3xl">What is ACG?</h2>
+            <p>
+              In ACG: Aspect of Elements, players engage in a strategic card
+              game where they command elemental forces in turn-based battles.
+              Choose your elemental affinity wisely – fire, water, earth, or air
+              – as each offers unique strengths and abilities. Build your deck
+              strategically, combining spells, creatures, and artifacts to
+              outmaneuver your opponents.
+            </p>
+          </div>
 
-  {isModalOpen && (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-bold mb-4">Modal Title</h2>
-        <p className="mb-4">This is the modal content.</p>
-        <button onClick={toggleModal} className="bg-red-500 text-white px-4 py-2 rounded">
-          Close
-        </button>
-      </div>
-    </div>
-  )}
+          <div className="proj-ideation p-12">
+            <h2 className="text-3xl">Project Ideation</h2>
+          </div>
+          <div className="proj-outcome p-12">
+            <h2 className="text-3xl">Outcome</h2>
+          </div>
+        </motion.section>
 
-<div className="grid grid-cols-2 gap-4 max-w-4xl">
-    <div className="bg-[#b2e4e0] p-6 rounded-lg shadow-md text-center">
-      <h2 className="text-4xl font-bold">251</h2>
-      <p className="text-xl">Projects</p>
-    </div>
-    <div className="bg-[#d1c4e9] p-6 rounded-lg shadow-md text-center">
-      <h2 className="text-4xl font-bold">156</h2>
-      <p className="text-xl">Awards</p>
-    </div>
-    <div className="bg-gray-800 p-6 rounded-lg shadow-md text-center text-white">
-      <h2 className="text-4xl font-bold">Clients</h2>
-      <p className="text-xl">Apple</p>
-    </div>
-    <div className="bg-[#ffcc80] p-6 rounded-lg shadow-md text-center">
-      <h2 className="text-4xl font-bold">172</h2>
-      <p className="text-xl">Global Design Awards</p>
-    </div>
-  </div>
-
-  <Gallery />
-</main>
+        <motion.section>
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+            <div className="grid gap-4">
+              <div>
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="grid gap-4">
+              <div>
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <img
+                  className="h-auto max-w-full rounded-lg"
+                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </motion.section>
+      </main>
       <Footer />
     </>
   );
