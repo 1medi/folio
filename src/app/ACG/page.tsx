@@ -7,6 +7,7 @@ import Image from "next/image";
 import { getImageProps } from "next/image";
 import NextVideo from "next-video";
 import AcgV from "../../../videos/acgpromo.mp4";
+import Lofi from "../../../videos/lofi.mp4"
 
 function getBackgroundImage(srcSet = "") {
   const imageSet = srcSet
@@ -81,26 +82,31 @@ const ACG = () => {
           </div>
 
           <div className="proj-ideation p-12">
-            <h2 className="text-3xl">Project Ideation</h2>
+            <h2 className="text-3xl text-right">Project Ideation</h2>
             <div className="p-8 flex sm:flex-col lg:flex-row">
-              <p>
+            <NextVideo className="p-4" width={640} height={360} src={Lofi} />
+              <p className="text-right">
                 This was a rigourous process which involved many steps such as
                 theory crafting, rule making, character design. We were also
                 tasked with determining the flow and gameplay the users
                 experienced
               </p>
-              <NextVideo width={400} height={400} src={AcgV} />
+
             </div>
           </div>
           <div className="proj-outcome p-12">
             <h2 className="text-3xl">Outcome</h2>
             <div>
-              <p>
+            <div className="p-8 flex sm:flex-col lg:flex-row">
+            <p className="text-left">
                 At the conclusion of the project the team produced a playable
                 lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                 cards each and a menu UI suitable to code for our development
                 team
               </p>
+              <NextVideo className="p-4" width={640} height={360} src={AcgV} />
+            </div>
+
             </div>
           </div>
         </motion.section>
