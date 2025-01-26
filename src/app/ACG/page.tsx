@@ -8,6 +8,7 @@ import ACGVideo from "../../../components/ACGVideo"
 import { getImageProps } from "next/image";
 import NextVideo from "next-video";
 import AcgV from "../../../videos/acgpromo.mp4"
+ 
 function getBackgroundImage(srcSet = "") {
   const imageSet = srcSet
     .split(", ")
