@@ -4,11 +4,10 @@ import { useState } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import Image from "next/image";
-import ACGVideo from "../../../components/ACGVideo"
 import { getImageProps } from "next/image";
 import NextVideo from "next-video";
-import AcgV from "../../../videos/acgpromo.mp4"
- 
+import AcgV from "../../../videos/acgpromo.mp4";
+
 function getBackgroundImage(srcSet = "") {
   const imageSet = srcSet
     .split(", ")
@@ -61,15 +60,13 @@ const ACG = () => {
         {/* <div className="p-4 m-12  rounded-xl">
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
-        <motion.section
-        className="pr-16 pl-16"
-        >
+        <motion.section className="pr-16 pl-16">
           <div className="tools-used p-12">
-          <h2 className="text-3xl">Tools Used</h2>
-          <ul className="p-4">
-            <li>Figma</li>
-            <li>Tabletop Simulator</li>
-          </ul>
+            <h2 className="text-3xl">Tools Used</h2>
+            <ul className="p-4">
+              <li>Figma</li>
+              <li>Tabletop Simulator</li>
+            </ul>
           </div>
           <div className="about p-12">
             <h2 className="text-3xl">What is ACG?</h2>
@@ -85,12 +82,26 @@ const ACG = () => {
 
           <div className="proj-ideation p-12">
             <h2 className="text-3xl">Project Ideation</h2>
-            <div>
-              <NextVideo src={AcgV}/>
+            <div className="p-8 flex sm:flex-col lg:flex-row">
+              <p>
+                This was a rigourous process which involved many steps such as
+                theory crafting, rule making, character design. We were also
+                tasked with determining the flow and gameplay the users
+                experienced
+              </p>
+              <NextVideo width={400} height={400} src={AcgV} />
             </div>
           </div>
           <div className="proj-outcome p-12">
             <h2 className="text-3xl">Outcome</h2>
+            <div>
+              <p>
+                At the conclusion of the project the team produced a playable
+                lofi physical card game, 3 decks (Fire, Water, Ice) with 12
+                cards each and a menu UI suitable to code for our development
+                team
+              </p>
+            </div>
           </div>
         </motion.section>
 
