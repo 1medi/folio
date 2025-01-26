@@ -7,7 +7,7 @@ import PPTitle from "../ProjectTitle/PPTitle";
 export default function AboutP() {
 return (
   <div>
-    <h1 id="projects" className="text-7xl font-bold text-center p-24">Projects</h1>
+    <h1 id="projects" className="text-7xl font-bold sm:text-center lg:text-right p-24">Projects</h1>
     <section className="">
     <hr/>
       <AeTitle/>
