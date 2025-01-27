@@ -7,6 +7,15 @@ import ACGBanner from "../../../components/PageBanners/ACGBanner";
 import NextVideo from "next-video";
 import AcgV from "../../../videos/acgpromo.mp4";
 import Lofi from "../../../videos/lofi.mp4";
+import Image from "next/image";
+import Gallery from "../../../components/Gallery";
+
+import ACGColors from "/public/ACG/colors.png";
+import ACGImagery from "/public/ACG/imagery.png";
+import ACGMeasurements from "/public/ACG/measurements.png";
+import ACGType from "/public/ACG/typography.png";
+import ACGGamem from "/public/ACG/gamemeasurements.png";
+import ACGLogo from "/public/ACG/logo.png";
 
 const ACG = () => {
   return (
@@ -38,9 +47,17 @@ const ACG = () => {
           </div>
 
           <div className="proj-ideation p-8">
-            <h2 className="text-3xl text-right bg-black rounded-lg p-4">Project Ideation</h2>
+            <h2 className="text-3xl text-right bg-black rounded-lg p-4">
+              Project Ideation
+            </h2>
             <div className="m-auto flex sm:flex-col lg:flex-row">
-              <NextVideo style={{zIndex: 1}} className="m-4" width={640} height={360} src={Lofi} />
+              <NextVideo
+                style={{ zIndex: 1 }}
+                className="m-4"
+                width={640}
+                height={360}
+                src={Lofi}
+              />
               <p className="text-right p-4">
                 This was a rigourous process which involved many steps such as
                 theory crafting, rule making, character design. We were also
@@ -51,21 +68,38 @@ const ACG = () => {
           </div>
           <div className="proj-outcome p-8 flex flex-col">
             <h2 className="text-3xl bg-black rounded-lg p-4">Outcome</h2>
-              <div className="m-auto flex flex-col lg:flex-row">
-                <p className="text-left p-4">
-                  At the conclusion of the project the team produced a playable
-                  lofi physical card game, 3 decks (Fire, Water, Ice) with 12
-                  cards each and a menu UI suitable to code for our development
-                  team
-                </p>
-                <NextVideo
+            <div className="m-auto flex flex-col lg:flex-row">
+              <p className="text-left p-4">
+                At the conclusion of the project the team produced a playable
+                lofi physical card game, 3 decks (Fire, Water, Ice) with 12
+                cards each and a menu UI suitable to code for our development
+                team
+              </p>
+              <NextVideo
                 className="m-4 md:w-320"
-                  style={{zIndex: 1}}
-                  width={640}
-                  height={360}
-                  src={AcgV}
-                />
+                style={{ zIndex: 1 }}
+                width={640}
+                height={360}
+                src={AcgV}
+              />
+            </div>
+          </div>
+          <div className="proj-styleguide p-8">
+            <h2 className="text-3xl text-right bg-black rounded-lg p-4">
+              Styleguide
+            </h2>
+            <div className="flex flex-row m-auto justify-center items-center">
+              <div className="Colors p-4">
+                <Image src={ACGColors} alt="colors " className="rounded-lg"/>
               </div>
+              <div className="Everything Else w-1/3 p-4">
+                <Image src={ACGImagery} alt="colors" className="m-2 rounded-lg" />
+                <Image src={ACGMeasurements} alt="colors" className="m-2 rounded-lg"/>
+                <Image src={ACGType} alt="colors" className="m-2 rounded-lg"/>
+                <Image src={ACGGamem} alt="colors" className="m-2 rounded-lg"/>
+                <Image src={ACGLogo} alt="colors"className="m-2 rounded-lg" />
+              </div>
+            </div>
           </div>
         </motion.section>
 

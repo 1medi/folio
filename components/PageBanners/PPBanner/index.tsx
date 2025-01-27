@@ -12,7 +12,8 @@ import Oscar from "../../../public/Oscarsolo.png";
 
 const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
 const PPBanner = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 50%, ${color}`;
 
@@ -56,17 +57,32 @@ const PPBanner = () => {
             <h2 className="text-2xl p-2">Completed: May 2024</h2>
 
             <motion.div
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
+              onMouseEnter={() => setIsHovered1(true)}
+              onMouseLeave={() => setIsHovered1(false)}
               animate={{
-                backgroundColor: isHovered ? "#5b21b6" : "",
-                scale: isHovered ? 1.25 : 1
+                backgroundColor: isHovered1 ? "#5b21b6" : "",
+                scale: isHovered1 ? 1.25 : 1
               }}
               transition={{ ease: "backInOut" }}
               className="bg-violet-900 p-2 rounded-2xl m-4"
             >
               <a href="https://www.pocketprof.online/" target="_blank">
                 <p className="text-4xl">Live App</p>
+              </a>
+            </motion.div>
+
+            <motion.div
+              onMouseEnter={() => setIsHovered2(true)}
+              onMouseLeave={() => setIsHovered2(false)}
+              animate={{
+                backgroundColor: isHovered2 ? "#5b21b6" : "",
+                scale: isHovered2 ? 1.25 : 1
+              }}
+              transition={{ ease: "backInOut" }}
+              className="bg-violet-900 p-2 rounded-2xl m-4"
+            >
+              <a href="https://pocket-profs-a5-styleguide.vercel.app/" target="_blank">
+                <p className="text-4xl">Styleguide!</p>
               </a>
             </motion.div>
           </div>

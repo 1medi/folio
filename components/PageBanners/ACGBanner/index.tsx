@@ -58,11 +58,6 @@ const ACGBanner = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-row justify-center items-center">
-                <a href="/styleguide" target="_blank">
-                  <motion.div className="p-4">
-                    <h3>Styleguide</h3>
-                  </motion.div>
-                </a>
                 <a
                   href="https://steamcommunity.com/sharedfiles/filedetails/?id=3247582700"
                   target="_blank"

@@ -9,6 +9,13 @@ import Aether4 from "/public/Aether/scan.png";
 import ACG1 from "/public/ACG/acg1.png"
 import PPLanding from "../../../public/Pocket-Prof/pplanding.png";
 
+import ACGColors from "/public/ACG/colors.png"
+import ACGImagery from "/public/ACG/imagery.png"
+import ACGMeasurements from "/public/ACG/measurements.png"
+import ACGType from "/public/ACG/typography.png"
+import ACGGamem from "/public/ACG/gamemeasurements.png"
+import ACGLogo from "/public/ACG/logo.png"
+
 export const Projects = [
   {
     id: 1,
@@ -75,8 +82,31 @@ export const AetherGallery = [
 export const AcgGallery = [
   {
     id:0,
-    image: ACG1,
-    title: "Photo1"
-  }
+    image: ACGColors,
+
+  },
+  {
+    id:1,
+    image: ACGImagery,
+  },
+  {
+    id:2,
+    image: ACGMeasurements,
+
+  },
+  {
+    id:3,
+    image: ACGType,
+
+  },
+  {
+    id:4,
+    image: ACGGamem,
+
+  },
+  {
+    id:5,
+    image: ACGLogo,
+  },
 ]
 

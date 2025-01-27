@@ -1,55 +1,26 @@
 "use client";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { AetherGallery } from "@/app/utils/data";
+import { AcgGallery } from "@/app/utils/data";
 import Image from "next/image";
-import { useRef } from "react";
 
 export default function Gallery() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const xLeft = useTransform(scrollYProgress, [0, 1], [250, -500]);
-  const xRight = useTransform(scrollYProgress, [0, 1], [-250, 500]);
-  const y = useTransform(scrollYProgress, [0, 1], ["0rem", "25rem"]);
-  const xLeftSpring = useSpring(xLeft, { stiffness: 1000, damping: 200 });
-  const xRightSpring = useSpring(xRight, { stiffness: 1000, damping: 200 });
-
   return (
     <>
-      <section ref={ref} className="overflow-hidden pt-[5lvh] pb-[5lvh]">
-        {AetherGallery.map((img, i) => {
+      <div className="grid grid-cols-2 gap-4 p-4">
+        {AcgGallery.map((img, i) => {
           return (
-            <motion.div
-              key={i}
-              className="flex overflow-hidden"
-              style={{
-                x: i % 2 ? xLeftSpring : xRightSpring,
-                justifyContent: i % 2 ? "flex-end" : "flex-start",
-              }}
-            >
-              <motion.div
-                style={{ y: y }}
-                className="relative h-[80rem] w-[30rem] mt-[-50rem]"
-              >
-                <Image
-                  alt={img.title}
-                  src={img.image}
-                  key={i}
-                  fill
-                  className="object-none my-12"
-                  loading="lazy"
-                />
-                {/* <div className="absolute left-2/4 top-2/4 translate-y-[-50%] translate-x-[-50%] flex flex-col gap-4 text-center">
-                  <p className="h3 uppercase">{img.title}</p>
-                </div> */}
-              </motion.div>
-            </motion.div>
+            <div key={i} className="flex">
+              <Image
+                alt="ACG"
+                src={img.image}
+                className=""
+                loading="lazy"
+                style={{objectFit:"contain", width:"100%"}}
+              />
+            </div>
           );
         })}
-      </section>
-      
+      </div>
     </>
   );
 }
