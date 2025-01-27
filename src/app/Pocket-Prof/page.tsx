@@ -66,9 +66,22 @@ const PocketProf = () => {
               available into 1 congestable pocket prof!
             </p>
           </div>
+          <div className="proj-ideation p-8">
+            <h2 className="text-3xl text-left bg-black rounded-lg p-4">
+              Design Decisions
+            </h2>
+            <div className="m-auto flex sm:flex-col lg:flex-row">
+              <p className="text-left p-4">
+                This was a rigourous process which involved many steps such as
+                theory crafting, rule making, character design. We were also
+                tasked with determining the flow and gameplay the users
+                experienced
+              </p>
+            </div>
+          </div>
           <div className="proj-outcome p-8">
-            <h2 className="text-3xl bg-black rounded-lg p-4">Outcome</h2>
-            <p className="text-left p-4">
+            <h2 className="text-3xl bg-black rounded-lg text-right p-4">Outcome</h2>
+            <p className="text-right p-4">
               At the conclusion of the project the team produced a playable lofi
               physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
               and a menu UI suitable to code for our development team

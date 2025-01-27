@@ -27,12 +27,26 @@ const ACG = () => {
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
         <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
-          <div className="tools-used p-8 ">
-            <h2 className="text-3xl bg-black rounded-lg p-4">Tools Used</h2>
-            <ul className="p-2">
-              <li className="text-4xl p-4">Figma</li>
-              <li className="text-4xl p-4">Tabletop Simulator</li>
-            </ul>
+        <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
+            <div className="p-4">
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+                Tools Used
+              </h2>
+              <ul className="p-2 text-center">
+                <li className="text-2xl p-5">Figma</li>
+                <li className="text-2xl p-5">Tabletop Simulator</li>
+              </ul>
+            </div>
+            <div className="p-4">
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+                Key Features
+              </h2>
+              <ul className="p-2 text-center">
+                <li className="text-2xl p-2">3 Elemental Decks!</li>
+                <li className="text-2xl p-2">Character Abilites</li>
+                <li className="text-2xl p-2">Unique Game Mechanics!</li>
+              </ul>
+            </div>
           </div>
           <div className="about p-8 ">
             <h2 className="text-3xl bg-black rounded-lg p-4">What is ACG?</h2>
@@ -66,10 +80,23 @@ const ACG = () => {
               </p>
             </div>
           </div>
+          <div className="proj-ideation p-8">
+            <h2 className="text-3xl text-left bg-black rounded-lg p-4">
+              Design Decisions
+            </h2>
+            <div className="m-auto flex sm:flex-col lg:flex-row">
+              <p className="text-leftt p-4">
+                This was a rigourous process which involved many steps such as
+                theory crafting, rule making, character design. We were also
+                tasked with determining the flow and gameplay the users
+                experienced
+              </p>
+            </div>
+          </div>
           <div className="proj-outcome p-8 flex flex-col">
-            <h2 className="text-3xl bg-black rounded-lg p-4">Outcome</h2>
+            <h2 className="text-3xl text-right bg-black rounded-lg p-4">Outcome</h2>
             <div className="m-auto flex flex-col lg:flex-row">
-              <p className="text-left p-4">
+              <p className="text-right p-4">
                 At the conclusion of the project the team produced a playable
                 lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                 cards each and a menu UI suitable to code for our development
@@ -85,7 +112,7 @@ const ACG = () => {
             </div>
           </div>
           <div className="proj-styleguide p-8">
-            <h2 className="text-3xl text-right bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center bg-black rounded-lg p-4">
               Styleguide
             </h2>
             <div className="flex flex-row m-auto justify-center items-center">
