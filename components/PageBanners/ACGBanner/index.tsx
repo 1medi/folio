@@ -39,7 +39,6 @@ const ACGBanner = () => {
           textAlign: "center",
           backgroundImage,
           opacity,
-
         }}
         initial={{ opacity: 0 }}
         animate={{
@@ -53,12 +52,10 @@ const ACGBanner = () => {
               Awesome Card Game:{" "}
               <p className="text-6xl">Aspects of Elements (ACG)</p>
             </h1>
-
             <div className="text-center p-5">
               <h2>Game Design Project</h2>
               <h2>Completed: May 2024</h2>
             </div>
-
             <div className="flex flex-col">
               <div className="flex flex-row justify-center items-center">
                 <a href="/styleguide" target="_blank">
@@ -69,24 +66,16 @@ const ACGBanner = () => {
                 <a
                   href="https://steamcommunity.com/sharedfiles/filedetails/?id=3247582700"
                   target="_blank"
-
                 >
-                  <motion.div 
-                  
-                  className="p-4 bg-black rounded-xl">
-                    <h3>Steam Workshop (Tabletop Simulator Required!)</h3>
+                  <motion.div className="p-4 bg-black rounded-xl">
+                    <h3>Steam Workshop</h3>
                   </motion.div>
                 </a>
               </div>
             </div>
           </div>
           <motion.div className="m-8" exit={{ opacity: 0 }}>
-            <Image
-              src={ACG}
-              alt="ACG LOGO"
-              width={512}
-              height={512}
-            />
+            <Image src={ACG} alt="ACG LOGO" width={512} height={512} />
           </motion.div>
         </div>
       </motion.section>

@@ -10,7 +10,7 @@ const Title = () => {
     <>
       <motion.a
         className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
-        href="/"
+        href="/Pocket-Prof"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         animate={{

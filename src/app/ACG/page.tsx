@@ -13,21 +13,21 @@ const ACG = () => {
     <>
       <Header />
       <ACGBanner />
-      <main className="min-h-screen flex flex-col m-auto flex-wrap flex-grow xl:m-24 items-center justify-center p-4 ">
+      <main className="min-h-screen flex flex-col m-auto flex-wrap flex-grow xl:m-24 items-center justify-center p-4 rounded-lg">
         {/* <div className="p-4 m-12  rounded-xl">
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
-        <motion.section className="pr-16 pl-16">
-          <div className="tools-used p-12">
-            <h2 className="text-3xl">Tools Used</h2>
-            <ul className="p-4">
-              <li>Figma</li>
-              <li>Tabletop Simulator</li>
+        <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
+          <div className="tools-used p-8 ">
+            <h2 className="text-3xl bg-black rounded-lg p-4">Tools Used</h2>
+            <ul className="p-2">
+              <li className="text-4xl p-4">Figma</li>
+              <li className="text-4xl p-4">Tabletop Simulator</li>
             </ul>
           </div>
-          <div className="about p-12">
-            <h2 className="text-3xl">What is ACG?</h2>
-            <p>
+          <div className="about p-8 ">
+            <h2 className="text-3xl bg-black rounded-lg p-4">What is ACG?</h2>
+            <p className="p-4">
               In ACG: Aspect of Elements, players engage in a strategic card
               game where they command elemental forces in turn-based battles.
               Choose your elemental affinity wisely – fire, water, earth, or air
@@ -37,11 +37,11 @@ const ACG = () => {
             </p>
           </div>
 
-          <div className="proj-ideation p-12">
-            <h2 className="text-3xl text-right">Project Ideation</h2>
-            <div className="mt-8 flex sm:flex-col lg:flex-row">
+          <div className="proj-ideation p-8">
+            <h2 className="text-3xl text-right bg-black rounded-lg p-4">Project Ideation</h2>
+            <div className="m-auto flex sm:flex-col lg:flex-row">
               <NextVideo style={{zIndex: 1}} className="m-4" width={640} height={360} src={Lofi} />
-              <p className="text-right">
+              <p className="text-right p-4">
                 This was a rigourous process which involved many steps such as
                 theory crafting, rule making, character design. We were also
                 tasked with determining the flow and gameplay the users
@@ -49,17 +49,17 @@ const ACG = () => {
               </p>
             </div>
           </div>
-          <div className="proj-outcome p-12 flex xl:flex-col">
-            <h2 className="text-3xl">Outcome</h2>
-              <div className="mt-8 flex sm:flex-col lg:flex-row">
-                <p className="text-left">
+          <div className="proj-outcome p-8 flex flex-col">
+            <h2 className="text-3xl bg-black rounded-lg p-4">Outcome</h2>
+              <div className="m-auto flex flex-col lg:flex-row">
+                <p className="text-left p-4">
                   At the conclusion of the project the team produced a playable
                   lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                   cards each and a menu UI suitable to code for our development
                   team
                 </p>
                 <NextVideo
-                className="m-4"
+                className="m-4 md:w-320"
                   style={{zIndex: 1}}
                   width={640}
                   height={360}
@@ -69,7 +69,7 @@ const ACG = () => {
           </div>
         </motion.section>
 
-        <motion.section>
+        <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
           <h3 className="text-8xl text-center p-4">Gallery</h3>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
             <div className="grid gap-4">

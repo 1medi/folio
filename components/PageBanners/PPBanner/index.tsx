@@ -49,19 +49,12 @@ const PPBanner = () => {
       >
         <div className="flex flex-row justify-center items-center">
           <div className="flex flex-col">
-            <h1 className="text-center font-bold mb-4 text-7xl">Pocket Prof</h1>
-            <h2 className="text-3xl font-semibold">
+            <h1 className="text-center font-bold mb-4 text-7xl">Pocket Prof.</h1>
+            <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Web App
             </h2>
-            <h2 className="text-2xl">Completed: 2024</h2>
-            <div className="tools-used p-12">
-              <h2 className="text-3xl font-semibold">Tools Used</h2>
-              <ul className="p-4">
-                <li className="text-2xl">Figma</li>
-                <li className="text-2xl">Next.js</li>
-                <li className="text-2xl">Openai</li>
-              </ul>
-            </div>
+            <h2 className="text-2xl p-2">Completed: May 2024</h2>
+
             <motion.div
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
@@ -70,7 +63,7 @@ const PPBanner = () => {
                 scale: isHovered ? 1.25 : 1
               }}
               transition={{ ease: "backInOut" }}
-              className="bg-violet-800 p-2 rounded-2xl"
+              className="bg-violet-900 p-2 rounded-2xl m-4"
             >
               <a href="https://www.pocketprof.online/" target="_blank">
                 <p className="text-4xl">Live App</p>

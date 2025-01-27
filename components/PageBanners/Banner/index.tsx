@@ -46,17 +46,14 @@ const Banner = () => {
         }}
         transition={{ duration: 1 }}
       >
-        <h1
-          className="text-center font-bold mb-4"
-          style={{ fontSize: "6rem", lineHeight: "1" }}
-        >
-          Hi! I'm Madi
-        </h1>
-        <p className="text-2xl m-12 text-center text-white">
-          Experienced front-end developer with expertise in modern web
-          technologies. Passionate about user-friendly designs and pushing
-          boundaries.
-        </p>
+        <h1 className="text-center text-7xl font-bold mb-2">Hi! I'm Madi</h1>
+        <div className="w-1/2 mr-auto ml-auto">
+          <p className="text-2xl m-4 text-center text-white">
+            A Front-end developer with a strong passion in modern web
+            technologies. With an unwavering interest in user-friendly designs
+            and pushing boundaries.
+          </p>
+        </div>
         <div className="flex justify-center gap-5 p-3">
           <motion.a
             href="https://github.com/1medi"

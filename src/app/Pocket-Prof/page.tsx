@@ -19,46 +19,60 @@ const PocketProf = () => {
         {/* <div className="p-4 m-12  rounded-xl">
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
-        <motion.section className="pr-16 pl-16">
-          <div className="about p-12">
-            <h2 className="text-3xl">What is Pocket Prof?</h2>
-            <p>
-              "Pocket Prof is a mobile web application goal tracking app that
+        <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
+          <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
+            <div className="p-4">
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">Tools Used</h2>
+              <ul className="p-2 text-center">
+                <li className="text-2xl p-2">Figma</li>
+                <li className="text-2xl p-2">Next.js</li>
+                <li className="text-2xl p-2">Openai</li>
+              </ul>
+            </div>
+            <div className="p-4">
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">Key Features</h2>
+              <ul className="p-2 text-center">
+                <li className="text-2xl p-2">AI Chat Bot</li>
+                <li className="text-2xl p-2">Quiz to Determine Best Skill</li>
+                <li className="text-2xl p-2">Skill Library</li>
+              </ul>
+            </div>
+          </div>
+          <div className="about p-8">
+            <h2 className="text-3xl bg-black rounded-lg p-4">
+              What is Pocket Prof?
+            </h2>
+            <p className="p-4">
+              Pocket Prof is a mobile web application goal tracking app that
               promotes a variety of skills a user can learn by gathering
               resources through our ai assistant Oscar. Through its interactive
               user-friendly features, it provides a platform for students and
               individuals alike to improve on themselves and create new goals."
             </p>
           </div>
-
-          <div className="proj-ideation p-12">
-            <h2 className="text-3xl text-right">Identifying The Issue</h2>
-            <div className="p-8 flex sm:flex-col lg:flex-row">
-              <p className="text-right">
-                This was a rigourous process which involved many steps such as
-                theory crafting, rule making, character design. We were also
-                tasked with determining the flow and gameplay the users
-                experienced
-              </p>
-            </div>
+          <div className="proj-ideation p-8">
+            <h2 className="text-3xl text-right bg-black rounded-lg p-4">
+              Identifying The Issue
+            </h2>
+            <p className="text-right p-4">
+              This was a rigourous process which involved many steps such as
+              theory crafting, rule making, character design. We were also
+              tasked with determining the flow and gameplay the users
+              experienced
+            </p>
           </div>
-          <div className="proj-outcome p-12">
-            <h2 className="text-3xl">Outcome</h2>
-            <div>
-              <div className="p-8 flex sm:flex-col lg:flex-row">
-                <p className="text-left">
-                  At the conclusion of the project the team produced a playable
-                  lofi physical card game, 3 decks (Fire, Water, Ice) with 12
-                  cards each and a menu UI suitable to code for our development
-                  team
-                </p>
-              </div>
-            </div>
+          <div className="proj-outcome p-8">
+            <h2 className="text-3xl bg-black rounded-lg p-4">Outcome</h2>
+            <p className="text-left p-4">
+              At the conclusion of the project the team produced a playable lofi
+              physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
+              and a menu UI suitable to code for our development team
+            </p>
           </div>
         </motion.section>
 
-        <motion.section>
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-4">
+        <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">
             <div className="grid gap-4">
               <div className="relative w-full">
                 <Image
