@@ -3,8 +3,8 @@ import React from "react";
 export default function Page() {
   return (
     <>
-      <h1 id="contact" className="text-6xl font-bold mb-8 text-center">Let's Get in Touch!</h1>
-      <form className="relative justify-center m-auto p-4 max-w-md">
+      <h1 id="contact" className="text-6xl font-bold  p-8 text-center">Let's Get in Touch!</h1>
+      <form className="relative justify-center m-auto p-8 max-w-md">
         <input
           type="text"
           name="name"

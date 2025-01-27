@@ -9,7 +9,7 @@ const Title = () => {
   return (
     <>
       <motion.a
-        className="title-container p-4 flex-wrap relative justify-center items-center flex flex-col  no-underline"
+        className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
         href="/"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -18,32 +18,29 @@ const Title = () => {
         }}
         transition={{ ease: "backInOut" }}
       >
-        <div className="flex flex-row flex-wrap relative justify-center items-center">
-          <h1 className="font-bold p-4 sm:text-4xl md:text-7xl lg:text-8xl xl:9xl">
+        <div className="flex flex-row p-2 flex-wrap relative justify-center items-center">
+          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
             Aether
           </h1>
           <motion.img
             src={First.src}
-            height={256}
-            width={256}
+            height={512}
+            width={512}
             style={{objectFit:"contain"}}
             animate={{
-              width: isHovered ? "10rem" : "0rem",
-              height: isHovered ? "8rem" : "0rem",
+              width: isHovered ? "6rem" : "0rem",
+              height: isHovered ? "4rem" : "0rem",
               opacity: isHovered ? "100%" : "0%",
-              padding: isHovered ? "0rem 0.75rem" : "0rem",
+              padding: isHovered ? "0rem 0.5rem" : "0rem",
             }}
             alt="aether"
           />
-          {/* <h1 className="font-bold p-4 sm:text-4xl md:text-7xl lg:text-8xl xl:9xl">
-            App
-          </h1> */}
         </div>
         <motion.p
           animate={{
             opacity: isHovered ? "100%" : "0%",
           }}
-          className="text-center p-4 text-2xl font-medium"
+          className="text-center text-2xl font-medium"
         >
           Learn More!
         </motion.p>

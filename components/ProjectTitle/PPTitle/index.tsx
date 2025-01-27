@@ -9,7 +9,7 @@ const Title = () => {
   return (
     <>
       <motion.a
-        className="title-container p-4 flex-wrap relative justify-center items-center flex flex-col  no-underline"
+        className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
         href="/"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -19,7 +19,7 @@ const Title = () => {
         transition={{ ease: "backInOut" }}
       >
         <div className="flex flex-row flex-wrap relative justify-center items-center">
-          <h1 className="font-bold p-4 sm:text-4xl md:text-7xl lg:text-8xl xl:9xl">
+          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
             Pocket
           </h1>
           <motion.img
@@ -33,7 +33,7 @@ const Title = () => {
             }}
             alt="aether"
           />
-          <h1 className="font-bold p-4 sm:text-4xl md:text-7xl lg:text-8xl xl:9xl">
+          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
             Prof
           </h1>
         </div>
@@ -41,7 +41,7 @@ const Title = () => {
           animate={{
             opacity: isHovered ? "100%" : "0%",
           }}
-          className="text-center p-4 text-2xl font-medium"
+          className="text-center p-2 text-2xl font-medium"
         >
           Learn More!
         </motion.p>

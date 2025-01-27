@@ -9,7 +9,7 @@ const Title = () => {
   return (
     <>
       <motion.a
-        className="title-container p-9 flex-wrap relative justify-center items-center flex flex-col  no-underline"
+        className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
         href="/ACG"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -19,7 +19,7 @@ const Title = () => {
         transition={{ ease: "backInOut" }}
       >
         <div className="flex flex-row flex-wrap relative justify-center items-center">
-          <h1 className="font-bold p-2 sm:text-2xl md:text-5xl lg:text-7xl xl:8xl">
+          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
             Awesome Card
           </h1>
           <motion.img
@@ -27,13 +27,14 @@ const Title = () => {
             height={512}
             width={512}
             animate={{
-              width: isHovered ? "10rem" : "0rem",
+              width: isHovered ? "9rem" : "0rem",
+              height: isHovered ? "3rem" : "0rem",
               opacity: isHovered ? "100%" : "0%",
               padding: isHovered ? "0rem 0.75rem" : "",
             }}
             alt="aether"
           />
-          <h1 className="font-bold p-4 sm:text-2xl md:text-5xl lg:text-7xl xl:8xl">
+          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
             Game (ACG)
           </h1>
         </div>
