@@ -28,17 +28,17 @@ const Banner = () => {
   }, []);
 
   return (
-    <>
+    <div className="-z-80">
       <motion.section
         key={"banner"}
-        exit={{ opacity: 0 }}
-        className="about-section min-h-screen relative justify-center shadow-2xl"
+        // exit={{ opacity: 0 }}
+        className="about-section min-h-screen relative justify-center shadow-2xl -z-80"
         style={{
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
           backgroundImage,
-          opacity,
+          // opacity,
         }}
         initial={{ opacity: 0 }}
         animate={{
@@ -84,7 +84,7 @@ const Banner = () => {
           </motion.a>
         </div>
       </motion.section>
-    </>
+    </div>
   );
 };
 

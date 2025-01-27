@@ -1,0 +1,76 @@
+import React, { useState, useEffect } from "react";
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  useScroll,
+  useTransform,
+  animate,
+} from "framer-motion";
+import Image from "next/image";
+import Oscar from "../../../public/Oscarsolo.png";
+
+const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
+const PPBanner = () => {
+  const color = useMotionValue(COLORS[0]);
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 50%, ${color}`;
+
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+
+  useEffect(() => {
+    animate(color, COLORS, {
+      ease: "easeInOut",
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
+  }, []);
+
+  return (
+    <>
+      <motion.section
+        key={"banner"}
+        // exit={{ opacity: 0 }}
+        className="about-section min-h-screen relative justify-center shadow-2xl"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          textAlign: "center",
+          backgroundImage,
+          opacity,
+        }}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ duration: 1 }}
+      >
+        <div className="flex flex-row justify-center items-center">
+          <div className="flex flex-col">
+            <h1
+              className="text-center font-bold mb-4 text-7xl"
+            >
+              Pocket Prof
+            </h1>
+            <h2>Designed and Coded Web App</h2>
+            <h2>Completed: 2024</h2>
+            <div className="tools-used p-12">
+            <h2 className="text-3xl">Tools Used</h2>
+            <ul className="p-4">
+              <li>Figma</li>
+              <li>Tabletop Simulator</li>
+            </ul>
+          </div>
+          </div>
+
+          <motion.div exit={{ opacity: 0 }}>
+            <Image src={Oscar} alt="oscar" width={512} height={512} />
+          </motion.div>
+        </div>
+      </motion.section>
+    </>
+  );
+};
+
+export default PPBanner;
