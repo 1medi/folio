@@ -22,7 +22,9 @@ const PocketProf = () => {
         <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
           <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
             <div className="p-4">
-              <h2 className="text-3xl text-center bg-black rounded-lg p-4">Tools Used</h2>
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+                Tools Used
+              </h2>
               <ul className="p-2 text-center">
                 <li className="text-2xl p-2">Figma</li>
                 <li className="text-2xl p-2">Next.js</li>
@@ -30,7 +32,9 @@ const PocketProf = () => {
               </ul>
             </div>
             <div className="p-4">
-              <h2 className="text-3xl text-center bg-black rounded-lg p-4">Key Features</h2>
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+                Key Features
+              </h2>
               <ul className="p-2 text-center">
                 <li className="text-2xl p-2">AI Chat Bot</li>
                 <li className="text-2xl p-2">Quiz to Determine Best Skill</li>
@@ -55,10 +59,11 @@ const PocketProf = () => {
               Identifying The Issue
             </h2>
             <p className="text-right p-4">
-              This was a rigourous process which involved many steps such as
-              theory crafting, rule making, character design. We were also
-              tasked with determining the flow and gameplay the users
-              experienced
+              There was a gap found in the ability of finding new skills due to
+              the overwhelming surplus of resources available of the internet.
+              Through the app ideation proccess, we determined with the help of
+              AI, we can collect all the available resources and make it
+              available into 1 congestable pocket prof!
             </p>
           </div>
           <div className="proj-outcome p-8">

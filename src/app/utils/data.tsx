@@ -83,7 +83,6 @@ export const AcgGallery = [
   {
     id:0,
     image: ACGColors,
-
   },
   {
     id:1,

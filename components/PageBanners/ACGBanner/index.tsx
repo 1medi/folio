@@ -26,6 +26,7 @@ const ACGBanner = () => {
       repeatType: "mirror",
     });
   }, []);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
@@ -56,17 +57,24 @@ const ACGBanner = () => {
               <h2>Game Design Project</h2>
               <h2>Completed: May 2024</h2>
             </div>
-            <div className="flex flex-col">
-              <div className="flex flex-row justify-center items-center">
+            <div className="flex flex-col w-2/3 m-auto">
+              <motion.div
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+                animate={{
+                  backgroundColor: isHovered ? "#a5681e" : "",
+                  scale: isHovered ? 1.25 : 1,
+                }}
+                transition={{ ease: "backInOut" }}
+                className="bg-[#F4A950] p-2 rounded-2xl m-4"
+              >
                 <a
-                  href="https://steamcommunity.com/sharedfiles/filedetails/?id=3247582700"
+                  href="https://pocket-profs-a5-styleguide.vercel.app/"
                   target="_blank"
                 >
-                  <motion.div className="p-4 bg-black rounded-xl">
-                    <h3>Steam Workshop</h3>
-                  </motion.div>
+                  <p className="text-4xl">On Steam Workshop!</p>
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
           <motion.div className="m-8" exit={{ opacity: 0 }}>
