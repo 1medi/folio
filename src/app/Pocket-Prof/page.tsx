@@ -64,7 +64,7 @@ const PocketProf = () => {
               the overwhelming surplus of resources available of the internet.
               Through the app ideation proccess, we determined with the help of
               AI, we can collect all the available resources and make it
-              available into 1 congestable pocket prof!
+              available into 1 congestable application: Pocket Prof!
             </p>
           </div>
           <div className="proj-ideation p-8">
@@ -76,7 +76,7 @@ const PocketProf = () => {
                 This was a rigourous process which involved many steps such as
                 theory crafting, rule making, character design. We were also
                 tasked with determining the flow and gameplay the users
-                experienced
+                experienced.
               </p>
             </div>
             <div className="m-auto flex flex-col">
