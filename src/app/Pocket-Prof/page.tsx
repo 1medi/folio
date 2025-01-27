@@ -8,8 +8,9 @@ import PPLanding from "../../../public/Pocket-Prof/pplanding.png";
 import PPHome from "../../../public/Pocket-Prof/pphome.png";
 import PPQuestion from "../../../public/Pocket-Prof/ppquestion.png";
 import PPQuiz from "../../../public/Pocket-Prof/ppquiz.png";
-
 import Image from "next/image";
+import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
+import Oscar from "../../../public/Oscarsolo.png";
 const PocketProf = () => {
   return (
     <>
@@ -78,9 +79,37 @@ const PocketProf = () => {
                 experienced
               </p>
             </div>
+            <div className="m-auto flex flex-col">
+              <h2 className="text-center text-4xl font-medium p-4">
+                User Workflow
+              </h2>
+              <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
+            </div>
+            <div className="m-auto flex flex-col">
+              <h2 className="text-center text-4xl font-medium p-4">
+                Logo Design
+              </h2>
+              <div className="flex flex-row ">
+                <Image className="m-auto justify-center items-center" src={Oscar} alt="sitemap" />
+                <p>
+                  Otters and the color purple might seem like an odd combination
+                  at first glance, but there are a few fun reasons why they
+                  could go well together. Otters are known for their playful
+                  nature, often seen frolicking in the water. Purple is a color
+                  often associated with creativity, imagination, and whimsy.
+                  Otters are typically brown or gray, so the color purple
+                  provides a striking contrast when paired with them. This
+                  contrast can create visual interest and draw attention, making
+                  it an appealing combination in art or design. Purple is
+                  sometimes associated with royalty, luxury, and magic.
+                </p>
+              </div>
+            </div>
           </div>
           <div className="proj-outcome p-8">
-            <h2 className="text-3xl bg-black rounded-lg text-right p-4">Outcome</h2>
+            <h2 className="text-3xl bg-black rounded-lg text-right p-4">
+              Outcome
+            </h2>
             <p className="text-right p-4">
               At the conclusion of the project the team produced a playable lofi
               physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
