@@ -13,7 +13,7 @@ const ACG = () => {
     <>
       <Header />
       <ACGBanner />
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 ">
+      <main className="min-h-screen flex flex-col m-auto flex-wrap flex-grow xl:m-24 items-center justify-center p-4 ">
         {/* <div className="p-4 m-12  rounded-xl">
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
@@ -39,8 +39,8 @@ const ACG = () => {
 
           <div className="proj-ideation p-12">
             <h2 className="text-3xl text-right">Project Ideation</h2>
-            <div className="p-8 flex sm:flex-col lg:flex-row">
-              <NextVideo style={{zIndex: 1}} className="p-4" width={640} height={360} src={Lofi} />
+            <div className="mt-8 flex sm:flex-col lg:flex-row">
+              <NextVideo style={{zIndex: 1}} className="m-4" width={640} height={360} src={Lofi} />
               <p className="text-right">
                 This was a rigourous process which involved many steps such as
                 theory crafting, rule making, character design. We were also
@@ -49,10 +49,9 @@ const ACG = () => {
               </p>
             </div>
           </div>
-          <div className="proj-outcome p-12">
+          <div className="proj-outcome p-12 flex xl:flex-col">
             <h2 className="text-3xl">Outcome</h2>
-            <div>
-              <div className="p-8 flex sm:flex-col lg:flex-row">
+              <div className="mt-8 flex sm:flex-col lg:flex-row">
                 <p className="text-left">
                   At the conclusion of the project the team produced a playable
                   lofi physical card game, 3 decks (Fire, Water, Ice) with 12
@@ -60,13 +59,13 @@ const ACG = () => {
                   team
                 </p>
                 <NextVideo
+                className="m-4"
                   style={{zIndex: 1}}
                   width={640}
                   height={360}
                   src={AcgV}
                 />
               </div>
-            </div>
           </div>
         </motion.section>
 

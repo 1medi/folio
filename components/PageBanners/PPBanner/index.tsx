@@ -12,6 +12,7 @@ import Oscar from "../../../public/Oscarsolo.png";
 
 const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
 const PPBanner = () => {
+  const [isHovered, setIsHovered] = useState(false);
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 50%, ${color}`;
 
@@ -48,20 +49,33 @@ const PPBanner = () => {
       >
         <div className="flex flex-row justify-center items-center">
           <div className="flex flex-col">
-            <h1
-              className="text-center font-bold mb-4 text-7xl"
-            >
-              Pocket Prof
-            </h1>
-            <h2>Designed and Coded Web App</h2>
-            <h2>Completed: 2024</h2>
+            <h1 className="text-center font-bold mb-4 text-7xl">Pocket Prof</h1>
+            <h2 className="text-3xl font-semibold">
+              Designed and Coded Web App
+            </h2>
+            <h2 className="text-2xl">Completed: 2024</h2>
             <div className="tools-used p-12">
-            <h2 className="text-3xl">Tools Used</h2>
-            <ul className="p-4">
-              <li>Figma</li>
-              <li>Tabletop Simulator</li>
-            </ul>
-          </div>
+              <h2 className="text-3xl font-semibold">Tools Used</h2>
+              <ul className="p-4">
+                <li className="text-2xl">Figma</li>
+                <li className="text-2xl">Next.js</li>
+                <li className="text-2xl">Openai</li>
+              </ul>
+            </div>
+            <motion.div
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              animate={{
+                backgroundColor: isHovered ? "#5b21b6" : "",
+                scale: isHovered ? 1.25 : 1
+              }}
+              transition={{ ease: "backInOut" }}
+              className="bg-violet-800 p-2 rounded-2xl"
+            >
+              <a href="https://www.pocketprof.online/" target="_blank">
+                <p className="text-4xl">Live App</p>
+              </a>
+            </motion.div>
           </div>
 
           <motion.div exit={{ opacity: 0 }}>

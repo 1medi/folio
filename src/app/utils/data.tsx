@@ -7,6 +7,7 @@ import Aether2 from "/public/Aether/formlibrary.png";
 import Aether3 from "/public/Aether/results.png";
 import Aether4 from "/public/Aether/scan.png";
 import ACG1 from "/public/ACG/acg1.png"
+import PPLanding from "../../../public/Pocket-Prof/pplanding.png";
 
 export const Projects = [
   {
@@ -78,3 +79,4 @@ export const AcgGallery = [
     title: "Photo1"
   }
 ]
+

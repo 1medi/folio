@@ -69,10 +69,13 @@ const ACGBanner = () => {
                 <a
                   href="https://steamcommunity.com/sharedfiles/filedetails/?id=3247582700"
                   target="_blank"
+
                 >
-                  <div className="p-4">
+                  <motion.div 
+                  
+                  className="p-4 bg-black rounded-xl">
                     <h3>Steam Workshop (Tabletop Simulator Required!)</h3>
-                  </div>
+                  </motion.div>
                 </a>
               </div>
             </div>

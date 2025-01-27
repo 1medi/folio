@@ -4,7 +4,12 @@ import Footer from "../../../components/Footer";
 import { getImageProps } from "next/image";
 import { motion } from "framer-motion";
 import PPBanner from "../../../components/PageBanners/PPBanner";
+import PPLanding from "../../../public/Pocket-Prof/pplanding.png";
+import PPHome from "../../../public/Pocket-Prof/pphome.png";
+import PPQuestion from "../../../public/Pocket-Prof/ppquestion.png";
+import PPQuiz from "../../../public/Pocket-Prof/ppquiz.png";
 
+import Image from "next/image";
 const PocketProf = () => {
   return (
     <>
@@ -27,7 +32,7 @@ const PocketProf = () => {
           </div>
 
           <div className="proj-ideation p-12">
-            <h2 className="text-3xl text-right">Project Ideation</h2>
+            <h2 className="text-3xl text-right">Identifying The Issue</h2>
             <div className="p-8 flex sm:flex-col lg:flex-row">
               <p className="text-right">
                 This was a rigourous process which involved many steps such as
@@ -53,50 +58,56 @@ const PocketProf = () => {
         </motion.section>
 
         <motion.section>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-4">
             <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+              <div className="relative w-full">
+                <Image
+                  className="rounded-lg"
+                  src={PPLanding}
                   alt=""
+                  layout="responsive"
+                  style={{
+                    objectFit: "cover",
+                    height: "300px", // Adjust height for variation
+                  }}
                 />
               </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+              <div className="relative w-full">
+                <Image
+                  className="rounded-lg"
+                  src={PPQuiz}
                   alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                  alt=""
+                  layout="responsive"
+                  style={{
+                    objectFit: "cover",
+                    height: "300px", // Adjust height for variation
+                  }}
                 />
               </div>
             </div>
             <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+              <div className="relative w-full">
+                <Image
+                  className="rounded-lg"
+                  src={PPHome}
                   alt=""
+                  layout="responsive"
+                  style={{
+                    objectFit: "cover",
+                    height: "300px", // Adjust height for variation
+                  }}
                 />
               </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+              <div className="relative w-full">
+                <Image
+                  className="rounded-lg"
+                  src={PPQuestion}
                   alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                  alt=""
+                  layout="responsive"
+                  style={{
+                    objectFit: "cover",
+                    height: "300px", // Adjust height for variation
+                  }}
                 />
               </div>
             </div>
