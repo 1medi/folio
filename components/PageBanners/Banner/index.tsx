@@ -46,7 +46,7 @@ const Banner = () => {
         }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-center text-7xl font-bold mb-2">Hi! I'm Madi</h1>
+        <h1 className="text-center text-7xl font-bold mb-2 text-white">Hi! I'm Madi</h1>
         <div className="w-1/2 mr-auto ml-auto">
           <p className="text-2xl m-4 text-center text-white">
             A Front-end developer with a strong passion in modern web
@@ -61,7 +61,7 @@ const Banner = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
           >
-            <FaGithub size={64} />
+            <FaGithub size={64} className="fill-white"/>
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/madi-tabon/"
@@ -69,7 +69,7 @@ const Banner = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
           >
-            <FaLinkedin size={64} />
+            <FaLinkedin size={64} className="fill-white"/>
           </motion.a>
           <motion.a
             href="/resume"
@@ -77,7 +77,7 @@ const Banner = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
           >
-            <FaFileAlt size={64} />
+            <FaFileAlt size={64} className="fill-white"/>
           </motion.a>
         </div>
       </motion.section>
