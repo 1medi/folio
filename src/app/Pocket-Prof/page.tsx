@@ -16,7 +16,7 @@ const PocketProf = () => {
     <>
       <Header />
       <PPBanner />
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 ">
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 lg:w-2/3 m-auto">
         {/* <div className="p-4 m-12  rounded-xl">
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
@@ -84,26 +84,6 @@ const PocketProf = () => {
                 User Workflow
               </h2>
               <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
-            </div>
-            <div className="m-auto flex flex-col">
-              <h2 className="text-center text-4xl font-medium p-4">
-                Logo Design
-              </h2>
-              <div className="flex flex-col justify-center items-center ">
-                <Image className="m-auto" src={Oscar} alt="Oscar" />
-                <p className="text-center md:text-right p-4">
-                  Otters and the color purple might seem like an odd combination
-                  at first glance, but there are a few fun reasons why they
-                  could go well together. Otters are known for their playful
-                  nature, often seen frolicking in the water. Purple is a color
-                  often associated with creativity, imagination, and whimsy.
-                  Otters are typically brown or gray, so the color purple
-                  provides a striking contrast when paired with them. This
-                  contrast can create visual interest and draw attention, making
-                  it an appealing combination in art or design. Purple is
-                  sometimes associated with royalty, luxury, and magic.
-                </p>
-              </div>
             </div>
           </div>
           <div className="proj-outcome p-8">

@@ -49,15 +49,14 @@ const ACGBanner = () => {
       >
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col">
-            <h1 className="text-center pt-8 font-bold mb-4 text-7xl">
-              Awesome Card Game:{" "}
-              <p className="text-6xl">Aspects of Elements (ACG)</p>
+            <h1 className="text-center pt-8 font-bold mt-12 text-6xl">
+              Awesome Card Game: Aspects of Elements (ACG)
             </h1>
             <div className="text-center p-5">
-              <h2>Game Design Project</h2>
-              <h2>Completed: May 2024</h2>
+              <h2 className="text-2xl font-semibold">Game Design Project</h2>
+              <h2 className="text-xl font-medium">Completed: May 2024</h2>
             </div>
-            <div className="flex flex-col w-2/3 m-auto">
+            <div className="flex flex-col w-2/3 justify-center items-center m-auto">
               <motion.div
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -66,7 +65,7 @@ const ACGBanner = () => {
                   scale: isHovered ? 1.25 : 1,
                 }}
                 transition={{ ease: "backInOut" }}
-                className="bg-[#F4A950] p-2 rounded-2xl m-4"
+                className="bg-[#F4A950] p-2 w-2/3 rounded-2xl m-2"
               >
                 <a
                   href="https://pocket-profs-a5-styleguide.vercel.app/"
@@ -77,7 +76,7 @@ const ACGBanner = () => {
               </motion.div>
             </div>
           </div>
-          <motion.div className="m-8" exit={{ opacity: 0 }}>
+          <motion.div className="m-6 p-2" exit={{ opacity: 0 }}>
             <Image src={ACG} alt="ACG LOGO" width={512} height={512} />
           </motion.div>
         </div>

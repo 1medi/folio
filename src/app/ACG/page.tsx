@@ -22,7 +22,7 @@ const ACG = () => {
     <>
       <Header />
       <ACGBanner />
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 rounded-lg">
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 rounded-lg lg:w-2/3 m-auto">
         {/* <div className="p-4 m-12  rounded-xl">
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
@@ -64,20 +64,21 @@ const ACG = () => {
             <h2 className="text-3xl text-right bg-black rounded-lg p-4">
               Project Ideation
             </h2>
-            <div className="m-auto flex flex-col">
+            <div className="m-auto flex flex-col lg:flex-row p-4">
+              <p className="text-right p-4">
+                At the conclusion of the project the team produced a playable
+                lofi physical card game, 3 decks (Fire, Water, Ice) with 12
+                cards each and a menu UI suitable to code for our development
+                team
+              </p>
+              <div className="flex justify-center items-center">
               <NextVideo
-                style={{ zIndex: 1 }}
                 className="m-4"
-                width={320}
-                height={180}
+                style={{ zIndex: 1, height: "100%" }} 
                 src={Lofi}
               />
-              <p className="text-right p-4">
-                This was a rigourous process which involved many steps such as
-                theory crafting, rule making, character design. We were also
-                tasked with determining the flow and gameplay the users
-                experienced
-              </p>
+              </div>
+
             </div>
           </div>
           {/* <div className="proj-ideation p-8">
@@ -97,30 +98,31 @@ const ACG = () => {
             <h2 className="text-3xl text-left bg-black rounded-lg p-4">
               Outcome
             </h2>
-            <div className="m-auto flex flex-col lg:flex-row">
+            <div className="m-auto flex flex-col lg:flex-row-reverse p-4">
               <p className="text-left p-4">
                 At the conclusion of the project the team produced a playable
                 lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                 cards each and a menu UI suitable to code for our development
                 team
               </p>
+              <div className="flex justify-center items-center">
               <NextVideo
-                className="m-4 md:w-320"
-                style={{ zIndex: 1 }}
-                width={320}
-                height={180}
+                className="m-4"
+                style={{ zIndex: 1, height: "100%" }} 
                 src={AcgV}
               />
+              </div>
+
             </div>
           </div>
           <div className="proj-styleguide p-8 flex flex-col ">
             <h2 className="text-3xl text-center bg-black rounded-lg p-4">
               Styleguide
             </h2>
-            <div className="flex flex-col justify-center items-center">
-              <div className="Colors ">
-                <Image src={ACGColors} alt="colors " className="rounded-lg" />
-                <p className="w-80 ">
+            <div className="flex flex-col justify-center items-center md:flex-row">
+              <div className="Colors flex-col justify-center items-center mt-2 lg:m-4">
+                <Image src={ACGColors} alt="colors " className="rounded-xl m-2" />
+                <p className="w-80 text-center m-4 lg:m-5">
                   <span className="font-bold">Core Colors: </span>
                   <br />
                   <span className="font-bold">#C1121F (Bright Red)</span> : For
@@ -137,13 +139,13 @@ const ACG = () => {
                 </p>
               </div>
               <div className="Everything Else p-4">
-                <div>
+                <div className="flex flex-col justify-center items-center">
                   <Image
                     src={ACGMeasurements}
                     alt="colors"
                     className="m-2 rounded-lg"
                   />
-                  <p className="w-80 ">
+                  <p className="w-80 text-center m-4 ">
                     <span className="font-bold">Core Colors:</span> <br />
                     <span className="font-bold">#C1121F (Bright Red)</span>: For
                     bold accents and energetic highlights.{" "}
@@ -155,10 +157,10 @@ const ACG = () => {
                     sophistication and premium vibes.
                   </p>
                 </div>
-                <div>
-                  <Image src={ACGType} alt="colors" className=" rounded-lg" />
-                  <p className="w-80 ">
-                    Gives off inviting but serious at the same time. It combines
+                <div className="flex flex-col justify-center items-center">
+                  <Image src={ACGType} alt="colors" className=" rounded-lg m-2" />
+                  <p className="w-80 text-center m-4">
+                    Dragon Hunter gives off inviting but serious at the same time. It combines
                     the classic fantasy style with a modernized, approachable
                     look.
                   </p>
@@ -178,10 +180,10 @@ const ACG = () => {
                   </p>
                 </div> */}
 
-                <div className="flex flex-wrap flex-grow">
-                  <Image src={ACGLogo} alt="colors" className=" rounded-lg" />
-                  <p className="w-80">
-                    The winged cards and "ACG: Aspect of Elements" logo blend
+                <div className="flex flex-col justify-center items-center">
+                  <Image src={ACGLogo} alt="colors" className=" rounded-lg m-2" />
+                  <p className="w-80 text-center m-4">
+                    The winged cards and the "ACG: Aspect of Elements" logo blend
                     themes of imagination and strategy, possibly alluding to
                     collectible card games or a design process inspired by
                     game-like creativity.
