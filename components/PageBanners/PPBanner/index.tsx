@@ -48,9 +48,11 @@ const PPBanner = () => {
         }}
         transition={{ duration: 1 }}
       >
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col mt-24 justify-center items-center">
           <div className="flex flex-col">
-            <h1 className="text-center font-bold mb-4 text-7xl">Pocket Prof.</h1>
+            <h1 className="text-center font-bold mb-4 text-7xl">
+              Pocket Prof.
+            </h1>
             <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Web App
             </h2>
@@ -61,7 +63,7 @@ const PPBanner = () => {
               onMouseLeave={() => setIsHovered1(false)}
               animate={{
                 backgroundColor: isHovered1 ? "#5b21b6" : "",
-                scale: isHovered1 ? 1.25 : 1
+                scale: isHovered1 ? 1.25 : 1,
               }}
               transition={{ ease: "backInOut" }}
               className="bg-violet-900 p-2 rounded-2xl m-4"
@@ -76,19 +78,22 @@ const PPBanner = () => {
               onMouseLeave={() => setIsHovered2(false)}
               animate={{
                 backgroundColor: isHovered2 ? "#5b21b6" : "",
-                scale: isHovered2 ? 1.25 : 1
+                scale: isHovered2 ? 1.25 : 1,
               }}
               transition={{ ease: "backInOut" }}
               className="bg-violet-900 p-2 rounded-2xl m-4"
             >
-              <a href="https://pocket-profs-a5-styleguide.vercel.app/" target="_blank">
+              <a
+                href="https://pocket-profs-a5-styleguide.vercel.app/"
+                target="_blank"
+              >
                 <p className="text-4xl">Styleguide!</p>
               </a>
             </motion.div>
           </div>
 
-          <motion.div exit={{ opacity: 0 }}>
-            <Image src={Oscar} alt="oscar" width={512} height={512} />
+          <motion.div className="m-auto justify-center items-center w-256 h-256" exit={{ opacity: 0 }}>
+            <Image src={Oscar} alt="oscar" className="w-full" />
           </motion.div>
         </div>
       </motion.section>

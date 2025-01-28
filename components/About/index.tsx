@@ -10,8 +10,8 @@ const About = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex flex-col  justify-center text-center">
-        <h2 className="text-6xl md:text-8xl lg:text-8xl p-4 font-bold m-auto">
+      <div className="flex flex-col m-auto justify-center items-center text-center">
+        <h2 className="text-7xl text-center md:text-8xl lg:text-8xl m-b:4 font-bold">
           About
         </h2>
         <div className="flex flex-grow flex-col">
@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
         <div className="p-4 flex flex-col m-auto">
-          <h3 className="text-2xl font-semibold mb-4">
+          <h3 className="text-2xl text-center font-semibold mb-4">
             I primarily work with:
           </h3>
           <div className="flex flex-col md:flex-row items-start">

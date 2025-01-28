@@ -44,7 +44,7 @@ const PocketProf = () => {
             </div>
           </div>
           <div className="about p-8">
-            <h2 className="text-3xl bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center bg-black rounded-lg p-4">
               What is Pocket Prof?
             </h2>
             <p className="p-4">
@@ -56,7 +56,7 @@ const PocketProf = () => {
             </p>
           </div>
           <div className="proj-ideation p-8">
-            <h2 className="text-3xl text-right bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center md:text-right bg-black rounded-lg p-4">
               Identifying The Issue
             </h2>
             <p className="text-right p-4">
@@ -68,7 +68,7 @@ const PocketProf = () => {
             </p>
           </div>
           <div className="proj-ideation p-8">
-            <h2 className="text-3xl text-left bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center md:text-left bg-black rounded-lg p-4">
               Design Decisions
             </h2>
             <div className="m-auto flex sm:flex-col lg:flex-row">
@@ -89,9 +89,9 @@ const PocketProf = () => {
               <h2 className="text-center text-4xl font-medium p-4">
                 Logo Design
               </h2>
-              <div className="flex flex-row ">
-                <Image className="m-auto justify-center items-center" src={Oscar} alt="sitemap" />
-                <p>
+              <div className="flex flex-col justify-center items-center ">
+                <Image className="m-auto" src={Oscar} alt="Oscar" />
+                <p className="text-center md:text-right p-4">
                   Otters and the color purple might seem like an odd combination
                   at first glance, but there are a few fun reasons why they
                   could go well together. Otters are known for their playful
@@ -107,10 +107,10 @@ const PocketProf = () => {
             </div>
           </div>
           <div className="proj-outcome p-8">
-            <h2 className="text-3xl bg-black rounded-lg text-right p-4">
+            <h2 className="text-3xl bg-black rounded-lg text-center md:text-right p-4">
               Outcome
             </h2>
-            <p className="text-right p-4">
+            <p className="text-center md:text-right p-4">
               At the conclusion of the project the team produced a playable lofi
               physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
               and a menu UI suitable to code for our development team
