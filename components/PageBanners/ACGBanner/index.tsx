@@ -47,9 +47,9 @@ const ACGBanner = () => {
         }}
         transition={{ duration: 0.25 }}
       >
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col">
-            <h1 className="text-center font-bold mb-4 text-7xl">
+            <h1 className="text-center pt-8 font-bold mb-4 text-7xl">
               Awesome Card Game:{" "}
               <p className="text-6xl">Aspects of Elements (ACG)</p>
             </h1>
