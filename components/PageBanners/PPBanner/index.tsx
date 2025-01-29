@@ -8,7 +8,9 @@ import {
   animate,
 } from "framer-motion";
 import Image from "next/image";
-import Oscar from "../../Animation/Oscar";
+import dynamic from 'next/dynamic';
+
+const Oscar = dynamic(() => import('../../../components/Animation/Oscar'), { ssr: false });
 
 const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
 const PPBanner = () => {

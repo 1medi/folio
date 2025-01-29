@@ -6,9 +6,7 @@ import PPBanner from "../../../components/PageBanners/PPBanner";
 import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import PPPhone from "../../../components/PPPhone";
-import dynamic from 'next/dynamic';
 
-const Oscar = dynamic(() => import('../../../components/Animation/Oscar'), { ssr: false });
 
 
 const PocketProf = () => {
