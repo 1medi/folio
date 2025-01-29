@@ -12,12 +12,12 @@ const PhoneSimulator = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % PPScreens.length);
-    }, 2000); // Change screen every 2 seconds
+    }, 6000); // Change screen every 2 seconds
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-[300px] h-[600px] mx-auto">
+    <div className="relative w-[300px] h-[800px] mx-auto overflow-hidden"> {/* Apply overflow-hidden here */}
       {/* Screens (Background) */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
@@ -26,14 +26,16 @@ const PhoneSimulator = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            className="absolute inset-0"
+            transition={{ duration: 1 }}
+            className="absolute inset-0 flex items-center justify-center"
+            style={{ height: "100%" }}
           >
             <Image
               src={PPScreens[index]}
               alt="App Screen"
-              fill
-              className="object-cover"
+
+              className="object-fill " // Ensure the image covers the area and fits nicely
+              style={{ aspectRatio: '1.2/2.45', borderRadius: '37px', }} // Adjust this ratio based on your image aspect
             />
           </motion.div>
         </AnimatePresence>
