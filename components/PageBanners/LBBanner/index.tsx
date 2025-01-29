@@ -10,12 +10,12 @@ import {
 import Image from "next/image";
 
 
-const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
+const COLORS = [" #10254E", "#E98704", "#F0AB1A"]; // Shades from the mascot
 const PPBanner = () => {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const color = useMotionValue(COLORS[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 50%, ${color}`;
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 30%, ${color}`;
 
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
@@ -63,11 +63,11 @@ const PPBanner = () => {
                 onMouseEnter={() => setIsHovered1(true)}
                 onMouseLeave={() => setIsHovered1(false)}
                 animate={{
-                  backgroundColor: isHovered1 ? "#5b21b6" : "",
+                  backgroundColor: isHovered1 ? "#0b243f" : "",
                   scale: isHovered1 ? 1.15 : 1,
                 }}
                 transition={{ ease: "backInOut" }}
-                className="bg-violet-900 p-2 rounded-2xl m-4 w-1/2 "
+                className="bg-[#012d5e]  p-2 rounded-2xl m-4 w-1/2 "
               >
                 <a href="https://lutong-bahay.vercel.app/" target="_blank">
                   <p className="text-4xl">Live App</p>
