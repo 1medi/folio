@@ -7,8 +7,6 @@ import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import PPPhone from "../../../components/PPPhone";
 
-
-
 const PocketProf = () => {
   return (
     <>
@@ -81,7 +79,7 @@ const PocketProf = () => {
               <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
             </div>
           </div>
-          <div className="proj-outcome p-8">
+          <div className="proj-outcome p-4">
             <h2 className="text-3xl bg-black rounded-lg text-center md:text-right p-4">
               Outcome
             </h2>
@@ -90,12 +88,11 @@ const PocketProf = () => {
               physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
               and a menu UI suitable to code for our development team
             </p>
+            <PPPhone />
           </div>
         </motion.section>
 
-        <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
-          <PPPhone />
-        </motion.section>
+        {/* <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg"></motion.section> */}
       </main>
       <Footer />
     </>
