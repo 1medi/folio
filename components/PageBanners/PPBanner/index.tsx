@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
   motion,
   useMotionTemplate,
@@ -11,40 +11,29 @@ import Image from "next/image";
 import Oscar from "../../Animation/Oscar";
 
 const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
-
 const PPBanner = () => {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 50%, ${color}`;
-  
-  const [isBrowser, setIsBrowser] = useState(false); // To track if we're in the browser
 
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
-  // Only run this effect on the client-side
   useEffect(() => {
-    setIsBrowser(true); // This will run only in the browser
+    animate(color, COLORS, {
+      ease: "easeInOut",
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
   }, []);
-
-  useEffect(() => {
-    if (isBrowser) {
-      animate(color, COLORS, {
-        ease: "easeInOut",
-        duration: 10,
-        repeat: Infinity,
-        repeatType: "mirror",
-      });
-    }
-  }, [isBrowser]);
-
-  if (!isBrowser) return null; // Prevent rendering SSR on the server-side
 
   return (
     <>
       <motion.section
         key={"banner"}
+        // exit={{ opacity: 0 }}
         className="about-section min-h-screen relative justify-center shadow-2xl"
         style={{
           display: "flex",
@@ -61,9 +50,9 @@ const PPBanner = () => {
       >
         <div className="flex flex-col mt-24 justify-center items-center">
           <div className="flex flex-col">
-            <h1 className="text-center font-bold mb-4 text-7xl flex flex-row">
-              Pocket Prof <Oscar />
-            </h1>
+              <h1 className="text-center font-bold mb-4 text-7xl flex flex-row">
+                Pocket Prof <Oscar />
+              </h1>
             <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Web App
             </h2>
