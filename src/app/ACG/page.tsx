@@ -108,7 +108,7 @@ const ACG = () => {
               <div className="flex justify-center items-center">
               <NextVideo
                 className="m-4"
-                style={{ zIndex: 1, height: "100%" }} 
+                style={{ zIndex: 1, height: "100%", width:"100%" }} 
                 src={AcgV}
               />
               </div>
