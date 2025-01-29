@@ -1,43 +1,19 @@
 "use client";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
-import { getImageProps } from "next/image";
 import { motion } from "framer-motion";
 import PPBanner from "../../../components/PageBanners/PPBanner";
-import PPLanding from "../../../public/Pocket-Prof/pplanding.png";
-import PPHome from "../../../public/Pocket-Prof/pphome.png";
-import PPQuestion from "../../../public/Pocket-Prof/ppquestion.png";
-import PPQuiz from "../../../public/Pocket-Prof/ppquiz.png";
 import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
-import Oscar from "../../../public/Oscarsolo.png";
 import PPPhone from "../../../components/PPPhone";
 
-// function getBackgroundImage(srcSet = '') {
-//   const imageSet = srcSet
-//     .split(', ')
-//     .map((str) => {
-//       const [url, dpi] = str.split(' ')
-//       return `url("${url}") ${dpi}`
-//     })
-//     .join(', ')
-//   return `image-set(${imageSet})`
-// }
 
 const PocketProf = () => {
-  // const {
-  //   props: { srcSet },
-  // } = getImageProps({ alt: '', width: 1792, height: 828, src: Phone })
-  // const backgroundImage = getBackgroundImage(srcSet)
-  // const style = { height: '100vh', width: '100vw', backgroundImage }
   return (
     <>
       <Header />
       <PPBanner />
       <main className="min-h-screen flex flex-col items-center justify-center p-4 lg:w-2/3 m-auto">
-        {/* <div className="p-4 m-12  rounded-xl">
-          <Image src={ACG1}  alt="acglogo" />
-        </div> */}
         <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
           <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
             <div className="p-4">
