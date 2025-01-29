@@ -89,7 +89,7 @@ const LutongBahay = () => {
               and a menu UI suitable to code for our development team
             </p>
           </div>
-        </motion.section>
+        </motion.section> 
       </main>
       <Footer />
     </>

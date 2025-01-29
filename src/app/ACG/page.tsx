@@ -72,13 +72,12 @@ const ACG = () => {
                 team
               </p>
               <div className="flex justify-center items-center">
-              <NextVideo
-                className="m-4"
-                style={{ zIndex: 1, height: "100%" }} 
-                src={Lofi}
-              />
+                <NextVideo
+                  className="m-4"
+                  style={{ zIndex: 1, height: "100%" }}
+                  src={Lofi}
+                />
               </div>
-
             </div>
           </div>
           {/* <div className="proj-ideation p-8">
@@ -106,23 +105,26 @@ const ACG = () => {
                 team
               </p>
               <div className="flex justify-center items-center">
-              <NextVideo
-                className="m-4"
-                style={{ zIndex: 1, height: "100%", width:"100%" }} 
-                src={AcgV}
-              />
+                <NextVideo
+                  className="m-4"
+                  style={{ zIndex: 1, height: "100%", width: "100%" }}
+                  src={AcgV}
+                />
               </div>
-
             </div>
           </div>
-          <div className="proj-styleguide p-8 flex flex-col ">
+          <div className="proj-styleguide p-4 m-8 flex flex-col ">
             <h2 className="text-3xl text-center bg-black rounded-lg p-4">
               Styleguide
             </h2>
-            <div className="flex flex-col justify-center items-center md:flex-row">
-              <div className="Colors flex-col justify-center items-center mt-2 lg:m-4">
-                <Image src={ACGColors} alt="colors " className="rounded-xl m-2" />
-                <p className="w-80 text-center m-4 lg:m-5">
+            <div className="flex p-4 m-8 flex-col justify-center items-center sm:flex-row">
+              <div className="Colors flex-col justify-center items-center mt-2 md:m-3 lg:m-4">
+                <Image
+                  src={ACGColors}
+                  alt="colors "
+                  className="rounded-xl m-2"
+                />
+                <p className="w-80 text-center m-4 md:m-4 lg:m-5">
                   <span className="font-bold">Core Colors: </span>
                   <br />
                   <span className="font-bold">#C1121F (Bright Red)</span> : For
@@ -138,7 +140,7 @@ const ACG = () => {
                   sophistication and premium vibes.
                 </p>
               </div>
-              <div className="Everything Else p-4">
+              <div className="Everything Else p-4 m-8">
                 <div className="flex flex-col justify-center items-center">
                   <Image
                     src={ACGMeasurements}
@@ -158,11 +160,15 @@ const ACG = () => {
                   </p>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                  <Image src={ACGType} alt="colors" className=" rounded-lg m-2" />
+                  <Image
+                    src={ACGType}
+                    alt="colors"
+                    className=" rounded-lg m-2"
+                  />
                   <p className="w-80 text-center m-4">
-                    Dragon Hunter gives off inviting but serious at the same time. It combines
-                    the classic fantasy style with a modernized, approachable
-                    look.
+                    Dragon Hunter gives off inviting but serious at the same
+                    time. It combines the classic fantasy style with a
+                    modernized, approachable look.
                   </p>
                 </div>
                 {/* <div>
@@ -181,11 +187,15 @@ const ACG = () => {
                 </div> */}
 
                 <div className="flex flex-col justify-center items-center">
-                  <Image src={ACGLogo} alt="colors" className=" rounded-lg m-2" />
+                  <Image
+                    src={ACGLogo}
+                    alt="colors"
+                    className=" rounded-lg m-2"
+                  />
                   <p className="w-80 text-center m-4">
-                    The winged cards and the "ACG: Aspect of Elements" logo blend
-                    themes of imagination and strategy, possibly alluding to
-                    collectible card games or a design process inspired by
+                    The winged cards and the "ACG: Aspect of Elements" logo
+                    blend themes of imagination and strategy, possibly alluding
+                    to collectible card games or a design process inspired by
                     game-like creativity.
                   </p>
                 </div>

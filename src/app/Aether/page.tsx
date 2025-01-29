@@ -1,55 +1,102 @@
-"use client";
-import { motion } from "framer-motion";
+"use client"
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
+import { motion } from "framer-motion";
+import AEBanner from "../../../components/PageBanners/AeBanner";
 import Image from "next/image";
-import Gallery from "../../../components/Gallery";
-import AetherLogo from "/public/aetherLogo.png";
+import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
+import PPPhone from "../../../components/PPPhone";
 
 const Aether = () => {
   return (
     <>
-      <Header />
-<main className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#004f2d]">
-  <h1 className="text-6xl font-extrabold mb-8 text-center text-[#b2b2b2]">Portfolio</h1>
-  
-  <div className="flex flex-col items-center mb-8">
-    <div className="relative">
-      <Image src={AetherLogo} width={600} height={300} alt="Aether" className="rounded-lg" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <button className="bg-white p-4 rounded-full shadow-lg">
-          <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M6 4l8 6-8 6V4z" clipRule="evenodd" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div className="grid grid-cols-2 gap-4 max-w-4xl">
-    <div className="bg-[#b2e4e0] p-6 rounded-lg shadow-md text-center">
-      <h2 className="text-4xl font-bold">251</h2>
-      <p className="text-xl">Projects</p>
-    </div>
-    <div className="bg-[#d1c4e9] p-6 rounded-lg shadow-md text-center">
-      <h2 className="text-4xl font-bold">156</h2>
-      <p className="text-xl">Awards</p>
-    </div>
-    <div className="bg-gray-800 p-6 rounded-lg shadow-md text-center text-white">
-      <h2 className="text-4xl font-bold">Clients</h2>
-      <p className="text-xl">Apple</p>
-    </div>
-    <div className="bg-[#ffcc80] p-6 rounded-lg shadow-md text-center">
-      <h2 className="text-4xl font-bold">172</h2>
-      <p className="text-xl">Global Design Awards</p>
-    </div>
-  </div>
-
-  <Gallery />
-</main>
+<Header />
+      <AEBanner />
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 lg:w-2/3 m-auto">
+        <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
+          <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
+            <div className="p-4">
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+                Tools Used
+              </h2>
+              <ul className="p-2 text-center grid grid-cols-2 ">
+                <li className="text-2xl p-2">Figma</li>
+                <li className="text-2xl p-2">Expo</li>
+                <li className="text-2xl p-2">React Native</li>
+                <li className="text-2xl p-2">OpenAI</li>
+                <li className="text-2xl p-2">Google Cloud Vision</li>
+                <li className="text-2xl p-2">Mongo DB</li>
+              </ul>
+            </div>
+            <div className="p-4">
+              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+                Key Features
+              </h2>
+              <ul className="p-2 text-center">
+                <li className="text-2xl p-2">Camera Paraphrasing</li>
+                <li className="text-2xl p-2">PDF Library</li>
+                <li className="text-2xl p-2">Autofill PDF Information</li>
+              </ul>
+            </div>
+          </div>
+          <div className="about p-8">
+            <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+              What is Aether?
+            </h2>
+            <p className="p-4">
+              Pocket Prof is a mobile web application goal tracking app that
+              promotes a variety of skills a user can learn by gathering
+              resources through our ai assistant Oscar. Through its interactive
+              user-friendly features, it provides a platform for students and
+              individuals alike to improve on themselves and create new goals."
+            </p>
+          </div>
+          <div className="proj-ideation p-8">
+            <h2 className="text-3xl text-center md:text-right bg-black rounded-lg p-4">
+              Identifying The Issue
+            </h2>
+            <p className="text-right p-4">
+              There was a gap found in the ability of finding new skills due to
+              the overwhelming surplus of resources available of the internet.
+              Through the app ideation proccess, we determined with the help of
+              AI, we can collect all the available resources and make it
+              available into 1 congestable application: Pocket Prof!
+            </p>
+          </div>
+          <div className="proj-ideation p-8">
+            <h2 className="text-3xl text-center md:text-left bg-black rounded-lg p-4">
+              Design Decisions
+            </h2>
+            <div className="m-auto flex sm:flex-col lg:flex-row">
+              <p className="text-left p-4">
+                This was a rigourous process which involved many steps such as
+                theory crafting, rule making, character design. We were also
+                tasked with determining the flow and gameplay the users
+                experienced.
+              </p>
+            </div>
+            <div className="m-auto flex flex-col">
+              <h2 className="text-center text-4xl font-medium p-4">
+                User Workflow
+              </h2>
+              <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
+            </div>
+          </div>
+          <div className="proj-outcome p-8">
+            <h2 className="text-3xl bg-black rounded-lg text-center md:text-right p-4">
+              Outcome
+            </h2>
+            <p className="text-center md:text-right p-4">
+              At the conclusion of the project the team produced a playable lofi
+              physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
+              and a menu UI suitable to code for our development team
+            </p>
+          </div>
+        </motion.section> 
+      </main>
       <Footer />
     </>
-  );
-};
+  )
+}
 
 export default Aether;
