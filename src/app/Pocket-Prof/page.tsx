@@ -11,7 +11,25 @@ import PPQuiz from "../../../public/Pocket-Prof/ppquiz.png";
 import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import Oscar from "../../../public/Oscarsolo.png";
+import PPPhone from "../../../components/PPPhone";
+
+// function getBackgroundImage(srcSet = '') {
+//   const imageSet = srcSet
+//     .split(', ')
+//     .map((str) => {
+//       const [url, dpi] = str.split(' ')
+//       return `url("${url}") ${dpi}`
+//     })
+//     .join(', ')
+//   return `image-set(${imageSet})`
+// }
+
 const PocketProf = () => {
+  // const {
+  //   props: { srcSet },
+  // } = getImageProps({ alt: '', width: 1792, height: 828, src: Phone })
+  // const backgroundImage = getBackgroundImage(srcSet)
+  // const style = { height: '100vh', width: '100vw', backgroundImage }
   return (
     <>
       <Header />
@@ -99,60 +117,7 @@ const PocketProf = () => {
         </motion.section>
 
         <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
-          <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">
-            <div className="grid gap-4">
-              <div className="relative w-full">
-                <Image
-                  className="rounded-lg"
-                  src={PPLanding}
-                  alt=""
-                  layout="responsive"
-                  style={{
-                    objectFit: "cover",
-                    height: "300px", // Adjust height for variation
-                  }}
-                />
-              </div>
-              <div className="relative w-full">
-                <Image
-                  className="rounded-lg"
-                  src={PPQuiz}
-                  alt=""
-                  layout="responsive"
-                  style={{
-                    objectFit: "cover",
-                    height: "300px", // Adjust height for variation
-                  }}
-                />
-              </div>
-            </div>
-            <div className="grid gap-4">
-              <div className="relative w-full">
-                <Image
-                  className="rounded-lg"
-                  src={PPHome}
-                  alt=""
-                  layout="responsive"
-                  style={{
-                    objectFit: "cover",
-                    height: "300px", // Adjust height for variation
-                  }}
-                />
-              </div>
-              <div className="relative w-full">
-                <Image
-                  className="rounded-lg"
-                  src={PPQuestion}
-                  alt=""
-                  layout="responsive"
-                  style={{
-                    objectFit: "cover",
-                    height: "300px", // Adjust height for variation
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+          <PPPhone />
         </motion.section>
       </main>
       <Footer />
