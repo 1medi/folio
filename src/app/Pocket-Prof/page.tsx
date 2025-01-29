@@ -2,7 +2,7 @@
 // import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import { motion } from "framer-motion";
-import PPBanner from "../../../components/PageBanners/PPBanner";
+// import PPBanner from "../../../components/PageBanners/PPBanner";
 import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import PPPhone from "../../../components/PPPhone";
@@ -12,7 +12,7 @@ const PocketProf = () => {
   return (
     <>
       {/* <Header /> */}
-      <PPBanner />
+      {/* <PPBanner /> */}
       <main className="min-h-screen flex flex-col items-center justify-center p-4 lg:w-2/3 m-auto">
         <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
           <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
