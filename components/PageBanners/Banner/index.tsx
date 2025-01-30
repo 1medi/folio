@@ -28,7 +28,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="-z-80">
+    <div className="-z-80  w-full h-full overflow-hidden">
       <motion.section
         key={"banner"}
         exit={{ opacity: 0 }}
