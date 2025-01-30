@@ -83,16 +83,16 @@ const Banner = () => {
           </motion.a>
         </div>
         <motion.a href="#projects">
-          <div className="absolute bottom-10 left-0 right-0">
+          <div className="absolute bottom-0 left-0 right-0">
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
               className="flex flex-row justify-center items-center"
               whileHover={{ color: "black" }}
             >
-              <FaArrowDown />
-              <motion.p whileHover={{ color: "black" }} className="p-4">
-                More Info Below!
+                              <FaArrowDown className="m-2" /> More Info Below!
+              <motion.p whileHover={{ color: "black" }} className=" flex flex-row">
+
               </motion.p>
             </motion.div>
           </div>
