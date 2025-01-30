@@ -7,7 +7,7 @@ import {
   useTransform,
   animate,
 } from "framer-motion";
-import { FaGithub, FaLinkedin, FaFileAlt, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileAlt, FaArrowDown } from "react-icons/fa";
 
 const COLORS = ["#473B1F", "#51432A", "#FFFFFF"];
 const Banner = () => {
@@ -31,14 +31,14 @@ const Banner = () => {
     <div className="-z-80">
       <motion.section
         key={"banner"}
-        // exit={{ opacity: 0 }}
+        exit={{ opacity: 0 }}
         className="about-section min-h-screen relative justify-center shadow-2xl -z-80"
         style={{
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
           backgroundImage,
-          // opacity,
+          opacity,
         }}
         initial={{ opacity: 0 }}
         animate={{
@@ -46,7 +46,9 @@ const Banner = () => {
         }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-center text-7xl font-bold mb-2 text-white">Hi! I'm Madi</h1>
+        <h1 className="text-center text-7xl font-bold mb-2 text-white">
+          Hi! I'm Madi
+        </h1>
         <div className="w-1/2 mr-auto ml-auto">
           <p className="text-2xl m-4 text-center text-white">
             A Front-end developer with a strong passion in modern web
@@ -61,7 +63,7 @@ const Banner = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
           >
-            <FaGithub size={64} className="fill-white"/>
+            <FaGithub size={64} className="fill-white" />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/madi-tabon/"
@@ -69,7 +71,7 @@ const Banner = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
           >
-            <FaLinkedin size={64} className="fill-white"/>
+            <FaLinkedin size={64} className="fill-white" />
           </motion.a>
           <motion.a
             href="/resume"
@@ -77,14 +79,25 @@ const Banner = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2 }}
           >
-            <FaFileAlt size={64} className="fill-white"/>
+            <FaFileAlt size={64} className="fill-white" />
           </motion.a>
         </div>
-        <div className="absolute bottom-10 left-0 right-0">
-        <p>More Info Below!</p>
-      </div>
+        <motion.a href="#projects">
+          <div className="absolute bottom-10 left-0 right-0">
+            <motion.div
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+              className="flex flex-row justify-center items-center"
+              whileHover={{ color: "black" }}
+            >
+              <FaArrowDown />
+              <motion.p whileHover={{ color: "black" }} className="p-4">
+                More Info Below!
+              </motion.p>
+            </motion.div>
+          </div>
+        </motion.a>
       </motion.section>
-
     </div>
   );
 };

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Header />
+      {/* <Header /> */}
       <AboutP />
       {/* <Gallery /> */}
       <About />

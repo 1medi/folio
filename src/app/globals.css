@@ -6,6 +6,13 @@
 
 body {
   font-family: 'Jost', sans-serif;
+  background: var(--background) url("/cartographer.png");
+  background-size: 100% auto; /* Prevents over-stretching */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  color: #ededed;
 }
 
 :root {
@@ -18,9 +25,4 @@ body {
     --background: #1E150A;
     --foreground: #ededed;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
 }
