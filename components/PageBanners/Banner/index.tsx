@@ -80,7 +80,11 @@ const Banner = () => {
             <FaFileAlt size={64} className="fill-white"/>
           </motion.a>
         </div>
+        <div className="absolute bottom-10 left-0 right-0">
+        <p>More Info Below!</p>
+      </div>
       </motion.section>
+
     </div>
   );
 };

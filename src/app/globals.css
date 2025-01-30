@@ -9,8 +9,8 @@ body {
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #1E150A;
+  --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {

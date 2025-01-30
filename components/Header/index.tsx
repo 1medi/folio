@@ -44,90 +44,88 @@ export default function Header() {
   );
 
   return (
-    <div className="sticky z-50 mx-auto w-full max-w-3xl flex-1 overflow-hidden text-white">
-      <div className="flex-1 overflow-y-scroll">
-        <motion.header
-          style={{
-            height: useTransform(
-              scrollYBoundedProgressDelayed,
-              [0, 1],
-              [80, 50]
-            ),
-            backgroundColor: useMotionTemplate`rgb(0 0 0 / ${useTransform(
-              scrollYBoundedProgressDelayed,
-              [0, 1],
-              [1, 0.1]
-            )})`,
-          }}
-          className="fixed inset-x-0 z-50 flex h-20 shadow backdrop-blur-md"
-        >
-          <div className="mx-auto flex flex-row w-full max-w-3xl items-center justify-between px-8">
-            <a href="/" className="flex flex-row items-center">
-              <Wordmark />
-              <motion.p
-                style={{
-                  scale: useTransform(
-                    scrollYBoundedProgressDelayed,
-                    [0, 1],
-                    [1, 0.9]
-                  ),
-                }}
-                className="flex items-center p-4 text-xl font-semibold uppercase"
-              >
-                Madi Tabon
-              </motion.p>
-            </a>
-
-            <motion.nav
+    <div className="sticky top-0 z-50 w-full overflow-hidden text-white">
+      <motion.header
+        style={{
+          height: useTransform(
+            scrollYBoundedProgressDelayed,
+            [0, 1],
+            [80, 50]
+          ),
+          backgroundColor: useMotionTemplate`rgb(0 0 0 / ${useTransform(
+            scrollYBoundedProgressDelayed,
+            [0, 1],
+            [1, 0.1]
+          )})`,
+        }}
+        className="flex h-20 w-full shadow backdrop-blur-md"
+      >
+        <div className="flex w-full items-center justify-between px-8">
+          <a href="/" className="flex flex-row items-center">
+            <Wordmark />
+            <motion.p
               style={{
-                opacity: useTransform(
+                scale: useTransform(
                   scrollYBoundedProgressDelayed,
                   [0, 1],
-                  [1, 0]
+                  [1, 0.9]
                 ),
               }}
-              className="flex space-x-4 text-sm font-medium text-slate-400"
+              className="flex items-center p-4 text-xl font-semibold uppercase"
             >
-              <motion.a
-                href="/#projects"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                animate={{
-                  color: isHovered ? "#DD8143" : "",
-                  scale: isHovered ? 1.15 : 1
-                }}
-                transition={{ ease: "backInOut" }}
-              >
-                Projects
-              </motion.a>
-              <motion.a
-                href="/#about"
-                onMouseEnter={() => setIsHovered1(true)}
-                onMouseLeave={() => setIsHovered1(false)}
-                animate={{
-                  color: isHovered1 ? "#DD8143" : "",
-                  scale: isHovered1 ? 1.15 : 1
-                }}
-                transition={{ ease: "backInOut" }}
-              >
-                About
-              </motion.a>
-              <motion.a
-                href="/#contact"
-                onMouseEnter={() => setIsHovered2(true)}
-                onMouseLeave={() => setIsHovered2(false)}
-                animate={{
-                  color: isHovered2 ? "#DD8143" : "",
-                  scale: isHovered2 ? 1.15 : 1
-                }}
-                transition={{ ease: "backInOut" }}
-              >
-                Contact
-              </motion.a>
-            </motion.nav>
-          </div>
-        </motion.header>
-      </div>
+              Madi Tabon
+            </motion.p>
+          </a>
+
+          <motion.nav
+            style={{
+              opacity: useTransform(
+                scrollYBoundedProgressDelayed,
+                [0, 1],
+                [1, 0]
+              ),
+            }}
+            className="flex space-x-4 text-sm font-medium text-slate-400"
+          >
+            <motion.a
+              href="/#projects"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              animate={{
+                color: isHovered ? "#DD8143" : "",
+                scale: isHovered ? 1.15 : 1
+              }}
+              transition={{ ease: "backInOut" }}
+            >
+              Projects
+            </motion.a>
+            <motion.a
+              href="/#about"
+              onMouseEnter={() => setIsHovered1(true)}
+              onMouseLeave={() => setIsHovered1(false)}
+              animate={{
+                color: isHovered1 ? "#DD8143" : "",
+                scale: isHovered1 ? 1.15 : 1
+              }}
+              transition={{ ease: "backInOut" }}
+            >
+              About
+            </motion.a>
+            <motion.a
+              href="/#contact"
+              onMouseEnter={() => setIsHovered2(true)}
+              onMouseLeave={() => setIsHovered2(false)}
+              animate={{
+                color: isHovered2 ? "#DD8143" : "",
+                scale: isHovered2 ? 1.15 : 1
+              }}
+              transition={{ ease: "backInOut" }}
+            >
+              Contact
+            </motion.a>
+          </motion.nav>
+        </div>
+      </motion.header>
     </div>
   );
 }

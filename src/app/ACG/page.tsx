@@ -29,7 +29,7 @@ const ACG = () => {
         <motion.section className="bg-[#a49e8d] w-full rounded-lg">
           <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
             <div className="p-4">
-              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
               </h2>
               <ul className="p-2 text-center">
@@ -38,7 +38,7 @@ const ACG = () => {
               </ul>
             </div>
             <div className="p-4">
-              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Key Features
               </h2>
               <ul className="p-2 text-center">
@@ -49,7 +49,7 @@ const ACG = () => {
             </div>
           </div>
           <div className="about p-8 ">
-            <h2 className="text-3xl bg-black rounded-lg p-4">What is ACG?</h2>
+            <h2 className="text-3xl bg-[#3A3F2D] rounded-lg p-4">What is ACG?</h2>
             <p className="p-4">
               In ACG: Aspect of Elements, players engage in a strategic card
               game where they command elemental forces in turn-based battles.
@@ -61,7 +61,7 @@ const ACG = () => {
           </div>
 
           <div className="proj-ideation p-8">
-            <h2 className="text-3xl text-right bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
               Project Ideation
             </h2>
             <div className="m-auto flex flex-col lg:flex-row p-4">
@@ -94,7 +94,7 @@ const ACG = () => {
             </div>
           </div> */}
           <div className="proj-outcome p-8 flex flex-col">
-            <h2 className="text-3xl text-left bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
               Outcome
             </h2>
             <div className="m-auto flex flex-col lg:flex-row-reverse p-4">
@@ -114,7 +114,7 @@ const ACG = () => {
             </div>
           </div>
           <div className="proj-styleguide p-4 m-8 flex flex-col ">
-            <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
             <div className="flex p-4 m-8 flex-col justify-center items-center sm:flex-row">

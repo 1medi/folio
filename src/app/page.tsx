@@ -10,8 +10,8 @@ import AboutP from "../../components/About-p/index";
 export default function Home() {
   return (
     <>
-      <Header />
       <Banner />
+      <Header />
       <AboutP />
       {/* <Gallery /> */}
       <About />
