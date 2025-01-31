@@ -17,7 +17,7 @@ body {
   background-size: 100% auto; 
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
   background-blend-mode: overlay;
 }
 
@@ -28,8 +28,8 @@ body {
     background: var(--background) url("/cartographer.png");
     background-size: 100% auto; 
     background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
+
     background-blend-mode: overlay;
   }
 }
