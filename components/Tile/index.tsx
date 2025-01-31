@@ -1,9 +1,13 @@
+import { motion } from "framer-motion"
 import Lutong from "../../public/BAHAY.png"
 
 const Tile = () => {
   return (
-    <div
-    className="aspect-square bg-[#004f2d]  border-neutral-900 hover:bg-[#004f2da1] transition-colors duration-100"
+    <motion.div
+    className="aspect-square bg-[#004f2d]  border-neutral-900 transition-colors duration-100"
+    whileHover={{
+      backgroundColor: "#004f2da1"
+    }}
     />
   )
 }
