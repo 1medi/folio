@@ -16,7 +16,7 @@ const LutongBahay = () => {
         <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
           <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
             <div className="p-4">
-              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
               </h2>
               <ul className="p-2 text-center">
@@ -26,7 +26,7 @@ const LutongBahay = () => {
               </ul>
             </div>
             <div className="p-4">
-              <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Key Features
               </h2>
               <ul className="p-2 text-center">
@@ -37,7 +37,7 @@ const LutongBahay = () => {
             </div>
           </div>
           <div className="about p-8">
-            <h2 className="text-3xl text-center bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               What is Lutong Bahay?
             </h2>
             <p className="p-4">
@@ -49,7 +49,7 @@ const LutongBahay = () => {
             </p>
           </div>
           <div className="proj-ideation p-8">
-            <h2 className="text-3xl text-center md:text-right bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
               Identifying The Issue
             </h2>
             <p className="text-right p-4">
@@ -61,7 +61,7 @@ const LutongBahay = () => {
             </p>
           </div>
           <div className="proj-ideation p-8">
-            <h2 className="text-3xl text-center md:text-left bg-black rounded-lg p-4">
+            <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
               Design Decisions
             </h2>
             <div className="m-auto flex sm:flex-col lg:flex-row">
@@ -80,7 +80,7 @@ const LutongBahay = () => {
             </div>
           </div>
           <div className="proj-outcome p-8">
-            <h2 className="text-3xl bg-black rounded-lg text-center md:text-right p-4">
+            <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
               Outcome
             </h2>
             <p className="text-center md:text-right p-4">

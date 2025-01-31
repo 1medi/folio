@@ -6,23 +6,30 @@
 
 body {
   font-family: 'Jost', sans-serif;
-  background: var(--background) url("/cartographer.png");
-  background-size: 100% auto; /* Prevents over-stretching */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
+
   color: #ededed;
 }
 
 :root {
   --background: #1E150A;
   --foreground: #ededed;
+  background: var(--background) url("/cartographer.png");
+  background-size: 100% auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1E150A;
     --foreground: #ededed;
+    background: var(--background) url("/cartographer.png");
+    background-size: 100% auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
   }
 }

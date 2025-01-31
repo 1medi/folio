@@ -8,97 +8,117 @@ import {
   animate,
 } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileAlt, FaArrowDown } from "react-icons/fa";
+import Tile from "../../Tile";
 
-const COLORS = ["#473B1F", "#51432A", "#FFFFFF"];
+const duration = 1;
+const transition = {
+  duration: 0.8,
+  delay: 0.5,
+  ease: [0, 0.71, 0.2, 1.01],
+}
 const Banner = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-  const color = useMotionValue(COLORS[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #004f2d 50%, ${color}`;
-
-  const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
-
-  useEffect(() => {
-    animate(color, COLORS, {
-      ease: "easeInOut",
-      duration: 10,
-      repeat: Infinity,
-      repeatType: "mirror",
-    });
-  }, []);
-
   return (
-    <div className="-z-80  w-full h-full overflow-hidden">
-      <motion.section
-        key={"banner"}
-        exit={{ opacity: 0 }}
-        className="about-section min-h-screen relative justify-center shadow-2xl -z-80"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          textAlign: "center",
-          backgroundImage,
-          opacity,
-        }}
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{ duration: 1 }}
+    <main className="w-full relative overflow-hidden">
+      <motion.section className="about-section w-full grid grid-cols-10 h-screen overflow-y-clip">
+        {Array.from({ length: 20 * 12 }).map((i, index) => (
+          <Tile key={index} />
+        ))}
+      </motion.section>
+      <div
+        className="pointer-events-none absolute inset-0
+      flex flex-col gap-5 items-center justify-center z-10 mb-10 
+      "
       >
-        <h1 className="text-center text-7xl font-bold mb-2 text-white">
+        <motion.h1
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 1 }}
+          transition={{ delay: duration }}
+          className="text-center text-7xl font-bold mb-2 text-white"
+        >
           Hi! I'm Madi
-        </h1>
-        <div className="w-1/2 mr-auto ml-auto">
+        </motion.h1>
+        <motion.div
+          className="w-1/2 mr-auto ml-auto"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 1 }}
+          transition={{ delay: 1.25 }}
+        >
           <p className="text-2xl m-4 text-center text-white">
             A Front-end developer with a strong passion in modern web
             technologies. With an unwavering interest in user-friendly designs
             and pushing boundaries.
           </p>
-        </div>
-        <div className="flex justify-center gap-5 p-3">
+        </motion.div>
+        <motion.div
+          className="flex justify-center gap-5 p-8 pointer-events-auto"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 1 }}
+          transition={{ delay: 1.5 }}
+        >
           <motion.a
             href="https://github.com/1medi"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.2 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 1 }}
+            transition={{ delay: 1.5 }}
+            className="pointer-events-auto"
           >
-            <FaGithub size={64} className="fill-white" />
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <FaGithub size={64} className="fill-white" />
+            </motion.div>
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/madi-tabon/"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.2 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 1 }}
+            transition={{ delay: 1.75 }}
           >
-            <FaLinkedin size={64} className="fill-white" />
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <FaLinkedin size={64} className="fill-white" />
+            </motion.div>
           </motion.a>
           <motion.a
             href="/resume"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.2 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 1 }}
+            transition={{ delay: 2 }}
           >
-            <FaFileAlt size={64} className="fill-white" />
+            <motion.div whileHover={{ scale: 1.2 }}>
+              <FaFileAlt size={64} className="fill-white" />
+            </motion.div>
           </motion.a>
-        </div>
-        <motion.a href="#projects">
-          <div className="absolute bottom-0 left-0 right-0">
+        </motion.div>
+        <motion.a href="#projects"
+        transition={transition}
+        >
+          <motion.div
+            className="absolute bottom-0 left-0 right-0 pointer-events-auto"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 1 }}
+            transition={{ delay: 2.25 }}
+          >
             <motion.div
               animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
               className="flex flex-row justify-center items-center"
-              whileHover={{ color: "black" }}
+              whileHover={{ color: "#FFFFFF" }}
+              whileTap={{rotate: 3}}
             >
-                              <FaArrowDown className="m-2" /> More Info Below!
-              <motion.p whileHover={{ color: "black" }} className=" flex flex-row">
-
-              </motion.p>
+              <FaArrowDown className="m-2" /> More Info Below!
             </motion.div>
-          </div>
+          </motion.div>
         </motion.a>
-      </motion.section>
-    </div>
+      </div>
+    </main>
   );
 };
 
