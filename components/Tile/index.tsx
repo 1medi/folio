@@ -1,18 +1,20 @@
-import { motion } from "framer-motion"
-import Lutong from "../../public/BAHAY.png"
+import { motion } from "framer-motion";
+import Lutong from "../../public/BAHAY.png";
 
+const colors = ["#C9C19F", "#EDF7D2", "#EDF7D2", "#EB5160"];
+// const ColorsRandom = Math.floor(Math.random() * colors.length) What i did before / not working since it was a constant value and not calculated while hover!
 const Tile = () => {
   return (
     <motion.div
-    className="aspect-square border-neutral-900 transition-colors duration-100"
-    whileHover={{
-      backgroundColor: "#004f2da1"
-    }}
+      className="aspect-square border-neutral-900 transition-colors duration-100"
+      whileHover={{
+        backgroundColor: colors[Math.floor(Math.random() * colors.length)],
+      }}
     />
-  )
-}
+  );
+};
 
-export default Tile
+export default Tile;
 // "use client"
 // const Tile = () => {
 //   return (
