@@ -4,7 +4,7 @@ import Lutong from "../../public/BAHAY.png"
 const Tile = () => {
   return (
     <motion.div
-    className="aspect-square bg-[#004f2d]  border-neutral-900 transition-colors duration-100"
+    className="aspect-square border-neutral-900 transition-colors duration-100"
     whileHover={{
       backgroundColor: "#004f2da1"
     }}

@@ -16,10 +16,27 @@ const transition = {
   delay: 0.5,
   ease: [0, 0.71, 0.2, 1.01],
 }
+const COLORS = ["#1E150A", "#004f2d", "#000000"];
+
+
 const Banner = () => {
+  const color = useMotionValue(COLORS[0]);
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 30%, ${color}`;
+    useEffect(() => {
+      animate(color, COLORS, {
+        ease: "easeInOut",
+        duration: 10,
+        repeat: Infinity,
+        repeatType: "mirror",
+      });
+    }, []);
   return (
     <main className="w-full relative overflow-hidden">
-      <motion.section className="about-section w-full grid grid-cols-10 h-screen overflow-y-clip">
+      <motion.section className="about-section w-full grid grid-cols-10 h-screen overflow-y-clip"
+      style={{
+        backgroundImage
+      }}
+      >
         {Array.from({ length: 20 * 12 }).map((i, index) => (
           <Tile key={index} />
         ))}
