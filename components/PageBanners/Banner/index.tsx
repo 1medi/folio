@@ -124,7 +124,7 @@ const Banner = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="flex flex-row justify-center m-auto items-center"
+              className="flex flex-row justify-center mb-12 sm:mb-0 items-center"
               whileHover={{ color: "#FFFFFF" }}
             >
               <FaArrowDown className="m-2" /> More Info Below!
