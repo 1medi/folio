@@ -18,12 +18,12 @@ export default function Carousel() {
   const xTranslation = useMotionValue(0);
 
   useEffect(() => {
-    let finalPosition = -width / 2 - 8;
+    let finalPosition = -width * 5 -8;
     let controls;
 
       controls = animate(xTranslation, [0, finalPosition], {
         ease: "linear",
-        duration: 25,
+        duration: 135,
         repeat: Infinity,
         repeatType: "loop",
         repeatDelay: 0,
@@ -37,11 +37,11 @@ export default function Carousel() {
   <h1 className="text-7xl text-center p-4 font-bold">Other Works</h1>
   <div className="w-screen overflow-x-hidden">
     <motion.div
-      className="absolute left-0 flex gap-4"
+      className="flex gap-4"
       ref={ref}
       style={{ x: xTranslation }}
     >
-      {[...images, ...images].map((item, idx) => (
+      {[...images, ...images, ...images, ...images,...images,...images].map((item, idx) => (
         <Card image={item} key={idx} />
       ))}
     </motion.div>
