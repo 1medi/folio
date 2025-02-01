@@ -5,14 +5,18 @@ import { useEffect, useState } from "react";
 
 export default function Carousel() {
   const images = [
-    "/ACG/colors.png",
-    "/ACG/imagery.png",
-    "/ACG/measurements.png",
-    "/ACG/typography.png",
-    "/Pocket-Prof/pplanding.png",
-    "/Pocket-Prof/ppquestion.png",
-    "/Pocket-Prof/ppquiz.png",
+    { src: "/ACG/colors.png", title: "Colors" },
+    { src: "/ACG/imagery.png", title: "Imagery" },
+    { src: "/ACG/measurements.png", title: "Measurements" },
+    { src: "/ACG/typography.png", title: "Typography" },
+    { src: "/Pocket-Prof/pplanding.png", title: "Pocket Prof Landing" },
+    { src: "/Pocket-Prof/ppquestion.png", title: "Pocket Prof Question" },
+    { src: "/Pocket-Prof/ppquiz.png", title: "Pocket Prof Quiz" },
   ];
+  
+  const links = [
+    "/"
+  ]
 
   let [ref, { width }] = useMeasure();
   const xTranslation = useMotionValue(0);
@@ -42,7 +46,7 @@ export default function Carousel() {
       style={{ x: xTranslation }}
     >
       {[...images, ...images, ...images, ...images,...images,...images].map((item, idx) => (
-        <Card image={item} key={idx} />
+        <Card image={item.src} title={item.title} key={idx} />
       ))}
     </motion.div>
   </div>
