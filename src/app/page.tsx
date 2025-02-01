@@ -6,6 +6,7 @@ import About from "../../components/About";
 // import Gallery from "../../components/Gallery";
 import Contact from "../../components/Contact";
 import AboutP from "../../components/About-p/index";
+import Carousel from "../../components/InfiniteCarousel";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       {/* <Header /> */}
       <AboutP />
       {/* <Gallery /> */}
+      <Carousel/>
       <About />
       <Contact />
       <Footer />

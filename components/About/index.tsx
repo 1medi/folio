@@ -5,7 +5,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="m-16 p-16 rounded-lg "
+      className="mt-16 p-16 rounded-lg "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

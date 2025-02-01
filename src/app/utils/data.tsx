@@ -113,3 +113,5 @@ export const AcgGallery = [
 ];
 
 export const PPScreens = [PPLanding, PPHome, PPQuiz];
+
+export const CarouselImages = [ACGColors, ACGImagery, ACGMeasurements, ACGType, ACGGamem,ACGLogo, PPLanding, PPHome, PPQuiz]
