@@ -9,7 +9,7 @@ const Title = () => {
   return (
     <>
       <motion.a
-        className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
+        className="title-container pr-0.5 flex-wrap relative justify-center items-center flex flex-col  no-underline"
         href="/Lutong-Bahay"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -19,7 +19,7 @@ const Title = () => {
         transition={{ ease: "backInOut" }}
       >
         <div className="flex flex-row flex-wrap relative justify-center items-center">
-          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
+          <h1 className="font-bold mt-2 pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
             Lutong
           </h1>
           <motion.img
@@ -34,7 +34,7 @@ const Title = () => {
             }}
             alt="aether"
           />
-          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
+          <h1 className="font-bold mt-2 pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
             Bahay
           </h1>
         </div>

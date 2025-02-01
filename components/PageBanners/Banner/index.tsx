@@ -60,14 +60,14 @@ const Banner = () => {
           animate={{ opacity: 1, y: 1 }}
           transition={{ delay: 1.25 }}
         >
-          <p className="text-2xl m-auto text-center text-white">
+          <p className="text-2xl m-2 sm:m-auto text-center text-white">
             A Front-end developer with a strong passion in modern web
             technologies. With an unwavering interest in user-friendly designs
             and pushing boundaries.
           </p>
         </motion.div>
         <motion.div
-          className="flex justify-center gap-5 m-auto p-8 pointer-events-auto"
+          className="flex justify-center gap-5 m-2 sm:m-auto p-8 pointer-events-auto"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 1 }}
           transition={{ delay: 1.5 }}

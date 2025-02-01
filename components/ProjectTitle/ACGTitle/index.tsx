@@ -19,8 +19,8 @@ const Title = () => {
         transition={{ ease: "backInOut" }}
       >
         <div className="flex flex-row flex-wrap relative justify-center items-center">
-          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
-            Awesome Card
+          <h1 className="font-bold pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
+            Awesome Card 
           </h1>
           <motion.img
             src={First.src}
@@ -34,7 +34,7 @@ const Title = () => {
             }}
             alt="aether"
           />
-          <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
+          <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
             Game (ACG)
           </h1>
         </div>
