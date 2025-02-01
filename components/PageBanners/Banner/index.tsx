@@ -67,7 +67,7 @@ const Banner = () => {
           </p>
         </motion.div>
         <motion.div
-          className="flex justify-center gap-5 m-auto p-8 pointer-events-auto"
+          className="flex justify-center gap-5 mb-12 sm:m-auto sm:mb-0 p-8 pointer-events-auto"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 1 }}
           transition={{ delay: 1.5 }}
