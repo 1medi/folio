@@ -46,26 +46,27 @@ const Banner = () => {
       flex flex-col gap-5 items-center justify-center z-10 mb-10 
       "
       >
-        <motion.h1
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 1 }}
-          transition={{ delay: duration }}
-          className="text-center text-5xl sm:text-7xl lg:text-9xl font-bold m-4 sm:m-auto text-white"
-        >
-          Hi! I'm Madi
-        </motion.h1>
-        <motion.div
-          className="w-1/2 mr-auto ml-auto"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 1 }}
-          transition={{ delay: 1.25 }}
-        >
-          <p className="text-xl sm:text-2xl lg:text-4xl m-auto lg:m-2 text-center text-white">
+        <div>
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 1 }}
+            transition={{ delay: duration }}
+            className="text-center text-5xl sm:text-7xl lg:text-9xl font-bold m-4 sm:m-auto text-white"
+          >
+            Hi! I'm Madi
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 1 }}
+            transition={{ delay: duration }}
+            className="text-xl sm:text-2xl lg:text-4xl m-auto p-4 lg:m-2 text-center text-white"
+          >
             A Front-end developer with a strong passion in modern web
             technologies. With an unwavering interest in user-friendly designs
             and pushing boundaries.
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
+
         <motion.div
           className="flex justify-center gap-5 mb-12 sm:m-auto sm:mb-0 lg:m-8 p-8 pointer-events-auto"
           initial={{ opacity: 0, y: 100 }}
