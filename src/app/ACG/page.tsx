@@ -64,14 +64,14 @@ const ACG = () => {
             <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
               Project Ideation
             </h2>
-            <div className="m-auto flex flex-col lg:flex-row p-4">
+            <div className="justify-center items-center flex flex-col lg:flex-row p-4">
               <p className="text-right p-4">
                 At the conclusion of the project the team produced a playable
                 lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                 cards each and a menu UI suitable to code for our development
                 team
               </p>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
                 <NextVideo
                   className="m-4"
                   style={{ zIndex: 1, height: "100%" }}
@@ -85,14 +85,14 @@ const ACG = () => {
             <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
               Outcome
             </h2>
-            <div className="m-auto flex flex-col lg:flex-row-reverse p-4">
+            <div className=" justify-center items-center flex flex-col lg:flex-row-reverse p-4">
               <p className="text-left p-4">
                 At the conclusion of the project the team produced a playable
                 lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                 cards each and a menu UI suitable to code for our development
                 team
               </p>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
                 <NextVideo
                   className="m-4"
                   style={{ zIndex: 1, height: "100%", width: "100%" }}
@@ -106,17 +106,18 @@ const ACG = () => {
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
-            <div className="flex p-4 flex-col justify-center items-center lg:flex-row">
-              <div className="Colors  flex-col justify-center items-center ">
-                <div className="photo-container min-w-[300px] min-h-[200px] flex m-4">
+
+            <div className="flex p-4 flex-col w-full justify-center items-center lg:flex-row">
+              <div className="Colors flex-col justify-center items-center m-auto lg:w-1/2 lg:m-16">
+                <div className="photo-container w-[200px] m-auto lg:w-full lg:flex">
                   <Image
                     src={ACGColors}
                     alt="colors "
-                    className="rounded-xl m-2 w-full"
+                    className="rounded-xl w-full"
                   />
                 </div>
 
-                <p className="m-auto text-center p-4">
+                <p className="w-50 m-auto text-center p-4">
                   <span className="font-bold">Core Colors: </span>
                   <br />
                   <span className="font-bold">#C1121F (Bright Red)</span> : For
@@ -133,17 +134,17 @@ const ACG = () => {
                 </p>
               </div>
 
-              <div className="Everything Else ">
+              <div className="Everything Else m-auto w-full lg:w-1/2">
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container min-w-[300px] min-h-[200px] flex m-4">
+                  <div className="photo-container w-[250px] lg:w-[500px] flex m-8">
                     <Image
                       src={ACGMeasurements}
                       alt="colors"
                       className="m-2 rounded-lg w-full"
                     />
                   </div>
-                  <p className="w-80 text-center m-4 ">
+                  <p className="w-50 text-center m-4 ">
                     <span className="font-bold">Core Colors:</span> <br />
                     <span className="font-bold">#C1121F (Bright Red)</span>: For
                     bold accents and energetic highlights.{" "}
@@ -157,7 +158,7 @@ const ACG = () => {
                 </div>
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container min-w-[300px] min-h-[200px] flex m-4">
+                  <div className="photo-container w-[250px] flex m-4">
                   <Image
                     src={ACGType}
                     alt="colors"
@@ -165,7 +166,7 @@ const ACG = () => {
                   />
                   </div>
 
-                  <p className="w-80 text-center m-4">
+                  <p className="w-60 text-center m-4">
                     Dragon Hunter gives off inviting but serious at the same
                     time. It combines the classic fantasy style with a
                     modernized, approachable look.
@@ -173,14 +174,14 @@ const ACG = () => {
                 </div>
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container min-w-[300px] min-h-[200px] flex m-4">
+                  <div className="photo-container w-[250px] flex m-4">
                   <Image
                     src={ACGLogo}
                     alt="colors"
                     className="w-full rounded-lg m-2"
                   />
                   </div>
-                  <p className="w-80 text-center m-4">
+                  <p className="w-60 text-center m-4">
                     The winged cards and the "ACG: Aspect of Elements" logo
                     blend themes of imagination and strategy, possibly alluding
                     to collectible card games or a design process inspired by
