@@ -12,9 +12,10 @@ const PocketProf = () => {
     <>
       <Header />
       <PPBanner />
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 lg:w-2/3 m-auto">
-        <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
-          <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
+
+        <motion.section className="w-full">
+          <div className="w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="p-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
@@ -36,7 +37,8 @@ const PocketProf = () => {
               </ul>
             </div>
           </div>
-          <div className="about p-8">
+
+          <div className="about p-8 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               What is Pocket Prof?
             </h2>
@@ -48,7 +50,8 @@ const PocketProf = () => {
               individuals alike to improve on themselves and create new goals."
             </p>
           </div>
-          <div className="proj-ideation p-8">
+
+          <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
               Identifying The Issue
             </h2>
@@ -60,7 +63,8 @@ const PocketProf = () => {
               available into 1 congestable application: Pocket Prof!
             </p>
           </div>
-          <div className="proj-ideation p-8">
+
+          <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
               Design Decisions
             </h2>
@@ -72,14 +76,16 @@ const PocketProf = () => {
                 experienced.
               </p>
             </div>
-            <div className="m-auto flex flex-col">
+          </div>
+
+          <div className="user-workflow p-8 m-8 bg-[#a49e8e80] rounded-lg">
               <h2 className="text-center text-4xl font-medium p-4">
                 User Workflow
               </h2>
               <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
             </div>
-          </div>
-          <div className="proj-outcome p-4">
+
+          <div className="proj-outcome p-4 m-8 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
               Outcome
             </h2>
@@ -90,6 +96,7 @@ const PocketProf = () => {
             </p>
             <PPPhone />
           </div>
+          
         </motion.section>
 
         {/* <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg"></motion.section> */}

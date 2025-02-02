@@ -23,11 +23,9 @@ const ACG = () => {
       <Header />
       <ACGBanner />
       <main className="min-h-screen flex flex-col items-center justify-center p-4 rounded-lg m-auto">
-        {/* <div className="p-4 m-12  rounded-xl">
-          <Image src={ACG1}  alt="acglogo" />
-        </div> */}
+
         <motion.section className=" w-full ">
-          <div className=" w-2/3 m-auto  bg-[#a49e8d] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+          <div className=" w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="p-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
@@ -49,7 +47,7 @@ const ACG = () => {
             </div>
           </div>
 
-          <div className="about p-8 bg-[#a49e8d] rounded-lg m-8">
+          <div className="about p-8 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg p-4">What is ACG?</h2>
             <p className="p-4">
               In ACG: Aspect of Elements, players engage in a strategic card
@@ -61,7 +59,7 @@ const ACG = () => {
             </p>
           </div>
 
-          <div className="proj-ideation p-8 bg-[#a49e8d] m-8 rounded-lg">
+          <div className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
             <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
               Project Ideation
             </h2>
@@ -82,7 +80,7 @@ const ACG = () => {
             </div>
           </div>
 
-          <div className="proj-outcome p-8 flex flex-col bg-[#a49e8d] m-8 rounded-lg">
+          <div className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-8 rounded-lg">
             <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
               Outcome
             </h2>
@@ -103,18 +101,18 @@ const ACG = () => {
             </div>
           </div>
 
-          <div className="proj-styleguide p-4 bg-[#a49e8d] m-8 rounded-lg flex flex-col ">
+          <div className="proj-styleguide p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
-            <div className="flex p-4 m-12 flex-col justify-center items-center lg:flex-row">
-              <div className="Colors flex-col justify-center items-center m-12 mt-2 md:m-3 lg:m-4">
+            <div className="flex p-4 flex-col justify-center items-center lg:flex-row">
+              <div className="Colors w-full flex-col justify-center items-center ">
                 <Image
                   src={ACGColors}
                   alt="colors "
-                  className="rounded-xl m-12"
+                  className="rounded-xl m-auto"
                 />
-                <p className="w-80 text-center m-4 md:m-4 lg:m-5">
+                <p className="m-auto text-center p-4">
                   <span className="font-bold">Core Colors: </span>
                   <br />
                   <span className="font-bold">#C1121F (Bright Red)</span> : For
@@ -161,20 +159,6 @@ const ACG = () => {
                     modernized, approachable look.
                   </p>
                 </div>
-                {/* <div>
-                  <Image
-                    src={ACGGamem}
-                    alt="colors"
-                    className="m-2 rounded-lg"
-                  />
-                  <p className="w-80 m-4">
-                    Core Colors: <br />
-                    #C1121F (Bright Red): For bold accents and energetic
-                    highlights. #FDF0D5 (Cream): A neutral base for balance and
-                    warmth. #2274A5 (Deep Blue): For contrast and reliability.
-                    #DB9B39 (Gold): Adds sophistication and premium vibes.
-                  </p>
-                </div> */}
 
                 <div className="flex flex-col justify-center m-12 items-center">
                   <Image
@@ -194,57 +178,6 @@ const ACG = () => {
           </div>
         </motion.section>
 
-        {/* <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg">
-          <h3 className="text-8xl text-center p-4">Gallery</h3>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </motion.section> */}
       </main>
       <Footer />
     </>
