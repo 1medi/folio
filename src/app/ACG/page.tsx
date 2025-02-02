@@ -22,12 +22,12 @@ const ACG = () => {
     <>
       <Header />
       <ACGBanner />
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 rounded-lg lg:w-2/3 m-auto">
+      <main className="min-h-screen flex flex-col items-center justify-center p-4 rounded-lg m-auto">
         {/* <div className="p-4 m-12  rounded-xl">
           <Image src={ACG1}  alt="acglogo" />
         </div> */}
-        <motion.section className="bg-[#a49e8d] w-full rounded-lg">
-          <div className="m-auto justify-center items-center p-8 flex flex-col md:flex-row">
+        <motion.section className=" w-full ">
+          <div className=" w-2/3 m-auto  bg-[#a49e8d] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="p-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
@@ -48,7 +48,8 @@ const ACG = () => {
               </ul>
             </div>
           </div>
-          <div className="about p-8 ">
+
+          <div className="about p-8 bg-[#a49e8d] rounded-lg m-8">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg p-4">What is ACG?</h2>
             <p className="p-4">
               In ACG: Aspect of Elements, players engage in a strategic card
@@ -60,7 +61,7 @@ const ACG = () => {
             </p>
           </div>
 
-          <div className="proj-ideation p-8">
+          <div className="proj-ideation p-8 bg-[#a49e8d] m-8 rounded-lg">
             <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
               Project Ideation
             </h2>
@@ -80,20 +81,8 @@ const ACG = () => {
               </div>
             </div>
           </div>
-          {/* <div className="proj-ideation p-8">
-            <h2 className="text-3xl text-left bg-black rounded-lg p-4">
-              Design Decisions
-            </h2>
-            <div className="m-auto flex sm:flex-col lg:flex-row">
-              <p className="text-leftt p-4">
-                This was a rigourous process which involved many steps such as
-                theory crafting, rule making, character design. We were also
-                tasked with determining the flow and gameplay the users
-                experienced
-              </p>
-            </div>
-          </div> */}
-          <div className="proj-outcome p-8 flex flex-col">
+
+          <div className="proj-outcome p-8 flex flex-col bg-[#a49e8d] m-8 rounded-lg">
             <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
               Outcome
             </h2>
@@ -113,16 +102,17 @@ const ACG = () => {
               </div>
             </div>
           </div>
-          <div className="proj-styleguide p-4 m-8 flex flex-col ">
+
+          <div className="proj-styleguide p-4 bg-[#a49e8d] m-8 rounded-lg flex flex-col ">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
-            <div className="flex p-4 m-8 flex-col justify-center items-center sm:flex-row">
-              <div className="Colors flex-col justify-center items-center mt-2 md:m-3 lg:m-4">
+            <div className="flex p-4 m-12 flex-col justify-center items-center lg:flex-row">
+              <div className="Colors flex-col justify-center items-center m-12 mt-2 md:m-3 lg:m-4">
                 <Image
                   src={ACGColors}
                   alt="colors "
-                  className="rounded-xl m-2"
+                  className="rounded-xl m-12"
                 />
                 <p className="w-80 text-center m-4 md:m-4 lg:m-5">
                   <span className="font-bold">Core Colors: </span>
@@ -140,8 +130,8 @@ const ACG = () => {
                   sophistication and premium vibes.
                 </p>
               </div>
-              <div className="Everything Else p-4 m-8">
-                <div className="flex flex-col justify-center items-center">
+              <div className="Everything Else p-4 m-12">
+                <div className="flex flex-col justify-center m-8 items-center">
                   <Image
                     src={ACGMeasurements}
                     alt="colors"
@@ -159,7 +149,7 @@ const ACG = () => {
                     sophistication and premium vibes.
                   </p>
                 </div>
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center m-12 items-center">
                   <Image
                     src={ACGType}
                     alt="colors"
@@ -186,7 +176,7 @@ const ACG = () => {
                   </p>
                 </div> */}
 
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center m-12 items-center">
                   <Image
                     src={ACGLogo}
                     alt="colors"
