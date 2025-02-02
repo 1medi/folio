@@ -50,7 +50,7 @@ const Banner = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 1 }}
           transition={{ delay: duration }}
-          className="text-center text-5xl sm:text-7xl font-bold m-4 sm:m-auto text-white"
+          className="text-center text-5xl sm:text-7xl lg:text-9xl font-bold m-4 sm:m-auto text-white"
         >
           Hi! I'm Madi
         </motion.h1>
