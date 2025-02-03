@@ -13,7 +13,6 @@ const PocketProf = () => {
       <Header />
       <PPBanner />
       <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
-
         <motion.section className="w-full">
           <div className="w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="p-4">
@@ -38,32 +37,36 @@ const PocketProf = () => {
             </div>
           </div>
 
-          <div className="about p-8 bg-[#a49e8e80] rounded-lg m-8">
-            <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
-              What is Pocket Prof?
-            </h2>
-            <p className="p-4">
-              Pocket Prof is a mobile web application goal tracking app that
-              promotes a variety of skills a user can learn by gathering
-              resources through our ai assistant Oscar. Through its interactive
-              user-friendly features, it provides a platform for students and
-              individuals alike to improve on themselves and create new goals."
-            </p>
+          <div className="flex flex-col lg:flex-row">
+            <div className="about p-8 bg-[#a49e8e80] rounded-lg m-8">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+                What is Pocket Prof?
+              </h2>
+              <p className="p-4">
+                Pocket Prof is a mobile web application goal tracking app that
+                promotes a variety of skills a user can learn by gathering
+                resources through our ai assistant Oscar. Through its
+                interactive user-friendly features, it provides a platform for
+                students and individuals alike to improve on themselves and
+                create new goals."
+              </p>
+            </div>
+
+            <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-8">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+                Identifying The Issue
+              </h2>
+              <p className="text-center p-4">
+                There was a gap found in the ability of finding new skills due
+                to the overwhelming surplus of resources available of the
+                internet. Through the app ideation proccess, we determined with
+                the help of AI, we can collect all the available resources and
+                make it available into 1 congestable application: Pocket Prof!
+              </p>
+            </div>
           </div>
 
-          <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-8">
-            <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
-              Identifying The Issue
-            </h2>
-            <p className="text-right p-4">
-              There was a gap found in the ability of finding new skills due to
-              the overwhelming surplus of resources available of the internet.
-              Through the app ideation proccess, we determined with the help of
-              AI, we can collect all the available resources and make it
-              available into 1 congestable application: Pocket Prof!
-            </p>
-          </div>
-
+          <div className="flex flex-col lg:flex-row">
           <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
               Design Decisions
@@ -79,11 +82,13 @@ const PocketProf = () => {
           </div>
 
           <div className="user-workflow p-8 m-8 bg-[#a49e8e80] rounded-lg">
-              <h2 className="text-center text-4xl font-medium p-4">
-                User Workflow
-              </h2>
-              <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
-            </div>
+            <h2 className="text-center text-4xl font-medium p-4">
+              User Workflow
+            </h2>
+            <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
+          </div>
+          </div>
+
 
           <div className="proj-outcome p-4 m-8 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
@@ -96,7 +101,6 @@ const PocketProf = () => {
             </p>
             <PPPhone />
           </div>
-          
         </motion.section>
 
         {/* <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg"></motion.section> */}
