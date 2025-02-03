@@ -6,7 +6,7 @@ import LBBanner from "../../../components/PageBanners/LBBanner";
 import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import PPPhone from "../../../components/PPPhone";
-
+import FramerCarousel from "../../../components/FramerCarousel";
 const LutongBahay = () => {
   return (
     <>
@@ -41,25 +41,28 @@ const LutongBahay = () => {
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               What is Lutong Bahay?
             </h2>
-            <p className="p-4">
-              Pocket Prof is a mobile web application goal tracking app that
-              promotes a variety of skills a user can learn by gathering
-              resources through our ai assistant Oscar. Through its interactive
-              user-friendly features, it provides a platform for students and
-              individuals alike to improve on themselves and create new goals."
+            <p className="p-4 text-center">
+              Lutong Bahay is a Filipino cookbook app that allows users to
+              easily customize recipes. One of the key features is the ability
+              to adjust serving sizes, so when users change the number of
+              servings, the app automatically updates the ingredient amounts. We
+              also included an ingredient substitution feature, which suggests
+              alternatives for items that might be unavailable or need to be
+              replaced due to dietary restrictions. This makes it easier for
+              users to cook Filipino dishes no matter where they are or what
+              ingredients they have on hand.
             </p>
           </div>
 
           <div className="proj-ideation p-8 m-8 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
-              Identifying The Issue
+              Challenges
             </h2>
             <p className="text-right p-4">
-              There was a gap found in the ability of finding new skills due to
-              the overwhelming surplus of resources available of the internet.
-              Through the app ideation proccess, we determined with the help of
-              AI, we can collect all the available resources and make it
-              available into 1 congestable application: Pocket Prof!
+              There was an issue when implementing a reliable cookbook API
+              specifically for filipino dishes, this resulted in the team
+              creating our own "fake" api in which we put in our own data to use
+              on the web app.
             </p>
           </div>
 
@@ -75,19 +78,19 @@ const LutongBahay = () => {
                 experienced.
               </p>
             </div>
-
           </div>
           <div className="proj-outcome p-8 m-8 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
               Outcome
             </h2>
             <p className="text-center md:text-right p-4">
-              At the conclusion of the project the team produced a playable lofi
-              physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
-              and a menu UI suitable to code for our development team
+              On the website, users are able to create and share recipes, as see
+              some of the ones already included which you can add to the
+              shopping list and bring with you to your next supermarket run!
             </p>
           </div>
         </motion.section>
+        <FramerCarousel/>
       </main>
       <Footer />
     </>
