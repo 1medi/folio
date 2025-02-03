@@ -47,7 +47,7 @@ const ACG = () => {
           </div>
 
           <div className="about p-8 bg-[#a49e8e80] rounded-lg m-8">
-            <h2 className="text-3xl bg-[#3A3F2D] rounded-lg p-4">
+            <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               What is ACG?
             </h2>
             <p className="p-4">
@@ -60,12 +60,13 @@ const ACG = () => {
             </p>
           </div>
 
+          <div className="flex flex-col lg:flex-row">
           <div className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
-            <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
+            <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
               Project Ideation
             </h2>
-            <div className="justify-center items-center flex flex-col lg:flex-row p-4">
-              <p className="text-right p-4">
+            <div className="justify-center items-center flex flex-col p-4">
+              <p className="text-left p-4">
                 At the conclusion of the project the team produced a playable
                 lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                 cards each and a menu UI suitable to code for our development
@@ -82,11 +83,11 @@ const ACG = () => {
           </div>
 
           <div className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-8 rounded-lg">
-            <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
+            <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
               Outcome
             </h2>
-            <div className=" justify-center items-center flex flex-col lg:flex-row-reverse p-4">
-              <p className="text-left p-4">
+            <div className=" justify-center items-center flex flex-col  p-4">
+              <p className="text-right p-4">
                 At the conclusion of the project the team produced a playable
                 lofi physical card game, 3 decks (Fire, Water, Ice) with 12
                 cards each and a menu UI suitable to code for our development
@@ -101,6 +102,8 @@ const ACG = () => {
               </div>
             </div>
           </div>
+          </div>
+
 
           <div className="proj-styleguide p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
