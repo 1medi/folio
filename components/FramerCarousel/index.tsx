@@ -92,7 +92,7 @@ function FramerCarousel() {
         </>
         <motion.div className='w-[550px] mt-4 mx-auto overflow-hidden  bg-[#3A3F2D]  border rounded-md'>
           <motion.div
-          key={items}
+          key={items.id}
             ref={carousel}
             drag='x'
             dragElastic={0.2}

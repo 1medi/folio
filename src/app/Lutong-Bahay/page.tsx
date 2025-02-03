@@ -37,35 +37,38 @@ const LutongBahay = () => {
             </div>
           </div>
 
-          <div className="about p-8  bg-[#a49e8e80] rounded-lg m-8">
-            <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
-              What is Lutong Bahay?
-            </h2>
-            <p className="p-4 text-center">
-              Lutong Bahay is a Filipino cookbook app that allows users to
-              easily customize recipes. One of the key features is the ability
-              to adjust serving sizes, so when users change the number of
-              servings, the app automatically updates the ingredient amounts. We
-              also included an ingredient substitution feature, which suggests
-              alternatives for items that might be unavailable or need to be
-              replaced due to dietary restrictions. This makes it easier for
-              users to cook Filipino dishes no matter where they are or what
-              ingredients they have on hand.
-            </p>
+          <div className="flex flex-col lg:flex-row">
+            <div className="about p-8  bg-[#a49e8e80] rounded-lg m-8">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+                What is Lutong Bahay?
+              </h2>
+              <p className="p-4 text-center">
+                Lutong Bahay is a Filipino cookbook app that allows users to
+                easily customize recipes. One of the key features is the ability
+                to adjust serving sizes, so when users change the number of
+                servings, the app automatically updates the ingredient amounts.
+                We also included an ingredient substitution feature, which
+                suggests alternatives for items that might be unavailable or
+                need to be replaced due to dietary restrictions. This makes it
+                easier for users to cook Filipino dishes no matter where they
+                are or what ingredients they have on hand.
+              </p>
+            </div>
+
+            <div className="proj-ideation p-8 m-8 bg-[#a49e8e80] rounded-lg">
+              <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
+                Challenges
+              </h2>
+              <p className="text-right p-4">
+                There was an issue when implementing a reliable cookbook API
+                specifically for filipino dishes, this resulted in the team
+                creating our own "fake" api in which we put in our own data to
+                use on the web app.
+              </p>
+            </div>
           </div>
 
-          <div className="proj-ideation p-8 m-8 bg-[#a49e8e80] rounded-lg">
-            <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
-              Challenges
-            </h2>
-            <p className="text-right p-4">
-              There was an issue when implementing a reliable cookbook API
-              specifically for filipino dishes, this resulted in the team
-              creating our own "fake" api in which we put in our own data to use
-              on the web app.
-            </p>
-          </div>
-
+          <div className="flex flex-col lg:flex-row"> 
           <div className="proj-ideation p-8 m-8 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
               Design Decisions
@@ -102,6 +105,8 @@ const LutongBahay = () => {
               shopping list and bring with you to your next supermarket run!
             </p>
           </div>
+          </div>
+
         </motion.section>
         <FramerCarousel />
       </main>
