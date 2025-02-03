@@ -54,7 +54,7 @@ function FramerCarousel() {
                 {tab.id === activeItem.id && (
                   <motion.figure
                     key={tab?.id}
-                    className='dark:bg-gray-900/60 bg-gray-100/60 border  rounded-md p-4 backdrop-blur-sm'
+                    className='bg-[#3A3F2D]  border  rounded-md p-4 backdrop-blur-sm'
                   >
                     <motion.div
                       initial={{ opacity: 0 }}
@@ -90,8 +90,9 @@ function FramerCarousel() {
             </section>
           ))}
         </>
-        <motion.div className='w-[550px] mt-4 mx-auto overflow-hidden   dark:bg-gray-900/60 bg-gray-100/60 border rounded-md'>
+        <motion.div className='w-[550px] mt-4 mx-auto overflow-hidden  bg-[#3A3F2D]  border rounded-md'>
           <motion.div
+          key={items}
             ref={carousel}
             drag='x'
             dragElastic={0.2}

@@ -70,13 +70,26 @@ const LutongBahay = () => {
             <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
               Design Decisions
             </h2>
-            <div className="m-auto flex sm:flex-col lg:flex-row">
-              <p className="text-left p-4">
-                This was a rigourous process which involved many steps such as
-                theory crafting, rule making, character design. We were also
-                tasked with determining the flow and gameplay the users
-                experienced.
-              </p>
+            <div className="m-auto flex sm:flex-col p-4 lg:flex-row">
+              <div className="flex-col justify-center items-center w-1/2">
+                <h1 className="text-2xl font-semibold">Font:</h1>
+                <p className="font-xl font-medium">Berkshire Swash</p>
+                <p>
+                  This type was used due it's whimsical feel and yet readable
+                  script font. Its unique swashes and smooth curves make it
+                  great for headings, branding, or designs that need a touch of
+                  personality without sacrificing legibility.
+                </p>
+              </div>
+
+              <div className="flex-col justify-center items-center p-4 w-1/2">
+                <h1 className="text-2xl font-semibold"> Colors: </h1>
+                <div className="flex flex-col justify-around lg:flex-row">
+                  <div className="w-[64px] h-[64px] p-4 m-4 bg-[#FF012D]" />
+                  <div className="w-[64px] h-[64px] p-4 m-4 bg-[#012D5E]" />
+                  <div className="w-[64px] h-[64px] p-4 m-4 bg-[#E98704]" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="proj-outcome p-8 m-8 bg-[#a49e8e80] rounded-lg">
@@ -90,7 +103,7 @@ const LutongBahay = () => {
             </p>
           </div>
         </motion.section>
-        <FramerCarousel/>
+        <FramerCarousel />
       </main>
       <Footer />
     </>
