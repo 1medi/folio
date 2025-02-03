@@ -40,9 +40,12 @@ function FramerCarousel() {
 
   return (
     <>
+    <div>
+      
+    </div>
       <motion.div
         layoutId={'activeItems'}
-        className='rounded-md w-fit pb-4 gap-2 items-center mx-auto cursor-auto '
+        className='rounded-md w-fit m-4 pb-4 gap-2 items-center cursor-auto '
         onClick={(e) => e.stopPropagation()}
       >
         <>
@@ -90,9 +93,8 @@ function FramerCarousel() {
             </section>
           ))}
         </>
-        <motion.div className='w-[550px] mt-4 mx-auto overflow-hidden  bg-[#3A3F2D]  border rounded-md'>
+        <motion.div className='min-w-[300px] mt-4 mx-auto overflow-hidden  bg-[#3A3F2D]  border rounded-md'>
           <motion.div
-          key={items.id}
             ref={carousel}
             drag='x'
             dragElastic={0.2}
@@ -104,6 +106,7 @@ function FramerCarousel() {
             {items.slice(0, 8)?.map((itemData, index) => {
               return (
                 <motion.div
+                key={itemData.id}
                   className={`relative p-2 flex-shrink-0`}
                   onClick={() => setActiveItem(itemData)}
                 >

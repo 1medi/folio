@@ -19,7 +19,7 @@ const Aether = () => {
         <motion.section className="w-full">
           <div className=" m-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
             <div className=" md:w-1/2">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                 Tools Used
               </h2>
               <ul className="p-6 text-center lg:grid lg:grid-cols-2 ">
@@ -31,8 +31,8 @@ const Aether = () => {
                 <li className="text-2xl p-2">Mongo DB</li>
               </ul>
             </div>
-            <div className="p-4 md:w-1/2">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+            <div className="md:w-1/2">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                 Key Features
               </h2>
               <ul className="p-3 text-center">

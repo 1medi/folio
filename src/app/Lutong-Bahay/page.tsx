@@ -14,9 +14,9 @@ const LutongBahay = () => {
       <LBBanner />
       <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <motion.section className="w-full">
-          <div className="w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
-            <div className="p-4">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+          <div className="w-2/3 m-auto my-4  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+            <div className="md:w-1/2">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                 Tools Used
               </h2>
               <ul className="p-2 text-center">
@@ -25,8 +25,8 @@ const LutongBahay = () => {
                 <li className="text-2xl p-2">React</li>
               </ul>
             </div>
-            <div className="p-4">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+            <div className="md:w-1/2">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                 Key Features
               </h2>
               <ul className="p-2 text-center">
@@ -38,11 +38,11 @@ const LutongBahay = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row">
-            <div className="about p-8  bg-[#a49e8e80] rounded-lg m-8">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+            <div className="about p-8 lg:w-1/2 bg-[#a49e8e80] rounded-lg m-4">
+              <h2 className="text-3xl text-center lg:text-left bg-[#3A3F2D] rounded-lg p-4">
                 What is Lutong Bahay?
               </h2>
-              <p className="p-4 text-center">
+              <p className="p-4 text-center lg:text-left">
                 Lutong Bahay is a Filipino cookbook app that allows users to
                 easily customize recipes. One of the key features is the ability
                 to adjust serving sizes, so when users change the number of
@@ -55,11 +55,11 @@ const LutongBahay = () => {
               </p>
             </div>
 
-            <div className="proj-ideation p-8 m-8 bg-[#a49e8e80] rounded-lg">
+            <div className="proj-ideation lg:w-1/2  p-8 m-4 bg-[#a49e8e80] rounded-lg">
               <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
                 Challenges
               </h2>
-              <p className="text-right p-4">
+              <p className="text-center lg:text-right p-4">
                 There was an issue when implementing a reliable cookbook API
                 specifically for filipino dishes, this resulted in the team
                 creating our own "fake" api in which we put in our own data to
@@ -68,45 +68,44 @@ const LutongBahay = () => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row"> 
-          <div className="proj-ideation p-8 m-8 bg-[#a49e8e80] rounded-lg">
-            <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
-              Design Decisions
-            </h2>
-            <div className="m-auto flex sm:flex-col p-4 lg:flex-row">
-              <div className="flex-col justify-center items-center w-1/2">
-                <h1 className="text-2xl font-semibold">Font:</h1>
-                <p className="font-xl font-medium">Berkshire Swash</p>
-                <p>
-                  This type was used due it's whimsical feel and yet readable
-                  script font. Its unique swashes and smooth curves make it
-                  great for headings, branding, or designs that need a touch of
-                  personality without sacrificing legibility.
-                </p>
-              </div>
+          <div className="flex flex-col lg:flex-row">
+            <div className="proj-ideation lg:w-1/2 p-8 m-4 bg-[#a49e8e80] rounded-lg">
+              <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
+                Design Decisions
+              </h2>
+              <div className="m-auto flex  p-4 lg:flex-row">
+                <div className="flex-col justify-center items-center w-1/2">
+                  <h1 className="text-2xl font-semibold">Font:</h1>
+                  <p className="font-xl font-medium">Berkshire Swash</p>
+                  <p>
+                    This type was used due it's whimsical feel and yet readable
+                    script font. Its unique swashes and smooth curves make it
+                    great for headings, branding, or designs that need a touch
+                    of personality without sacrificing legibility.
+                  </p>
+                </div>
 
-              <div className="flex-col justify-center items-center p-4 w-1/2">
-                <h1 className="text-2xl font-semibold"> Colors: </h1>
-                <div className="flex flex-col justify-around lg:flex-row">
-                  <div className="w-[64px] h-[64px] p-4 m-4 bg-[#FF012D]" />
-                  <div className="w-[64px] h-[64px] p-4 m-4 bg-[#012D5E]" />
-                  <div className="w-[64px] h-[64px] p-4 m-4 bg-[#E98704]" />
+                <div className="flex-col justify-center items-center p-4 w-1/2">
+                  <h1 className="text-2xl font-semibold"> Colors: </h1>
+                  <div className="flex flex-col justify-around lg:flex-row">
+                    <div className="w-[64px] h-[64px] p-4 m-4 bg-[#FF012D]" />
+                    <div className="w-[64px] h-[64px] p-4 m-4 bg-[#012D5E]" />
+                    <div className="w-[64px] h-[64px] p-4 m-4 bg-[#E98704]" />
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="proj-outcome p-8 m-4 lg:w-1/2  bg-[#a49e8e80] rounded-lg">
+              <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
+                Outcome
+              </h2>
+              <p className="text-center md:text-right p-4">
+                On the website, users are able to create and share recipes, as
+                see some of the ones already included which you can add to the
+                shopping list and bring with you to your next supermarket run!
+              </p>
+            </div>
           </div>
-          <div className="proj-outcome p-8 m-8 bg-[#a49e8e80] rounded-lg">
-            <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
-              Outcome
-            </h2>
-            <p className="text-center md:text-right p-4">
-              On the website, users are able to create and share recipes, as see
-              some of the ones already included which you can add to the
-              shopping list and bring with you to your next supermarket run!
-            </p>
-          </div>
-          </div>
-
         </motion.section>
         <FramerCarousel />
       </main>
