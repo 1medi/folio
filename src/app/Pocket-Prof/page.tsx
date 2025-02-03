@@ -14,9 +14,9 @@ const PocketProf = () => {
       <PPBanner />
       <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <motion.section className="w-full">
-          <div className="w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
-            <div className="p-4">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+          <div className="w-2/3 m-auto mb-4  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+            <div className="md:w-1/2">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg m-4 p-4">
                 Tools Used
               </h2>
               <ul className="p-2 text-center">
@@ -25,8 +25,8 @@ const PocketProf = () => {
                 <li className="text-2xl p-2">Openai</li>
               </ul>
             </div>
-            <div className="p-4">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+            <div className="md:w-1/2">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg m-4 p-4">
                 Key Features
               </h2>
               <ul className="p-2 text-center">
@@ -38,7 +38,7 @@ const PocketProf = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row">
-            <div className="about p-8 bg-[#a49e8e80] rounded-lg m-8">
+            <div className="about p-8 lg:w-1/2 bg-[#a49e8e80] rounded-lg m-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 What is Pocket Prof?
               </h2>
@@ -52,7 +52,7 @@ const PocketProf = () => {
               </p>
             </div>
 
-            <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-8">
+            <div className="proj-ideation lg:w-1/2 p-8 bg-[#a49e8e80] rounded-lg m-4 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Identifying The Issue
               </h2>
@@ -66,29 +66,28 @@ const PocketProf = () => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row">
-          <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-8">
-            <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
-              Design Decisions
-            </h2>
-            <div className="m-auto flex sm:flex-col lg:flex-row">
-              <p className="text-left p-4">
-                This was a rigourous process which involved many steps such as
-                theory crafting, rule making, character design. We were also
-                tasked with determining the flow and gameplay the users
-                experienced.
-              </p>
+          <div className="flex flex-col lg:flex-row m-4">
+            <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg lg:w-1/3 lg:mr-4">
+              <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
+                Design Decisions
+              </h2>
+              <div className="m-auto flex sm:flex-col lg:flex-row">
+                <p className="text-left p-4">
+                  This was a rigourous process which involved many steps such as
+                  theory crafting, rule making, character design. We were also
+                  tasked with determining the flow and gameplay the users
+                  experienced.
+                </p>
+              </div>
+            </div>
+
+            <div className="user-workflow p-8  bg-[#a49e8e80] rounded-lg lg:w-2/3 lg:ml-4">
+              <h2 className="text-center text-4xl font-medium p-4">
+                User Workflow
+              </h2>
+              <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
             </div>
           </div>
-
-          <div className="user-workflow p-8 m-8 bg-[#a49e8e80] rounded-lg">
-            <h2 className="text-center text-4xl font-medium p-4">
-              User Workflow
-            </h2>
-            <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
-          </div>
-          </div>
-
 
           <div className="proj-outcome p-4 m-8 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
