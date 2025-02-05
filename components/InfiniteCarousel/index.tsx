@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 
 export default function Carousel() {
   const images = [
-    { src: "/ACG/colors.png", title: "Colors" },
-    { src: "/ACG/imagery.png", title: "Imagery" },
-    { src: "/ACG/measurements.png", title: "Measurements" },
-    { src: "/ACG/typography.png", title: "Typography" },
-    { src: "/Pocket-Prof/pplanding.png", title: "Pocket Prof Landing" },
-    { src: "/Pocket-Prof/ppquestion.png", title: "Pocket Prof Question" },
-    { src: "/Pocket-Prof/ppquiz.png", title: "Pocket Prof Quiz" },
+    { src: "/carouselImages/qnc.png", title: "Quack n' Cluck", a:"/Projects/quackncluck" },
+    { src: "/carouselImages/CHUFFCITY1.png", title: "Chuff City V1", a:"/Projects/chuffcityV1" },
+    { src: "/carouselImages/CHUFFCITY2.png", title: "Chuff City V2", a:"/Projects/chuffcityV2" },
+    { src: "/carouselImages/CHUFFCITY3.png", title: "Chuff City V3", a:"/Projects/chuffcityV3" },
+    { src: "/carouselImages/DigitalMagazine.png", title: "Cycladic Blueprint (Digital)", a:"https://indd.adobe.com/view/d1ad75cd-d214-414b-9a49-784fc55dd04f" },
+    { src: "/carouselImages/GradeyDick.png", title: "Gradey Dick Graphic", a:"/Projects/gradeydick" },
+    // { src: "/Pocket-Prof/ppquiz.png", title: "Pocket Prof Quiz" },
   ];
 
   const links = ["/"];
@@ -35,7 +35,7 @@ export default function Carousel() {
   }, [xTranslation, width]);
 
   return (
-    <div className="overflow-x-hidden py-8 mb-48">
+    <div className="overflow-x-hidden py-8 ">
       <h1 className="text-7xl text-center p-4 font-bold">Other Works</h1>
       <div className="w-screen overflow-x-hidden">
         <motion.div
@@ -69,7 +69,13 @@ export default function Carousel() {
             ...images,
             ...images,
           ].map((item, idx) => (
+            <a
+            target="_blank"
+            key={idx}
+            href={item.a}
+            >
             <Card image={item.src} title={item.title} key={idx} />
+            </a>
           ))}
         </motion.div>
       </div>

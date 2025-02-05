@@ -149,27 +149,26 @@ const PocketProf = () => {
                   </h1>
                   <ul className="list-decimal">
                     <li>
-                      Navigate through the on-boarding steps and reach the ‘New
-                      Subject’ page.
+                      We resized and changed colours to improve visibility
                     </li>
                     <li>
-                      On the ‘New Subject’ page, navigate to the ‘art/creative’
-                      section and create a goal list for a basic guitar course.
-                    </li>
-                    <li>Visit the profile page and change the user name.</li>
-                    <li>
-                      Add a goal individually, then add multiple goals to your
-                      account.
+                      For better clarity, we improved the design of the icons on
+                      the Navigation bar and reduced the number from 4 to 3.
                     </li>
                     <li>
-                      Navigate to the settings page, switch to dark mode, and
-                      adjust the font size to large.
+                      For better navigation and flow, we made the “New subject”
+                      page to homepage.
                     </li>
-                    <li>Complete a quiz and review your results.</li>
+                    <li>
+                      This usability testing helped us point several areas for
+                      improvement. We aim to improve the design and flow of our
+                      app by incorporating the suggested recommendations so that
+                      we can enhance the user experience and satisfaction.
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div className="solutions p-4 m-4 justify-center items-center">
+              <div className="solutions p-4 m-4 justify-center items-center ">
                 <h1 className="text-center lg:text-2xl font-bold">
                   Problems / Solutions
                 </h1>
