@@ -1,7 +1,8 @@
 import { useMotionValue, animate, motion } from "framer-motion";
 import Card from "../Card";
 import useMeasure from "react-use-measure";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import Link from "next/link";
 
 export default function Carousel() {
   const images = [
@@ -69,13 +70,13 @@ export default function Carousel() {
             ...images,
             ...images,
           ].map((item, idx) => (
-            <a
+            <Link
             target="_blank"
             key={idx}
             href={item.a}
             >
             <Card image={item.src} title={item.title} key={idx} />
-            </a>
+            </Link>
           ))}
         </motion.div>
       </div>
