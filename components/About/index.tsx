@@ -61,8 +61,8 @@ const About = () => {
               <h4 className="font-semibold ">Backend</h4>
               <ul className="list-disc list-inside">
                 <li className="p-2">MongoDB</li>
-                <li className="p-2">Node.js</li>
-                <li className="p-2">Express.js</li>
+                <li className="p-2">Node</li>
+                <li className="p-2">Express</li>
               </ul>
             </div>
           </div>
