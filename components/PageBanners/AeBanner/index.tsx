@@ -69,7 +69,7 @@ const AEBanner = () => {
                 transition={{ ease: "backInOut" }}
                 className="bg-[#012d5e]  p-2 rounded-2xl m-4 w-1/2 "
               >
-                <a href="https://aether-app.ca/" target="_blank">
+                <a href="https://aether-blog.vercel.app/" target="_blank">
                   <p className="text-4xl">Landing Page</p>
                 </a>
               </motion.div>

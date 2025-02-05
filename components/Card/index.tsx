@@ -41,7 +41,7 @@ export const Card: React.FC<CarouselCardProps> = ({ image, title }) => {
           </motion.div>
         )}
       </AnimatePresence>
-      <Image src={image} alt={"An image"} fill style={{ objectFit: "cover" }} />
+      <Image src={image} priority alt={"An image"} fill style={{ objectFit: "cover" }} />
     </motion.div>
   );
 };
