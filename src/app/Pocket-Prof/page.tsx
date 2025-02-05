@@ -241,7 +241,7 @@ const PocketProf = () => {
             </div>
           </div>
 
-          <div className="proj-outcome p-4 m-8 bg-[#a49e8e80] rounded-lg">
+          {/* <div className="proj-outcome p-4 m-8 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
               Outcome
             </h2>
@@ -251,7 +251,7 @@ const PocketProf = () => {
               and a menu UI suitable to code for our development team
             </p>
             <PPPhone />
-          </div>
+          </div> */}
         </motion.section>
 
         {/* <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg"></motion.section> */}

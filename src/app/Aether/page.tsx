@@ -137,7 +137,7 @@ const Aether = () => {
             </div>
           </div>
 
-          <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg m-8">
+          {/* <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
               Design Decisions
             </h2>
@@ -166,7 +166,7 @@ const Aether = () => {
               physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
               and a menu UI suitable to code for our development team
             </p>
-          </div>
+          </div> */}
         </motion.section>
       </main>
       <Footer />
