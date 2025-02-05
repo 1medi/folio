@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Carousel() {
   const images = [
     { src: "/carouselImages/qnc.png", title: "Quack n' Cluck", a:"/Projects/quackncluck" },
-    { src: "/carouselImages/ChuffCity1.png", title: "Chuff City V1", a:"/Projects/chuffcityV1" },
+    { src: "/carouselImages/ChuffCity1.png",  title: "Chuff City V1", a:"/Projects/chuffcityV1" },
     { src: "/carouselImages/ChuffCity2.png", title: "Chuff City V2", a:"/Projects/chuffcityV2" },
     { src: "/carouselImages/ChuffCity3.png", title: "Chuff City V3", a:"/Projects/chuffcityV3" },
     { src: "/carouselImages/DigitalMagazine.png", title: "Cycladic Blueprint (Digital)", a:"https://indd.adobe.com/view/d1ad75cd-d214-414b-9a49-784fc55dd04f" },

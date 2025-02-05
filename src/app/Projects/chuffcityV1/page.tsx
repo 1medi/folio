@@ -32,6 +32,6 @@ const ChuffCityV1 = () => {
       />
     </div>
   );
-};
+}; 
 
 export default ChuffCityV1;
