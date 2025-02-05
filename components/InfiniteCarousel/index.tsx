@@ -11,7 +11,7 @@ export default function Carousel() {
     { src: "/carouselImages/ChuffCity2.png", title: "Chuff City V2", a:"/carouselImages/ChuffCity2.png" },
     { src: "/carouselImages/ChuffCity3.png", title: "Chuff City V3", a:"/carouselImages/ChuffCity3.png" },
     { src: "/carouselImages/DigitalMagazine.png", title: "Cycladic Blueprint (Digital)", a:"https://indd.adobe.com/view/d1ad75cd-d214-414b-9a49-784fc55dd04f" },
-    { src: "/carouselImages/GradeyDick.png", title: "Gradey Dick Graphic", a:"/Projects/gradeyDick.pdf" },
+    { src: "/carouselImages/GradeyDick.png", title: "Gradey Dick Graphic", a:"/carouselImages/GradeyDick.png" },
     // { src: "/Pocket-Prof/ppquiz.png", title: "Pocket Prof Quiz" },
   ];
 
