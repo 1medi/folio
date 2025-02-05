@@ -99,7 +99,7 @@ const Banner = () => {
             </motion.div>
           </motion.a>
           <motion.a
-            href="/resume"
+            href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 100 }}
