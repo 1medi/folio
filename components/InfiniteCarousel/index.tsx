@@ -7,9 +7,9 @@ import Link from "next/link";
 export default function Carousel() {
   const images = [
     { src: "/carouselImages/qnc.png", title: "Quack n' Cluck", a:"/Projects/quack.pdf" },
-    { src: "/carouselImages/ChuffCity.png",  title: "Chuff City V1", a:"/Projects/CHUFFCITY1.pdf" },
-    { src: "/carouselImages/ChuffCity2.png", title: "Chuff City V2", a:"/Projects/CHUFFCITY2.pdf" },
-    { src: "/carouselImages/ChuffCity3.png", title: "Chuff City V3", a:"/Projects/CHUFFCITY3.pdf" },
+    { src: "/carouselImages/ChuffCity.png",  title: "Chuff City V1", a:"/carouselImages/ChuffCity.png" },
+    { src: "/carouselImages/ChuffCity2.png", title: "Chuff City V2", a:"/carouselImages/ChuffCity2.png" },
+    { src: "/carouselImages/ChuffCity3.png", title: "Chuff City V3", a:"/carouselImages/ChuffCity3.png" },
     { src: "/carouselImages/DigitalMagazine.png", title: "Cycladic Blueprint (Digital)", a:"https://indd.adobe.com/view/d1ad75cd-d214-414b-9a49-784fc55dd04f" },
     { src: "/carouselImages/GradeyDick.png", title: "Gradey Dick Graphic", a:"/Projects/gradeyDick.pdf" },
     // { src: "/Pocket-Prof/ppquiz.png", title: "Pocket Prof Quiz" },
