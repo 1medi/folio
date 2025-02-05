@@ -14,7 +14,7 @@ const LutongBahay = () => {
       <LBBanner />
       <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <motion.section className="w-full">
-          <div className="w-2/3 m-auto my-4  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+          <div className="w-2/3 m-auto my-4 bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                 Tools Used

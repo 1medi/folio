@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@img-comparison-slider/react": "^8.0.2",
     "framer-motion": "^11.17.0",
     "lenis": "^1.1.19",
     "lottie-react": "^2.4.1",
