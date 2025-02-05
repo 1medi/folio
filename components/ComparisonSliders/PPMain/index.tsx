@@ -8,9 +8,9 @@ export default function NavComparison() {
     <div style={{}}>
     <ImgComparisonSlider
     >
-      <img style={{height:"500px"}} slot="first" src="/Pocket-Prof/PPmainbefore.png" />
+      <img className="h-[300px] lg:h-[500px]" slot="first" src="/Pocket-Prof/PPmainbefore.png" />
       <figcaption>Before</figcaption>
-      <img style={{height:"500px"}}slot="second" src="/Pocket-Prof/PPmainafter.png" />
+      <img className="h-[300px] lg:h-[500px]" slot="second" src="/Pocket-Prof/PPmainafter.png" />
       <figcaption>After</figcaption>
     </ImgComparisonSlider>
     </div>
