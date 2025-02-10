@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import LBBanner from "../../../components/PageBanners/LBBanner";
 import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
-import PPPhone from "../../../components/PPPhone";
+import PPPhone from "../../../components/PhoneScreens/PPPhone/index2";
 import FramerCarousel from "../../../components/FramerCarousel";
 const LutongBahay = () => {
   return (
@@ -73,8 +73,8 @@ const LutongBahay = () => {
               <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                 Design Decisions
               </h2>
-              <div className="m-auto flex  p-4 lg:flex-row">
-                <div className="flex-col justify-center items-center w-1/2">
+              <div className="m-auto flex flex-col  p-4 lg:flex-row">
+                <div className="flex-row justify-center items-center">
                   <h1 className="text-2xl font-semibold">Font:</h1>
                   <p className="font-xl font-medium">Berkshire Swash</p>
                   <p>
@@ -85,9 +85,9 @@ const LutongBahay = () => {
                   </p>
                 </div>
 
-                <div className="flex-col justify-center items-center p-4 w-1/2">
+                <div className="flex-row justify-center items-center p-4 ">
                   <h1 className="text-2xl font-semibold"> Colors: </h1>
-                  <div className="flex flex-col justify-around lg:flex-row">
+                  <div className="flex flex-row justify-around lg:flex-row">
                     <div className="w-[64px] h-[64px] p-4 m-4 bg-[#FF012D]" />
                     <div className="w-[64px] h-[64px] p-4 m-4 bg-[#012D5E]" />
                     <div className="w-[64px] h-[64px] p-4 m-4 bg-[#E98704]" />

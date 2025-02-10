@@ -33,20 +33,13 @@ const AEBanner = () => {
     <>
       <motion.section
         key={"banner"}
-        // exit={{ opacity: 0 }}
         className="about-section min-h-screen relative justify-center shadow-2xl"
         style={{
           display: "flex",
           flexDirection: "column",
           textAlign: "center",
           backgroundImage,
-          opacity,
         }}
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{ duration: 1 }}
       >
         <div className="flex flex-col mt-24 justify-center items-center">
           <div className="flex flex-col">
@@ -69,7 +62,7 @@ const AEBanner = () => {
                 transition={{ ease: "backInOut" }}
                 className="bg-[#012d5e]  p-2 rounded-2xl m-4 w-1/2 "
               >
-                <a href="https://aether-blog.vercel.app/" target="_blank">
+                <a href="https://aether-landing-seven.vercel.app/" target="_blank">
                   <p className="text-4xl">Landing Page</p>
                 </a>
               </motion.div>

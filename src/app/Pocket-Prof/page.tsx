@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import PPBanner from "../../../components/PageBanners/PPBanner";
 import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
-import PPPhone from "../../../components/PPPhone";
+import PPPhone from "../../../components/PhoneScreens/PPPhone/index";
 import NavBefore from "../../../public/Pocket-Prof/navBefore.png";
 import NavAfter from "../../../public/Pocket-Prof/navAfter.png";
 import { FaArrowDown } from "react-icons/fa";
@@ -240,18 +240,10 @@ const PocketProf = () => {
               </div>
             </div>
           </div>
+          <div className="grid h-screen place-content-center bg-neutral-900 p-12">
+          <PPPhone/>
+          </div>
 
-          {/* <div className="proj-outcome p-4 m-8 bg-[#a49e8e80] rounded-lg">
-            <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
-              Outcome
-            </h2>
-            <p className="text-center md:text-right p-4">
-              At the conclusion of the project the team produced a playable lofi
-              physical card game, 3 decks (Fire, Water, Ice) with 12 cards each
-              and a menu UI suitable to code for our development team
-            </p>
-            <PPPhone />
-          </div> */}
         </motion.section>
 
         {/* <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg"></motion.section> */}

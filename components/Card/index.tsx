@@ -14,7 +14,7 @@ export const Card: React.FC<CarouselCardProps> = ({ image, title }) => {
     <motion.div
       onHoverStart={() => setShowOverlay(true)}
       onHoverEnd={() => setShowOverlay(false)}
-      className="relative overflow-hidden h-[200px] lg:h-[600px] min-w-[200px] lg:w-[600px] bg-slate-400 flex justify-center items-center rounded-xl"
+      className="relative overflow-hidden h-[200px] lg:h-[700px] min-w-[200px] lg:w-[600px] bg-slate-400 flex justify-center items-center rounded-xl"
     >
       <AnimatePresence>
         {showOverlay && (
