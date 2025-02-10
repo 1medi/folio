@@ -6,7 +6,7 @@ import Image from "next/image";
 const Phone = () => {
   return (
     <section 
-    className="grid place-content-center p-12">
+    className=" place-content-center p-12 md:scale-125  ">
       <FloatingPhone />
     </section>
   );

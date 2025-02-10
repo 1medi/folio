@@ -72,17 +72,23 @@ const PocketProf = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row m-4">
-            <div className="user-workflow p-8 mr-4  bg-[#a49e8e80] rounded-lg ">
+            <div className="user-workflow p-8 mr-4  bg-[#a49e8e80] rounded-lg lg:w-3/5 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 User Workflow
               </h2>
-              <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
+              <div className="rounded-xl p-4">
+              <Image src={PPSitemap} alt="sitemap" />
+              </div>
+
             </div>
-            <div className="user-workflow p-8 ml-4  bg-[#a49e8e80] rounded-lg ">
+            <div className="user-workflow p-8 ml-4  bg-[#a49e8e80] rounded-lg lg:w-2/5 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 App Mockup
               </h2>
+              <div className="flex justify-center h-full items-center m-auto">
               <PPPhone />
+              </div>
+
             </div>
           </div>
 

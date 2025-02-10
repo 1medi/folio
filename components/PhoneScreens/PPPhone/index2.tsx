@@ -17,7 +17,7 @@ const PhoneSimulator = () => {
   }, []);
 
   return (
-    <div className="relative w-[300px] h-[800px] mx-auto overflow-hidden"> {/* Apply overflow-hidden here */}
+    <div className="relative w-[300px] h-[800px] mx-auto overflow-hidden md:scale-150"> {/* Apply overflow-hidden here */}
       {/* Screens (Background) */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
@@ -27,7 +27,7 @@ const PhoneSimulator = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
-            className="absolute inset-0 flex items-center justify-center"
+            className="absolute inset-0 flex items-center justify-center md:scale-150"
             style={{ height: "100%" }}
           >
             <Image
