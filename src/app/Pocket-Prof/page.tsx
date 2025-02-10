@@ -72,25 +72,17 @@ const PocketProf = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row m-4">
-            {/* <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg lg:w-1/3 lg:mr-4">
-              <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
-                Design Decisions
-              </h2>
-              <div className="m-auto flex sm:flex-col lg:flex-row">
-                <p className="text-left p-4">
-                  This was a rigourous process which involved many steps such as
-                  theory crafting, rule making, character design. We were also
-                  tasked with determining the flow and gameplay the users
-                  experienced.
-                </p>
-              </div>
-            </div> */}
-
-            <div className="user-workflow p-8  bg-[#a49e8e80] rounded-lg ">
-              <h2 className="text-center text-4xl font-medium p-4">
+            <div className="user-workflow p-8 mr-4  bg-[#a49e8e80] rounded-lg ">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 User Workflow
               </h2>
               <Image className="rounded-xl" src={PPSitemap} alt="sitemap" />
+            </div>
+            <div className="user-workflow p-8 ml-4  bg-[#a49e8e80] rounded-lg ">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+                App Mockup
+              </h2>
+              <PPPhone />
             </div>
           </div>
 
@@ -240,10 +232,6 @@ const PocketProf = () => {
               </div>
             </div>
           </div>
-          <div className="grid h-screen place-content-center bg-neutral-900 p-12">
-          <PPPhone/>
-          </div>
-
         </motion.section>
 
         {/* <motion.section className="bg-[#a49e8d] m-4 p-12 rounded-lg"></motion.section> */}
