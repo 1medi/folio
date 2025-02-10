@@ -7,9 +7,9 @@ export default function LogoComparison() {
     <div style={{}}>
     <ImgComparisonSlider
     >
-      <img className="bg-slate-500 block w-full lg:h-[150px]" slot="first" src="/Aether/AetherOld.png" />
+      <img className="bg-slate-500 block w-full lg:h-[175px] p-4" slot="first" src="/Aether/AetherOld.png" />
       <figcaption>Before</figcaption>
-      <img className="h-[300px] block w-full lg:h-[150px]" slot="second" src="/Aether/AetherNew.png" />
+      <img className="block w-full lg:h-[175px] p-4" slot="second" src="/Aether/AetherNew.png" />
       <figcaption>After</figcaption>
     </ImgComparisonSlider>
     </div>

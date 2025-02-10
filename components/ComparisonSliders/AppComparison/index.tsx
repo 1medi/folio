@@ -9,7 +9,7 @@ export default function LogoComparison() {
     >
       <img className="bg-slate-500 block w-full lg:h-[550px]" slot="first" src="/Aether/appOld.png" />
       <figcaption>Before</figcaption>
-      <img className="h-[300px] block w-full lg:h-[550px]" slot="second" src="/Aether/appNew.png" />
+      <img className=" block w-full lg:h-[550px]" slot="second" src="/Aether/appNew.png" />
       <figcaption>After</figcaption>
     </ImgComparisonSlider>
     </div>

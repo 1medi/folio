@@ -17,7 +17,14 @@ import Persona2 from "../../../public/personas/persona2.png";
 import LogoComparison from "../../../components/ComparisonSliders/LogoComparison";
 import Parallax from "../../../components/Parallax/index";
 import AppComparison from "../../../components/ComparisonSliders/AppComparison";
-import { SiGooglecloud, SiFigma, SiExpo, SiReact, SiOpenai, SiMongodb } from 'react-icons/si';
+import {
+  SiGooglecloud,
+  SiFigma,
+  SiExpo,
+  SiReact,
+  SiOpenai,
+  SiMongodb,
+} from "react-icons/si";
 
 const Aether = () => {
   return (
@@ -97,7 +104,7 @@ const Aether = () => {
                 managing forms and paperwork! Through the team's research and
                 surveying, it was found that caregivers felt:
               </p>
-              <ul className="list-disc text-center lg:text-xl">
+              <ul className=" text-center lg:text-xl">
                 <li>Repetitive paperwork is tiring understanding </li>
                 <li>Learning legal terms is stressful</li>
                 <li>Time spent on forms, meant time lost with loved ones</li>
@@ -119,7 +126,7 @@ const Aether = () => {
                     alt="action"
                     width={64}
                   />
-                  <h1 className="text-xl font-semibold">ChatGPT</h1>
+                  <h1 className="text-xl lg:text-3xl font-semibold">ChatGPT</h1>
                 </div>
                 <p className="m-auto min-h-[200px]">
                   A large language model that can be used to help answer
@@ -137,7 +144,7 @@ const Aether = () => {
                     alt="action"
                     width={64}
                   />
-                  <h1 className="text-xl font-semibold">PDF.ai</h1>
+                  <h1 className="text-xl lg:text-3xl font-semibold">PDF.ai</h1>
                 </div>
                 <p className="m-auto min-h-[200px]">
                   PDF.ai is an AI-powered tool designed to interact with and
@@ -156,7 +163,9 @@ const Aether = () => {
                     alt="action"
                     width={64}
                   />
-                  <h1 className="text-xl font-semibold">Quillbot</h1>
+                  <h1 className="text-xl lg:text-3xl font-semibold">
+                    Quillbot
+                  </h1>
                 </div>
                 <p className="m-auto min-h-[200px]">
                   Started in 2017 as an app to help students improve their
@@ -188,7 +197,9 @@ const Aether = () => {
                     />
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl lg:text-3xl font-semibold">Personal Details</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">
+                      Personal Details
+                    </h4>
                     <ul className="list-disc m-2">
                       <li className="text-2xl">
                         <span className="font-bold">Age: </span> 57
@@ -213,7 +224,9 @@ const Aether = () => {
                     </ul>
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl lg:text-3xl font-semibold">Key Behaviours</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">
+                      Key Behaviours
+                    </h4>
                     <ul className="list-disc m-2">
                       <li>
                         Uses digital tools like calendars to keep track of tasks
@@ -238,7 +251,9 @@ const Aether = () => {
                     </ul>
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl lg:text-3xl font-semibold">Must Have's</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">
+                      Must Have's
+                    </h4>
                     <ul className="list-disc">
                       <li>
                         Easy access homepage to quickly navigate features she
@@ -256,7 +271,9 @@ const Aether = () => {
                     </ul>
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl lg:text-3xl font-semibold">Never Do's</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">
+                      Never Do's
+                    </h4>
                     <ul className="list-disc">
                       <li>Cluttered layout</li>
                       <li>Unclear design</li>
@@ -267,12 +284,20 @@ const Aether = () => {
                     </ul>
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl lg:text-3xl font-semibold">Key Tasks</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">
+                      Key Tasks
+                    </h4>
                     <ul className="list-disc">
-                      <li>Keeping records of each seniors information in a timely / accessible manner</li>
-                      <li>Reviewing forms to ensure all information is correct</li>
                       <li>
-                        Understanding the UX / UI to efficently use the technology
+                        Keeping records of each seniors information in a timely
+                        / accessible manner
+                      </li>
+                      <li>
+                        Reviewing forms to ensure all information is correct
+                      </li>
+                      <li>
+                        Understanding the UX / UI to efficently use the
+                        technology
                       </li>
                     </ul>
                   </div>
@@ -299,7 +324,7 @@ const Aether = () => {
                 <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">
                   Who We Surveyed
                 </h4>
-                <p className="text-center">
+                <p className="text-center text-lg">
                   We conducted 2 rounds of interviews, 1 for our initial idea
                   which was more focused on an older demographic looking for a
                   solution to easily file forms while the second was more
@@ -313,9 +338,11 @@ const Aether = () => {
                 </h4>
                 <div className="survey-findings flex flex-col lg:grid grid-cols-2">
                   <div className="m-2">
-                    <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">Commonalities</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">
+                      Commonalities
+                    </h4>
                     <div>
-                      <ul>
+                      <ul className="text-lg">
                         <li className="p-2">
                           <span className="font-bold">
                             Form Complexity and Stress:
@@ -367,9 +394,11 @@ const Aether = () => {
                     </div>
                   </div>
                   <div className="m-2">
-                    <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">Pain Points</h4>
-                    <div>
-                      <ul>
+                    <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">
+                      Pain Points
+                    </h4>
+                    <div className="h-4/5 p-8">
+                      <ul className="h-full text-lg justify-between items-stretch flex flex-col ">
                         <li className="p-2">
                           <span className="font-bold">Forms:</span> Users find
                           forms challenging due to complex terminology, lengthy
@@ -404,25 +433,65 @@ const Aether = () => {
               <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                 Design Decisions
               </h2>
-              <p className="text-left p-4">
+              <p className="text-left p-4 text-lg">
                 Whether it be the logo, blog or application, Aether underwent
                 many shifts in creative direction
               </p>
               <div className="m-auto items-center flex flex-col">
                 <div className="logo">
-                  <h1 className="text-center">Logo</h1>
+                  <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
+                    Logo
+                  </h1>
                   <div>
                     <LogoComparison />
                   </div>
+                  <p></p>
                 </div>
-                <div className="blog">
-                  <h1 className="text-center">Blog</h1>
-                </div>
+
                 <div className="App">
-                  <h1 className="text-center">App</h1>
+                  <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
+                    App
+                  </h1>
                 </div>
                 <div>
                   <AppComparison />
+                </div>
+                <div className="name">
+                  <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
+                    Name
+                  </h1>
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <h2 className="font-bold">Elder Ease</h2>
+                      <p>
+                        Originating from our favourite LLM, Elder Ease was the
+                        inital name of the project. Meant to signify the ease
+                        our under-represented demographic would experience when
+                        using the app!
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <h2 className="font-bold">Nimbus</h2>
+                      <p>
+                        Further discussions brought up the issue that the term
+                        "Elder" can limit our potential scalability of our app,
+                        boxing us into a certain demographic. Therefor a changed
+                        was needed and Nimbus was a name that stuck with the
+                        entire team.
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <h2 className="font-bold">Aether</h2>
+                      <p>
+                        The team attemptted to find a connection between our
+                        product name and the user up high in the clouds having a
+                        sense of safety and security. Although, further
+                        researched uncovered that "Nimbus" was a derogatory
+                        term. So Aether, a term akin to the values we hold
+                        dearly, appeared to be apt.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -431,40 +500,94 @@ const Aether = () => {
               <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
                 Marketing
               </h2>
-              <div className="promo-videos flex flex-col justify-center items-center ">
-                <p className="text-center md:text-right p-4">
-                  On top of the various aspects of designing and developing the
-                  core application, we had to create other components to support
-                  our app, including physical goods such as: Brochures, Tote
-                  Bags and even a commerical!
-                </p>
-                <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
-                  <NextVideo
-                    className="m-4"
-                    style={{ zIndex: 1, height: "100%", width: "100%" }}
-                    src={AetherPromo}
-                  />
+              <div className="flex flex-col h-[90%] justify-between">
+                <div className="promo-videos flex flex-col justify-center items-center ">
+                  <p className="text-center text-xl m-4">
+                    On top of the various aspects of designing and developing
+                    the core application, we had to create other components to
+                    support our app, including physical goods such as:
+                    Brochures, Tote Bags and even a commerical!
+                  </p>
+                  <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
+                    <NextVideo
+                      className="m-4"
+                      style={{ zIndex: 1, height: "100%", width: "100%" }}
+                      src={AetherPromo}
+                    />
+                  </div>
+                </div>
+                <div className="promo-videos flex flex-col justify-center items-center">
+                  <div className="flex flex-col justify-center items-center w-[300px] lg:w-full lg:m-auto">
+                    <NextVideo
+                      className="m-4"
+                      style={{ zIndex: 1, height: "100%", width: "100%" }}
+                      src={AetherMockup}
+                      autoPlay
+                      loop
+                    />
+                    <p>
+                      A mockup created by the team displayed on the blog page.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="promo-videos flex flex-col justify-center items-center">
-                <p className="text-center md:text-right p-4">
-                  At the conclusion of the project the team produced a playable
-                  lofi physical card game, 3 decks (Fire, Water, Ice) with 12
-                  cards each and a menu UI suitable to code for our development
-                  team
-                </p>
-                <div className="flex flex-col justify-center items-center w-[300px] lg:w-full lg:m-auto">
-                  <NextVideo
-                    className="m-4"
-                    style={{ zIndex: 1, height: "100%", width: "100%" }}
-                    src={AetherMockup}
-                    autoPlay
-                    loop
-                  />
-                  <p>
-                    A mockup created by the team displayed on the blog page.
-                  </p>
-                </div>
+            </div>
+          </div>
+          <div className="last-row flex flex-col lg:flex-row">
+            <div className="future p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/2">
+              <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-left p-4">
+                Future Prospects
+              </h2>
+              <div className="text flex flex-col justify-center items-center ">
+                <ul className=" m-4">
+                  <li className="text-lg">
+                    <span className="font-bold">'Photo-to-PDF' Feature: </span>{" "}
+                    This feature allows caregivers to take photos of forms with
+                    their phones and convert them into editable PDFs in just a
+                    few clicks.
+                  </li>
+                  <li className="text-lg">
+                    <span className="font-bold">
+                      Expanded Library of Supported Forms:{" "}
+                    </span>
+                    We are building a database of forms that caregivers can
+                    easily search and access, ensuring they can find the
+                    specific forms they need.
+                  </li>
+                  <li className="text-lg">
+                    <span className="font-bold">
+                      Multilingual Support for Diverse Users:
+                    </span>{" "}
+                    This feature can help caregivers use our app in their
+                    preferred languages.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="future p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:ml-4 lg:w-1/2">
+              <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
+                Lessons Learned
+              </h2>
+              <div className="text flex flex-col justify-center items-center ">
+                <ul className="m-4 text-right">
+                  <li className="text-lg">
+                    Effective communication when collaborating in a large,
+                    cross-functional team with diverse roles.
+                  </li>
+                  <li className="text-lg">
+                    The importance of organizing smaller team discussions when
+                    needed, staying flexible, and addressing issues early in the
+                    process
+                  </li>
+                  <li className="text-lg">
+                    The value of competitive analysis to understand industry
+                    standards and identifying gaps within the market.
+                  </li>
+                  <li className="text-lg">
+                    How to effectively change project trajectory to meet
+                    deadlines with available resources.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
