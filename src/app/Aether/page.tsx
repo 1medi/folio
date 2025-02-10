@@ -20,7 +20,7 @@ import AppComparison from "../../../components/ComparisonSliders/AppComparison";
 const Aether = () => {
   return (
     <>
-      <Parallax />
+      {/* <Parallax /> */}
       <Header />
       <AEBanner />
 
