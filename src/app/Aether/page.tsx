@@ -508,7 +508,7 @@ const Aether = () => {
                     support our app, including physical goods such as:
                     Brochures, Tote Bags and even a commerical!
                   </p>
-                  <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
+                  <div className="flex justify-center items-center w-[300px] h-full lg:w-full lg:m-auto">
                     <NextVideo
                       className="m-4"
                       style={{ zIndex: 1, height: "100%", width: "100%" }}
@@ -517,7 +517,7 @@ const Aether = () => {
                   </div>
                 </div>
                 <div className="promo-videos flex flex-col justify-center items-center">
-                  <div className="flex flex-col justify-center items-center w-[300px] lg:w-full lg:m-auto">
+                  <div className="flex flex-col justify-center items-center h-full w-[300px] lg:w-full lg:m-auto">
                     <NextVideo
                       className="m-4"
                       style={{ zIndex: 1, height: "100%", width: "100%" }}
