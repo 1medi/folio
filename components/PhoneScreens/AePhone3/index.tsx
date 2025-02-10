@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import Ae1 from "../../../public/Aether/aescreen5.png"
+import Ae1 from "../../../public/Aether/aescreen3.png"
 import Image from "next/image";
 
 const AePhone3 = () => {
   return (
     <section 
-    className="h-screen flex justify-center items-center">
+    className="h-screen flex justify-center items-center md:scale-150">
       <FloatingPhone />
     </section>
   );
@@ -57,7 +57,7 @@ const HeaderBar = () => {
 
 const Screen = () => {
   return (
-    <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
+    <div className="relative z-0 grid h-full w-full object-scale-down place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
 <Image
 src={Ae1}

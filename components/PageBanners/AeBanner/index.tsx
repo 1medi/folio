@@ -9,8 +9,7 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 
-
-const COLORS = ["#5E86A0", "#1B425E", "#A7C6DD"];// Shades from the mascot
+const COLORS = ["#5E86A0", "#1B425E", "#A7C6DD"]; // Shades from the mascot
 const AEBanner = () => {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
@@ -40,12 +39,17 @@ const AEBanner = () => {
           textAlign: "center",
           backgroundImage,
         }}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{ duration: 1 }}
       >
         <div className="flex flex-col mt-24 justify-center items-center">
           <div className="flex flex-col">
-              <h1 className="text-center font-bold mb-4 text-7xl flex flex-row justify-center">
-                Aether
-              </h1>
+            <h1 className="text-center font-bold mb-4 text-7xl flex flex-row justify-center">
+              Aether
+            </h1>
             <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Mobile App
             </h2>
@@ -62,7 +66,10 @@ const AEBanner = () => {
                 transition={{ ease: "backInOut" }}
                 className="bg-[#012d5e]  p-2 rounded-2xl m-4 w-1/2 "
               >
-                <a href="https://aether-landing-seven.vercel.app/" target="_blank">
+                <a
+                  href="https://aether-landing-seven.vercel.app/"
+                  target="_blank"
+                >
                   <p className="text-4xl">Landing Page</p>
                 </a>
               </motion.div>

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import Ae1 from "../../../public/Aether/aescreen3.png"
+import Ae1 from "../../../public/Aether/aescreen5.png"
 import Image from "next/image";
 
 const AePhone2 = () => {
   return (
     <section 
-    className="h-screen flex justify-center items-center">
+    className="h-screen flex justify-center items-center md:scale-150">
       <FloatingPhone />
     </section>
   );

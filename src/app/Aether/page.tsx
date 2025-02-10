@@ -15,13 +15,15 @@ import AetherMockup from "../../../videos/aether_app_mockup.mp4";
 import Persona1 from "../../../public/personas/persona1.jpg";
 import Persona2 from "../../../public/personas/persona2.png";
 import LogoComparison from "../../../components/ComparisonSliders/LogoComparison";
-import Parallax from "../../../components/Parallax";
+import Parallax from "../../../components/Parallax/index";
 import AppComparison from "../../../components/ComparisonSliders/AppComparison";
+import { SiGooglecloud, SiFigma, SiExpo, SiReact, SiOpenai, SiMongodb } from 'react-icons/si';
+
 const Aether = () => {
   return (
     <>
-      {/* <Parallax /> */}
       <Header />
+      <Parallax />
       <AEBanner />
 
       <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
@@ -32,12 +34,30 @@ const Aether = () => {
                 Tools Used
               </h2>
               <ul className="p-6 text-center lg:grid lg:grid-cols-2 ">
-                <li className="text-2xl p-2">Google Cloud Vision</li>
-                <li className="text-2xl p-2 ">Figma</li>
-                <li className="text-2xl p-2">Expo</li>
-                <li className="text-2xl p-2">React Native</li>
-                <li className="text-2xl p-2">OpenAI</li>
-                <li className="text-2xl p-2">Mongo DB</li>
+                <li className="text-2xl p-2">
+                  <SiGooglecloud className="inline-block mr-2" />
+                  Google Cloud Vision
+                </li>
+                <li className="text-2xl p-2">
+                  <SiFigma className="inline-block mr-2" />
+                  Figma
+                </li>
+                <li className="text-2xl p-2">
+                  <SiExpo className="inline-block mr-2" />
+                  Expo
+                </li>
+                <li className="text-2xl p-2">
+                  <SiReact className="inline-block mr-2" />
+                  React Native
+                </li>
+                <li className="text-2xl p-2">
+                  <SiOpenai className="inline-block mr-2" />
+                  OpenAI
+                </li>
+                <li className="text-2xl p-2">
+                  <SiMongodb className="inline-block mr-2" />
+                  Mongo DB
+                </li>
               </ul>
             </div>
             <div className="md:w-1/2">
@@ -57,7 +77,7 @@ const Aether = () => {
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 What is Aether?
               </h2>
-              <p className="p-4 text-center">
+              <p className="p-4 lg:text-xl text-center">
                 Aether’s unique approach allows our audience to scan paper forms
                 and upload documents to their mobile devices, convert them into
                 editable digital versions, and simplify complicated terminology
@@ -71,13 +91,13 @@ const Aether = () => {
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Identifying The Issue
               </h2>
-              <p className="p-4">
-                <span className="font-bold text-xl">Did you know? </span>
+              <p className="p-4 lg:text-xl">
+                <span className="font-bold text-2xl">Did you know? </span>
                 Caregivers spend up to an average of 10-15 hours per week
                 managing forms and paperwork! Through the team's research and
                 surveying, it was found that caregivers felt:
               </p>
-              <ul className="list-disc">
+              <ul className="list-disc text-center lg:text-xl">
                 <li>Repetitive paperwork is tiring understanding </li>
                 <li>Learning legal terms is stressful</li>
                 <li>Time spent on forms, meant time lost with loved ones</li>
@@ -156,44 +176,44 @@ const Aether = () => {
                 User Personas
               </h2>
               <div>
-                <div className="persona1 flex flex-col lg:grid grid-cols-2 gap-3 ">
-                  <div className="flex flex-col justify-center items-center ">
-                    <h3 className="text-2xl lg:text-3xl font-bold m-2">
+                <div className="persona1 flex flex-col lg:grid grid-cols-2 ">
+                  <div className="flex flex-row justify-center items-center ">
+                    <h3 className="text-2xl lg:text-5xl font-bold m-2 l:m-4">
                       Sarah James
                     </h3>
                     <Image
-                      className="w-[200px] h-[200px] m-2 rounded-lg"
+                      className="w-[200px] h-[200px] m-2 lg:m-4 rounded-lg"
                       src={Persona1}
                       alt="Sarah James"
                     />
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl font-semibold">Personal Details</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">Personal Details</h4>
                     <ul className="list-disc m-2">
-                      <li>
+                      <li className="text-2xl">
                         <span className="font-bold">Age: </span> 57
                       </li>
-                      <li>
+                      <li className="text-2xl">
                         <span className="font-bold">Gender: </span>Female
                       </li>
-                      <li>
+                      <li className="text-2xl">
                         <span className="font-bold">Occupation:</span> Senior
                         Home Caregiver
                       </li>
-                      <li>
+                      <li className="text-2xl">
                         <span className="font-bold">Income: </span>$70,000
                       </li>
-                      <li>
+                      <li className="text-2xl">
                         <span className="font-bold">Location:</span> Coquitlam,
                         BC
                       </li>
-                      <li>
+                      <li className="text-2xl">
                         <span className="font-bold">Ethnicity:</span> Caucasian
                       </li>
                     </ul>
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl font-semibold">Key Behaviours</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">Key Behaviours</h4>
                     <ul className="list-disc m-2">
                       <li>
                         Uses digital tools like calendars to keep track of tasks
@@ -218,7 +238,7 @@ const Aether = () => {
                     </ul>
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl font-semibold">Must Have's</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">Must Have's</h4>
                     <ul className="list-disc">
                       <li>
                         Easy access homepage to quickly navigate features she
@@ -236,13 +256,23 @@ const Aether = () => {
                     </ul>
                   </div>
                   <div className="m-4">
-                    <h4 className="text-xl font-semibold">Never Do's</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold">Never Do's</h4>
                     <ul className="list-disc">
                       <li>Cluttered layout</li>
                       <li>Unclear design</li>
                       <li>
                         Layouts that aren’t practical (like going through
                         several pages to get to account information)
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="m-4">
+                    <h4 className="text-xl lg:text-3xl font-semibold">Key Tasks</h4>
+                    <ul className="list-disc">
+                      <li>Keeping records of each seniors information in a timely / accessible manner</li>
+                      <li>Reviewing forms to ensure all information is correct</li>
+                      <li>
+                        Understanding the UX / UI to efficently use the technology
                       </li>
                     </ul>
                   </div>
@@ -265,10 +295,10 @@ const Aether = () => {
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-xl font-semibold text-center m-2">
+              <div className="m-2 lg:m-4">
+                <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">
                   Who We Surveyed
-                </h3>
+                </h4>
                 <p className="text-center">
                   We conducted 2 rounds of interviews, 1 for our initial idea
                   which was more focused on an older demographic looking for a
@@ -277,13 +307,13 @@ const Aether = () => {
                   responsible for filling out forms for seniors.
                 </p>
               </div>
-              <div className="results-container m-2">
-                <h3 className="text-center text-xl font-semibold ">
+              <div className="results-container m-2 lg:m-4">
+                <h4 className="text-xl lg:text-3xl font-semibold text-center">
                   Major Findings / Pain Points
-                </h3>
+                </h4>
                 <div className="survey-findings flex flex-col lg:grid grid-cols-2">
                   <div className="m-2">
-                    <h4 className="text-center text-lg">Commonalities</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">Commonalities</h4>
                     <div>
                       <ul>
                         <li className="p-2">
@@ -337,7 +367,7 @@ const Aether = () => {
                     </div>
                   </div>
                   <div className="m-2">
-                    <h4 className="text-center text-lg">Pain Points</h4>
+                    <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">Pain Points</h4>
                     <div>
                       <ul>
                         <li className="p-2">
@@ -431,7 +461,9 @@ const Aether = () => {
                     autoPlay
                     loop
                   />
-                  <p>A mockup created by the team displayed on the blog page.</p>
+                  <p>
+                    A mockup created by the team displayed on the blog page.
+                  </p>
                 </div>
               </div>
             </div>

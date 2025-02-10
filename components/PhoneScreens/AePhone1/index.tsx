@@ -5,8 +5,7 @@ import Image from "next/image";
 
 const AePhone1 = () => {
   return (
-    <section 
-    className="h-screen flex justify-center items-center">
+    <section className="h-screen flex justify-center items-center md:scale-150 ">
       <FloatingPhone />
     </section>
   );
@@ -19,7 +18,7 @@ const FloatingPhone = () => {
         transformStyle: "preserve-3d",
         transform: "rotateY(-30deg) rotateX(15deg)",
       }}
-      className="rounded-[24px] bg-[#9FC3E5]"
+      className="rounded-[24px] bg-[#9FC3E5] transform"
     >
       <motion.div
         initial={{
@@ -59,13 +58,10 @@ const Screen = () => {
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
-<Image
-src={Ae1}
-alt="phone"
-/>
-
-      {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
-      {/* <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-violet-500" /> */}
+      <Image
+        src={Ae1}
+        alt="phone"
+      />
     </div>
   );
 };
