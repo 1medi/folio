@@ -28,7 +28,7 @@ const Aether = () => {
   return (
     <>
       <Header />
-      <main className="max-h-screen snap-y snap-mandatory" >
+      <main className="max-h-screen snap-y" >
         <Parallax />
         <div className="snap-always snap-start">
           <AEBanner />

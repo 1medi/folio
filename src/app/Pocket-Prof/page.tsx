@@ -8,19 +8,8 @@ import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import PPPhone from "../../../components/PhoneScreens/PPPhone/index";
 import PPNav from "../../../components/ComparisonSliders/PPNav";
 import PPMain from "../../../components/ComparisonSliders/PPMain";
-import { useEffect } from "react";
-import Lenis from "lenis";
 
 const PocketProf = () => {
-
-  useEffect(() => {
-    const lenis = new Lenis();
-    function raf(time: any) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-  }, []);
 
   return (
     <>

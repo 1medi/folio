@@ -4,19 +4,9 @@ import Footer from "../../../components/Footer";
 import { motion } from "framer-motion";
 import LBBanner from "../../../components/PageBanners/LBBanner";
 import FramerCarousel from "../../../components/FramerCarousel";
-import { useEffect } from "react";
-import Lenis from "lenis";
 
 const LutongBahay = () => {
 
-  useEffect(() => {
-    const lenis = new Lenis();
-    function raf(time: any) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-  }, []);
 
   return (
     <>
