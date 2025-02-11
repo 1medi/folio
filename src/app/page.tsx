@@ -1,14 +1,15 @@
 "use client";
 import Banner from "../../components/PageBanners/Banner";
-import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import About from "../../components/About";
-// import Gallery from "../../components/Gallery";
-import Contact from "../../components/Contact";
 import AboutP from "../../components/About-p/index";
-import Carousel from "../../components/InfiniteCarousel";
 import Lenis from "lenis";
 import { useEffect } from "react";
+import dynamic from "next/dynamic";
+
+const DynamicCarousel = dynamic(() => import('../../components/InfiniteCarousel'), {
+  loading: () => <p>Loading...</p>,
+})
 
 export default function Home() {
     useEffect(() => {
@@ -22,12 +23,9 @@ export default function Home() {
   return (
     <>
       <Banner />
-      {/* <Header /> */}
       <AboutP />
-      {/* <Gallery /> */}
-      <Carousel/>
+      <DynamicCarousel/>
       <About />
-      {/* <Contact /> */}
       <Footer />
     </>
   );
