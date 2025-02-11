@@ -110,7 +110,7 @@ const ACG = () => {
 
             <div className="flex p-4 flex-col w-full justify-center items-center lg:flex-row">
               <div className="Colors flex-col justify-center items-center m-auto lg:w-1/2 lg:m-16">
-                <div className="photo-container w-[200px] m-auto lg:w-full lg:flex">
+                <div className="photo-container w-[200px] m-auto lg:w-full lg:flex xl:w-[500px]">
                   <Image
                     src={ACGColors}
                     alt="colors "
@@ -138,7 +138,7 @@ const ACG = () => {
               <div className="Everything Else m-auto w-full lg:w-1/2">
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container w-[250px] lg:w-[500px] flex m-8">
+                  <div className="photo-container w-[250px] lg:w-[500px]  flex m-8">
                     <Image
                       src={ACGMeasurements}
                       alt="colors"
@@ -159,7 +159,7 @@ const ACG = () => {
                 </div>
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container w-[250px] flex m-4">
+                  <div className="photo-container w-[250px] xl:w-[500px] flex m-4">
                     <Image
                       src={ACGType}
                       alt="colors"
@@ -175,7 +175,7 @@ const ACG = () => {
                 </div>
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container w-[250px] flex m-4">
+                  <div className="photo-container w-[250px] xl:w-[500px] flex m-4">
                     <Image
                       src={ACGLogo}
                       alt="colors"
