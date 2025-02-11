@@ -6,8 +6,9 @@ import { AnimatePresence, motion } from "framer-motion";
 interface CarouselCardProps {
   image: string;
   title: string;
+  description: string;
 }
-export const Card: React.FC<CarouselCardProps> = ({ image, title }) => {
+export const Card: React.FC<CarouselCardProps> = ({ image, title, description }) => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -24,20 +25,24 @@ export const Card: React.FC<CarouselCardProps> = ({ image, title }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <div className="absolute bg-[#a49e8e80] pointer-events-none  h-full w-full" />
-            <div className="flex flex-col">
-              <p className="m-auto text-black lg:text-5xl p-4">{title}</p>
-              <motion.h1
-                className="bg-white text-black font-semibold text-sm z-10 px-3 py-2 rounded-full flex items-center g-[0.5ch] hover:opacity-75"
-                initial={{ y: 10 }}
-                animate={{ y: 0 }}
-                exit={{ y: 10 }}
-                onClick={() => setIsOpen(true)}
-              >
-                <span>Click Here!</span>
-                <FaArrowRight className="h-4 w-4 p-1" />
-              </motion.h1>
+            <div className="absolute  pointer-events-none  h-full w-full" />
+            <div className="bg-[#a49e8e80] h-full w-full flex justify-center items-center">
+              <div className="flex flex-col flex-wrap">
+                <p className="m-auto text-black lg:text-5xl p-4">{title}</p>
+                <p className="m-auto text-black lg:text-4xl p-4 text-center">{description}</p>
+                <motion.h1
+                  className="bg-white m-auto text-black font-semibold text-sm z-10 px-3 py-2 rounded-full flex items-center g-[0.5ch] hover:opacity-75"
+                  initial={{ y: 10 }}
+                  animate={{ y: 0 }}
+                  exit={{ y: 10 }}
+                  onClick={() => setIsOpen(true)}
+                >
+                  <span>Click Here!</span>
+                  <FaArrowRight className="h-4 w-4 p-1" />
+                </motion.h1>
+              </div>
             </div>
+
           </motion.div>
         )}
       </AnimatePresence>
