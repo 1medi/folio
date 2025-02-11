@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const AePhone1 = () => {
   return (
-    <section className="h-screen flex justify-center items-center md:scale-150 ">
+    <section className="h-screen h-screen flex justify-center items-center md:scale-150 xl:scale-300 ">
       <FloatingPhone />
     </section>
   );

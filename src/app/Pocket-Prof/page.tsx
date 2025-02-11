@@ -11,8 +11,18 @@ import NavAfter from "../../../public/Pocket-Prof/navAfter.png";
 import { FaArrowDown } from "react-icons/fa";
 import PPNav from "../../../components/ComparisonSliders/PPNav";
 import PPMain from "../../../components/ComparisonSliders/PPMain";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 const PocketProf = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, [])
   return (
     <>
       <Header />

@@ -27,13 +27,26 @@ import {
 } from "react-icons/si";
 
 const Aether = () => {
+
+  const headingVariants = {
+    initial: { y: 300, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    exit: { y: -300, opacity: 0 },
+  };
+
+
   return (
     <>
       <Header />
-      <Parallax />
-      <AEBanner />
+    <main className="max-h-screen snap-y snap-mandatory" >
+<Parallax/>
+      <div className="snap-always snap-start">
 
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
+      <AEBanner />
+      </div>
+
+
+      <section className=" snap-always snap-start flex flex-col items-center justify-center p-4 m-auto ">
         <motion.section className="w-full">
           <div className=" m-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
             <div className=" md:w-1/2">
@@ -179,8 +192,8 @@ const Aether = () => {
             </div>
           </div>
 
-          <div className="flex flex-col m-4">
-            <div className="about p-8 bg-[#a49e8e80] rounded-lg m-4 ">
+          <div className=" flex flex-col m-4">
+            <div className="snap-always snap-start about p-8 bg-[#a49e8e80] rounded-lg m-4 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 User Personas
               </h2>
@@ -305,7 +318,7 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4">
+            <div className="snap-always snap-start proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 User Research
               </h2>
@@ -428,7 +441,7 @@ const Aether = () => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row">
+          <div className="snap-always snap-start flex flex-col lg:flex-row">
             <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-2/5">
               <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                 Design Decisions
@@ -533,7 +546,7 @@ const Aether = () => {
               </div>
             </div>
           </div>
-          <div className="last-row flex flex-col lg:flex-row">
+          <div className="snap-always snap-start last-row flex flex-col lg:flex-row">
             <div className="future p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/2">
               <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-left p-4">
                 Future Prospects
@@ -592,9 +605,12 @@ const Aether = () => {
             </div>
           </div>
         </motion.section>
-      </main>
+      </section>
       <Footer />
+      </main>
+
     </>
+   
   );
 };
 

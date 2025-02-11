@@ -36,7 +36,7 @@ function ComponentWrapper({
 
   return (
     <section
-      className="y-snap h-screen flex justify-center items-center relative snap-start overflow-y-scroll"
+      className="y-snap h-full flex justify-center items-center relative snap-start overflow-y-scroll"
       style={{ backgroundColor }}
     >
       <div

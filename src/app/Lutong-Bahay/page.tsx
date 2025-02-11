@@ -7,7 +7,17 @@ import Image from "next/image";
 import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import PPPhone from "../../../components/PhoneScreens/PPPhone/index2";
 import FramerCarousel from "../../../components/FramerCarousel";
+import { useEffect } from "react";
+import Lenis from "lenis";
 const LutongBahay = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, [])
   return (
     <>
       <Header />

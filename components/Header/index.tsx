@@ -44,7 +44,7 @@ export default function Header() {
   );
 
   return (
-    <div className="sticky top-0 z-50 w-full overflow-hidden text-white">
+    <div className="fixed top-0 z-50 w-full overflow-hidden text-white">
       <motion.header
         style={{
           height: useTransform(

@@ -4,10 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-snap-type:y mandatory;
+}
+
 body {
   font-family: 'Jost', sans-serif;
   color: #ededed;
+
 }
+
 
 :root {
   --background: #1E150A;

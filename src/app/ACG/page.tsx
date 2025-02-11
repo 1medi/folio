@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import ACGBanner from "../../../components/PageBanners/ACGBanner";
@@ -16,8 +16,17 @@ import ACGMeasurements from "/public/ACG/measurements.png";
 import ACGType from "/public/ACG/typography.png";
 import ACGGamem from "/public/ACG/gamemeasurements.png";
 import ACGLogo from "/public/ACG/logo.png";
+import Lenis from "lenis";
 
 const ACG = () => {
+    useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, [])
   return (
     <>
       <Header />
