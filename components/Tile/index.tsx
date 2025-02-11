@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Lutong from "../../public/BAHAY.png";
 
 const colors = ["#C9C19F", "#EDF7D2", "#EDF7D2", "#EB5160"];
 // const ColorsRandom = Math.floor(Math.random() * colors.length) What i did before / not working since it was a constant value and not calculated while hover!
@@ -15,14 +14,3 @@ const Tile = () => {
 };
 
 export default Tile;
-// "use client"
-// const Tile = () => {
-//   return (
-//     <div
-//       className="aspect-square bg-cover bg-center border-neutral-900 transition-colors duration-100 hover:opacity-80"
-//       style={{ backgroundImage: "url('/lutong.png')" }}
-//     />
-//   );
-// };
-
-// export default Tile;

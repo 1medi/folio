@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import ACGBanner from "../../../components/PageBanners/ACGBanner";
@@ -8,18 +8,15 @@ import NextVideo from "next-video";
 import AcgV from "../../../videos/acgpromo.mp4";
 import Lofi from "../../../videos/lofi.mp4";
 import Image from "next/image";
-import Gallery from "../../../components/Gallery";
-
 import ACGColors from "/public/ACG/colors.png";
-import ACGImagery from "/public/ACG/imagery.png";
 import ACGMeasurements from "/public/ACG/measurements.png";
 import ACGType from "/public/ACG/typography.png";
-import ACGGamem from "/public/ACG/gamemeasurements.png";
 import ACGLogo from "/public/ACG/logo.png";
 import Lenis from "lenis";
 
 const ACG = () => {
-    useEffect(() => {
+
+  useEffect(() => {
     const lenis = new Lenis();
     function raf(time: any) {
       lenis.raf(time);
@@ -27,6 +24,7 @@ const ACG = () => {
     }
     requestAnimationFrame(raf);
   }, [])
+
   return (
     <>
       <Header />
@@ -70,47 +68,47 @@ const ACG = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row">
-          <div className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
-            <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
-              Project Ideation
-            </h2>
-            <div className="justify-center items-center flex flex-col p-4">
-              <p className="text-left p-4">
-                At the conclusion of the project the team produced a playable
-                lofi physical card game, 3 decks (Fire, Water, Ice) with 12
-                cards each and a menu UI suitable to code for our development
-                team
-              </p>
-              <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
-                <NextVideo
-                  className="m-4"
-                  style={{ zIndex: 1, height: "100%" }}
-                  src={Lofi}
-                />
+            <div className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
+              <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
+                Project Ideation
+              </h2>
+              <div className="justify-center items-center flex flex-col p-4">
+                <p className="text-left p-4">
+                  At the conclusion of the project the team produced a playable
+                  lofi physical card game, 3 decks (Fire, Water, Ice) with 12
+                  cards each and a menu UI suitable to code for our development
+                  team
+                </p>
+                <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
+                  <NextVideo
+                    className="m-4"
+                    style={{ zIndex: 1, height: "100%" }}
+                    src={Lofi}
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-8 rounded-lg">
-            <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
-              Outcome
-            </h2>
-            <div className=" justify-center items-center flex flex-col  p-4">
-              <p className="text-right p-4">
-                At the conclusion of the project the team produced a playable
-                lofi physical card game, 3 decks (Fire, Water, Ice) with 12
-                cards each and a menu UI suitable to code for our development
-                team
-              </p>
-              <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
-                <NextVideo
-                  className="m-4"
-                  style={{ zIndex: 1, height: "100%", width: "100%" }}
-                  src={AcgV}
-                />
+            <div className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-8 rounded-lg">
+              <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
+                Outcome
+              </h2>
+              <div className=" justify-center items-center flex flex-col  p-4">
+                <p className="text-right p-4">
+                  At the conclusion of the project the team produced a playable
+                  lofi physical card game, 3 decks (Fire, Water, Ice) with 12
+                  cards each and a menu UI suitable to code for our development
+                  team
+                </p>
+                <div className="flex justify-center items-center w-[300px] lg:w-full lg:m-auto">
+                  <NextVideo
+                    className="m-4"
+                    style={{ zIndex: 1, height: "100%", width: "100%" }}
+                    src={AcgV}
+                  />
+                </div>
               </div>
             </div>
-          </div>
           </div>
 
 
@@ -171,11 +169,11 @@ const ACG = () => {
 
                 <div className="flex flex-col justify-center m-12 items-center">
                   <div className="photo-container w-[250px] flex m-4">
-                  <Image
-                    src={ACGType}
-                    alt="colors"
-                    className="rounded-lg m-2 w-full"
-                  />
+                    <Image
+                      src={ACGType}
+                      alt="colors"
+                      className="rounded-lg m-2 w-full"
+                    />
                   </div>
 
                   <p className="w-60 text-center m-4">
@@ -187,11 +185,11 @@ const ACG = () => {
 
                 <div className="flex flex-col justify-center m-12 items-center">
                   <div className="photo-container w-[250px] flex m-4">
-                  <Image
-                    src={ACGLogo}
-                    alt="colors"
-                    className="w-full rounded-lg m-2"
-                  />
+                    <Image
+                      src={ACGLogo}
+                      alt="colors"
+                      className="w-full rounded-lg m-2"
+                    />
                   </div>
                   <p className="w-60 text-center m-4">
                     The winged cards and the "ACG: Aspect of Elements" logo

@@ -3,13 +3,12 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import { motion } from "framer-motion";
 import LBBanner from "../../../components/PageBanners/LBBanner";
-import Image from "next/image";
-import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
-import PPPhone from "../../../components/PhoneScreens/PPPhone/index2";
 import FramerCarousel from "../../../components/FramerCarousel";
 import { useEffect } from "react";
 import Lenis from "lenis";
+
 const LutongBahay = () => {
+
   useEffect(() => {
     const lenis = new Lenis();
     function raf(time: any) {
@@ -17,7 +16,8 @@ const LutongBahay = () => {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-  }, [])
+  }, []);
+
   return (
     <>
       <Header />

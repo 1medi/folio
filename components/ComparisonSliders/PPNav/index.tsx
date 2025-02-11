@@ -1,8 +1,4 @@
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
-import NavBefore from "../../../public/Pocket-Prof/navBefore.png";
-import NavAfter from "../../../public/Pocket-Prof/navAfter.png";
-import "../PPNav/PPNav.styles.css"
-// ...
 
 export default function NavComparison() {
   return (

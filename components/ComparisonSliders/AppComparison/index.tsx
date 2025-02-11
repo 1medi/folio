@@ -1,7 +1,5 @@
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
 
-// ...
-
 export default function LogoComparison() {
   return (
     <div style={{}}>

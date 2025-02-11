@@ -59,7 +59,7 @@ const Banner = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 1 }}
             transition={{ delay: duration }}
-            className="text-xl sm:text-2xl lg:text-4xl m-auto p-4 lg:m-2 text-center text-white"
+            className="text-xl sm:text-2xl lg:text-4xl m-auto p-4 lg:m-2 xl:m-8 xl:text-3xl text-center text-white"
           >
             A Front-end developer with a strong passion in modern web
             technologies. With an unwavering interest in user-friendly designs
