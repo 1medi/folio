@@ -9,17 +9,15 @@ const Title = () => {
 
   return (
     <>
-      <motion.div
-        className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        animate={{
-          backgroundColor: isHovered ? "#DD8143" : "",
-        }}
-        transition={{ ease: "backInOut" }}
-      >
-        <Link
-          href="/ACG"
+      <Link href="/ACG">
+        <motion.div
+          className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          animate={{
+            backgroundColor: isHovered ? "#DD8143" : "",
+          }}
+          transition={{ ease: "backInOut" }}
         >
           <div className="flex flex-row flex-wrap relative justify-center items-center">
             <h1 className="font-bold pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
@@ -33,12 +31,7 @@ const Title = () => {
                 padding: isHovered ? "0rem 0.75rem" : "",
               }}
             >
-              <Image
-                src={First.src}
-                height={512}
-                width={512}
-                alt="aether"
-              />
+              <Image src={First.src} height={512} width={512} alt="aether" />
             </motion.div>
 
             <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
@@ -53,9 +46,8 @@ const Title = () => {
           >
             Learn More!
           </motion.p>
-        </Link>
-      </motion.div>
-
+        </motion.div>
+      </Link>
     </>
   );
 };

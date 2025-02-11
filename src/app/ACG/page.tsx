@@ -19,10 +19,14 @@ const ACG = () => {
   return (
     <>
       <Header />
-      <ACGBanner />
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 rounded-lg m-auto">
+
+      <main className="min-h-screen snap-y">
+        <div className="snap-always snap-start">
+        <ACGBanner />
+        </div>
+
         <motion.section className=" w-full ">
-          <div className=" w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+          <div className="snap-start snap-always w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="p-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
@@ -44,7 +48,7 @@ const ACG = () => {
             </div>
           </div>
 
-          <div className="about p-8 bg-[#a49e8e80] rounded-lg m-8">
+          <div className="about snap-always snap-start p-8 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               What is ACG?
             </h2>
@@ -58,7 +62,7 @@ const ACG = () => {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row">
+          <div className="snap-always snap-start flex flex-col lg:flex-row">
             <div className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
               <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
                 Project Ideation
@@ -103,7 +107,7 @@ const ACG = () => {
           </div>
 
 
-          <div className="proj-styleguide p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
+          <div className="proj-styleguide snap-always snap-start p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
@@ -159,7 +163,7 @@ const ACG = () => {
                 </div>
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container w-[250px] xl:w-[500px] flex m-4">
+                  <div className="snap-always snap-start photo-container w-[250px] xl:w-[500px] flex m-4">
                     <Image
                       src={ACGType}
                       alt="colors"
@@ -174,7 +178,7 @@ const ACG = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col justify-center m-12 items-center">
+                <div className="snap-always snap-start flex flex-col justify-center m-12 items-center">
                   <div className="photo-container w-[250px] xl:w-[500px] flex m-4">
                     <Image
                       src={ACGLogo}

@@ -66,7 +66,7 @@ export default function Carousel() {
   }, [xTranslation, width]);
 
   return (
-    <div className="overflow-x-hidden py-8 ">
+    <div className="overflow-x-hidden ">
       <h1 className="text-7xl text-center p-4 font-bold">Other Works</h1>
       <div className="w-screen overflow-x-hidden">
         <motion.div

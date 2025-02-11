@@ -9,18 +9,15 @@ const Title = () => {
 
   return (
     <>
-      <motion.div
-        className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
-
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        animate={{
-          backgroundColor: isHovered ? "#656384" : "",
-        }}
-        transition={{ ease: "backInOut" }}
-      >
-        <Link
-          href="/Pocket-Prof"
+      <Link href="/Pocket-Prof">
+        <motion.div
+          className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          animate={{
+            backgroundColor: isHovered ? "#656384" : "",
+          }}
+          transition={{ ease: "backInOut" }}
         >
           <div className="flex flex-row flex-wrap relative justify-center items-center">
             <h1 className="font-bold pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
@@ -49,8 +46,8 @@ const Title = () => {
           >
             Learn More!
           </motion.p>
-        </Link>
-      </motion.div>
+        </motion.div>
+      </Link>
     </>
   );
 };

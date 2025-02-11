@@ -29,10 +29,10 @@ export default function Banners() {
           className="m-8">
           <motion.h2
             variants={headingVariants}
-            className="m-4 text-white text-[56px] lg:text-[108px] xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+            className="m-4 text-white text-[56px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
           >
             summarize.<br />
-            <motion.p className="text-center text-2xl tracking-[0.2px] font-normal">Get the gist in seconds—Aether condenses complex forms into clear takeaways.</motion.p>
+            <motion.p className="text-center md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">Get the gist in seconds—Aether condenses complex forms into clear takeaways.</motion.p>
           </motion.h2>
 
         </motion.div>
@@ -53,10 +53,10 @@ export default function Banners() {
           className="m-8">
           <motion.h2
             variants={headingVariants}
-            className="m-4 text-white text-[56px] lg:text-[108px] xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+            className="m-4 text-white text-[56px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
           >
             simplify.<br />
-            <motion.p className="text-center text-2xl tracking-[0.2px] font-normal">Confusing paperwork? Aether rewrites it in plain, easy-to-understand language.</motion.p>
+            <motion.p className="text-center md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">Confusing paperwork? Aether rewrites it in plain, easy-to-understand language.</motion.p>
           </motion.h2>
         </motion.div>
 
@@ -78,10 +78,10 @@ export default function Banners() {
 
           <motion.h2
             variants={headingVariants}
-            className="m-4 text-white text-[56px] lg:text-[108px] xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+            className="m-4 text-white text-[56px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
           >
             streamline.<br />
-            <motion.p className="text-center text-2xl tracking-[0.2px] font-normal">From photo to form in one tap—Aether makes document handling effortless.</motion.p>
+            <motion.p className="text-center md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">From photo to form in one tap—Aether makes document handling effortless.</motion.p>
           </motion.h2>
         </motion.div>
 

@@ -14,6 +14,7 @@ import Persona1 from "../../../public/personas/persona1.jpg";
 import LogoComparison from "../../../components/ComparisonSliders/LogoComparison";
 import Parallax from "../../../components/Parallax/index";
 import AppComparison from "../../../components/ComparisonSliders/AppComparison";
+import AetherSolo from "../../../public/Aether/aetherSolo.png";
 import {
   SiGooglecloud,
   SiFigma,
@@ -22,20 +23,48 @@ import {
   SiOpenai,
   SiMongodb,
 } from "react-icons/si";
+import { IoIosArrowUp } from "react-icons/io";
+import { useState, useEffect } from "react";
 
 const Aether = () => {
+  const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
+
+  function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    // Show the button when the user scrolls down
+    if (window.scrollY > 100) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <Header />
-      <main className="max-h-screen snap-y" >
+      <main className="max-h-screen snap-y">
         <Parallax />
         <div className="snap-always snap-start">
           <AEBanner />
         </div>
-        <section className="snap-always snap-start flex flex-col items-center justify-center p-4 m-auto ">
+        <section className=" flex flex-col items-center justify-center p-4 m-auto ">
           <motion.section className="w-full">
-            <div className=" m-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
+            <div className=" snap-start m-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
               <div className=" md:w-1/2">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                   Tools Used
@@ -79,18 +108,18 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row m-4">
+            <div className=" snap-center flex flex-col lg:flex-row m-4">
               <div className="about p-8 bg-[#a49e8e80] rounded-lg m-4 lg:w-1/2 lg:ml-4 lg:mr-4 lg:m-2">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                   What is Aether?
                 </h2>
                 <p className="p-4 lg:text-xl text-center">
-                  Aether’s unique approach allows our audience to scan paper forms
-                  and upload documents to their mobile devices, convert them into
-                  editable digital versions, and simplify complicated terminology
-                  with a click of a buttton. Additionally, by addressing the
-                  administrative burden many Canadians face—especially the
-                  millions supporting elderly family members
+                  Aether’s unique approach allows our audience to scan paper
+                  forms and upload documents to their mobile devices, convert
+                  them into editable digital versions, and simplify complicated
+                  terminology with a click of a buttton. Additionally, by
+                  addressing the administrative burden many Canadians
+                  face—especially the millions supporting elderly family members
                 </p>
               </div>
 
@@ -112,7 +141,7 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-8">
+            <div className="proj-ideation snap-center p-8  bg-[#a49e8e80] rounded-lg mx-8">
               <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                 Competitive Analysis
               </h2>
@@ -126,7 +155,9 @@ const Aether = () => {
                       alt="action"
                       width={64}
                     />
-                    <h1 className="text-xl lg:text-3xl font-semibold">ChatGPT</h1>
+                    <h1 className="text-xl lg:text-3xl font-semibold">
+                      ChatGPT
+                    </h1>
                   </div>
                   <p className="m-auto min-h-[200px]">
                     A large language model that can be used to help answer
@@ -144,15 +175,17 @@ const Aether = () => {
                       alt="action"
                       width={64}
                     />
-                    <h1 className="text-xl lg:text-3xl font-semibold">PDF.ai</h1>
+                    <h1 className="text-xl lg:text-3xl font-semibold">
+                      PDF.ai
+                    </h1>
                   </div>
                   <p className="m-auto min-h-[200px]">
                     PDF.ai is an AI-powered tool designed to interact with and
                     analyze PDF documents, allowing users to ask questions,
                     extract data, and generate summaries, making document
                     comprehension and research more efficient. It is especially
-                    useful in professional settings for automating data extraction
-                    and gaining insights from complex texts.
+                    useful in professional settings for automating data
+                    extraction and gaining insights from complex texts.
                   </p>
                 </div>
                 <div className="m-4 md:m-2 flex flex-col md:w-1/3">
@@ -170,17 +203,18 @@ const Aether = () => {
                   <p className="m-auto min-h-[200px]">
                     Started in 2017 as an app to help students improve their
                     english when writing. Since then, it has evolved into a
-                    AI-powered writing platform. They are also partnered with 150
-                    universities. They have started expanding the use of AI in
-                    their website and app and adding new features to it such as
-                    citation, grammar check, summarizer, plagarism check, and more
+                    AI-powered writing platform. They are also partnered with
+                    150 universities. They have started expanding the use of AI
+                    in their website and app and adding new features to it such
+                    as citation, grammar check, summarizer, plagarism check, and
+                    more
                   </p>
                 </div>
               </div>
             </div>
 
             <div className=" flex flex-col m-4">
-              <div className="snap-always snap-start about p-8 bg-[#a49e8e80] rounded-lg m-4 ">
+              <div className="snap-center about p-8 bg-[#a49e8e80] rounded-lg m-4 ">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                   User Personas
                 </h2>
@@ -215,11 +249,12 @@ const Aether = () => {
                           <span className="font-bold">Income: </span>$70,000
                         </li>
                         <li className="text-2xl">
-                          <span className="font-bold">Location:</span> Coquitlam,
-                          BC
+                          <span className="font-bold">Location:</span>{" "}
+                          Coquitlam, BC
                         </li>
                         <li className="text-2xl">
-                          <span className="font-bold">Ethnicity:</span> Caucasian
+                          <span className="font-bold">Ethnicity:</span>{" "}
+                          Caucasian
                         </li>
                       </ul>
                     </div>
@@ -229,8 +264,8 @@ const Aether = () => {
                       </h4>
                       <ul className="list-disc m-2">
                         <li>
-                          Uses digital tools like calendars to keep track of tasks
-                          and to stay organized
+                          Uses digital tools like calendars to keep track of
+                          tasks and to stay organized
                         </li>
                         <li>
                           Uses alarms and reminders for submission deadlines and
@@ -265,8 +300,8 @@ const Aether = () => {
                           electronically,
                         </li>
                         <li>
-                          Good organization option to keep track of documents and
-                          forms
+                          Good organization option to keep track of documents
+                          and forms
                         </li>
                       </ul>
                     </div>
@@ -289,8 +324,8 @@ const Aether = () => {
                       </h4>
                       <ul className="list-disc">
                         <li>
-                          Keeping records of each seniors information in a timely
-                          / accessible manner
+                          Keeping records of each seniors information in a
+                          timely / accessible manner
                         </li>
                         <li>
                           Reviewing forms to ensure all information is correct
@@ -305,14 +340,14 @@ const Aether = () => {
                 </div>
               </div>
 
-              <div className="snap-always snap-start proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4">
+              <div className="snap-start proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                   User Research
                 </h2>
                 <div className="m-2">
                   <p>
-                    <span className="font-bold">Date of Report:</span> October 1,
-                    2024
+                    <span className="font-bold">Date of Report:</span> October
+                    1, 2024
                   </p>
                   <p>
                     <span className="font-bold">Date of Interviews:</span>{" "}
@@ -347,14 +382,15 @@ const Aether = () => {
                             <span className="font-bold">
                               Form Complexity and Stress:
                             </span>{" "}
-                            Users often find forms challenging due to complicated
-                            language, unclear instructions, and the stress of
-                            ensuring all necessary information is collected and
-                            filled out correctly (55.56%). This is a shared
-                            experience across all age groups, particularly when
-                            handling legal, medical, and government forms.
+                            Users often find forms challenging due to
+                            complicated language, unclear instructions, and the
+                            stress of ensuring all necessary information is
+                            collected and filled out correctly (55.56%). This is
+                            a shared experience across all age groups,
+                            particularly when handling legal, medical, and
+                            government forms.
                           </li>
-                          <li className="p-2">
+                          <li className="p-2 snap-start">
                             <span className="font-bold">
                               Time-Consuming Nature of Forms:
                             </span>{" "}
@@ -388,7 +424,8 @@ const Aether = () => {
                             This indicates that while there is interest in using
                             the app, some users remain cautious and want to see
                             how the app would provide a more streamlined and
-                            helpful process compared to their existing practices.
+                            helpful process compared to their existing
+                            practices.
                           </li>
                         </ul>
                       </div>
@@ -401,24 +438,25 @@ const Aether = () => {
                         <ul className="h-full text-lg justify-between items-stretch flex flex-col ">
                           <li className="p-2">
                             <span className="font-bold">Forms:</span> Users find
-                            forms challenging due to complex terminology, lengthy
-                            and time-consuming processes, difficulty gathering
-                            required information, and a lack of error-checking,
-                            leading to frustration, delays, and stress.
+                            forms challenging due to complex terminology,
+                            lengthy and time-consuming processes, difficulty
+                            gathering required information, and a lack of
+                            error-checking, leading to frustration, delays, and
+                            stress.
                           </li>
                           <li className="p-2">
                             <span className="font-bold">Poor Navigation:</span>{" "}
                             Users struggle with poor navigation in apps and
-                            websites, finding them unorganized and cluttered with
-                            unnecessary features, making it hard to access
+                            websites, finding them unorganized and cluttered
+                            with unnecessary features, making it hard to access
                             essential tools.
                           </li>
                           <li className="p-2">
                             <span className="font-bold">Support Issues:</span>{" "}
                             Users often struggle with filling out forms due to a
                             lack of guidance, leaving them confused, while also
-                            feeling uneasy about data security and the privacy of
-                            their sensitive information.
+                            feeling uneasy about data security and the privacy
+                            of their sensitive information.
                           </li>
                         </ul>
                       </div>
@@ -428,8 +466,8 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className="snap-always snap-start flex flex-col lg:flex-row">
-              <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-2/5">
+            <div className="snap-start snap-always flex flex-col lg:flex-row">
+              <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/3">
                 <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                   Design Decisions
                 </h2>
@@ -456,7 +494,7 @@ const Aether = () => {
                   <div>
                     <AppComparison />
                   </div>
-                  <div className="name">
+                  <div className="name snap-start snap-always">
                     <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
                       Name
                     </h1>
@@ -466,26 +504,26 @@ const Aether = () => {
                         <p>
                           Originating from our favourite LLM, Elder Ease was the
                           inital name of the project. Meant to signify the ease
-                          our under-represented demographic would experience when
-                          using the app!
+                          our under-represented demographic would experience
+                          when using the app!
                         </p>
                       </div>
                       <div className="text-center">
                         <h2 className="font-bold">Nimbus</h2>
                         <p>
                           Further discussions brought up the issue that the term
-                          "Elder" can limit our potential scalability of our app,
-                          boxing us into a certain demographic. Therefor a changed
-                          was needed and Nimbus was a name that stuck with the
-                          entire team.
+                          "Elder" can limit our potential scalability of our
+                          app, boxing us into a certain demographic. Therefor a
+                          changed was needed and Nimbus was a name that stuck
+                          with the entire team.
                         </p>
                       </div>
                       <div className="text-center">
                         <h2 className="font-bold">Aether</h2>
                         <p>
                           The team attemptted to find a connection between our
-                          product name and the user up high in the clouds having a
-                          sense of safety and security. Although, further
+                          product name and the user up high in the clouds having
+                          a sense of safety and security. Although, further
                           researched uncovered that "Nimbus" was a derogatory
                           term. So Aether, a term akin to the values we hold
                           dearly, appeared to be apt.
@@ -495,45 +533,85 @@ const Aether = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="marketing p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:ml-4 lg:w-3/5">
-                <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
-                  Marketing
+              <div className="Styleguide snap-start p-8 snap-always bg-[#a49e8e80] mx-8 rounded-lg mb-8 lg:ml-4 lg:w-2/3">
+                <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
+                  Styleguide
                 </h2>
-                <div className="flex flex-col justify-around">
-                  <div className="promo-videos flex flex-col justify-center items-center ">
-                    <p className="text-center text-xl m-4">
-                      On top of the various aspects of designing and developing
-                      the core application, we had to create other components to
-                      support our app, including physical goods such as:
-                      Brochures, Tote Bags and even a commerical!
+                <div className="section1">
+                  <h2 className="m-4 lg:text-3xl font-semibold">Logo</h2>
+                  <div className="flex flex-col lg:flex-row">
+                    <p className="lg:m-8">
+                      This is a combination of a document and a compass. The
+                      document represent the app’s function of assisting with
+                      form completion and paperwork. The compass represents the
+                      guidance and direction we provide to our users.
                     </p>
-
-                    <NextVideo
-                      className="m-4"
-                      style={{ zIndex: 1, height: "100%", width: "100%", maxWidth: "800px" }}
-                      src={AetherPromo}
-                    />
-
+                    <div className="lg:m-8 lg:w-[512px] flex items-center justify-center">
+                      <Image
+                        width={256}
+                        height={256}
+                        src={AetherSolo}
+                        alt="aetherbooks"
+                      />
+                    </div>
                   </div>
-                  <div className="promo-videos flex flex-col justify-center items-center">
-                    <p className="">
-                      A mockup created by the team displayed on the blog page.
-                    </p>
-
-                    <NextVideo
-                      className="m-4"
-                      style={{ zIndex: 1, height: "100%", width: "100%", maxWidth: "800px" }}
-                      src={AetherMockup}
-                      autoPlay
-                      loop
-                    />
-
-                  </div>
+                </div>
+                <div className="section2 snap-start m-4">
+                <h2 className="m-4 lg:text-3xl font-semibold">Color Palette</h2> 
+                <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2 lg:gap-4">
+                  <div className="bg-[#08415C] h-12 lg:h-24 rounded-xl p-4">Color 1</div>
+                  <div className="bg-[#5C8CC8] h-12 lg:h-24 rounded-xl p-4">Color 2</div>
+                  <div className="bg-[#8EAACD] h-12 lg:h-24 rounded-xl p-4">Color 3</div>
+                  <div className="bg-[#ECFEE8] h-12 lg:h-24 rounded-xl p-4">Color 4</div>
+                  <div className="bg-[#FEF5EC] h-12 lg:h-24 rounded-xl p-4">Color 5</div>
+                </div>
                 </div>
               </div>
             </div>
-            <div className="snap-always snap-start last-row flex flex-col lg:flex-row">
+            <div className="marketing snap-start snap-always p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 ">
+              <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
+                Marketing
+              </h2>
+              <div className="flex flex-col justify-around">
+                <div className="promo-videos flex flex-col justify-center items-center lg:flex-row ">
+                  <p className="text-center text-xl m-4">
+                    On top of the various aspects of designing and developing
+                    the core application, we had to create other components to
+                    support our app, including physical goods such as:
+                    Brochures, Tote Bags and even a commerical!
+                  </p>
+
+                  <NextVideo
+                    className="m-4"
+                    style={{
+                      zIndex: 1,
+                      height: "100%",
+                      width: "100%",
+                      maxWidth: "1000px",
+                    }}
+                    src={AetherPromo}
+                  />
+                </div>
+                <div className="promo-videos flex flex-col justify-center items-center lg:flex-row-reverse">
+                  <p className="">
+                    A mockup created by the team displayed on the blog page.
+                  </p>
+                  <NextVideo
+                    className="m-4"
+                    style={{
+                      zIndex: 1,
+                      height: "100%",
+                      width: "100%",
+                      maxWidth: "700px",
+                    }}
+                    src={AetherMockup}
+                    autoPlay
+                    loop
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="snap-start snap-always last-row flex flex-col lg:flex-row">
               <div className="future p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/2">
                 <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-left p-4">
                   Future Prospects
@@ -541,10 +619,12 @@ const Aether = () => {
                 <div className="text flex flex-col justify-center items-center ">
                   <ul className=" m-4">
                     <li className="text-lg">
-                      <span className="font-bold">'Photo-to-PDF' Feature: </span>{" "}
-                      This feature allows caregivers to take photos of forms with
-                      their phones and convert them into editable PDFs in just a
-                      few clicks.
+                      <span className="font-bold">
+                        'Photo-to-PDF' Feature:{" "}
+                      </span>{" "}
+                      This feature allows caregivers to take photos of forms
+                      with their phones and convert them into editable PDFs in
+                      just a few clicks.
                     </li>
                     <li className="text-lg">
                       <span className="font-bold">
@@ -576,8 +656,8 @@ const Aether = () => {
                     </li>
                     <li className="text-lg">
                       The importance of organizing smaller team discussions when
-                      needed, staying flexible, and addressing issues early in the
-                      process
+                      needed, staying flexible, and addressing issues early in
+                      the process
                     </li>
                     <li className="text-lg">
                       The value of competitive analysis to understand industry
@@ -591,13 +671,19 @@ const Aether = () => {
                 </div>
               </div>
             </div>
+            <motion.button
+              className={`m-auto bg-black rounded-full p-4 z-50 items-center text-lg flex gap-2`}
+              onClick={scrollToTop}
+            >
+              BACK TO TOP
+              <IoIosArrowUp className="inline-block h-4 w-4" />
+            </motion.button>
           </motion.section>
         </section>
+
         <Footer />
       </main>
-
     </>
-
   );
 };
 

@@ -9,6 +9,9 @@ const Title = () => {
 
   return (
     <>
+            <Link
+          href="/Lutong-Bahay"
+        >
       <motion.div
         className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
         onMouseEnter={() => setIsHovered(true)}
@@ -18,9 +21,7 @@ const Title = () => {
         }}
         transition={{ ease: "backInOut" }}
       >
-        <Link
-          href="/Lutong-Bahay"
-        >
+
           <div className="flex flex-row flex-wrap relative justify-center items-center">
             <h1 className="font-bold mt-2 pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
               Lutong
@@ -49,9 +50,9 @@ const Title = () => {
           >
             Learn More!
           </motion.p>
-        </Link>
-      </motion.div>
 
+      </motion.div>
+      </Link>
     </>
   );
 };
