@@ -63,10 +63,8 @@ const Aether = () => {
   return (
     <>
       <Header />
-      <div className="snap-y snap-start">
         <Parallax />
-      </div>
-      <div className=" snap-start">
+      <div className="snap-y snap-start">
         <AEBanner />
       </div>
       <main className="min-h-screen">

@@ -14,7 +14,8 @@ export default function Banners() {
 
   return (
     <>
-      <section
+    <div className="snap-y">
+    <section
         className="w-full h-screen flex justify-center items-center snap-always snap-start flex-col md:flex-row "
 
         style={{ backgroundColor: "#0B4F6F" }}
@@ -86,6 +87,8 @@ export default function Banners() {
         </motion.div>
 
       </section>
+    </div>
+
     </>
 
   );
