@@ -15,7 +15,7 @@ export default function Banners() {
   return (
     <>
       <section
-        className="w-full flex justify-center items-center snap-always snap-start flex-col md:flex-row "
+        className="w-full h-screen flex justify-center items-center snap-always snap-start flex-col md:flex-row "
 
         style={{ backgroundColor: "#0B4F6F" }}
       >
@@ -26,13 +26,13 @@ export default function Banners() {
           exit="exit"
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="m-8">
+          className="m-8 ">
           <motion.h2
             variants={headingVariants}
-            className="m-4 text-white text-[56px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+            className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
           >
             summarize.<br />
-            <motion.p className="text-center md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">Get the gist in seconds—Aether condenses complex forms into clear takeaways.</motion.p>
+            <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">Get the gist in seconds—Aether condenses complex forms into clear takeaways.</motion.p>
           </motion.h2>
 
         </motion.div>
@@ -40,7 +40,7 @@ export default function Banners() {
       </section>
 
       <section
-        className="w-full flex justify-center items-center snap-always snap-start flex-col md:flex-row "
+        className="w-full h-screen flex justify-center items-center snap-always snap-start flex-col md:flex-row "
         style={{ backgroundColor: "#1E7FA5" }}
       >
         <AePhone2 />
@@ -53,10 +53,10 @@ export default function Banners() {
           className="m-8">
           <motion.h2
             variants={headingVariants}
-            className="m-4 text-white text-[56px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+            className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
           >
             simplify.<br />
-            <motion.p className="text-center md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">Confusing paperwork? Aether rewrites it in plain, easy-to-understand language.</motion.p>
+            <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">Confusing paperwork? Aether rewrites it in plain, easy-to-understand language.</motion.p>
           </motion.h2>
         </motion.div>
 
@@ -64,7 +64,7 @@ export default function Banners() {
 
       <section
         id="section"
-        className="w-full flex justify-center items-center snap-always snap-start flex-col md:flex-row "
+        className="w-full h-screen flex justify-center items-center snap-always snap-start flex-col md:flex-row "
         style={{ backgroundColor: "#9FC3E5" }}
       >
         <AePhone3 />
@@ -78,10 +78,10 @@ export default function Banners() {
 
           <motion.h2
             variants={headingVariants}
-            className="m-4 text-white text-[56px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+             className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
           >
             streamline.<br />
-            <motion.p className="text-center md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">From photo to form in one tap—Aether makes document handling effortless.</motion.p>
+            <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">From photo to form in one tap—Aether makes document handling effortless.</motion.p>
           </motion.h2>
         </motion.div>
 
