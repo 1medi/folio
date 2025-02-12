@@ -63,16 +63,17 @@ const Aether = () => {
   return (
     <>
       <Header />
-      <main className="max-h-screen ">
-        <div className="snap-y snap-start">
-          <Parallax />
-        </div>
-        <div className=" snap-start">
-          <AEBanner />
-        </div>
-        <section className="snap-start flex flex-col items-center justify-center p-4 m-auto ">
+      <div className="snap-y snap-start">
+        <Parallax />
+      </div>
+      <div className=" snap-start">
+        <AEBanner />
+      </div>
+      <main className="min-h-screen">
+
+        <section className="snap-start  flex flex-col items-center justify-center p-4 m-auto ">
           <motion.section className="w-full">
-            <div className=" m-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
+            <div className=" m-4 mx-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
               <div className=" md:w-1/2">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                   Tools Used
@@ -622,19 +623,18 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className="marketing  p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 ">
+            <div className="marketing h-full p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 ">
               <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
                 Marketing
               </h2>
-              <div className="flex flex-col justify-around">
-                <div className="promo-videos flex flex-col justify-center items-center lg:flex-row ">
-                  <p className="text-center text-xl m-4">
+              <div className="flex flex-col lg:grid lg:grid-cols-2 justify-around">
+                <div className="promo-videos md:m-4 flex flex-col justify-center items-center">
+                  <p className="text-center text-xl lg:mx-24 lg:my-8">
                     On top of the various aspects of designing and developing
                     the core application, we had to create other components to
                     support our app, including physical goods such as:
                     Brochures, Tote Bags and even a commerical!
                   </p>
-
                   <NextVideo
                     className="m-4"
                     style={{
@@ -646,8 +646,8 @@ const Aether = () => {
                     src={AetherPromo}
                   />
                 </div>
-                <div className="promo-videos flex flex-col justify-center items-center lg:flex-row-reverse">
-                  <p className="">
+                <div className="promo-videos md:m-4 flex flex-col justify-center items-center ">
+                  <p className="text-center text-xl lg:mx-24 lg:my-8">
                     A mockup created by the team displayed on the blog page.
                   </p>
                   <NextVideo
@@ -735,8 +735,10 @@ const Aether = () => {
           </motion.section>
         </section>
 
-        <Footer />
       </main>
+      <div className="snap-start">
+        <Footer />
+      </div>
     </>
   );
 };

@@ -14,8 +14,11 @@ const PocketProf = () => {
   return (
     <>
       <Header />
+      <div className="snap-y snap-start">
       <PPBanner />
-      <main className="min-h-screen flex flex-col items-center justify-center p-4 m-auto">
+      </div>
+
+      <main className="snap-start min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <motion.section className="w-full">
           <div className="w-2/3 m-auto mb-4  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="md:w-1/2">
@@ -238,7 +241,9 @@ const PocketProf = () => {
           </div>
         </motion.section>
       </main>
-      <Footer />
+      <div className="snap-start">
+          <Footer />
+        </div>
     </>
   );
 };

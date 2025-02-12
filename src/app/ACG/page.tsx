@@ -197,8 +197,12 @@ const ACG = () => {
             </div>
           </div>
         </motion.section>
+        <div className="snap-start">
+          <Footer />
+        </div>
       </main>
-      <Footer />
+
+
     </>
   );
 };
