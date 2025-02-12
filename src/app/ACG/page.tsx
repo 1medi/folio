@@ -20,35 +20,35 @@ const ACG = () => {
     <>
       <Header />
 
-      <main className="min-h-screen snap-y">
-        <div className="snap-always snap-start">
-        <ACGBanner />
+      <main className="min-h-screen ">
+        <div className="snap-y snap-start">
+          <ACGBanner />
         </div>
 
-        <motion.section className=" w-full ">
-          <div className="snap-start snap-always w-2/3 m-auto  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
-            <div className="p-4">
+        <motion.section className="snap-start w-full ">
+          <div className=" m-8  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+            <div className="lg:p-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
               </h2>
               <ul className="p-2 text-center">
-                <li className="text-2xl p-5">Figma</li>
-                <li className="text-2xl p-5">Tabletop Simulator</li>
+                <li className="text-2xl p-2 lg:p-5">Figma</li>
+                <li className="text-2xl p-2 lg:p-5">Tabletop Simulator</li>
               </ul>
             </div>
-            <div className="p-4">
+            <div className="lg:p-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Key Features
               </h2>
               <ul className="p-2 text-center">
-                <li className="text-2xl p-2">3 Elemental Decks!</li>
-                <li className="text-2xl p-2">Character Abilites</li>
-                <li className="text-2xl p-2">Unique Game Mechanics!</li>
+                <li className="text-2xl lg:p-2">3 Elemental Decks!</li>
+                <li className="text-2xl lg:p-2">Character Abilites</li>
+                <li className="text-2xl lg:p-2">Unique Game Mechanics!</li>
               </ul>
             </div>
           </div>
 
-          <div className="about snap-always snap-start p-8 bg-[#a49e8e80] rounded-lg m-8">
+          <div className="about p-12 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               What is ACG?
             </h2>
@@ -62,7 +62,7 @@ const ACG = () => {
             </p>
           </div>
 
-          <div className="snap-always snap-start flex flex-col lg:flex-row">
+          <div className="flex flex-col lg:flex-row">
             <div className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
               <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
                 Project Ideation
@@ -107,7 +107,7 @@ const ACG = () => {
           </div>
 
 
-          <div className="proj-styleguide snap-always snap-start p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
+          <div className="proj-styleguide p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
@@ -121,8 +121,7 @@ const ACG = () => {
                     className="rounded-xl w-full"
                   />
                 </div>
-
-                <p className="w-50 m-auto text-center p-4">
+                <div className="w-50 m-auto text-center p-4">
                   <span className="font-bold">Core Colors: </span>
                   <br />
                   <span className="font-bold">#C1121F (Bright Red)</span> : For
@@ -136,12 +135,12 @@ const ACG = () => {
                   <br />
                   <span className="font-bold"> #DB9B39 (Gold)</span> : Adds
                   sophistication and premium vibes.
-                </p>
+                </div>
               </div>
 
               <div className="Everything Else m-auto w-full lg:w-1/2">
 
-                <div className="flex flex-col justify-center m-12 items-center">
+                <div className=" flex flex-col justify-center m-12 items-center">
                   <div className="photo-container w-[250px] lg:w-[500px]  flex m-8">
                     <Image
                       src={ACGMeasurements}
@@ -162,8 +161,8 @@ const ACG = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="snap-always snap-start photo-container w-[250px] xl:w-[500px] flex m-4">
+                <div className=" flex flex-col justify-center m-12 items-center">
+                  <div className=" photo-container w-[250px] xl:w-[500px] flex m-4">
                     <Image
                       src={ACGType}
                       alt="colors"
@@ -178,7 +177,7 @@ const ACG = () => {
                   </p>
                 </div>
 
-                <div className="snap-always snap-start flex flex-col justify-center m-12 items-center">
+                <div className="flex flex-col justify-center m-12 items-center">
                   <div className="photo-container w-[250px] xl:w-[500px] flex m-4">
                     <Image
                       src={ACGLogo}

@@ -7,6 +7,7 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    
     extend: {
       colors: {
         background: "var(--background)",
@@ -14,8 +15,12 @@ export default {
       },
       gridTemplateColumns:{
         10: "repeat(10, minmax(0, 1fr))",
-      }
+      },
+      screens: {
+        "xs": "390px", // Custom breakpoint for extra small screens
+      },
     },
+
   },
   plugins: [],
 } satisfies Config;

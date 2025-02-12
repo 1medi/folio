@@ -63,14 +63,16 @@ const Aether = () => {
   return (
     <>
       <Header />
-      <main className="max-h-screen snap-y">
-        <Parallax />
-        <div className="snap-always snap-start">
+      <main className="max-h-screen ">
+        <div className="snap-y snap-start">
+          <Parallax />
+        </div>
+        <div className=" snap-start">
           <AEBanner />
         </div>
-        <section className=" flex flex-col items-center justify-center p-4 m-auto ">
+        <section className="snap-start flex flex-col items-center justify-center p-4 m-auto ">
           <motion.section className="w-full">
-            <div className=" snap-start m-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
+            <div className=" m-8 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col lg:flex-row">
               <div className=" md:w-1/2">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                   Tools Used
@@ -114,7 +116,7 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className=" snap-center flex flex-col lg:flex-row m-4">
+            <div className=" flex flex-col lg:flex-row m-4">
               <div className="about p-8 bg-[#a49e8e80] rounded-lg m-4 lg:w-1/2 lg:ml-4 lg:mr-4 lg:m-2">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                   What is Aether?
@@ -147,7 +149,7 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className="proj-ideation snap-center p-8  bg-[#a49e8e80] rounded-lg mx-8">
+            <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-8">
               <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                 Competitive Analysis
               </h2>
@@ -220,7 +222,7 @@ const Aether = () => {
             </div>
 
             <div className=" flex flex-col m-4">
-              <div className="snap-center about p-8 bg-[#a49e8e80] rounded-lg m-4 ">
+              <div className=" about p-8 bg-[#a49e8e80] rounded-lg m-4 ">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                   User Personas
                 </h2>
@@ -346,7 +348,7 @@ const Aether = () => {
                 </div>
               </div>
 
-              <div className="snap-start proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4">
+              <div className=" proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4">
                 <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                   User Research
                 </h2>
@@ -396,7 +398,7 @@ const Aether = () => {
                             particularly when handling legal, medical, and
                             government forms.
                           </li>
-                          <li className="p-2 snap-start">
+                          <li className="p-2">
                             <span className="font-bold">
                               Time-Consuming Nature of Forms:
                             </span>{" "}
@@ -473,7 +475,7 @@ const Aether = () => {
             </div>
 
             <div className=" flex flex-col lg:flex-row">
-              <div className="snap-start snap-always proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/3">
+              <div className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/3">
                 <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                   Design Decisions
                 </h2>
@@ -500,7 +502,7 @@ const Aether = () => {
                   <div>
                     <AppComparison />
                   </div>
-                  <div className="name snap-start snap-always">
+                  <div className="name ">
                     <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
                       Name
                     </h1>
@@ -540,12 +542,12 @@ const Aether = () => {
                 </div>
               </div>
 
-              <div className="Styleguide p-8 snap-always bg-[#a49e8e80] mx-8 rounded-lg mb-8 lg:ml-4 lg:w-2/3">
+              <div className="Styleguide p-8  bg-[#a49e8e80] mx-8 rounded-lg mb-8 lg:ml-4 lg:w-2/3">
                 <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                   Styleguide
                 </h2>
                 <div className="section-container h-full flex flex-col items-around justify-around">
-                  <div className="section1 snap-start">
+                  <div className="section1 ">
                     <h2 className="m-4 lg:text-3xl font-semibold">Logo</h2>
                     <div className="flex flex-col lg:flex-row">
                       <p className="lg:m-8">
@@ -564,7 +566,7 @@ const Aether = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="section2 snap-start">
+                  <div className="section2 ">
                     <h2 className="m-4 lg:text-3xl font-semibold">
                       Color Palette
                     </h2>
@@ -586,7 +588,7 @@ const Aether = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="section3 snap-start">
+                  <div className="section3 ">
                     <h2 className="m-4 lg:text-3xl font-semibold">
                       Typography
                     </h2>
@@ -620,7 +622,7 @@ const Aether = () => {
               </div>
             </div>
 
-            <div className="marketing snap-start snap-always p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 ">
+            <div className="marketing  p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 ">
               <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
                 Marketing
               </h2>
@@ -663,7 +665,7 @@ const Aether = () => {
                 </div>
               </div>
             </div>
-            <div className="snap-start snap-always last-row flex flex-col lg:flex-row">
+            <div className=" last-row flex flex-col lg:flex-row">
               <div className="future p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/2">
                 <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-left p-4">
                   Future Prospects
