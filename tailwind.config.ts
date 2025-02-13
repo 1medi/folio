@@ -18,6 +18,7 @@ export default {
       },
       screens: {
         "xs": "390px", // Custom breakpoint for extra small screens
+        "desktop": "1920px", // Cu  stom breakpoint for extra small screens
       },
     },
 
