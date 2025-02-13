@@ -12,7 +12,7 @@ export default function Section1() {
     <>
       <div className="m-4 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col">
         <div className="md:w-1/2 xl:m-0">
-          <h2 className="text-3xl xl:text-center bg-[#3A3F2D] rounded-lg p-2 m-4">
+          <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-2 m-4">
             Tools Used
           </h2>
           <ul className="p-6 xl:p-2 text-center lg:grid lg:grid-cols-2 xl:w-auto">

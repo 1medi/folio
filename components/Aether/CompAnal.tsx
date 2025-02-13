@@ -6,8 +6,8 @@ import PDFai from "../../public/Logos/pdfai.jpg";
 export default function Section2() {
   return (
     <>
-      <div className="proj-ideation p-8 m-4 bg-[#a49e8e80]  rounded-lg w-full h-full xl:h-screen xl:h-[800px] ">
-        <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
+      <div className="proj-ideation p-4  xl:p-10 bg-[#a49e8e80]  rounded-lg w-full h-full xl:h-screen xl:h-[800px] ">
+        <h2 className="text-2xl text-center  xl:text-3xl  bg-[#3A3F2D] rounded-lg m-4 p-4">
           Competitive Analysis
         </h2>
         <div className="flex flex-col xl:items-center p-4 xl:justify-around xl:items-around xl:h-full xl:p-8">

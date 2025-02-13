@@ -18,7 +18,7 @@ export default function Section6() {
         </h2>
         <div className="section-container h-full flex flex-col items-around justify-around">
           <div className="section1 ">
-            <h2 className="m-4 xl:text-8xl font-semibold">Logo</h2>
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">Logo</h2>
             <div className="flex flex-col lg:flex-row">
               <p className="lg:m-8 xl:text-xl xl:w-2/3">
                 This is a combination of a document and a compass. The document
@@ -37,7 +37,7 @@ export default function Section6() {
             </div>
           </div>
           <div className="section2">
-            <h2 className="m-4 xl:text-8xl font-semibold">Color Palette</h2>
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">Color Palette</h2>
             <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2 lg:gap-4">
               <div className="bg-[#08415C] h-12 lg:h-24 rounded-xl p-4">
                 Color 1
@@ -57,10 +57,10 @@ export default function Section6() {
             </div>
           </div>
           <div className="section3 ">
-            <h2 className="m-4 xl:text-8xl font-semibold">Typography</h2>
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">Typography</h2>
             <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4">
               <div className={OpenSans.className}>
-                <h2 className="p-4 xl:text-5xl font-bold">This is Opensans</h2>
+                <h2 className="p-4 text-2xl xl:text-5xl font-bold">This is Opensans</h2>
                 <p className="xl:text-xl p-4">
                   Balancing the modernity and accessibility, which aligns with
                   the app's goal of simplifying complex processes. It is clear
@@ -69,7 +69,7 @@ export default function Section6() {
                 </p>
               </div>
               <div className={ItalianaFont.className}>
-                <h2 className="p-4 text-5xl font-bold">
+                <h2 className="p-4 text-2xl xl:text-5xl font-bold">
                   This is Italiana (Redacted)
                 </h2>
                 <p className="xl:text-xl p-4">
