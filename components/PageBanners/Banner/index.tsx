@@ -17,6 +17,7 @@ const transition = {
   ease: [0, 0.71, 0.2, 1.01],
 };
 const COLORS = ["#1E150A", "#004f2d", "#000000"];
+const colors = ["#C9C19F", "#EDF7D2", "#EDF7D2", "#EB5160"];
 
 const Banner = () => {
   const color = useMotionValue(COLORS[0]);
@@ -29,6 +30,7 @@ const Banner = () => {
       repeatType: "mirror",
     });
   }, []);
+
   return (
     <main className="w-full h-full relative overflow-hidden">
       <motion.section
@@ -46,15 +48,16 @@ const Banner = () => {
       flex flex-col gap-5 items-center justify-center z-10 mb-10 
       "
       >
-        <div>
-          <motion.h1
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 1 }}
-            transition={{ delay: duration }}
-            className="text-center text-5xl sm:text-7xl lg:text-9xl font-bold m-4 sm:m-auto text-white"
-          >
-            Hi! I'm Madi
-          </motion.h1>
+        <motion.div>
+            <motion.h1
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 1 }}
+              transition={{ delay: duration }}
+              className="z-10 text-center text-5xl sm:text-7xl lg:text-9xl font-bold m-4 sm:m-auto text-white"
+            >
+              Hi! I'm Madi
+            </motion.h1>
+
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 1 }}
@@ -65,7 +68,7 @@ const Banner = () => {
             technologies. With an unwavering interest in user-friendly designs
             and pushing boundaries.
           </motion.p>
-        </div>
+        </motion.div>
 
         <motion.div
           className="flex justify-center gap-5 mb-12 sm:m-auto sm:mb-0 lg:m-8 p-8 pointer-events-auto"
