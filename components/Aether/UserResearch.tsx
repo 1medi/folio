@@ -5,12 +5,12 @@ export default function Section4() {
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 User Research
               </h2>
-              <div className="m-2">
+              <div className="text-xl p-4">
                 <p>
                   <span className="font-bold">Date of Report:</span> October 1,
                   2024
                 </p>
-                <p>
+                <p >
                   <span className="font-bold">Date of Interviews:</span>{" "}
                   September 21 - 28, 2024
                 </p>

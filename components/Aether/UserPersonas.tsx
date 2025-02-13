@@ -4,7 +4,7 @@ import Persona1 from "../../public/personas/persona1.jpg";
 export default function Section3() {
   return (
     <>
-      <div className=" about p-8 bg-[#a49e8e80] rounded-lg m-4 xl:h-screen">
+      <div className=" about p-8 bg-[#a49e8e80] rounded-lg m-4 xl:h-[800px]">
         <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
           User Personas
         </h2>

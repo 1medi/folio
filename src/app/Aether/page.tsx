@@ -48,36 +48,33 @@ const Aether = () => {
       <Header />
       <Parallax />
       <main className=" min-h-screen ">
-        <section className="snap-y flex flex-col items-center justify-center p-4 m-auto ">
-          <div className="snap-start snap-always xl:grid xl:grid-cols-2 m-8 p-8">
-            <Section1 />
-          </div>
-          <section className="snap-start lg:mx-8 ">
-            <Section2 />
-          </section>
-          <section className="snap-start flex flex-col m-4">
-            <UserPersonas />
-            <div className="lg:snap-start">
-            <Section4 />
-            </div>
-
-          </section>
-          <section className="snap-start flex flex-col lg:flex-row">
-            <Section5 />
-            <Section6 />
-          </section>
-          <section className="snap-start ">
-            <Section7 />
-            <Section8 />
-          </section>
-          <motion.button
-            className={`m-auto bg-black rounded-full p-4 z-50 items-center text-lg flex gap-2`}
-            onClick={scrollToTop}
-          >
-            BACK TO TOP
-            <IoIosArrowUp className="inline-block h-4 w-4" />
-          </motion.button>
+        <div className="snap-start snap-always xl:grid xl:grid-cols-2 xl:mt-32 xl:py-20 p-8">
+          <Section1 />
+        </div>
+        <section className="snap-start m-8 p-8 xl:mt-32 xl:py-24">
+          <Section2 />
         </section>
+        <section className="snap-start flex flex-col m-4 h-full xl:mt-32 xl:py-20">
+          <UserPersonas />
+          <div className="lg:snap-start h-full xl:mt-32 xl:py-20">
+            <Section4 />
+          </div>
+        </section>
+        <section className="snap-start flex flex-col lg:flex-row h-full xl:mt-32 xl:py-20">
+          <Section5 />
+          <Section6 />
+        </section>
+        <section className="snap-start h-full xl:mt-32 xl:py-20">
+          <Section7 />
+          <Section8 />
+        </section>
+        <motion.button
+          className={`m-auto bg-black rounded-full p-4 z-50 items-center text-lg flex gap-2`}
+          onClick={scrollToTop}
+        >
+          BACK TO TOP
+          <IoIosArrowUp className="inline-block h-4 w-4" />
+        </motion.button>
       </main>
       <div className="snap-start">
         <Footer />
