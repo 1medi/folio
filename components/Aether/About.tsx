@@ -10,8 +10,8 @@ import {
 export default function Section1() {
   return (
     <>
-      <div className="m-4 justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col">
-        <div className="md:w-1/2 xl:m-0">
+      <div className="m-4 mt-20 h-screen xl:h-auto justify-center bg-[#a49e8e80] rounded-lg items-center p-4 flex flex-col">
+        <div className="  xl:m-0">
           <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-2 m-4">
             Tools Used
           </h2>

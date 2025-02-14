@@ -19,7 +19,7 @@ export default function Banners() {
         className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
         style={{ backgroundColor: "#0B4F6F" }}
       >
-        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col">
+        <div className="xl:m-auto mt-20 flex justify-center items-center flex-col xl:flex-row">
           <AePhone1 />
           <motion.div
             initial="initial"
@@ -48,7 +48,7 @@ export default function Banners() {
         className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
         style={{ backgroundColor: "#1E7FA5" }}
       >
-        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col">
+        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col xl:flex-row">
           <AePhone2 />
           <motion.div
             initial="initial"
@@ -78,7 +78,7 @@ export default function Banners() {
         className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
         style={{ backgroundColor: "#9FC3E5" }}
       >
-        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col">
+        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col xl:flex-row">
           <AePhone3 />
           <motion.div
             initial="initial"
