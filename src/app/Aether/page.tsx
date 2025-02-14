@@ -68,6 +68,7 @@ const Aether = () => {
           <Section7 />
           <Section8 />
         </section>
+        <div className="m-4">
         <motion.button
           className={`m-auto bg-black rounded-full p-4 z-50 items-center text-lg flex gap-2`}
           onClick={scrollToTop}
@@ -75,6 +76,8 @@ const Aether = () => {
           BACK TO TOP
           <IoIosArrowUp className="inline-block h-4 w-4" />
         </motion.button>
+        </div>
+
       </main>
       <div className="snap-start">
         <Footer />
