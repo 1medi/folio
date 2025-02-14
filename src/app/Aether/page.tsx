@@ -12,6 +12,7 @@ import Section5 from "../../../components/Aether/Design";
 import Section6 from "../../../components/Aether/Styleguide";
 import Section7 from "../../../components/Aether/Marketing";
 import Section8 from "../../../components/Aether/Final";
+import AboutAe from "../../../components/Aether/AboutAether";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState, useEffect } from "react";
 
@@ -48,9 +49,12 @@ const Aether = () => {
       <Header />
       <Parallax />
       <main className=" min-h-screen ">
-        <div className="snap-start snap-y snap-always mt-32 xl:grid xl:grid-cols-2 xl:mt-32 xl:py-20 ">
+        <section className="snap-start snap-y snap-always mt-32 xl:grid xl:grid-cols-2 xl:mt-32 xl:py-20 ">
+        <div className="snap-start h-full xl:my-auto">
           <Section1 />
         </div>
+        <AboutAe/>
+        </section>
         <section className="snap-start p-8 xl:mt-36 xl:py-32">
           <Section2 />
         </section>
