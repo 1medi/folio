@@ -15,92 +15,96 @@ export default function Banners() {
 
   return (
     <>
-        <div className="snap-y">
-          <section
-            className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row "
-            style={{ backgroundColor: "#0B4F6F" }}
+      <section
+        className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        style={{ backgroundColor: "#0B4F6F" }}
+      >
+        <div className="xl:m-auto mt-28 flex justify-center items-center flex-col">
+          <AePhone1 />
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="m-8 "
           >
-            <AePhone1 />
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              exit="exit"
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="m-8 "
+            <motion.h2
+              variants={headingVariants}
+              className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
             >
-              <motion.h2
-                variants={headingVariants}
-                className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
-              >
-                summarize.
-                <br />
-                <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">
-                  Get the gist in seconds—Aether condenses complex forms into
-                  clear takeaways.
-                </motion.p>
-              </motion.h2>
-            </motion.div>
-          </section>
-
-          <section
-            className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row "
-            style={{ backgroundColor: "#1E7FA5" }}
-          >
-            <AePhone2 />
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              exit="exit"
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="m-8"
-            >
-              <motion.h2
-                variants={headingVariants}
-                className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
-              >
-                simplify.
-                <br />
-                <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">
-                  Confusing paperwork? Aether rewrites it in plain,
-                  easy-to-understand language.
-                </motion.p>
-              </motion.h2>
-            </motion.div>
-          </section>
-
-          <section
-            id="section"
-            className="snap-start snap-always  w-full h-screen flex justify-center items-center flex-col md:flex-row "
-            style={{ backgroundColor: "#9FC3E5" }}
-          >
-            <AePhone3 />
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              exit="exit"
-              viewport={{ once: false, amount: 0.5 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="m-8"
-            >
-              <motion.h2
-                variants={headingVariants}
-                className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
-              >
-                streamline.
-                <br />
-                <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">
-                  From photo to form in one tap—Aether makes document handling
-                  effortless.
-                </motion.p>
-              </motion.h2>
-            </motion.div>
-          </section>
-          <div className="snap-start snap-always ">
-            <AEBanner />
-          </div>
+              summarize.
+              <br />
+              <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">
+                Get the gist in seconds—Aether condenses complex forms into
+                clear takeaways.
+              </motion.p>
+            </motion.h2>
+          </motion.div>
         </div>
+      </section>
+
+      <section
+        className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        style={{ backgroundColor: "#1E7FA5" }}
+      >
+        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col">
+          <AePhone2 />
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="m-8"
+          >
+            <motion.h2
+              variants={headingVariants}
+              className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+            >
+              simplify.
+              <br />
+              <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">
+                Confusing paperwork? Aether rewrites it in plain,
+                easy-to-understand language.
+              </motion.p>
+            </motion.h2>
+          </motion.div>
+        </div>
+      </section>
+
+      <section
+        id="section"
+        className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        style={{ backgroundColor: "#9FC3E5" }}
+      >
+        <div className="xl:m-auto mt-28 flex justify-center items-center flex-col">
+          <AePhone3 />
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="m-8"
+          >
+            <motion.h2
+              variants={headingVariants}
+              className="m-2 text-white text-center text-[36px] md:text-[128px] 2xl:text-[208px] font-bold tracking-[-3px] leading-[1.2]"
+            >
+              streamline.
+              <br />
+              <motion.p className="text-center text-lg md:text-xl 2xl:text-2xl tracking-[0.2px] font-normal">
+                From photo to form in one tap—Aether makes document handling
+                effortless.
+              </motion.p>
+            </motion.h2>
+          </motion.div>
+        </div>
+      </section>
+      <div className="snap-start snap-always w-full h-screen">
+        <AEBanner />
+      </div>
     </>
   );
 }
