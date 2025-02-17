@@ -30,7 +30,7 @@ const Title = () => {
               animate={{
                 width: isHovered ? "12rem" : "0rem",
                 opacity: isHovered ? "100%" : "0%",
-                padding: isHovered ? "0rem 0.75rem" : "",
+                padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
               alt="aether"
             />

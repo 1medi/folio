@@ -28,9 +28,9 @@ const Title = () => {
             <motion.div
               animate={{
                 width: isHovered ? "9rem" : "0rem",
-                height: isHovered ? "3rem" : "0rem",
+                height: isHovered ? "32px" : "0rem",
                 opacity: isHovered ? "100%" : "0%",
-                padding: isHovered ? "0rem 0.75rem" : "",
+                padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
             >
               <Image

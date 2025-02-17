@@ -25,13 +25,13 @@ const Title = () => {
             </h1>
             <motion.div
               animate={{
-                width: isHovered ? "9rem" : "0rem",
-                height: isHovered ? "3rem" : "0rem",
+                width: isHovered ? "128px" : "0rem",
+                height: isHovered ? "56px" : "0rem",
                 opacity: isHovered ? "100%" : "0%",
-                padding: isHovered ? "0rem 0.75rem" : "",
+                padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
             >
-              <Image src={First.src} height={512} width={512} alt="aether" />
+              <Image src={First.src} height={128} width={128} alt="aether" />
             </motion.div>
 
             <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">

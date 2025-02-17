@@ -28,13 +28,13 @@ const Title = () => {
             </h1>
             <motion.img
               src={First.src}
-              height={128}
-              width={512}
+              height={96}
+              width={64}
               animate={{
-                width: isHovered ? "128px" : "0rem",
-                height: isHovered ? "4rem" : "0rem",
+                width: isHovered ? "96px" : "0rem",
+                height: isHovered ? "64px" : "0rem",
                 opacity: isHovered ? "100%" : "0%",
-                padding: isHovered ? "0rem 0.75rem" : "",
+                padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
               alt="aether"
             />
