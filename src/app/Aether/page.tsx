@@ -12,6 +12,7 @@ import Section5 from "../../../components/Aether/Design";
 import Section6 from "../../../components/Aether/Styleguide";
 import Section7 from "../../../components/Aether/Marketing";
 import Section8 from "../../../components/Aether/Final";
+import AboutAe from "../../../components/Aether/AboutAether";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState, useEffect } from "react";
 
@@ -48,9 +49,12 @@ const Aether = () => {
       <Header />
       <Parallax />
       <main className=" min-h-screen ">
-        <div className="snap-start snap-always mt-32 xl:grid xl:grid-cols-2 xl:mt-32 xl:py-20 ">
+        <section className="snap-start snap-y snap-always mt-32 xl:grid xl:grid-cols-2 xl:mt-32 xl:py-20 ">
+        <div className="snap-start h-full xl:my-auto">
           <Section1 />
         </div>
+        <AboutAe/>
+        </section>
         <section className="snap-start p-8 xl:mt-36 xl:py-32">
           <Section2 />
         </section>
@@ -68,6 +72,7 @@ const Aether = () => {
           <Section7 />
           <Section8 />
         </section>
+        <div className="m-4">
         <motion.button
           className={`m-auto bg-black rounded-full p-4 z-50 items-center text-lg flex gap-2`}
           onClick={scrollToTop}
@@ -75,6 +80,8 @@ const Aether = () => {
           BACK TO TOP
           <IoIosArrowUp className="inline-block h-4 w-4" />
         </motion.button>
+        </div>
+
       </main>
       <div className="snap-start">
         <Footer />
