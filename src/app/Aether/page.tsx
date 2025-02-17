@@ -49,11 +49,14 @@ const Aether = () => {
       <Header />
       <Parallax />
       <main className=" min-h-screen ">
-        <section className="snap-start snap-y snap-always mt-32 xl:grid xl:grid-cols-2 xl:mt-32 xl:py-20 ">
+        <section className="snap-start snap-y snap-always mt-32 xl:grid xl:grid-cols-2 xl:my-32 xl:py-20 ">
         <div className="snap-start h-full xl:my-auto">
           <Section1 />
         </div>
+        <div className="">
         <AboutAe/>
+        </div>
+
         </section>
         <section className="snap-start p-8 xl:mt-36 xl:py-32">
           <Section2 />

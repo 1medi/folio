@@ -1,8 +1,45 @@
+import { motion, useInView } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+
 export default function AboutAe() {
-    return (
-        <>
-         <div className="snap-center h-full xl:snap-none flex flex-col ">
-        <div className="about p-8 bg-[#a49e8e80] rounded-lg m-4 lg:p-4 xl:p-12 lg:m-none desktop:p-24">
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false }); // Detects when it's in viewport
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    if (!isInView) {
+      setIsVisible(false); // Triggers exit animation when out of view
+    } else {
+      setIsVisible(true);
+    }
+  }, [isInView]);
+
+  return (
+    <>
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={isVisible ? "visible" : "exit"}
+        transition={{ duration: 0.3, delay: 0.3 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 },
+          exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
+        }}
+        className="snap-center h-full xl:m-4 xl:snap-none flex justify-center flex-col "
+      >
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isVisible ? "visible" : "exit"}
+          transition={{ duration: 0.3, delay: 0.5 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+            exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
+          }}
+          className="about p-8 bg-[#a49e8e80] rounded-lg m-4 lg:p-4 xl:p-12 lg:m-none desktop:p-24"
+        >
           <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
             What is Aether?
           </h2>
@@ -14,9 +51,20 @@ export default function AboutAe() {
             many Canadians face—especially the millions supporting elderly
             family members
           </p>
-        </div>
+        </motion.div>
 
-        <div className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4 lg:p-4 lg:m-none xl:p-12 desktop:p-24">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isVisible ? "visible" : "exit"}
+          transition={{ duration: 0.3, delay: 0.75 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+            exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
+          }}
+          className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4 lg:p-4 lg:m-none xl:p-12 desktop:p-24"
+        >
           <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
             Identifying The Issue
           </h2>
@@ -31,8 +79,8 @@ export default function AboutAe() {
             <li>Learning legal terms is stressful</li>
             <li>Time spent on forms, meant time lost with loved ones</li>
           </ul>
-        </div>
-      </div>
-        </>
-    )
+        </motion.div>
+      </motion.div>
+    </>
+  );
 }
