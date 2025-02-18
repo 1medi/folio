@@ -6,35 +6,11 @@ import {
   SiOpenai,
   SiMongodb,
 } from "react-icons/si";
-import { motion, useInView } from "framer-motion";
-import { useEffect, useState, useRef } from "react";
+import FadeIn from "@/app/utils/fadein";
 
 export default function Section1() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: false }); // Detects when it's in viewport
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    if (!isInView) {
-      setIsVisible(false); // Triggers exit animation when out of view
-    } else {
-      setIsVisible(true);
-    }
-  }, [isInView]);
   return (
-    <>
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={isVisible ? "visible" : "exit"}
-        transition={{ duration: 0.3 , }}
-        variants={{
-          visible: { opacity: 1, scale: 1,   },
-          hidden: { opacity: 0, scale: 0 },
-          exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
-        }}
-        className="mx-4 xl:mt-4 xl:h-full xl:h-auto justify-center  bg-[#a49e8e80] rounded-lg items-center xl:m-8 p-4 flex flex-col"
-      >
+    <FadeIn className="mx-4 mt-12 pt-12 xl:mt-4 xl:h-full justify-center  bg-[#a49e8e80] rounded-lg items-center xl:m-8 p-4 flex flex-col">
         <div className=" xl:m-0">
           <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-2 m-4">
             Tools Used
@@ -76,7 +52,6 @@ export default function Section1() {
             <li className="text-2xl p-3">Autofill PDF Information</li>
           </ul>
         </div>
-      </motion.div>
-    </>
+    </FadeIn>
   );
 }

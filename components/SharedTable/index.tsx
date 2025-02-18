@@ -11,7 +11,9 @@ const TabData = [
     body: (
       <div className="m-4 xl:mb-8">
         <ul className="m-2 xl:text-4xl text-white font-medium text-center">
-          <li className="xl:p-2">Uses digital tools like calendars to stay organized</li>
+          <li className="xl:p-2">
+            Uses digital tools like calendars to stay organized
+          </li>
           <li className="xl:p-2">Uses alarms/reminders for deadlines</li>
           <li className="xl:p-2">Uses laptop and smartphone daily</li>
           <li className="xl:p-2">Prioritizes speed and efficiency</li>
@@ -28,7 +30,9 @@ const TabData = [
       <div className="m-4 xl:mb-8">
         <ul className="m-2 xl:text-4xl text-white font-medium text-center">
           <li className="xl:p-4">Easy access homepage</li>
-          <li className="xl:p-4">Scan physical documents or receive electronically</li>
+          <li className="xl:p-4">
+            Scan physical documents or receive electronically
+          </li>
           <li className="xl:p-4">Good organization to track forms</li>
         </ul>
       </div>
@@ -69,7 +73,7 @@ export default function SharedLayoutAnimation() {
 
   return (
     <div style={container}>
-      <nav style={nav}>
+      <nav className="bg-[#3A3F2D] rounded-t-[10px] border-b border-b-[#a49e8e80] h-[56px]">
         <ul style={tabsContainer}>
           {TabData.map((item) => (
             <motion.li
@@ -79,7 +83,7 @@ export default function SharedLayoutAnimation() {
               animate={{
                 backgroundColor: item === selectedTab ? "#a49e8e80" : "#eee0",
               }}
-              style={tab}
+              className="rounded-t-[5px] text-center w-full xl:px-[25px] xl:py-[24px] relative bg-black cursor-pointer h-[56px] flex justify-between items-center flex-1 min-w-0 select-none text-sm text-white"
             >
               {`${item.icon} ${item.label}`}
               {item === selectedTab ? (
@@ -114,7 +118,7 @@ export default function SharedLayoutAnimation() {
 const container: React.CSSProperties = {
   width: "100%",
   height: "60vh",
-  maxHeight: 360,
+  // maxHeight: 360,
   borderRadius: 10,
   background: "#3A3F2D",
   overflow: "hidden",
@@ -139,28 +143,9 @@ const tabsContainer: React.CSSProperties = {
   width: "100%",
 };
 
-const tab: React.CSSProperties = {
-  borderRadius: 5,
-  borderBottomLeftRadius: 0,
-  borderBottomRightRadius: 0,
-  width: "100%",
-  padding: "10px 15px",
-  position: "relative",
-  background: "black",
-  cursor: "pointer",
-  height: 24,
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  flex: 1,
-  minWidth: 0,
-  userSelect: "none",
-  color: "white",
-};
-
 const underline: React.CSSProperties = {
   position: "absolute",
-  bottom: -2,
+  bottom: -1,
   left: 0,
   right: 0,
   height: 2,

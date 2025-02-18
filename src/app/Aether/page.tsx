@@ -48,30 +48,30 @@ const Aether = () => {
     <>
       <Header />
       <Parallax />
-      <main className=" min-h-screen ">
-        <section className="snap-start snap-y snap-always mt-32 xl:grid xl:grid-cols-2 xl:my-32 xl:py-20 ">
-        <div className="snap-start h-full xl:my-auto">
+      <main className=" min-h-screen snap-y ">
+        <section className="snap-start snap-normal mt-32 xl:grid xl:grid-cols-2 xl:my-32 xl:py-20 ">
+        <div className="snap-start snap-normal h-full xl:my-auto">
           <Section1 />
         </div>
-        <div className="">
+        <div className="snap-normal">
         <AboutAe/>
         </div>
 
         </section>
-        <section className="snap-start p-8 xl:mt-36 xl:py-32">
+        <section className="snap-start snap-normal p-8 xl:mt-36 xl:py-32">
           <Section2 />
         </section>
-        <section className="snap-start flex flex-col m-4 h-full xl:mt-32 xl:py-20">
+        <section className="snap-start snap-normal flex flex-col m-4 h-full xl:mt-32 xl:py-20">
           <UserPersonas />
-          <div className="lg:snap-start h-full xl:mt-32 xl:py-20">
+          <div className="lg:snap-start snap-normal h-full xl:mt-32 xl:py-20">
             <Section4 />
           </div>
         </section>
-        <section className="snap-start flex flex-col lg:flex-row h-full xl:mt-32 xl:py-20">
+        <section className="snap-start snap-normal flex flex-col lg:flex-row h-full xl:mt-32 xl:py-20">
           <Section5 />
           <Section6 />
         </section>
-        <section className="snap-start h-full xl:mt-32 xl:py-20">
+        <section className="snap-start snap-normal h-full xl:mt-32 xl:py-20">
           <Section7 />
           <Section8 />
         </section>
@@ -86,7 +86,7 @@ const Aether = () => {
         </div>
 
       </main>
-      <div className="snap-start">
+      <div className="snap-start snap-normal">
         <Footer />
       </div>
     </>

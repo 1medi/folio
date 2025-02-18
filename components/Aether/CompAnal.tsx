@@ -2,11 +2,15 @@ import Image from "next/image";
 import Openai from "../../public/Logos/openai.png";
 import Quillbot from "../../public/Logos/quillbot.png";
 import PDFai from "../../public/Logos/pdfai.jpg";
+import FadeIn from "@/app/utils/fadein";
 
 export default function Section2() {
+
   return (
     <>
-      <div className="proj-ideation p-4  xl:p-10 bg-[#a49e8e80]  rounded-lg w-full h-full xl:h-[800px] ">
+      <FadeIn
+        className="proj-ideation p-4  xl:p-10 bg-[#a49e8e80]  rounded-lg w-full h-full  "
+      >
         <h2 className="text-2xl text-center  xl:text-3xl  bg-[#3A3F2D] rounded-lg m-4 p-4">
           Competitive Analysis
         </h2>
@@ -68,7 +72,7 @@ export default function Section2() {
             </p>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </>
   );
 }

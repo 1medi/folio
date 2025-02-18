@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Persona1 from "../../public/personas/persona1.jpg";
 import SharedTable from "../../components/SharedTable";
+import FadeIn from "@/app/utils/fadein";
 
 export default function Section3() {
+
   return (
     <>
-      <div className=" about p-8 bg-[#a49e8e80] rounded-lg m-4 xl:h-[800px]">
+      <FadeIn
+        className=" about p-8 bg-[#a49e8e80] rounded-lg m-4 xl:h-full"
+      >
         <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
           User Personas
         </h2>
@@ -50,7 +54,7 @@ export default function Section3() {
           </div>
           <SharedTable />
         </div>
-      </div>
+      </FadeIn>
     </>
   );
 }

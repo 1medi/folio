@@ -2,6 +2,7 @@ import { Open_Sans } from "next/font/google";
 import { Italiana } from "next/font/google";
 import Image from "next/image";
 import AetherSolo from "../../public/Aether/aetherSolo.png";
+import FadeIn from "@/app/utils/fadein";
 
 const OpenSans = Open_Sans({ subsets: ["latin"] });
 const ItalianaFont = Italiana({
@@ -10,9 +11,12 @@ const ItalianaFont = Italiana({
 });
 
 export default function Section6() {
+
   return (
     <>
-      <div className="Styleguide p-8  bg-[#a49e8e80] mx-8 rounded-lg mb-8 lg:ml-4 lg:w-2/3">
+      <FadeIn
+        className="Styleguide p-8  bg-[#a49e8e80] mx-8 rounded-lg mb-8 lg:ml-4 lg:w-2/3"
+      >
         <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
           Styleguide
         </h2>
@@ -37,7 +41,9 @@ export default function Section6() {
             </div>
           </div>
           <div className="section2">
-            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">Color Palette</h2>
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">
+              Color Palette
+            </h2>
             <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2 lg:gap-4">
               <div className="bg-[#08415C] h-12 lg:h-24 rounded-xl p-4">
                 Color 1
@@ -57,10 +63,14 @@ export default function Section6() {
             </div>
           </div>
           <div className="section3 ">
-            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">Typography</h2>
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">
+              Typography
+            </h2>
             <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4">
               <div className={OpenSans.className}>
-                <h2 className="p-4 text-2xl xl:text-5xl font-bold">This is Opensans</h2>
+                <h2 className="p-4 text-2xl xl:text-5xl font-bold">
+                  This is Opensans
+                </h2>
                 <p className="xl:text-xl p-4">
                   Balancing the modernity and accessibility, which aligns with
                   the app's goal of simplifying complex processes. It is clear
@@ -82,7 +92,7 @@ export default function Section6() {
             </div>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </>
   );
 }
