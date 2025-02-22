@@ -72,7 +72,7 @@ export default function SharedLayoutAnimation() {
   const [selectedTab, setSelectedTab] = useState(TabData[0]);
 
   return (
-    <div style={container}>
+    <div style={container} className="m-4">
       <nav className="bg-[#3A3F2D] rounded-t-[10px] border-b border-b-[#a49e8e80] h-[56px]">
         <ul style={tabsContainer}>
           {TabData.map((item) => (

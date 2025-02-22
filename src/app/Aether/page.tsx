@@ -48,7 +48,7 @@ const Aether = () => {
     <>
       <Header />
       <Parallax />
-      <main className=" min-h-screen snap-y ">
+      <main className=" min-h-screen snap-y  ">
         <section className="snap-start snap-normal mt-32 xl:grid xl:grid-cols-2 xl:my-32 xl:py-20 ">
         <div className="snap-start snap-normal h-full xl:my-auto">
           <Section1 />
