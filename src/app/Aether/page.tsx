@@ -48,43 +48,43 @@ const Aether = () => {
     <>
       <Header />
       <Parallax />
-      <main className=" min-h-screen snap-y  ">
-        <section className="snap-start snap-normal mt-32 xl:grid xl:grid-cols-2 xl:my-32 xl:py-20 ">
-        <div className="snap-start snap-normal h-full xl:my-auto">
-          <Section1 />
-        </div>
-        <div className="snap-normal">
-        <AboutAe/>
-        </div>
-
-        </section>
-        <section className="snap-start snap-normal p-8 xl:mt-36 xl:py-32">
-          <Section2 />
-        </section>
-        <section className="snap-start snap-normal flex flex-col m-4 h-full xl:mt-32 xl:py-20">
-          <UserPersonas />
-          <div className="lg:snap-start snap-normal h-full xl:mt-32 xl:py-20">
-            <Section4 />
+      <main className=" min-h-screen snap-y snap-start ">
+        <section className="snap-start">
+          <section className="mt-32 xl:grid xl:grid-cols-2 ">
+            <div className=" h-full xl:my-auto">
+              <Section1 />
+            </div>
+            <div className="">
+              <AboutAe />
+            </div>
+          </section>
+          <section className=" p-8">
+            <Section2 />
+          </section>
+          <section className="flex flex-col m-4 h-full">
+            <UserPersonas />
+            <div className="h-full">
+              <Section4 />
+            </div>
+          </section>
+          <section className="flex flex-col lg:flex-row h-full ">
+            <Section5 />
+            <Section6 />
+          </section>
+          <section className="h-full ">
+            <Section7 />
+            <Section8 />
+          </section>
+          <div className="m-4">
+            <motion.button
+              className={`m-auto bg-black rounded-full p-4 z-50 items-center text-lg flex gap-2`}
+              onClick={scrollToTop}
+            >
+              BACK TO TOP
+              <IoIosArrowUp className="inline-block h-4 w-4" />
+            </motion.button>
           </div>
         </section>
-        <section className="snap-start snap-normal flex flex-col lg:flex-row h-full xl:mt-32 xl:py-20">
-          <Section5 />
-          <Section6 />
-        </section>
-        <section className="snap-start snap-normal h-full xl:mt-32 xl:py-20">
-          <Section7 />
-          <Section8 />
-        </section>
-        <div className="m-4">
-        <motion.button
-          className={`m-auto bg-black rounded-full p-4 z-50 items-center text-lg flex gap-2`}
-          onClick={scrollToTop}
-        >
-          BACK TO TOP
-          <IoIosArrowUp className="inline-block h-4 w-4" />
-        </motion.button>
-        </div>
-
       </main>
       <div className="snap-start snap-normal">
         <Footer />

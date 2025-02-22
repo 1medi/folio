@@ -26,7 +26,7 @@ export default function AboutAe() {
           hidden: { opacity: 0, scale: 0 },
           exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
         }}
-        className="snap-center h-full xl:m-4 xl:snap-none flex justify-center flex-col "
+        className=" h-full xl:m-4 flex justify-center flex-col "
       >
         <motion.div
           ref={ref}
