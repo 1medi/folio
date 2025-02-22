@@ -68,7 +68,7 @@ export default function AboutAe() {
           <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
             Identifying The Issue
           </h2>
-          <p className="p-4 lg:text-lg">
+          <p className="p-4 text-center lg:text-lg">
             <span className="font-bold text-xl">Did you know? </span>
             Caregivers spend up to an average of 10-15 hours per week managing
             forms and paperwork! Through the team's research and surveying, it

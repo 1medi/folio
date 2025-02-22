@@ -10,12 +10,12 @@ export default function Section8() {
           </h2>
           <div className="text flex flex-col justify-center items-center ">
             <ul className=" m-4">
-              <li className="text-lg">
+              <li className="text-lg text-center p-2">
                 <span className="font-bold">'Photo-to-PDF' Feature: </span> This
                 feature allows caregivers to take photos of forms with their
                 phones and convert them into editable PDFs in just a few clicks.
               </li>
-              <li className="text-lg">
+              <li className="text-lg text-center p-2">
                 <span className="font-bold">
                   Expanded Library of Supported Forms:{" "}
                 </span>
@@ -23,7 +23,7 @@ export default function Section8() {
                 search and access, ensuring they can find the specific forms
                 they need.
               </li>
-              <li className="text-lg">
+              <li className="text-lg text-center p-2">
                 <span className="font-bold">
                   Multilingual Support for Diverse Users:
                 </span>{" "}

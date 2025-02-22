@@ -23,9 +23,9 @@ export default function Section2() {
                 alt="action"
                 width={64}
               />
-              <h1 className="text-xl lg:text-3xl font-semibold">ChatGPT</h1>
+              <h1 className="text-3xl xl:text-8xl font-semibold ">ChatGPT</h1>
             </div>
-            <p className="">
+            <p className="text-center">
               A large language model that can be used to help answer questions
               as well as clarifying text that may need alternate way of
               explaining. This technology can scan Images, simplify paragraphs
@@ -41,9 +41,9 @@ export default function Section2() {
                 alt="action"
                 width={64}
               />
-              <h1 className="text-xl lg:text-3xl font-semibold">PDF.ai</h1>
+              <h1 className="text-3xl xl:text-8xl font-semibold ">PDF.ai</h1>
             </div>
-            <p className="">
+            <p className="text-center">
               PDF.ai is an AI-powered tool designed to interact with and analyze
               PDF documents, allowing users to ask questions, extract data, and
               generate summaries, making document comprehension and research
@@ -60,9 +60,9 @@ export default function Section2() {
                 alt="action"
                 width={64}
               />
-              <h1 className="text-xl lg:text-3xl font-semibold">Quillbot</h1>
+              <h1 className="text-3xl xl:text-8xl font-semibold ">Quillbot</h1>
             </div>
-            <p className="">
+            <p className="text-center">
               Started in 2017 as an app to help students improve their english
               when writing. Since then, it has evolved into a AI-powered writing
               platform. They are also partnered with 150 universities. They have

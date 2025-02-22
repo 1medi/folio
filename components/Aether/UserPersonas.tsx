@@ -15,7 +15,7 @@ export default function Section3() {
         </h2>
         <div>
           <div className="persona1 flex flex-col lg:grid grid-cols-2 ">
-            <div className="flex flex-row justify-center items-center ">
+            <div className="flex flex-col xl:flex-row justify-center items-center ">
               <h3 className="text-2xl lg:text-5xl font-bold m-2 l:m-4">
                 Sarah James
               </h3>
@@ -25,7 +25,7 @@ export default function Section3() {
                 alt="Sarah James"
               />
             </div>
-            <div className="m-4">
+            <div className="m-4 text-center">
               <h4 className="text-xl lg:text-3xl font-semibold">
                 Personal Details
               </h4>

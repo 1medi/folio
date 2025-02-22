@@ -22,9 +22,9 @@ export default function Section6() {
         </h2>
         <div className="section-container h-full flex flex-col items-around justify-around">
           <div className="section1 ">
-            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">Logo</h2>
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold text-center">Logo</h2>
             <div className="flex flex-col lg:flex-row">
-              <p className="lg:m-8 xl:text-xl xl:w-2/3">
+              <p className="lg:m-8 xl:text-xl xl:w-2/3 text-center">
                 This is a combination of a document and a compass. The document
                 represent the app’s function of assisting with form completion
                 and paperwork. The compass represents the guidance and direction
@@ -41,7 +41,7 @@ export default function Section6() {
             </div>
           </div>
           <div className="section2">
-            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold text-center">
               Color Palette
             </h2>
             <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2 lg:gap-4">
@@ -63,15 +63,15 @@ export default function Section6() {
             </div>
           </div>
           <div className="section3 ">
-            <h2 className="m-4 text-3xl xl:text-8xl font-semibold">
+            <h2 className="m-4 text-3xl xl:text-8xl font-semibold text-center">
               Typography
             </h2>
             <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-4">
               <div className={OpenSans.className}>
-                <h2 className="p-4 text-2xl xl:text-5xl font-bold">
+                <h2 className="p-4 text-2xl xl:text-5xl font-bold text-center">
                   This is Opensans
                 </h2>
-                <p className="xl:text-xl p-4">
+                <p className="xl:text-xl p-4 text-center">
                   Balancing the modernity and accessibility, which aligns with
                   the app's goal of simplifying complex processes. It is clear
                   which is easy to read and can be used to across different
@@ -79,10 +79,10 @@ export default function Section6() {
                 </p>
               </div>
               <div className={ItalianaFont.className}>
-                <h2 className="p-4 text-2xl xl:text-5xl font-bold">
+                <h2 className="p-4 text-2xl xl:text-5xl font-bold text-center">
                   This is Italiana (Redacted)
                 </h2>
-                <p className="xl:text-xl p-4">
+                <p className="xl:text-xl p-4 text-center">
                   The abstract design of this font works well with the logo; it
                   adds more depth to it. The contrast between fine and thick
                   strokes adds a unique touch, while keeping the design modern

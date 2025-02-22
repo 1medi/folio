@@ -27,7 +27,10 @@ export default function Home() {
       <div className="snap-start">
         <About />
       </div>
+      <div className="snap-start">
       <Footer />
+      </div>
+
     </main>
   );
 }

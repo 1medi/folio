@@ -10,7 +10,7 @@ export default function Section4() {
           User Research
         </h2>
         <div className="flex flex-col xl:flex-row">
-          <div className="text-xl p-4">
+          <div className="text-center text-xl p-4">
             <p>
               <span className="font-bold">Date of Report:</span> October 1, 2024
             </p>
@@ -20,7 +20,7 @@ export default function Section4() {
             </p>
           </div>
           <div className="m-2 lg:m-4">
-            <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">
+            <h4 className="text-3xl xl:text-8xl font-semibold  text-center p-4">
               Who We Surveyed
             </h4>
             <p className="text-center text-lg">
@@ -34,15 +34,15 @@ export default function Section4() {
         </div>
 
         <div className="results-container m-2 lg:m-4">
-          <h4 className="text-xl lg:text-3xl font-semibold text-center">
-            Major Findings / Pain Points
+          <h4 className="text-3xl xl:text-8xl font-semibold text-center">
+            Major Findings
           </h4>
           <div className="survey-findings flex flex-col lg:grid grid-cols-2">
             <div className="m-2">
               <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">
                 Commonalities
               </h4>
-              <div>
+              <div className="text-center">
                 <ul className="text-lg">
                   <li className="p-2">
                     <span className="font-bold">
@@ -87,8 +87,8 @@ export default function Section4() {
                 </ul>
               </div>
             </div>
-            <div className="m-2">
-              <h4 className="text-xl lg:text-3xl font-semibold text-center p-4">
+            <div className="m-2 text-center">
+              <h4 className="text-3xl xl:text-8xl font-semibold text-center p-4">
                 Pain Points
               </h4>
               <div className="m-2">

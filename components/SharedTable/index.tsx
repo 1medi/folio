@@ -11,13 +11,13 @@ const TabData = [
     body: (
       <div className="m-4 xl:mb-8">
         <ul className="m-2 xl:text-4xl text-white font-medium text-center">
-          <li className="xl:p-2">
+          <li className="p-2">
             Uses digital tools like calendars to stay organized
           </li>
-          <li className="xl:p-2">Uses alarms/reminders for deadlines</li>
-          <li className="xl:p-2">Uses laptop and smartphone daily</li>
-          <li className="xl:p-2">Prioritizes speed and efficiency</li>
-          <li className="xl:p-2">Always improving and optimizing tasks</li>
+          <li className="p-2">Uses alarms/reminders for deadlines</li>
+          <li className="p-2">Uses laptop and smartphone daily</li>
+          <li className="p-2">Prioritizes speed and efficiency</li>
+          <li className="p-2">Always improving and optimizing tasks</li>
         </ul>
       </div>
     ),
@@ -29,11 +29,11 @@ const TabData = [
     body: (
       <div className="m-4 xl:mb-8">
         <ul className="m-2 xl:text-4xl text-white font-medium text-center">
-          <li className="xl:p-4">Easy access homepage</li>
-          <li className="xl:p-4">
+          <li className="p-2 xl:p-4">Easy access homepage</li>
+          <li className="p-2 xl:p-4">
             Scan physical documents or receive electronically
           </li>
-          <li className="xl:p-4">Good organization to track forms</li>
+          <li className="p-2 xl:p-4">Good organization to track forms</li>
         </ul>
       </div>
     ),
@@ -45,9 +45,9 @@ const TabData = [
     body: (
       <div className="m-4 xl:mb-8">
         <ul className="m-2 xl:text-4xl text-white font-medium text-center">
-          <li className="xl:p-4">Cluttered layout</li>
-          <li className="xl:p-4">Unclear design</li>
-          <li className="xl:p-4">Unnecessary navigation steps</li>
+          <li className="p-2 xl:p-4">Cluttered layout</li>
+          <li className="p-2 xl:p-4">Unclear design</li>
+          <li className="p-2 xl:p-4">Unnecessary navigation steps</li>
         </ul>
       </div>
     ),
@@ -59,9 +59,9 @@ const TabData = [
     body: (
       <div className="m-4 xl:mb-8">
         <ul className="m-2 xl:text-4xl text-white font-medium text-center">
-          <li className="xl:p-4">Keeping seniors' records organized</li>
-          <li className="xl:p-4">Reviewing forms for accuracy</li>
-          <li className="xl:p-4">Understanding UX/UI for efficiency</li>
+          <li className="p-2 xl:p-4">Keeping seniors' records organized</li>
+          <li className="p-2 xl:p-4">Reviewing forms for accuracy</li>
+          <li className="p-2 xl:p-4">Understanding UX/UI for efficiency</li>
         </ul>
       </div>
     ),

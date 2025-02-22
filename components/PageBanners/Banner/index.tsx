@@ -48,7 +48,7 @@ const Banner = () => {
       flex flex-col gap-5 items-center justify-center z-10 mb-10 
       "
       >
-        <motion.div className="">
+        <motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 1 }}

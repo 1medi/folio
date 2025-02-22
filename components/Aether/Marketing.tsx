@@ -12,7 +12,7 @@ export default function Section7() {
         </h2>
         <div className="flex flex-col lg:grid lg:grid-cols-2 justify-around">
           <div className="promo-videos md:m-4 flex flex-col justify-center items-center">
-            <p className="text-center text-xl lg:mx-24 lg:my-8">
+            <p className="text-center text-xl lg:mx-24 lg:my-8 p-2">
               On top of the various aspects of designing and developing the core
               application, we had to create other components to support our app,
               including physical goods such as: Brochures, Tote Bags and even a
@@ -43,6 +43,7 @@ export default function Section7() {
               }}
               src={AetherMockup}
               autoPlay
+              playsInline
               loop
             />
           </div>

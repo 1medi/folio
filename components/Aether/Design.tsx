@@ -8,35 +8,35 @@ export default function Section5() {
         <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
           Design Decisions
         </h2>
-        <p className="text-left p-4 text-lg">
+        <p className="text-center xl:text-left p-4 text-lg">
           Whether it be the logo, blog or application, Aether underwent many
           shifts in creative direction
         </p>
         <div className="m-auto items-center flex flex-col">
           <div className="logo">
-            <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
+            <h1 className="text-3xl font-semibold text-center p-4">
               Logo
             </h1>
-            <div>
+            <div> 
               <LogoComparison />
             </div>
             <p></p>
           </div>
 
           <div className="App">
-            <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
+            <h1 className="text-3xl font-semibold text-center p-4">
               App
             </h1>
           </div>
           <div>
             <AppComparison />
           </div>
-          <div className="name ">
-            <h1 className="text-xl lg:text-3xl font-semibold text-center p-4">
+          <div className="name">
+            <h1 className="text-3xl font-semibold text-center p-4">
               Name
             </h1>
-            <div className="grid grid-cols-3 gap-4">
-              <div className="text-center">
+            <div className="flex flex-col xl:grid xl:grid-cols-3 xl:gap-4">
+              <div className="text-center p-2">
                 <h2 className="font-bold">Elder Ease</h2>
                 <p>
                   Originating from our favourite LLM, Elder Ease was the inital
@@ -45,7 +45,7 @@ export default function Section5() {
                   app!
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center p-2">
                 <h2 className="font-bold">Nimbus</h2>
                 <p>
                   Further discussions brought up the issue that the term "Elder"
@@ -54,7 +54,7 @@ export default function Section5() {
                   Nimbus was a name that stuck with the entire team.
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center p-2">
                 <h2 className="font-bold">Aether</h2>
                 <p>
                   The team attemptted to find a connection between our product

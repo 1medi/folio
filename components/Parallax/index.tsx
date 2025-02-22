@@ -10,7 +10,7 @@ export default function Banners() {
   const headingVariants = {
     initial: { y: 300, opacity: 0 },
     animate: { y: 0, opacity: 1 },
-    exit: { y: -300, opacity: 0 },
+    exit: { y: 900, opacity: 0 },
   };
 
   return (

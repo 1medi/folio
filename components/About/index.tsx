@@ -49,7 +49,7 @@ const About = () => {
               </ul>
             </div>
             <div className="m-auto p-2">
-              <h4 className="font-semibold">Frameworks</h4>
+              <h4 className="font-semibold">Frameworks / Libraries</h4>
               <ul className="list-disc list-inside">
                 <li className="p-1">React</li>
                 <li className="p-1">Next.js</li>
