@@ -38,12 +38,7 @@ export function ContactEmail(props: ContactFormType): ReactElement {
           </Section>
           <Hr style={hr} />
           <Link href="https://www.maditabon.dev">
-            <Img
-              src="https://imgur.com/a/66znC9m"
-              alt="Madi Tabon"
-              width="250"
-              style={logo}
-            />
+          Madi Tabon's Portfolio
           </Link>
         </Container>
       </Body>
