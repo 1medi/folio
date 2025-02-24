@@ -120,9 +120,10 @@ const ACG = () => {
                     className="rounded-xl w-full"
                   />
                 </div>
-                <h2 className="font-bold p-2 xl:text-2xl desktop:p-4 text-center ">Core Colors: </h2>
+                <h2 className="font-bold p-2 xl:text-2xl desktop:p-4 text-center ">
+                  Core Colors
+                </h2>
                 <ul className="w-50 m-auto text-center p-4 desktop:text-2xl desktop:w-full">
-
                   <li className="p-2 desktop:p-4">
                     {" "}
                     <span className="font-bold">#C1121F (Bright Red)</span> :
@@ -154,17 +155,31 @@ const ACG = () => {
                       className="m-2 rounded-lg w-full"
                     />
                   </div>
-                  <p className="w-50 text-center m-4 desktop:text-2xl desktop:w-full">
-                    <span className="font-bold">Core Colors:</span> <br />
-                    <span className="font-bold">#C1121F (Bright Red)</span>: For
-                    bold accents and energetic highlights.{" "}
-                    <span className="font-bold">#FDF0D5 (Cream)</span>: A
-                    neutral base for balance and warmth.{" "}
-                    <span className="font-bold">#2274A5 (Deep Blue)</span>: For
-                    contrast and reliability.
-                    <span className="font-bold">#DB9B39 (Gold)</span>: Adds
-                    sophistication and premium vibes.
-                  </p>
+                  <h2 className="font-bold p-2 xl:text-2xl desktop:p-4 text-center ">
+                    Core Colors
+                  </h2>
+                  <ul className="w-50 text-center m-4 desktop:text-2xl desktop:w-full">
+                    <li className="p-2 desktop:p-4">
+                      {" "}
+                      <span className="font-bold">#C1121F (Bright Red)</span>:
+                      For bold accents and energetic highlights.{" "}
+                    </li>
+                    <li className="p-2 desktop:p-4">
+                      {" "}
+                      <span className="font-bold">#FDF0D5 (Cream)</span>: A
+                      neutral base for balance and warmth.{" "}
+                    </li>
+                    <li className="p-2 desktop:p-4">
+                      {" "}
+                      <span className="font-bold">#2274A5 (Deep Blue)</span>:
+                      For contrast and reliability.
+                    </li>
+                    <li className="p-2 desktop:p-4">
+                      {" "}
+                      <span className="font-bold">#DB9B39 (Gold)</span>: Adds
+                      sophistication and premium vibes.
+                    </li>
+                  </ul>
                 </div>
 
                 <div className=" flex flex-col justify-center m-12 items-center">
