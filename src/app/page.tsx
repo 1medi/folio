@@ -28,9 +28,9 @@ export default function Home() {
       <div className="snap-start">
         <About />
       </div>
-      {/* <div className="snap-start">
+      <div className="snap-start">
         <Contact />
-      </div> */}
+      </div>
       <div className="snap-start">
       <Footer />
       </div>

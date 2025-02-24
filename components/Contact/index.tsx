@@ -47,7 +47,7 @@ export default function Page() {
           <input
             placeholder="Your Name"
             {...register("name", { required: "Name is Required " })}
-            className="block w-full p-2 mb-2 border border-gray-300 rounded"
+            className="block w-full p-2 mb-2 border text-black  border-gray-300 rounded"
           />
           {errors.name && <p className="">{errors.name.message}</p>}
         </label>
@@ -56,7 +56,7 @@ export default function Page() {
           <input
             {...register("email", { required: "Email is Required " })}
             placeholder="Your Email"
-            className="block w-full p-2 mb-2 border border-gray-300 rounded"
+            className="block w-full p-2 mb-2 border text-black  border-gray-300 rounded"
           />
           {errors.email && <p className="">{errors.email.message}</p>}
         </label>
@@ -65,7 +65,7 @@ export default function Page() {
           <textarea
             {...register("message", { required: "A Message is Required " })}
             placeholder="Your Message"
-            className="block w-full p-2 mb-2 border border-gray-300 rounded"
+            className="block w-full p-2 mb-2 border border-gray-300 text-black rounded"
           />
           {errors.message && <p className="">{errors.message.message}</p>}
         </label>
@@ -76,7 +76,7 @@ export default function Page() {
         >
           Submit
         </button>
-        {successMessage && <p>{successMessage}</p>}
+        {successMessage && <p className="text-center">{successMessage}</p>}
       </form>
     </>
   );
