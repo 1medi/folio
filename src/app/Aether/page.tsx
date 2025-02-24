@@ -48,30 +48,27 @@ const Aether = () => {
     <>
       <Header />
       <Parallax />
-      <main className=" min-h-screen snap-y snap-start ">
-        <section className="snap-start">
-          <section className="mt-32 xl:grid xl:grid-cols-2 ">
-            <div className=" h-full xl:my-auto">
+      <main className=" min-h-screen snap-start ">
+        <section className="inner-container snap-start">
+          <section className="xl:grid xl:grid-cols-2 xl:m-4 ">
+            <div className="flex justify-center items-center pt-10">
               <Section1 />
             </div>
-            <div className="">
+            <div className="lg:pt-10 ">
               <AboutAe />
             </div>
           </section>
-          <section className=" p-8">
+          <section className="xl:mx-4 xl:my-8">
             <Section2 />
-          </section>
-          <section className="flex flex-col m-4 h-full">
             <UserPersonas />
-            <div className="h-full">
-              <Section4 />
-            </div>
+            <Section4 />
           </section>
-          <section className="flex flex-col lg:flex-row h-full ">
+
+          <section className="flex flex-col lg:flex-row">
             <Section5 />
             <Section6 />
           </section>
-          <section className="h-full ">
+          <section>
             <Section7 />
             <Section8 />
           </section>
@@ -86,7 +83,7 @@ const Aether = () => {
           </div>
         </section>
       </main>
-      <div className="snap-start snap-normal">
+      <div className="snap-start">
         <Footer />
       </div>
     </>

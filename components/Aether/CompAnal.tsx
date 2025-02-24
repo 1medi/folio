@@ -9,7 +9,7 @@ export default function Section2() {
   return (
     <>
       <FadeIn
-        className="proj-ideation p-4  xl:p-10 bg-[#a49e8e80]  rounded-lg w-full h-full  "
+        className="Comp-Anal p-4 m-4 bg-[#a49e8e80]  rounded-lg  xl:mb-8"
       >
         <h2 className="text-2xl text-center  xl:text-3xl  bg-[#3A3F2D] rounded-lg m-4 p-4">
           Competitive Analysis
@@ -23,9 +23,9 @@ export default function Section2() {
                 alt="action"
                 width={64}
               />
-              <h1 className="text-3xl font-semibold ">ChatGPT</h1>
+              <h1 className="text-3xl font-semibold desktop:text-5xl">ChatGPT</h1>
             </div>
-            <p className="text-center">
+            <p className="text-center desktop:text-2xl">
               A large language model that can be used to help answer questions
               as well as clarifying text that may need alternate way of
               explaining. This technology can scan Images, simplify paragraphs
@@ -34,16 +34,16 @@ export default function Section2() {
           </div>
 
           <div className="m-4 md:m-2 flex flex-col xl:w-auto xl:m-4">
-            <div className="header flex flex-row items-center">
+            <div className="header flex flex-row items-center ">
               <Image
                 className="rounded-full m-4"
                 src={PDFai}
                 alt="action"
                 width={64}
               />
-              <h1 className="text-3xl font-semibold ">PDF.ai</h1>
+              <h1 className="text-3xl font-semibold desktop:text-5xl">PDF.ai</h1>
             </div>
-            <p className="text-center">
+            <p className="text-center desktop:text-2xl">
               PDF.ai is an AI-powered tool designed to interact with and analyze
               PDF documents, allowing users to ask questions, extract data, and
               generate summaries, making document comprehension and research
@@ -60,15 +60,15 @@ export default function Section2() {
                 alt="action"
                 width={64}
               />
-              <h1 className="text-3xl font-semibold ">Quillbot</h1>
+              <h1 className="text-3xl font-semibold desktop:text-5xl">Quillbot</h1>
             </div>
-            <p className="text-center">
+            <p className="text-center desktop:text-2xl">
               Started in 2017 as an app to help students improve their english
               when writing. Since then, it has evolved into a AI-powered writing
               platform. They are also partnered with 150 universities. They have
               started expanding the use of AI in their website and app and
               adding new features to it such as citation, grammar check,
-              summarizer, plagarism check, and more
+              summarizer, plagarism check, and more.
             </p>
           </div>
         </div>

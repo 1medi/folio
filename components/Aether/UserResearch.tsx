@@ -4,9 +4,9 @@ export default function Section4() {
   return (
     <>
       <FadeIn
-        className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4"
+        className="user-research p-4 bg-[#a49e8e80] rounded-lg m-4  xl:mb-8"
       >
-        <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+        <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 xl:m-4">
           User Research
         </h2>
         <div className="flex flex-col xl:flex-row">

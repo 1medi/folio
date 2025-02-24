@@ -26,7 +26,7 @@ export default function AboutAe() {
           hidden: { opacity: 0, scale: 0 },
           exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
         }}
-        className=" h-full xl:m-4 flex justify-center flex-col "
+        className="About-App flex justify-center flex-col "
       >
         <motion.div
           ref={ref}
@@ -38,7 +38,7 @@ export default function AboutAe() {
             hidden: { opacity: 0, scale: 0 },
             exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
           }}
-          className="about p-8 bg-[#a49e8e80] rounded-lg m-4 lg:p-4 xl:p-12 lg:m-none desktop:p-24"
+          className="about p-8 bg-[#a49e8e80] rounded-lg m-4 mb-0 lg:mb-auto "
         >
           <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
             What is Aether?
@@ -63,7 +63,7 @@ export default function AboutAe() {
             hidden: { opacity: 0, scale: 0 },
             exit: { opacity: 0, scale: 0.8 }, // Custom exit animation
           }}
-          className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4 lg:p-4 lg:m-none xl:p-12 desktop:p-24"
+          className="proj-ideation p-8 bg-[#a49e8e80] rounded-lg m-4 mb-0 lg:mb-auto  "
         >
           <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
             Identifying The Issue

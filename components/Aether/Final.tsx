@@ -4,7 +4,7 @@ export default function Section8() {
   return (
     <>
       <FadeIn className="last-row  flex flex-col lg:flex-row">
-        <div className="future p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:mr-4 lg:w-1/2">
+        <div className="future p-8 mx-4 mb-4 bg-[#a49e8e80] rounded-lg lg:mx-8 lg:mb-8 lg:mr-4 lg:w-1/2">
           <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-left p-4">
             Future Prospects
           </h2>
@@ -33,12 +33,12 @@ export default function Section8() {
             </ul>
           </div>
         </div>
-        <div className="future p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 lg:ml-4 lg:w-1/2">
+        <div className="future p-8 mx-4 mb-4 bg-[#a49e8e80] rounded-lg lg:mx-8 lg:mb-8 lg:ml-4 lg:w-1/2">
           <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
             Lessons Learned
           </h2>
           <div className="text flex flex-col justify-center items-center ">
-            <ul className="m-4 text-center xl:text-right">
+            <ul className="m-4 text-center ">
               <li className="text-lg pb-2">
                 Effective communication when collaborating in a large,
                 cross-functional team with diverse roles.

@@ -26,7 +26,7 @@ export const Card: React.FC<CarouselCardProps> = ({ image, title, description })
             exit={{ opacity: 0 }}
           >
             <div className="absolute  pointer-events-none  h-full w-full" />
-            <div className="bg-[#a49e8e80] h-full w-full flex justify-center items-center">
+            <div className="bg-[#ffc5d8da] h-full w-full flex justify-center items-center">
               <div className="flex flex-col flex-wrap">
                 <p className="m-auto text-black lg:text-5xl p-4">{title}</p>
                 <p className="m-auto text-black lg:text-4xl p-4 text-center">{description}</p>

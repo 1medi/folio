@@ -6,7 +6,7 @@ import FadeIn from "@/app/utils/fadein";
 export default function Section7() {
   return (
     <>
-      <FadeIn className="marketing  h-full p-8 bg-[#a49e8e80] rounded-lg mx-8 mb-8 ">
+      <FadeIn className="marketing  h-full p-8 mx-4 mb-4 bg-[#a49e8e80] rounded-lg lg:mx-8 lg:mb-8 ">
         <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
           Marketing
         </h2>

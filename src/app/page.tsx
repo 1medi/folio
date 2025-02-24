@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import About from "../../components/About";
 import AboutP from "../../components/About-p/index";
 import dynamic from "next/dynamic";
+import Contact from "../../components/Contact"
 
 const DynamicCarousel = dynamic(
   () => import("../../components/InfiniteCarousel"),
@@ -27,6 +28,9 @@ export default function Home() {
       <div className="snap-start">
         <About />
       </div>
+      {/* <div className="snap-start">
+        <Contact />
+      </div> */}
       <div className="snap-start">
       <Footer />
       </div>

@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^4.1.1",
     "@img-comparison-slider/react": "^8.0.2",
+    "@react-email/components": "^0.0.33",
+    "@sendgrid/mail": "^8.1.4",
     "framer-motion": "^11.17.0",
     "lenis": "^1.1.20",
     "lottie-react": "^2.4.1",
@@ -19,11 +22,15 @@
     "next-video": "^2.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-email": "^1.2.0",
+    "react-hook-form": "^7.54.2",
     "react-icons": "^5.4.0",
     "react-pdf": "^9.2.1",
     "react-use-measure": "^2.1.7",
+    "regex": "^6.0.1",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/node": "^20",

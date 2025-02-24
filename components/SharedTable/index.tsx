@@ -11,13 +11,17 @@ const TabData = [
     body: (
       <div className="m-4 xl:mb-8">
         <ul className="m-2 xl:text-4xl text-white font-medium text-center">
-          <li className="p-2">
+          <li className="p-2 desktop:p-4">
             Uses digital tools like calendars to stay organized
           </li>
-          <li className="p-2">Uses alarms/reminders for deadlines</li>
-          <li className="p-2">Uses laptop and smartphone daily</li>
-          <li className="p-2">Prioritizes speed and efficiency</li>
-          <li className="p-2">Always improving and optimizing tasks</li>
+          <li className="p-2 desktop:p-4">
+            Uses alarms/reminders for deadlines
+          </li>
+          <li className="p-2 desktop:p-4">Uses laptop and smartphone daily</li>
+          <li className="p-2 desktop:p-4">Prioritizes speed and efficiency</li>
+          <li className="p-2 desktop:p-4">
+            Always improving and optimizing tasks
+          </li>
         </ul>
       </div>
     ),
@@ -83,7 +87,7 @@ export default function SharedLayoutAnimation() {
               animate={{
                 backgroundColor: item === selectedTab ? "#a49e8e80" : "#eee0",
               }}
-              className="rounded-t-[5px] text-center w-full xl:px-[25px] xl:py-[24px] relative bg-black cursor-pointer h-[56px] flex justify-between items-center flex-1 min-w-0 select-none text-sm text-white"
+              className="rounded-t-[5px] text-center w-full xl:px-[25px] xl:py-[24px] relative bg-black cursor-pointer h-[56px] flex justify-between items-center flex-1 min-w-0 select-none text-sm desktop:text-xl text-white"
             >
               {`${item.icon} ${item.label}`}
               {item === selectedTab ? (
