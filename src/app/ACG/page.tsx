@@ -13,10 +13,7 @@ import ACGType from "/public/ACG/typography.png";
 import ACGLogo from "/public/ACG/logo.png";
 import FadeIn from "../utils/fadein";
 
-
 const ACG = () => {
-
-
   return (
     <>
       <Header />
@@ -27,44 +24,46 @@ const ACG = () => {
         </div>
 
         <motion.section className="snap-start w-full ">
-          <FadeIn className=" m-8  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
-            <div className="lg:p-4">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
-                Tools Used
-              </h2>
-              <ul className="p-2 text-center">
-                <li className="text-2xl p-2 lg:p-5">Figma</li>
-                <li className="text-2xl p-2 lg:p-5">Tabletop Simulator</li>
-              </ul>
-            </div>
-            <div className="lg:p-4">
-              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
-                Key Features
-              </h2>
-              <ul className="p-2 text-center">
-                <li className="text-2xl lg:p-2">3 Elemental Decks!</li>
-                <li className="text-2xl lg:p-2">Character Abilites</li>
-                <li className="text-2xl lg:p-2">Unique Game Mechanics!</li>
-              </ul>
-            </div>
-          </FadeIn>
+          <FadeIn className="mt-10 flex flex-col xl:flex-row">
+            <FadeIn className=" m-4 xl:ml-8 xl:mr-4 bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+              <div className="lg:p-4">
+                <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+                  Tools Used
+                </h2>
+                <ul className="p-2 text-center">
+                  <li className="text-2xl p-2 lg:p-5">Figma</li>
+                  <li className="text-2xl p-2 lg:p-5">Tabletop Simulator</li>
+                </ul>
+              </div>
+              <div className="lg:p-4">
+                <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+                  Key Features
+                </h2>
+                <ul className="p-2 text-center">
+                  <li className="text-2xl lg:p-2">3 Elemental Decks!</li>
+                  <li className="text-2xl lg:p-2">Character Abilites</li>
+                  <li className="text-2xl lg:p-2">Unique Game Mechanics!</li>
+                </ul>
+              </div>
+            </FadeIn>
 
-          <FadeIn className="about p-12 bg-[#a49e8e80] rounded-lg m-8">
-            <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
-              What is ACG?
-            </h2>
-            <p className="p-4">
-              In ACG: Aspect of Elements, players engage in a strategic card
-              game where they command elemental forces in turn-based battles.
-              Choose your elemental affinity wisely – fire, water, earth, or air
-              – as each offers unique strengths and abilities. Build your deck
-              strategically, combining spells, creatures, and artifacts to
-              outmaneuver your opponents.
-            </p>
+            <FadeIn className="about  m-4 xl:mr-8 xl:ml-4  p-8 bg-[#a49e8e80] rounded-lg">
+              <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
+                What is ACG?
+              </h2>
+              <p className="p-4">
+                In ACG: Aspect of Elements, players engage in a strategic card
+                game where they command elemental forces in turn-based battles.
+                Choose your elemental affinity wisely – fire, water, earth, or
+                air – as each offers unique strengths and abilities. Build your
+                deck strategically, combining spells, creatures, and artifacts
+                to outmaneuver your opponents.
+              </p>
+            </FadeIn>
           </FadeIn>
 
           <div className="flex flex-col lg:flex-row">
-            <FadeIn className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
+            <FadeIn className="proj-ideation p-8 bg-[#a49e8e80] m-4 xl:m-8 xl:mr-4 rounded-lg">
               <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
                 Project Ideation
               </h2>
@@ -85,7 +84,7 @@ const ACG = () => {
               </div>
             </FadeIn>
 
-            <FadeIn className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-8 rounded-lg">
+            <FadeIn className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-4 xl:m-8 xl:ml-4 rounded-lg">
               <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
                 Outcome
               </h2>
@@ -107,8 +106,7 @@ const ACG = () => {
             </FadeIn>
           </div>
 
-
-          <FadeIn className="proj-styleguide p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
+          <FadeIn className="proj-styleguide p-4 bg-[#a49e8e80] m-4 xl:m-8 xl:mt-4 rounded-lg flex flex-col ">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
@@ -122,25 +120,32 @@ const ACG = () => {
                     className="rounded-xl w-full"
                   />
                 </div>
-                <div className="w-50 m-auto text-center p-4">
-                  <span className="font-bold">Core Colors: </span>
-                  <br />
-                  <span className="font-bold">#C1121F (Bright Red)</span> : For
-                  bold accents and energetic highlights.
-                  <br /> <span className="font-bold">#FDF0D5 (Cream)</span> : A
-                  neutral base for balance and warmth.
-                  <br /> <span className="font-bold">
-                    #2274A5 (Deep Blue)
-                  </span>{" "}
-                  : For contrast and reliability.
-                  <br />
-                  <span className="font-bold"> #DB9B39 (Gold)</span> : Adds
-                  sophistication and premium vibes.
-                </div>
+                <h2 className="font-bold p-2 xl:text-2xl desktop:p-4 text-center ">Core Colors: </h2>
+                <ul className="w-50 m-auto text-center p-4 desktop:text-2xl desktop:w-full">
+
+                  <li className="p-2 desktop:p-4">
+                    {" "}
+                    <span className="font-bold">#C1121F (Bright Red)</span> :
+                    For bold accents and energetic highlights.
+                  </li>
+                  <li className="p-2 desktop:p-4">
+                    {" "}
+                    <span className="font-bold">#FDF0D5 (Cream)</span> : A
+                    neutral base for balance and warmth.
+                  </li>
+                  <li className="p-2 desktop:p-4">
+                    <span className="font-bold">#2274A5 (Deep Blue)</span> : For
+                    contrast and reliability.
+                  </li>
+                  <li className="p-2 desktop:p-4">
+                    {" "}
+                    <span className="font-bold"> #DB9B39 (Gold)</span> : Adds
+                    sophistication and premium vibes.
+                  </li>
+                </ul>
               </div>
 
               <div className="Everything Else m-auto w-full lg:w-1/2">
-
                 <div className=" flex flex-col justify-center m-12 items-center">
                   <div className="photo-container w-[250px] lg:w-[500px]  flex m-8">
                     <Image
@@ -149,7 +154,7 @@ const ACG = () => {
                       className="m-2 rounded-lg w-full"
                     />
                   </div>
-                  <p className="w-50 text-center m-4 ">
+                  <p className="w-50 text-center m-4 desktop:text-2xl desktop:w-full">
                     <span className="font-bold">Core Colors:</span> <br />
                     <span className="font-bold">#C1121F (Bright Red)</span>: For
                     bold accents and energetic highlights.{" "}
@@ -171,7 +176,7 @@ const ACG = () => {
                     />
                   </div>
 
-                  <p className="w-60 text-center m-4">
+                  <p className="w-60 text-center m-4 desktop:text-2xl desktop:w-full">
                     Dragon Hunter gives off inviting but serious at the same
                     time. It combines the classic fantasy style with a
                     modernized, approachable look.
@@ -186,14 +191,13 @@ const ACG = () => {
                       className="w-full rounded-lg m-2"
                     />
                   </div>
-                  <p className="w-60 text-center m-4">
+                  <p className="w-60 text-center m-4 desktop:text-2xl desktop:w-full">
                     The winged cards and the "ACG: Aspect of Elements" logo
                     blend themes of imagination and strategy, possibly alluding
                     to collectible card games or a design process inspired by
                     game-like creativity.
                   </p>
                 </div>
-
               </div>
             </div>
           </FadeIn>
@@ -202,8 +206,6 @@ const ACG = () => {
           <Footer />
         </div>
       </main>
-
-
     </>
   );
 };
