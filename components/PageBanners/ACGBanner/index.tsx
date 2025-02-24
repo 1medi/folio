@@ -71,7 +71,7 @@ const ACGBanner = () => {
                   href="https://pocket-profs-a5-styleguide.vercel.app/"
                   target="_blank"
                 >
-                  <p className="text-4xl">On Steam Workshop!</p>
+                  <p className="text-2xl xl:text-4xl">On Steam Workshop!</p>
                 </a>
               </motion.div>
             </div>

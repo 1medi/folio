@@ -8,6 +8,7 @@ import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
 import PPPhone from "../../../components/PhoneScreens/PPPhone/index";
 import PPNav from "../../../components/ComparisonSliders/PPNav";
 import PPMain from "../../../components/ComparisonSliders/PPMain";
+import FadeIn from "../utils/fadein";
 
 const PocketProf = () => {
 
@@ -20,7 +21,7 @@ const PocketProf = () => {
 
       <main className="snap-start min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <motion.section className="w-full">
-          <div className="w-2/3 mx-auto md:my-4 md:my-6 bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+          <FadeIn className="w-2/3 mx-auto md:my-4 bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg m-4 p-4">
                 Tools Used
@@ -41,10 +42,10 @@ const PocketProf = () => {
                 <li className="text-2xl p-2">Skill Library</li>
               </ul>
             </div>
-          </div>
+          </FadeIn>
 
           <div className="flex flex-col lg:flex-row m-4">
-            <div className="about p-8 lg:w-1/2 bg-[#a49e8e80] my-2 md:my-4 md:my-auto rounded-lg lg:mr-4 ">
+            <FadeIn className="about p-8 lg:w-1/2 bg-[#a49e8e80] my-2 md:my-4 md:my-auto rounded-lg lg:mr-4 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 What is Pocket Prof?
               </h2>
@@ -56,9 +57,9 @@ const PocketProf = () => {
                 students and individuals alike to improve on themselves and
                 create new goals."
               </p>
-            </div>
+            </FadeIn>
 
-            <div className="proj-ideation lg:w-1/2 p-8 bg-[#a49e8e80]  my-2  md:my-4 md:my-auto rounded-lg lg:ml-4">
+            <FadeIn className="proj-ideation lg:w-1/2 p-8 bg-[#a49e8e80]  my-2  md:my-4 md:my-auto rounded-lg lg:ml-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Identifying The Issue
               </h2>
@@ -69,19 +70,19 @@ const PocketProf = () => {
                 the help of AI, we can collect all the available resources and
                 make it available into 1 congestable application: Pocket Prof!
               </p>
-            </div>
+            </FadeIn>
           </div>
 
           <div className="flex flex-col lg:flex-row m-4">
-            <div className="user-workflow p-8 my-2  lg:mr-4 bg-[#a49e8e80] rounded-lg lg:w-3/5 ">
+            <FadeIn className="user-workflow p-8 my-2  lg:mr-4 bg-[#a49e8e80] rounded-lg lg:w-3/5 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 User Workflow
               </h2>
               <div className="rounded-xl p-4">
               <Image src={PPSitemap} alt="sitemap" />
               </div>
-            </div>
-            <div className="user-workflow p-8 my-2 lg:ml-4  bg-[#a49e8e80] rounded-lg lg:w-2/5 ">
+            </FadeIn>
+            <FadeIn className="user-workflow p-8 my-2 lg:ml-4  bg-[#a49e8e80] rounded-lg lg:w-2/5 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 App Mockup
               </h2>
@@ -89,10 +90,10 @@ const PocketProf = () => {
               <PPPhone />
               </div>
 
-            </div>
+            </FadeIn>
           </div>
 
-          <div className="user-testing p-4 m-4 lg:m-4 bg-[#a49e8e80] rounded-lg">
+          <FadeIn className="user-testing p-4 m-4 lg:m-4 bg-[#a49e8e80] rounded-lg">
             <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
               User Testing
             </h2>
@@ -237,7 +238,7 @@ const PocketProf = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </motion.section>
       </main>
       <div className="snap-start">

@@ -11,6 +11,7 @@ import ACGColors from "/public/ACG/colors.png";
 import ACGMeasurements from "/public/ACG/measurements.png";
 import ACGType from "/public/ACG/typography.png";
 import ACGLogo from "/public/ACG/logo.png";
+import FadeIn from "../utils/fadein";
 
 
 const ACG = () => {
@@ -26,7 +27,7 @@ const ACG = () => {
         </div>
 
         <motion.section className="snap-start w-full ">
-          <div className=" m-8  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+          <FadeIn className=" m-8  bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="lg:p-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Tools Used
@@ -46,9 +47,9 @@ const ACG = () => {
                 <li className="text-2xl lg:p-2">Unique Game Mechanics!</li>
               </ul>
             </div>
-          </div>
+          </FadeIn>
 
-          <div className="about p-12 bg-[#a49e8e80] rounded-lg m-8">
+          <FadeIn className="about p-12 bg-[#a49e8e80] rounded-lg m-8">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               What is ACG?
             </h2>
@@ -60,10 +61,10 @@ const ACG = () => {
               strategically, combining spells, creatures, and artifacts to
               outmaneuver your opponents.
             </p>
-          </div>
+          </FadeIn>
 
           <div className="flex flex-col lg:flex-row">
-            <div className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
+            <FadeIn className="proj-ideation p-8 bg-[#a49e8e80] m-8 rounded-lg">
               <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
                 Project Ideation
               </h2>
@@ -82,9 +83,9 @@ const ACG = () => {
                   />
                 </div>
               </div>
-            </div>
+            </FadeIn>
 
-            <div className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-8 rounded-lg">
+            <FadeIn className="proj-outcome p-8 flex flex-col bg-[#a49e8e80] m-8 rounded-lg">
               <h2 className="text-3xl text-right bg-[#3A3F2D] rounded-lg p-4">
                 Outcome
               </h2>
@@ -103,11 +104,11 @@ const ACG = () => {
                   />
                 </div>
               </div>
-            </div>
+            </FadeIn>
           </div>
 
 
-          <div className="proj-styleguide p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
+          <FadeIn className="proj-styleguide p-4 bg-[#a49e8e80] m-8 rounded-lg flex flex-col ">
             <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
               Styleguide
             </h2>
@@ -195,7 +196,7 @@ const ACG = () => {
 
               </div>
             </div>
-          </div>
+          </FadeIn>
         </motion.section>
         <div className="snap-start">
           <Footer />

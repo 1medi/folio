@@ -18,7 +18,7 @@ export default function Oscar() {
 
   return (
     <div className="flex justify-center items-center pt-5">
-      <div className="flex justify-center w-12" ref={animationContainer}></div>
+      <div className="flex justify-center w-12 desktop:w-24" ref={animationContainer}></div>
     </div>
   );
 }

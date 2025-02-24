@@ -4,7 +4,7 @@ import Footer from "../../../components/Footer";
 import { motion } from "framer-motion";
 import LBBanner from "../../../components/PageBanners/LBBanner";
 import FramerCarousel from "../../../components/FramerCarousel";
-
+import FadeIn from "../utils/fadein";
 const LutongBahay = () => {
 
 
@@ -17,7 +17,7 @@ const LutongBahay = () => {
 
       <main className="snap-start min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <motion.section className="w-full">
-          <div className="w-2/3 m-auto my-4 bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
+          <FadeIn className="w-2/3 m-auto my-4 bg-[#a49e8e80] rounded-lg justify-center items-center p-8  flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 m-4">
                 Tools Used
@@ -38,10 +38,10 @@ const LutongBahay = () => {
                 <li className="text-2xl p-2">Skill Library</li>
               </ul>
             </div>
-          </div>
+          </FadeIn>
 
           <div className="flex flex-col lg:flex-row">
-            <div className="about p-8 lg:w-1/2 bg-[#a49e8e80] rounded-lg m-4">
+            <FadeIn className="about p-8 lg:w-1/2 bg-[#a49e8e80] rounded-lg m-4">
               <h2 className="text-3xl text-center lg:text-left bg-[#3A3F2D] rounded-lg p-4">
                 What is Lutong Bahay?
               </h2>
@@ -56,9 +56,9 @@ const LutongBahay = () => {
                 easier for users to cook Filipino dishes no matter where they
                 are or what ingredients they have on hand.
               </p>
-            </div>
+            </FadeIn>
 
-            <div className="proj-ideation lg:w-1/2  p-8 m-4 bg-[#a49e8e80] rounded-lg">
+            <FadeIn className="proj-ideation lg:w-1/2  p-8 m-4 bg-[#a49e8e80] rounded-lg">
               <h2 className="text-3xl text-center md:text-right bg-[#3A3F2D] rounded-lg p-4">
                 Challenges
               </h2>
@@ -68,11 +68,11 @@ const LutongBahay = () => {
                 creating our own "fake" api in which we put in our own data to
                 use on the web app.
               </p>
-            </div>
+            </FadeIn>
           </div>
 
           <div className="flex flex-col lg:flex-row">
-            <div className="proj-ideation lg:w-1/2 p-8 m-4 bg-[#a49e8e80] rounded-lg">
+            <FadeIn className="proj-ideation lg:w-1/2 p-8 m-4 bg-[#a49e8e80] rounded-lg">
               <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
                 Design Decisions
               </h2>
@@ -97,8 +97,8 @@ const LutongBahay = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="proj-outcome p-8 m-4 lg:w-1/2  bg-[#a49e8e80] rounded-lg">
+            </FadeIn>
+            <FadeIn className="proj-outcome p-8 m-4 lg:w-1/2  bg-[#a49e8e80] rounded-lg">
               <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
                 Outcome
               </h2>
@@ -107,7 +107,7 @@ const LutongBahay = () => {
                 see some of the ones already included which you can add to the
                 shopping list and bring with you to your next supermarket run!
               </p>
-            </div>
+            </FadeIn>
           </div>
         </motion.section>
         <FramerCarousel />
