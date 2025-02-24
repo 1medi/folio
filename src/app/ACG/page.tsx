@@ -64,7 +64,7 @@ const ACG = () => {
 
           <div className="flex flex-col lg:flex-row">
             <FadeIn className="proj-ideation p-8 bg-[#a49e8e80] m-4 xl:m-8 xl:mr-4 rounded-lg">
-              <h2 className="text-3xl text-left bg-[#3A3F2D] rounded-lg p-4">
+              <h2 className="text-3xl text-center xl:text-left bg-[#3A3F2D] rounded-lg p-4">
                 Project Ideation
               </h2>
               <div className="justify-center items-center flex flex-col p-4">
