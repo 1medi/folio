@@ -13,6 +13,7 @@
     "@img-comparison-slider/react": "^8.0.2",
     "@react-email/components": "^0.0.33",
     "@sendgrid/mail": "^8.1.4",
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^11.17.0",
     "lenis": "^1.1.20",
     "lottie-react": "^2.4.1",
@@ -33,6 +34,8 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.11.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

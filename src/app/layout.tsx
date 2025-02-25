@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Transition from "../../components/Transition";
 // import {ReactLenis} from "@/app/utils/lenis"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Transition>{children}</Transition>
+        <SpeedInsights/>
       </body>
       {/* </ReactLenis> */}
     </html>
