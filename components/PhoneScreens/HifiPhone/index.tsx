@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const HifiPhone1 = () => {
   return (
-    <section className="flex justify-center items-center md:scale-125 xl:scale-300 ">
+    <section className="flex justify-center items-center scale:100 md:scale-125 xl:scale-300 ">
       <FloatingPhone />
     </section>
   );

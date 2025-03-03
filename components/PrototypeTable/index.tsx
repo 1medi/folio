@@ -11,7 +11,7 @@ const TabData = [
     label: "Lo-Fi",
     icon: "🙆",
     body: (
-      <div className="m-4 xl:mb-8">
+      <div className="m-8 xl:mb-8">
         <LofiCarousel/>
       </div>
     ),
@@ -32,8 +32,8 @@ export default function SharedLayoutAnimation() {
   const [selectedTab, setSelectedTab] = useState(TabData[0]);
 
   return (
-    <div style={container} className="m-4">
-      <nav className="bg-[#3A3F2D] rounded-t-[10px] border-b border-b-[#a49e8e80] h-[56px]">
+    <div style={container} className="m-4 h-[80vh] desktop:h-[60vh]">
+      <nav className="bg-[#3A3F2D] rounded-t-[10px] border-b border-b-[#a49e8e80] h-[56px] ">
         <ul style={tabsContainer}>
           {TabData.map((item) => (
             <motion.li
@@ -62,7 +62,7 @@ export default function SharedLayoutAnimation() {
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.2 }}
             style={content}
-            className="flex justify-center items-center  xl:h-[300px]"
+            className="flex justify-center items-center text-center xl:h-[300px]"
           >
             {selectedTab.body}
           </motion.div>
@@ -77,7 +77,7 @@ export default function SharedLayoutAnimation() {
  */
 const container: React.CSSProperties = {
   width: "100%",
-  height: "80vh",
+
   // maxHeight: 360,
   borderRadius: 10,
   background: "#3A3F2D",

@@ -15,7 +15,7 @@ const DynamicCarousel = dynamic(
 
 export default function Home() {
   return (
-    <main className="max-h-screen snap-y">
+    <main className="max-h-screen overflow-y-auto snap-y snap-mandatory scrollbar-hidden">
       <div className="max-h-screen snap-start">
         <Banner />
       </div>

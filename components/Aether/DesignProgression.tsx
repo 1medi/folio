@@ -18,11 +18,11 @@ export default function Section7() {
         </h2>
         <div className="inner flex flex-col xl:flex-row justify-center items-center p-4">
           <iframe
-            className="border border-solid border-gray-200 w-450px h-[250px] xl:w-[800px] xl:h-[450px]"
+            className="border border-solid border-gray-200 w-[350px] h-[450px] xl:w-[800px] xl:h-[450px] desktop:w-[1400px] desktop:h-[800px]"
             src="https://embed.figma.com/design/eKUiV3gWInupozNnMRm1EY/Aether-Prototype?node-id=2750-6684&embed-host=share&hide-ui=1&footer=false"
             allowFullScreen
           ></iframe>
-          <div className="flex justify-center items-center m-2 w-[400px] xl:w-[500px]">
+          <div className="flex justify-center items-center m-2 w-[350px] xl:w-[500px]">
           <PrototypeTable/>
           </div>
 

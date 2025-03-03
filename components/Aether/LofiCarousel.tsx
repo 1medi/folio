@@ -80,11 +80,11 @@ function LofiCarousel() {
                 },
               }}
             >
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center ">
                 <div className="flex flex-col ml-4">
                   <button
                     onClick={handlePrev}
-                    className="bg-transparent p-2 rounded m-6 flex items-center"
+                    className="bg-transparent p-2 rounded xl:m-6 flex items-center"
                   >
                     <FaArrowLeft className="text-gray-800" />
                   </button>
@@ -98,7 +98,7 @@ function LofiCarousel() {
                 <div className="flex flex-col ml-4">
                   <button
                     onClick={handleNext}
-                    className="bg-transparent p-2 rounded m-6 flex items-center"
+                    className="bg-transparent p-2 rounded xl:m-6 flex items-center"
                   >
                     <FaArrowRight className="text-gray-800" />
                   </button>

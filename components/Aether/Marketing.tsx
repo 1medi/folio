@@ -29,7 +29,7 @@ export default function Section7() {
               src={AetherPromo}
             />
           </div>
-          <div className="promo-videos md:m-4 flex flex-col justify-center items-center ">
+          <div className="promo-videos md:m-4 flex flex-col justify-center items-center mb-16 xl:mb-auto">
             <p className="text-center text-xl lg:mx-24 lg:my-8">
               A mockup created by the team displayed on the blog page.
             </p>
