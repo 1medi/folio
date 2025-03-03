@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import PPHome from "../../../public/Pocket-Prof/pphome.png"
+import Ae1 from "../../../public/Aether/aescreen1.jpeg"
 import Image from "next/image";
-import React from "react";
 
-const Phone: React.FC = () => {
+const HifiPhone1 = () => {
   return (
-    <section 
-    className=" place-content-center p-12 md:scale-125  ">
+    <section className="flex justify-center items-center md:scale-125 xl:scale-300 ">
       <FloatingPhone />
     </section>
   );
@@ -20,7 +18,7 @@ const FloatingPhone = () => {
         transformStyle: "preserve-3d",
         transform: "rotateY(-30deg) rotateX(15deg)",
       }}
-      className="rounded-[24px] bg-violet-500"
+      className="rounded-[24px] bg-[#9FC3E5] transform"
     >
       <motion.div
         initial={{
@@ -60,15 +58,12 @@ const Screen = () => {
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
-<Image
-src={PPHome}
-alt="phone"
-/>
-
-      {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
-      {/* <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-violet-500" /> */}
+      <Image
+        src={Ae1}
+        alt="phone"
+      />
     </div>
   );
 };
 
-export default Phone;
+export default HifiPhone1;

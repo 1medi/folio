@@ -4,12 +4,9 @@ import SharedTable from "../../components/SharedTable";
 import FadeIn from "@/app/utils/fadein";
 
 export default function Section3() {
-
   return (
     <>
-      <FadeIn
-        className="user-persona about p-4 bg-[#a49e8e80] rounded-lg m-4 xl:mb-8"
-      >
+      <FadeIn className="user-persona about p-4 bg-[#a49e8e80] rounded-lg m-4 xl:mb-8">
         <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4 xl:m-4">
           User Personas
         </h2>
@@ -52,7 +49,9 @@ export default function Section3() {
               </ul>
             </div>
           </div>
-          <SharedTable />
+          <div className="flex m-auto">
+            <SharedTable />
+          </div>
         </div>
       </FadeIn>
     </>
