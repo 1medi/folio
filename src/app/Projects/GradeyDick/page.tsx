@@ -13,31 +13,42 @@ export default function GradeyDick() {
   return (
     <>
       <Header />
-      <main className="mt-20 min-h-screen flex flex-col items-center justify-center p-4 m-auto">
-        <Link href="/Projects" className="absolute top-20 left-20 mb-4 text-blue-500">
-          ← Back to Other Works
-        </Link>
-        <h1 className="text-4xl">Gradey Dick</h1>
-        <div className="body-container">
-          <div className="m-8">
-            <motion.div
+      <main className="mt-10 xl:mt-20 min-h-screen flex flex-col items-center justify-center p-4 m-auto">
+          <Link
+            href="/#Projects"
+            className="absolute top-20 left-10 xl:left-20 mb-4 text-blue-500"
+          >
+            <motion.h1
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
               animate={{ scale: isHovered ? 1.1 : 1 }}
               className="cursor-pointer"
             >
-              <Image 
-                src={Gradey} 
-                alt="Gradey Dick" 
-                width={800} 
-                height={800} 
-                className="w-full h-auto"
+              ← Back to Other Works
+            </motion.h1>
+          </Link>
+          <div className="m-8 flex flex-col xl:flex-row">
+              <Image
+                src={Gradey}
+                alt="Gradey Dick"
+
+                className="w-[500px] xl:w-[600px] desktop:w-[700px]"
               />
-            </motion.div>
-          </div>
-          <div>
-            <p>Here is some text</p>
-          </div>
+            <div className="text-center m-4 xl:m-8 flex flex-col">
+              <h1 className="text-4xl font-bold xl:text-8xl">Gradey Dick</h1>
+              <div className="xl:text-xl xl:m-8">
+                <p className="p-2">
+                  This design encapsulates my massive adoration for the Toronto
+                  Raptors and 13th draft pick{" "}
+                  <span className="font-bold">Gradey Dick</span>.
+                </p>
+                <p>
+                  Gradey Dick poured in a career high 32 points on November 12,
+                  2024 against the Milwaukee Bucks. Dick also pulled down five
+                  rebounds in the game.
+                </p>
+              </div>
+            </div>
         </div>
       </main>
       <Footer />

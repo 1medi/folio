@@ -14,25 +14,11 @@ export default function Carousel() {
         "A fun and engaging project featuring a quirky duck and chicken duo.",
     },
     {
-      src: "/carouselImages/ChuffCity.png",
-      title: "Chuff City V1",
+      src: "/carouselImages/ChuffCity2.png",
+      title: "Chuff City Posters",
       a: "/Projects/ChuffCity",
       description:
-        "The first iteration of the Chuff City project, showcasing early design concepts.",
-    },
-    {
-      src: "/carouselImages/ChuffCity2.png",
-      title: "Chuff City V2",
-      a: "/carouselImages/ChuffCity2.png",
-      description:
-        "An improved version of Chuff City with refined visuals and enhancements.",
-    },
-    {
-      src: "/carouselImages/ChuffCity3.png",
-      title: "Chuff City V3",
-      a: "/carouselImages/ChuffCity3.png",
-      description:
-        "The final iteration of Chuff City, bringing a polished and cohesive design.",
+        "The iterations of the Chuff City project, showcasing all design concepts.",
     },
     {
       src: "/carouselImages/DigitalMagazine.png",
