@@ -15,7 +15,7 @@ export default function Section6() {
   return (
     <>
       <FadeIn
-        className="Styleguide p-8  bg-[#a49e8e80] mb-4 mx-4 lg:mx-8 rounded-lg lg:mb-8 lg:ml-4 lg:w-2/3"
+        className="Styleguide p-8  bg-[#a49e8e80] mb-4 mx-4 lg:mx-8 rounded-lg lg:mb-2 lg:ml-4 lg:w-2/3"
       >
         <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
           Styleguide

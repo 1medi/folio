@@ -4,7 +4,7 @@ import FadeIn from "@/app/utils/fadein";
 
 export default function Section5() {
   return (
-    <FadeIn className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-4 mb-4 lg:mx-8 lg:mb-8 lg:mr-4 lg:w-1/3">
+    <FadeIn className="proj-ideation p-8  bg-[#a49e8e80] rounded-lg mx-4 mb-4 lg:mx-8 lg:mb-2 lg:mr-4 lg:w-1/3">
         <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
           Design Decisions
         </h2>

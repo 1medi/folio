@@ -4,18 +4,19 @@ import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import { motion } from "framer-motion";
 import Parallax from "../../../components/Parallax/index";
-import Section1 from "../../../components/Aether/About";
-import Section2 from "../../../components/Aether/CompAnal";
+import About from "../../../components/Aether/About";
+import CompAnal from "../../../components/Aether/CompAnal";
 import UserPersonas from "../../../components/Aether/UserPersonas";
-import Section4 from "../../../components/Aether/UserResearch";
-import Section5 from "../../../components/Aether/Design";
-import Section6 from "../../../components/Aether/Styleguide";
-import Section7 from "../../../components/Aether/Marketing";
-import Section8 from "../../../components/Aether/Final";
+import UserResearch from "../../../components/Aether/UserResearch";
+import Design from "../../../components/Aether/Design";
+import Styleguide from "../../../components/Aether/Styleguide";
+import Marketing from "../../../components/Aether/Marketing";
+import Final from "../../../components/Aether/Final";
 import AboutAe from "../../../components/Aether/AboutAether";
+import DesignProgression from "../../../components/Aether/DesignProgression";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState, useEffect } from "react";
-
+import Workflow from "../../../components/Aether/Workflow"
 const Aether = () => {
   const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
 
@@ -48,29 +49,34 @@ const Aether = () => {
     <>
       <Header />
       <Parallax />
-      <main className=" min-h-screen snap-start ">
-        <section className="inner-container snap-start">
-          <section className="xl:grid xl:grid-cols-2 xl:m-4 ">
+
+      <main className="min-h-screen "> 
+        <section className="inner-container ">
+          <section className="xl:grid xl:grid-cols-2 xl:m-4  ">
             <div className="flex justify-center items-center pt-10">
-              <Section1 />
+              <About />
             </div>
             <div className="lg:pt-10 ">
               <AboutAe />
             </div>
           </section>
           <section className="xl:mx-4 xl:my-8">
-            <Section2 />
+            <CompAnal />
             <UserPersonas />
-            <Section4 />
+            <UserResearch/>
           </section>
-
+            
           <section className="flex flex-col lg:flex-row">
-            <Section5 />
-            <Section6 />
+            <Design />
+            <Styleguide/>
           </section>
           <section>
-            <Section7 />
-            <Section8 />
+            <Workflow/>
+            <DesignProgression/>
+          </section>
+          <section>
+            <Marketing />
+            <Final />
           </section>
           <div className="m-4">
             <motion.button
@@ -83,7 +89,7 @@ const Aether = () => {
           </div>
         </section>
       </main>
-      <div className="snap-start">
+      <div className="">
         <Footer />
       </div>
     </>

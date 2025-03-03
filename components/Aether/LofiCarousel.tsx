@@ -1,139 +1,135 @@
 // @ts-nocheck
-'use client';
+"use client";
 
-import React, { useEffect, useRef, useState } from 'react';
-import { AnimatePresence, LayoutGroup, motion } from 'framer-motion';
-import Image from 'next/image';
+import React, { useEffect, useRef, useState } from "react";
+import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import Image from "next/image";
+import HifiPhone from "../../components/PhoneScreens/HifiPhone";
+import HifiPhone2 from "../../components/PhoneScreens/HifiPhone2";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
 
-const items = [
+const items: Item[] = [
   {
-    id:0,
-    src: "/Lutong-Bahay/MainMenu.png"
+    id: 0,
+    src: HifiPhone,
+    description: "this describes the first slide",
   },
   {
-    id:1,
-    src: "/Lutong-Bahay/Recipes.png"
+    id: 1,
+    src: HifiPhone2,
+    description: "this describes the second slide",
   },
   {
-    id:2,
-    src: "/Lutong-Bahay/Sharing.png"
+    id: 2,
+    src: HifiPhone,
+    description: "this describes the third slide",
   },
   {
-    id:3,
-    src: "/Lutong-Bahay/Shoppinglist.png"
+    id: 3,
+    src: HifiPhone2,
+    description: "this describes the fourth slide",
   },
-]
+];
+
 type Item = {
-  id: string;
-  imgSrc: string;
-  title: string;
+  id: number;
+  src: React.FC;
   description: string;
 };
 
 function LofiCarousel() {
   const [activeItem, setActiveItem] = useState(items[0]);
-  const [width, setWidth] = useState(0);
   const carousel = useRef(null);
-  useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, [carousel]);
+
+  const handleNext = () => {
+    const nextIndex = (activeItem.id + 1) % items.length;
+    setActiveItem(items[nextIndex]);
+  };
+
+  const handlePrev = () => {
+    const prevIndex = (activeItem.id - 1 + items.length) % items.length;
+    setActiveItem(items[prevIndex]);
+  };
 
   return (
     <>
-    <div>
-      
-    </div>
       <motion.div
-        layoutId={'activeItems'}
-        className='rounded-md w-fit m-4 pb-4 gap-2 items-center cursor-auto '
+        layoutId={"activeItems"}
+        className="rounded-md w-fit mt-16 pb-4 gap-2 items-center cursor-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <>
-          {items.map((tab: any, index) => (
-            <section
-            key={tab.id}
+        <AnimatePresence mode="popLayout" initial={false}>
+          <motion.figure key={activeItem.id} className="flex flex-col p-4 backdrop-blur-sm">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  type: "ease",
+                  ease: "easeInOut",
+                  duration: 0.3,
+                  delay: 0.2,
+                },
+              }}
+              exit={{
+                opacity: 0,
+                transition: {
+                  type: "ease",
+                  ease: "easeInOut",
+                  duration: 0.2,
+                },
+              }}
             >
-              <AnimatePresence mode='popLayout' initial={false}>
-                {tab.id === activeItem.id && (
-                  <motion.figure
-                    key={tab?.id}
-                    className='bg-[#3A3F2D]  border  rounded-md p-4 backdrop-blur-sm'
+              <div className="flex justify-center items-center">
+                <div className="flex flex-col ml-4">
+                  <button
+                    onClick={handlePrev}
+                    className="bg-transparent p-2 rounded m-6 flex items-center"
                   >
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{
-                        opacity: 1,
-                        transition: {
-                          type: 'ease',
-                          ease: 'easeInOut',
-                          duration: 0.3,
-                          delay: 0.2,
-                        },
-                      }}
-                      exit={{
-                        opacity: 0,
-                        transition: {
-                          type: 'ease',
-                          ease: 'easeInOut',
-                          duration: 0.2,
-                        },
-                      }}
-                    >
-                      <Image
-                        src={activeItem.src}
-                        width={1000}
-                        height={1000}
-                        alt='preview_img'
-                        className=' object-contain h-96  mx-auto rounded-md'
-                      />
-                    </motion.div>
-                  </motion.figure>
-                )}
-              </AnimatePresence>
-            </section>
-          ))}
-        </>
-        <motion.div className='min-w-[300px] mt-4 mx-auto overflow-hidden  bg-[#3A3F2D]  border rounded-md'>
-          <motion.div
-            ref={carousel}
-            drag='x'
-            dragElastic={0.2}
-            dragConstraints={{ right: 0, left: -width }}
-            dragTransition={{ bounceDamping: 30 }}
-            transition={{ duration: 0.2, ease: 'easeInOut' }}
-            className='flex  '
-          >
-            {items.slice(0, 8)?.map((itemData, index) => {
-              return (
-                <motion.div
-                key={itemData.id}
-                  className={`relative p-2 flex-shrink-0`}
-                  onClick={() => setActiveItem(itemData)}
-                >
-                  <Image
-                    src={itemData?.src}
-                    width={400}
-                    height={400}
-                    alt='img'
-                    className='w-28 h-16 object-cover cursor-pointer relative z-[2] rounded-md pointer-events-none'
-                  />
-                  {itemData?.id === activeItem?.id && (
-                    <motion.div
-                      layoutId='slider'
-                      transition={{
-                        layout: {
-                          duration: 0.2,
-                          ease: 'easeOut',
-                        },
-                      }}
-                      className='absolute top-0 left-0 h-full w-full dark:bg-gray-100 bg-gray-800 rounded-md'
-                    ></motion.div>
-                  )}
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        </motion.div>
+                    <FaArrowLeft className="text-gray-800" />
+                  </button>
+                </div>
+                {React.createElement(activeItem.src, {
+                  images: items.map((item) => item.src),
+                  activeImageIndex: activeItem.id,
+                  width: 400,
+                  height: 400,
+                })}
+                <div className="flex flex-col ml-4">
+                  <button
+                    onClick={handleNext}
+                    className="bg-transparent p-2 rounded m-6 flex items-center"
+                  >
+                    <FaArrowRight className="text-gray-800" />
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+            <motion.figcaption
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  type: "ease",
+                  ease: "easeInOut",
+                  duration: 0.3,
+                  delay: 0.2,
+                },
+              }}
+              exit={{
+                opacity: 0,
+                transition: {
+                  type: "ease",
+                  ease: "easeInOut",
+                  duration: 0.2,
+                },
+              }}
+              className="mt-12"
+            >
+              {activeItem.description}
+            </motion.figcaption>
+          </motion.figure>
+        </AnimatePresence>
       </motion.div>
     </>
   );

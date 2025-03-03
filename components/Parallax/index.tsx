@@ -14,9 +14,9 @@ export default function Banners() {
   };
 
   return (
-    <>
+    <div className="w-full h-screen overflow-y-auto snap-y snap-mandatory scrollbar-hidden">
       <section
-        className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        className="snap-start w-full h-screen flex justify-center items-center flex-col md:flex-row"
         style={{ backgroundColor: "#0B4F6F" }}
       >
         <div className="xl:m-auto mt-20 flex justify-center items-center flex-col xl:flex-row">
@@ -27,7 +27,7 @@ export default function Banners() {
             exit="exit"
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="m-8 "
+            className="m-8"
           >
             <motion.h2
               variants={headingVariants}
@@ -45,7 +45,7 @@ export default function Banners() {
       </section>
 
       <section
-        className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        className="snap-start w-full h-screen flex justify-center items-center flex-col md:flex-row"
         style={{ backgroundColor: "#1E7FA5" }}
       >
         <div className="xl:m-auto mt-24 flex justify-center items-center flex-col xl:flex-row">
@@ -75,7 +75,7 @@ export default function Banners() {
 
       <section
         id="section"
-        className="snap-start snap-always w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        className="snap-start w-full h-screen flex justify-center items-center flex-col md:flex-row"
         style={{ backgroundColor: "#9FC3E5" }}
       >
         <div className="xl:m-auto mt-24 flex justify-center items-center flex-col xl:flex-row">
@@ -102,9 +102,10 @@ export default function Banners() {
           </motion.div>
         </div>
       </section>
-      <div className="snap-start snap-always w-full h-screen">
+
+      <div className="snap-start w-full h-screen">
         <AEBanner />
       </div>
-    </>
+    </div>
   );
 }

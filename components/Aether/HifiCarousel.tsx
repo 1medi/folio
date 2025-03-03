@@ -55,14 +55,11 @@ function HifiCarousel() {
     <>
       <motion.div
         layoutId={"activeItems"}
-        className="rounded-md w-fit m-4 pb-4 gap-2 items-center cursor-auto"
+        className="rounded-md w-fit mt-16 pb-4 gap-2 items-center cursor-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <AnimatePresence mode="popLayout" initial={false}>
-          <motion.figure
-            key={activeItem.id}
-            className="border rounded-md p-4 backdrop-blur-sm"
-          >
+          <motion.figure key={activeItem.id} className="flex flex-col p-4 backdrop-blur-sm">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{
@@ -127,6 +124,7 @@ function HifiCarousel() {
                   duration: 0.2,
                 },
               }}
+              className="mt-12"
             >
               {activeItem.description}
             </motion.figcaption>
