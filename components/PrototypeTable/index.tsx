@@ -3,7 +3,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import HifiCarousel from "../aether/hifiCarousel";
-import LofiCarousel from "../aether/lofiCarousel";
 
 const TabData = [
   {
@@ -12,7 +11,6 @@ const TabData = [
     icon: "🙆",
     body: (
       <div className="m-8 xl:mb-8">
-        <LofiCarousel/>
       </div>
     ),
   },
