@@ -31,7 +31,7 @@ const AETitle = () => {
                 padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
             >
-              <Image src={AetherLogo} height={512} width={512} alt="aether" />
+              <Image src={AetherLogo} height={512} width={512} alt="aether" priority/>
             </motion.div>
           </div>
 

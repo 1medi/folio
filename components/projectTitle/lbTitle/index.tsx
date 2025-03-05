@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Lutong from "../../../public/projectLogos/lutongBahayLogo.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const LBTitle = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -22,18 +23,16 @@ const LBTitle = () => {
             <h1 className="font-bold mt-2 pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
               Lutong
             </h1>
-            <motion.img
-              src={Lutong.src}
-              height={96}
-              width={64}
+            <motion.div
               animate={{
                 width: isHovered ? "96px" : "0rem",
                 height: isHovered ? "64px" : "0rem",
                 opacity: isHovered ? "100%" : "0%",
                 padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
-              alt="aether"
-            />
+            >
+              <Image src={Lutong.src} height={512} width={512} alt="lutong bahay" priority />
+            </motion.div>
             <h1 className="font-bold mt-2 pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
               Bahay
             </h1>
@@ -53,4 +52,3 @@ const LBTitle = () => {
 };
 
 export default LBTitle;
-

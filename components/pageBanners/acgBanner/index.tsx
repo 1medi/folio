@@ -77,7 +77,7 @@ const ACGBanner = () => {
             </div>
           </div>
           <motion.div className="m-6 p-2" exit={{ opacity: 0 }}>
-            <Image src={ACG} alt="ACG LOGO" width={512} height={512} />
+            <Image src={ACG} alt="ACG LOGO" width={512} height={512} priority/>
           </motion.div>
         </div>
       </motion.section>

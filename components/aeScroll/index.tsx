@@ -19,7 +19,7 @@ export default function AeScroll() {
         className="snap-start w-full h-screen flex justify-center items-center flex-col"
         style={{ backgroundColor: "#0B4F6F" }}
       >
-        <div className="xl:m-auto mt-20 flex justify-center items-center flex-col md:flex-row">
+        <div className="xl:m-auto w-screen mt-20 flex justify-center items-center flex-col md:flex-row">
           <AePhone1 />
           <motion.div
             initial="initial"

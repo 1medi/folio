@@ -53,7 +53,7 @@ const LBBanner = () => {
               Lutong Bahay{" "}
               <span>
                 <div className="w-[96px] pl-4">
-                <Image alt="LB Logo" src={LBLogo} />
+                <Image alt="LB Logo" src={LBLogo} priority/>
                 </div>
               </span>
             </h1>

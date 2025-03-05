@@ -31,7 +31,7 @@ const ACGTitle = () => {
                 padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
             >
-              <Image src={ACGLogo} height={128} width={128} alt="acg" />
+              <Image src={ACGLogo} height={128} width={128} alt="acg" priority />
             </motion.div>
 
             <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">

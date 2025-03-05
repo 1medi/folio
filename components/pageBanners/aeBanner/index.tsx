@@ -32,7 +32,7 @@ const AEBanner = () => {
     <>
       <motion.section
         key={"banner"}
-        className="about-section min-h-screen relative justify-center shadow-2xl"
+        className="about-section min-h-screen w-screen relative justify-center shadow-2xl overflow-x-hidden"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -51,9 +51,14 @@ const AEBanner = () => {
               className="m-auto justify-center items-center w-[512px] p-4"
               exit={{ opacity: 0 }}
             >
-              <Image src={AELogo} alt="aether logo" className="w-full" />
+              <Image
+                src={AELogo}
+                alt="aether logo"
+                className="m-auto w-[300px] xl:w-full"
+                priority
+              />
             </motion.div>
-            <h2 className="text-3xl font-semibold p-2">
+            <h2 className="text-2xl xl:text-3xl font-semibold p-2">
               Designed and Coded Mobile App
             </h2>
             <h2 className="text-2xl p-2">Completed: December 2024</h2>
@@ -99,4 +104,3 @@ const AEBanner = () => {
 };
 
 export default AEBanner;
-

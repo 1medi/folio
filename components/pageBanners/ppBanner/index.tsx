@@ -54,7 +54,7 @@ const PPBanner = () => {
               className="m-auto justify-center items-center w-[512px] p-4"
               exit={{ opacity: 0 }}
             >
-              <Image alt="oscarlogo" src={OscarLogo} />
+              <Image alt="oscarlogo" src={OscarLogo} priority/>
             </motion.div>
             <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Web App

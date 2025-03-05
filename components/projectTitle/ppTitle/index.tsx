@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PPOscar from "../../../public/projectLogos/pocketProfLogo.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const PPTitle = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -22,17 +23,21 @@ const PPTitle = () => {
             <h1 className="font-bold pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
               Pocket
             </h1>
-            <motion.img
-              src={PPOscar.src}
-              height={512}
-              width={512}
+            <motion.div
               animate={{
                 width: isHovered ? "12rem" : "0rem",
                 opacity: isHovered ? "100%" : "0%",
                 padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
-              alt="aether"
-            />
+            >
+              <Image
+                src={PPOscar.src}
+                height={512}
+                width={512}
+                alt="Pocket Prof"
+                priority
+              />
+            </motion.div>
             <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
               Prof
             </h1>
@@ -52,4 +57,3 @@ const PPTitle = () => {
 };
 
 export default PPTitle;
-
