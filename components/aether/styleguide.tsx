@@ -97,4 +97,4 @@ export default function Section6() {
       </FadeIn>
     </>
   );
-}
+};

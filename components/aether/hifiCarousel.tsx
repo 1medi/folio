@@ -136,6 +136,7 @@ function HifiCarousel() {
       </motion.div>
     </>
   );
-};
+}
 
 export default HifiCarousel;
+

@@ -16,5 +16,4 @@ export default function PageTransition({
       {children}
     </motion.div>
   );
-}
-;
+};

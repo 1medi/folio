@@ -52,3 +52,4 @@ export const Card: React.FC<CarouselCardProps> = ({ image, title, description })
 };
 
 export default Card;
+

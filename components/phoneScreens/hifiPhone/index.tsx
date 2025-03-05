@@ -66,3 +66,4 @@ const HifiScreen1 = () => {
 };
 
 export default HifiPhone1;
+

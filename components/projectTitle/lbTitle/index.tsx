@@ -53,3 +53,4 @@ const LBTitle = () => {
 };
 
 export default LBTitle;
+
