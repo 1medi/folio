@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+}
+body {
+  font-family: 'Jost', sans-serif;
+  color: #ededed;
+
+}
+
+:root {
+  --background: #1E150A;
+  --foreground: #ededed;
+  background: var(--background) url("/cartographer.png");
+  background-size: 100% auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-blend-mode: overlay;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1E150A;
+    --foreground: #ededed;
+    background: var(--background) url("/cartographer.png");
+    background-size: 100% auto; 
+    background-position: center;
+    background-repeat: repeat;
+
+    background-blend-mode: overlay;
+  }
+}
