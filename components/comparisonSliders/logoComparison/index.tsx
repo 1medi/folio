@@ -16,7 +16,7 @@ export default function LogoComparison() {
         <figure slot="second" className="relative m-0">
           <img
             className="block w-full xl:h-[125px] p-4"
-            src="/Aether/AetherNew.png"
+            src="/aether/AetherNew.png"
           />
           <figcaption className="absolute top-[25%] right-3 -translate-y-1/2 bg-white border border-gray-400 rounded-xl text-[#2e3452] opacity-30 p-3 leading-none">
             After
