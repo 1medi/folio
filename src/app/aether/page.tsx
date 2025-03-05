@@ -3,7 +3,7 @@
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import { motion } from "framer-motion";
-import Parallax from "../../../components/aeScroll";
+import Scroll from "../../../components/aeScroll";
 import About from "../../../components/aether/about";
 import CompAnal from "../../../components/aether/compAnal";
 import UserPersonas from "../../../components/aether/userPersonas";
@@ -47,7 +47,7 @@ const Aether = () => {
   return (
     <>
       <Header />
-      <Parallax />
+      <Scroll />
 
       <main className="min-h-screen "> 
         <section className="inner-container ">

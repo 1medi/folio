@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Openai from "../../public/Logos/openai.png";
-import Quillbot from "../../public/Logos/quillbot.png";
-import PDFai from "../../public/Logos/pdfai.jpg";
+import Openai from "../../public/Logos/openAi.png";
+import Quillbot from "../../public/Logos/quillBot.png";
+import PDFai from "../../public/Logos/pdfAi.jpg";
 import FadeIn from "@/app/utils/fadein";
 
 export default function CompAnal() {
