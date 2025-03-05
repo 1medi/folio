@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Header from "../../../../components/header";
 import Footer from "../../../../components/footer";
-import Gradey from "../../../../public/carouselImages/GradeyDick.png";
+import Gradey from "../../../../public/carouselImages/gradeyDick.png";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
