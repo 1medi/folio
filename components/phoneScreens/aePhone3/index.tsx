@@ -62,6 +62,7 @@ const AEScreen3 = () => {
 <Image
 src={Ae3}
 alt="phone"
+priority
 />
     </div>
   );

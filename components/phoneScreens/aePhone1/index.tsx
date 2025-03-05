@@ -57,7 +57,7 @@ const AEHeaderBar1 = () => {
 const AEScreen1 = () => {
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
-      <Image src={Ae1} alt="phone" />
+      <Image src={Ae1} alt="phone" priority />
     </div>
   );
 };
