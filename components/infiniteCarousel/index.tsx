@@ -9,14 +9,14 @@ export default function HomeCarousel() {
     {
       src: "/carouselImages/qnc.png",
       title: "Quack n' Cluck",
-      a: "/Projects/Quack",
+      a: "/projects/quack",
       description:
         "A fun and engaging project featuring a quirky duck and chicken duo.",
     },
     {
       src: "/carouselImages/chuffCity2.png",
       title: "Chuff City Posters",
-      a: "/Projects/ChuffCity",
+      a: "/projects/chuffCity",
       description:
         "The iterations of the Chuff City project, showcasing all design concepts.",
     },
@@ -30,7 +30,7 @@ export default function HomeCarousel() {
     {
       src: "/carouselImages/gradeyDick.png",
       title: "Gradey Dick Graphic",
-      a: "/Projects/GradeyDick",
+      a: "/projects/gradeyDick",
       description:
         "A dynamic graphic representation of basketball player Gradey Dick.",
     },
