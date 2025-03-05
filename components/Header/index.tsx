@@ -8,7 +8,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useEffect, useState } from "react";
-import Wordmark from "../Wordmark";
+import Wordmark from "../wordmark";
 
 function useBoundedScroll(threshold: number) {
   let { scrollY } = useScroll();
@@ -128,7 +128,7 @@ export default function Header() {
       </motion.header>
     </div>
   );
-}
+};
 
 let clamp = (number: number, min: number, max: number) =>
   Math.min(Math.max(number, min), max);

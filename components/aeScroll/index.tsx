@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import AePhone1 from "../PhoneScreens/AePhone1";
-import AePhone2 from "../PhoneScreens/AePhone2";
-import AePhone3 from "../PhoneScreens/AePhone3";
-import AEBanner from "../PageBanners/AeBanner";
+import AePhone1 from "../phoneScreens/aePhone1";
+import AePhone2 from "../phoneScreens/aePhone2";
+import AePhone3 from "../phoneScreens/aePhone3";
+import AEBanner from "../pageBanners/aeBanner";
 
-export default function Banners() {
+export default function AeScroll() {
   const headingVariants = {
     initial: { y: 300, opacity: 0 },
     animate: { y: 0, opacity: 1 },
@@ -16,10 +16,10 @@ export default function Banners() {
   return (
     <div className="w-full h-screen overflow-y-auto snap-y snap-mandatory scrollbar-hidden">
       <section
-        className="snap-start w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        className="snap-start w-full h-screen flex justify-center items-center flex-col"
         style={{ backgroundColor: "#0B4F6F" }}
       >
-        <div className="xl:m-auto mt-20 flex justify-center items-center flex-col xl:flex-row">
+        <div className="xl:m-auto mt-20 flex justify-center items-center flex-col md:flex-row">
           <AePhone1 />
           <motion.div
             initial="initial"
@@ -45,10 +45,10 @@ export default function Banners() {
       </section>
 
       <section
-        className="snap-start w-full h-screen flex justify-center items-center flex-col md:flex-row"
+        className="snap-start w-full h-screen flex justify-center items-center flex-col"
         style={{ backgroundColor: "#1E7FA5" }}
       >
-        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col xl:flex-row">
+        <div className="xl:m-auto mt-24 flex justify-center items-center flex-col md:flex-row">
           <AePhone2 />
           <motion.div
             initial="initial"
@@ -108,4 +108,4 @@ export default function Banners() {
       </div>
     </div>
   );
-}
+};

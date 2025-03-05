@@ -4,8 +4,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import Image from "next/image";
-import HifiPhone from "../../components/PhoneScreens/HifiPhone";
-import HifiPhone2 from "../../components/PhoneScreens/HifiPhone2";
+import HifiPhone from "../phoneScreens/hifiPhone";
+import HifiPhone2 from "../phoneScreens/hifiPhone2";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
 
 const items: Item[] = [
@@ -55,11 +55,14 @@ function HifiCarousel() {
     <>
       <motion.div
         layoutId={"activeItems"}
-        className="rounded-md w-fit mt-16 pb-4 gap-2 items-center cursor-auto"
+        className="hifiCarousel rounded-md w-fit mt-16 pb-4 gap-2 items-center cursor-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <AnimatePresence mode="popLayout" initial={false}>
-          <motion.figure key={activeItem.id} className="flex flex-col p-4 backdrop-blur-sm">
+          <motion.figure
+            key={activeItem.id}
+            className="flex flex-col p-4 backdrop-blur-sm"
+          >
             <motion.div
               initial={{ opacity: 0 }}
               animate={{
@@ -133,6 +136,6 @@ function HifiCarousel() {
       </motion.div>
     </>
   );
-}
+};
 
 export default HifiCarousel;

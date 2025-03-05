@@ -1,13 +1,13 @@
 "use client";
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
 import { motion } from "framer-motion";
-import PPBanner from "../../../components/PageBanners/PPBanner";
+import PPBanner from "../../../components/pageBanners/ppBanner";
 import Image from "next/image";
-import PPSitemap from "../../../public/Pocket-Prof/PPSitemap.png";
-import PPPhone from "../../../components/PhoneScreens/PPPhone/index";
-import PPNav from "../../../components/ComparisonSliders/PPNav";
-import PPMain from "../../../components/ComparisonSliders/PPMain";
+import PPSitemap from "../../../public/pocketProf/ppSitemap.png";
+import PPPhone from "../../../components/phoneScreens/ppPhone";
+import PPNav from "../../../components/comparisonSliders/ppNav";
+import PPMain from "../../../components/comparisonSliders/ppMain";
 import FadeIn from "../utils/fadein";
 
 const PocketProf = () => {

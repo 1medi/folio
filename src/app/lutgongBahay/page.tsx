@@ -1,9 +1,9 @@
 "use client";
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
 import { motion } from "framer-motion";
-import LBBanner from "../../../components/PageBanners/LBBanner";
-import FramerCarousel from "../../../components/FramerCarousel";
+import LBBanner from "../../../components/pageBanners/lbBanner";
+import FramerCarousel from "../../../components/framerCarousel";
 import FadeIn from "../utils/fadein";
 const LutongBahay = () => {
 

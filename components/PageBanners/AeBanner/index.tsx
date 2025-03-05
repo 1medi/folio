@@ -7,14 +7,14 @@ import {
   useTransform,
   animate,
 } from "framer-motion";
+import AELogo from "../../../public/projectLogos/aetherLogo.png";
 import Image from "next/image";
-
 const COLORS = ["#5E86A0", "#1B425E", "#A7C6DD"]; // Shades from the mascot
 const AEBanner = () => {
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const color = useMotionValue(COLORS[0]);
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 30%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[0]} 30%, ${color})`;
 
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
@@ -47,9 +47,12 @@ const AEBanner = () => {
       >
         <div className="flex flex-col mt-24 justify-center items-center">
           <div className="flex flex-col">
-            <h1 className="text-center font-bold mb-4 text-7xl flex flex-row justify-center">
-              Aether
-            </h1>
+            <motion.div
+              className="m-auto justify-center items-center w-[512px] p-4"
+              exit={{ opacity: 0 }}
+            >
+              <Image src={AELogo} alt="aether logo" className="w-full" />
+            </motion.div>
             <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Mobile App
             </h2>
@@ -89,11 +92,6 @@ const AEBanner = () => {
               </motion.div>
             </div>
           </div>
-
-          <motion.div
-            className="m-auto justify-center items-center w-256 h-256"
-            exit={{ opacity: 0 }}
-          ></motion.div>
         </div>
       </motion.section>
     </>

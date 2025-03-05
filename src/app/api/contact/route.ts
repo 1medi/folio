@@ -3,7 +3,7 @@ import sgMail from "@sendgrid/mail";
 import { render } from "@react-email/render";
 import { ContactEmail } from "../../../../emails/ContactEmail";
 import { createElement } from "react";
-import { ContactFormType } from "../../../../components/Contact/interfaces";
+import { ContactFormType } from "../../../../components/contact/interfaces";
 
 const SENDER_EMAIL = "no-reply@maditabon.dev";
 const RECEIVER_EMAIL = "maditabon33@gmail.com";

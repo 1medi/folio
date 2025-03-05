@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 

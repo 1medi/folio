@@ -1,13 +1,13 @@
 "use client";
-import Banner from "../../components/PageBanners/Banner";
-import Footer from "../../components/Footer";
-import About from "../../components/About";
-import AboutP from "../../components/About-p/index";
+import Banner from "../../components/pageBanners/banner";
+import Footer from "../../components/footer";
+import About from "../../components/about";
+import AboutP from "../../components/aboutProjects";
 import dynamic from "next/dynamic";
-import Contact from "../../components/Contact"
+import Contact from "../../components/contact"
 
 const DynamicCarousel = dynamic(
-  () => import("../../components/InfiniteCarousel"),
+  () => import("../../components/infiniteCarousel"),
   {
     loading: () => <p>Loading...</p>,
   }

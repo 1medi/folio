@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 const colors = ["#C9C19F", "#EDF7D2", "#EDF7D2", "#EB5160"];
-// const ColorsRandom = Math.floor(Math.random() * colors.length) What i did before / not working since it was a constant value and not calculated while hover!
 const Tile = () => {
   return (
     <motion.div

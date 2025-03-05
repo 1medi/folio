@@ -8,9 +8,7 @@ import {
   animate,
 } from "framer-motion";
 import Image from "next/image";
-import dynamic from 'next/dynamic';
-
-const Oscar = dynamic(() => import('../../../components/Animation/Oscar'), { ssr: false });
+import OscarLogo from "../../../public/projectLogos/pocketProfLogo.png";
 
 const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
 const PPBanner = () => {
@@ -52,9 +50,12 @@ const PPBanner = () => {
       >
         <div className="flex flex-col mt-24 justify-center items-center">
           <div className="flex flex-col">
-              <h1 className="text-center font-bold mb-4 text-7xl flex flex-row">
-                Pocket Prof <Oscar />
-              </h1>
+            <motion.div
+              className="m-auto justify-center items-center w-[512px] p-4"
+              exit={{ opacity: 0 }}
+            >
+              <Image alt="oscarlogo" src={OscarLogo} />
+            </motion.div>
             <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Web App
             </h2>
@@ -94,11 +95,6 @@ const PPBanner = () => {
               </motion.div>
             </div>
           </div>
-
-          <motion.div
-            className="m-auto justify-center items-center w-256 h-256"
-            exit={{ opacity: 0 }}
-          ></motion.div>
         </div>
       </motion.section>
     </>

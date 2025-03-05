@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
-import ACGBanner from "../../../components/PageBanners/ACGBanner";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
+import ACGBanner from "../../../components/pageBanners/acgBanner";
 import NextVideo from "next-video";
 import AcgV from "../../../videos/acgpromo.mp4";
 import Lofi from "../../../videos/lofi.mp4";

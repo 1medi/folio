@@ -1,33 +1,29 @@
 import React, { useState } from "react";
-import First from "/public/lutong.png";
-import Image from "next/image";
+import Lutong from "../../../public/projectLogos/lutongBahayLogo.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Title = () => {
+const LBTitle = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
-            <Link
-          href="/Lutong-Bahay"
+      <Link href="/Lutong-Bahay">
+        <motion.div
+          className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          animate={{
+            backgroundColor: isHovered ? "#DD8143" : "",
+          }}
+          transition={{ ease: "backInOut" }}
         >
-      <motion.div
-        className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        animate={{
-          backgroundColor: isHovered ? "#DD8143" : "",
-        }}
-        transition={{ ease: "backInOut" }}
-      >
-
           <div className="flex flex-row flex-wrap relative justify-center items-center">
             <h1 className="font-bold mt-2 pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
               Lutong
             </h1>
             <motion.img
-              src={First.src}
+              src={Lutong.src}
               height={96}
               width={64}
               animate={{
@@ -38,7 +34,7 @@ const Title = () => {
               }}
               alt="aether"
             />
-            <h1 className="font-bold mt-2 pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">  
+            <h1 className="font-bold mt-2 pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
               Bahay
             </h1>
           </div>
@@ -50,11 +46,10 @@ const Title = () => {
           >
             Learn More!
           </motion.p>
-
-      </motion.div>
+        </motion.div>
       </Link>
     </>
   );
 };
 
-export default Title;
+export default LBTitle;

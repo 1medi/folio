@@ -1,22 +1,21 @@
 "use client";
 
-import Header from "../../../components/Header";
-import Footer from "../../../components/Footer";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
 import { motion } from "framer-motion";
-import Parallax from "../../../components/Parallax/index";
-import About from "../../../components/Aether/About";
-import CompAnal from "../../../components/Aether/CompAnal";
-import UserPersonas from "../../../components/Aether/UserPersonas";
-import UserResearch from "../../../components/Aether/UserResearch";
-import Design from "../../../components/Aether/Design";
-import Styleguide from "../../../components/Aether/Styleguide";
-import Marketing from "../../../components/Aether/Marketing";
-import Final from "../../../components/Aether/Final";
-import AboutAe from "../../../components/Aether/AboutAether";
-import DesignProgression from "../../../components/Aether/DesignProgression";
+import Parallax from "../../../components/aeScroll";
+import About from "../../../components/aether/about";
+import CompAnal from "../../../components/aether/compAnal";
+import UserPersonas from "../../../components/aether/userPersonas";
+import UserResearch from "../../../components/aether/userResearch";
+import Design from "../../../components/aether/design";
+import Styleguide from "../../../components/aether/styleguide";
+import Marketing from "../../../components/aether/marketing";
+import Final from "../../../components/aether/final";
+import AboutAe from "../../../components/aether/aboutAether";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState, useEffect } from "react";
-import Workflow from "../../../components/Aether/Workflow"
+import Workflow from "../../../components/aether/workflow"
 const Aether = () => {
   const isBrowser = () => typeof window !== "undefined"; //The approach recommended by Next.js
 
@@ -64,15 +63,12 @@ const Aether = () => {
             <CompAnal />
             <UserPersonas />
             <UserResearch/>
+            <Design />
           </section>
             
-          <section className="flex flex-col lg:flex-row">
-            <Design />
+          <section className="flex flex-col">
             <Styleguide/>
-          </section>
-          <section>
             <Workflow/>
-            <DesignProgression/>
           </section>
           <section>
             <Marketing />

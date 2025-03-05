@@ -11,41 +11,44 @@ export default function Section7() {
           Marketing
         </h2>
         <div className="flex flex-col lg:grid lg:grid-cols-2 justify-around">
-          <div className="promo-videos md:m-4 flex flex-col justify-center items-center">
+          <div className="promoVideos md:m-4 flex flex-col justify-center items-center">
             <p className="text-center text-xl lg:mx-24 lg:my-8 p-2">
               On top of the various aspects of designing and developing the core
               application, we had to create other components to support our app,
               including physical goods such as: Brochures, Tote Bags and even a
               commerical!
             </p>
-            <NextVideo
-              className="m-4"
-              style={{
-                zIndex: 1,
-                height: "100%",
-                width: "100%",
-                maxWidth: "1000px",
-              }}
-              src={AetherPromo}
-            />
+            <div className="flex items-center justify-center min-h-[200px] min-w-[300px] md:h-[400px] md:w-[500px] p-4 rounded-xl"> 
+              <NextVideo
+                className="m-4"
+                style={{
+                  zIndex: 1,
+                  height: "100%",
+                  width: "100%",
+                }}
+                src={AetherPromo}
+              />
+            </div>
           </div>
-          <div className="promo-videos md:m-4 flex flex-col justify-center items-center mb-16 xl:mb-auto">
+          <div className="mockupVideos md:m-4 flex flex-col justify-center items-center">
             <p className="text-center text-xl lg:mx-24 lg:my-8">
               A mockup created by the team displayed on the blog page.
             </p>
-            <NextVideo
-              className="m-4"
-              style={{
-                zIndex: 1,
-                height: "100%",
-                width: "100%",
-                maxWidth: "700px",
-              }}
-              src={AetherMockup}
-              autoPlay
-              playsInline
-              loop
-            />
+            <div className="flex items-center justify-center h-[200px] w-[300px] md:h-[400px] md:w-[500px] p-4">
+              <NextVideo
+                className="m-4"
+                style={{
+                  zIndex: 1,
+                  height: "100%",
+                  width: "100%",
+                  maxWidth: "700px",
+                }}
+                src={AetherMockup}
+                autoPlay
+                playsInline
+                loop
+              />
+            </div>
           </div>
         </div>
       </FadeIn>

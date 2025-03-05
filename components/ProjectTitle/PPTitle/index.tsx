@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import First from "/public/Oscar.png";
-import Image from "next/image";
+import PPOscar from "../../../public/projectLogos/pocketProfLogo.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Title = () => {
+const PPTitle = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -24,7 +23,7 @@ const Title = () => {
               Pocket
             </h1>
             <motion.img
-              src={First.src}
+              src={PPOscar.src}
               height={512}
               width={512}
               animate={{
@@ -52,4 +51,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default PPTitle;

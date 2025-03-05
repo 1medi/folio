@@ -1,10 +1,10 @@
 "use client";
-import AeTitle from "../ProjectTitle/AeTitle";
-import ACGTitle from "../ProjectTitle/ACGTitle";
-import LBTitle from "../ProjectTitle/LBTitle";
-import PPTitle from "../ProjectTitle/PPTitle";
+import AeTitle from "../projectTitle/aeTitle";
+import ACGTitle from "../projectTitle/acgTitle";
+import LBTitle from "../projectTitle/lbTitle";
+import PPTitle from "../projectTitle/ppTitle";
 
-export default function AboutP() {
+export default function AboutProjects() {
 return (
   <div className="mb-12">
     <h1 id="projects" className="text-8xl font-bold text-center m-auto pt-16 pb-16">Projects</h1>

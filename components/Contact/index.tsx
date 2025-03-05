@@ -4,7 +4,7 @@ import { ContactFormSchema, ContactFormType } from "./interfaces";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-export default function Page() {
+export default function Contact() {
   const {
     register,
     handleSubmit,
@@ -80,4 +80,4 @@ export default function Page() {
       </form>
     </>
   );
-}
+};

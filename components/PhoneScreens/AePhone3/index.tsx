@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import Ae1 from "../../../public/Aether/aescreen3.png"
+import Ae3 from "../../../public/Aether/aescreen3.png"
 import Image from "next/image";
 
 const AePhone3 = () => {
   return (
     <section 
-    className=" flex justify-center items-center md:scale-150 xl:scale-300">
-      <FloatingPhone />
+    className=" flex justify-center items-center md:scale-125 xl:scale-300">
+      <AEFloatingPhone3 />
     </section>
   );
 };
 
-const FloatingPhone = () => {
+const AEFloatingPhone3 = () => {
   return (
     <div
       style={{
@@ -36,14 +36,14 @@ const FloatingPhone = () => {
         }}
         className="relative h-96 w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-[3px] pt-[3px]"
       >
-        <HeaderBar />
-        <Screen />
+        <AEHeaderBar3 />
+        <AEScreen3 />
       </motion.div>
     </div>
   );
 };
 
-const HeaderBar = () => {
+const AEHeaderBar3 = () => {
   return (
     <>
       <div className="absolute left-[50%] top-2.5 z-10 h-2 w-16 -translate-x-[50%] rounded-md bg-neutral-900"></div>
@@ -55,17 +55,14 @@ const HeaderBar = () => {
   );
 };
 
-const Screen = () => {
+const AEScreen3 = () => {
   return (
     <div className="relative z-0 grid h-full w-full object-scale-down place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
 <Image
-src={Ae1}
+src={Ae3}
 alt="phone"
 />
-
-      {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
-      {/* <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-violet-500" /> */}
     </div>
   );
 };

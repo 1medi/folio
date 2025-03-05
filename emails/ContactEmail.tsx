@@ -9,7 +9,7 @@ import {
   Img,
   Link,
 } from "@react-email/components";
-import { ContactFormType } from "../components/Contact/interfaces";
+import { ContactFormType } from "../components/contact/interfaces";
 import { CSSProperties, ReactElement } from "react";
 
 export function ContactEmail(props: ContactFormType): ReactElement {
@@ -44,7 +44,7 @@ export function ContactEmail(props: ContactFormType): ReactElement {
       </Body>
     </Html>
   );
-}
+};
 
 const container: CSSProperties = {
   margin: "0 auto",
@@ -70,13 +70,4 @@ const fieldName: CSSProperties = {
   fontWeight: "bold",
   marginRight: "1rem",
   color: "#141e49",
-};
-
-const logo: CSSProperties = {
-  margin: "2rem auto",
-};
-
-const paragraph: CSSProperties = {
-  fontSize: "16px",
-  lineHeight: "26px",
 };

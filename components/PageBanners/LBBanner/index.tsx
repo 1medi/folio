@@ -7,13 +7,12 @@ import {
   useTransform,
   animate,
 } from "framer-motion";
+import LBLogo from "../../../public/projectLogos/lutongBahayLogo.png";
 import Image from "next/image";
 
-
 const COLORS = [" #10254E", "#E98704", "#F0AB1A"]; // Shades from the mascot
-const PPBanner = () => {
+const LBBanner = () => {
   const [isHovered1, setIsHovered1] = useState(false);
-  const [isHovered2, setIsHovered2] = useState(false);
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 30%, ${color}`;
 
@@ -50,9 +49,14 @@ const PPBanner = () => {
       >
         <div className="flex flex-col mt-24 justify-center items-center">
           <div className="flex flex-col">
-              <h1 className="text-center font-bold mb-4 text-7xl flex flex-row">
-                Lutong Bahay
-              </h1>
+            <h1 className="text-center font-bold text-7xl flex flex-row">
+              Lutong Bahay{" "}
+              <span>
+                <div className="w-[96px] pl-4">
+                <Image alt="LB Logo" src={LBLogo} />
+                </div>
+              </span>
+            </h1>
             <h2 className="text-3xl font-semibold p-2">
               Designed and Coded Web App
             </h2>
@@ -75,15 +79,10 @@ const PPBanner = () => {
               </motion.div>
             </div>
           </div>
-
-          <motion.div
-            className="m-auto justify-center items-center w-256 h-256"
-            exit={{ opacity: 0 }}
-          ></motion.div>
         </div>
       </motion.section>
     </>
   );
 };
 
-export default PPBanner;
+export default LBBanner;

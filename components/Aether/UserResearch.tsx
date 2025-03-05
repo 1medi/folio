@@ -10,7 +10,7 @@ export default function Section4() {
           User Research
         </h2>
         <div className="flex flex-col xl:flex-row">
-          <div className="text-center text-xl p-4">
+          <div className="text-left text-xl p-4">
             <p>
               <span className="font-bold">Date of Report:</span> October 1, 2024
             </p>
@@ -19,11 +19,8 @@ export default function Section4() {
               21 - 28, 2024
             </p>
           </div>
-          <div className="m-2 lg:m-4">
-            <h4 className="text-3xl xl:text-5xl font-semibold  text-center p-4">
-              Who We Surveyed
-            </h4>
-            <p className="text-center text-lg">
+          <div className="m-2 lg:m-auto">
+            <p className="text-left text-lg">
               We conducted 2 rounds of interviews, 1 for our initial idea which
               was more focused on an older demographic looking for a solution to
               easily file forms while the second was more centered around
@@ -34,15 +31,12 @@ export default function Section4() {
         </div>
 
         <div className="results-container m-2 lg:m-4">
-          <h4 className="text-3xl xl:text-5xl font-semibold text-center">
-            Major Findings
-          </h4>
           <div className="survey-findings flex flex-col lg:grid grid-cols-2">
             <div className="m-2">
-              <h4 className="text-3xl xl:text-5xl font-semibold text-center p-4">
+              <h4 className="text-2xl xl:text-3xl font-semibold text-center p-4">
                 Commonalities
               </h4>
-              <div className="text-center">
+              <div className="text-left">
                 <ul className="text-lg">
                   <li className="p-2">
                     <span className="font-bold">
@@ -88,11 +82,11 @@ export default function Section4() {
               </div>
             </div>
             <div className="m-2 text-center">
-              <h4 className="text-3xl xl:text-5xl font-semibold text-center p-4">
+              <h4 className="text-2xl xl:text-3xl font-semibold text-center p-4">
                 Pain Points
               </h4>
               <div className="m-2">
-                <ul className="h-full text-lg justify-between items-stretch flex flex-col ">
+                <ul className="h-full text-lg justify-between text-left items-stretch flex flex-col ">
                   <li className="p-2">
                     <span className="font-bold">Forms:</span> Users find forms
                     challenging due to complex terminology, lengthy and
@@ -121,4 +115,4 @@ export default function Section4() {
       </FadeIn>
     </>
   );
-}
+};

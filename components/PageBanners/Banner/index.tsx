@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   motion,
   useMotionTemplate,
@@ -8,7 +8,7 @@ import {
   animate,
 } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileAlt, FaArrowDown } from "react-icons/fa";
-import Tile from "../../Tile";
+import Tile from "../../tile";
 
 const duration = 1;
 const transition = {

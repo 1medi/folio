@@ -1,7 +1,7 @@
 "use client";
-import Header from "../../../../components/Header";
-import Footer from "../../../../components/Footer";
-import QuackCarousel from "../../../../components/QuackCarousel";
+import Header from "../../../../components/header";
+import Footer from "../../../../components/footer";
+import QuackCarousel from "../../../../components/quackCarousel";
 import Link from "next/link";
 import {motion} from "framer-motion"
 import { useState } from "react";

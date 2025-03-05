@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Header from "../../../../components/Header";
-import Footer from "../../../../components/Footer";
+import Header from "../../../../components/header";
+import Footer from "../../../../components/footer";
 import Gradey from "../../../../public/carouselImages/GradeyDick.png";
 import Link from "next/link";
 import { useState } from "react";

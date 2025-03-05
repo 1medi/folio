@@ -10,7 +10,7 @@ const About = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex flex-col m-auto justify-center items-center text-center">
+      <div className="aboutMe flex flex-col m-auto justify-center items-center text-center">
         <h2 className="text-7xl text-center md:text-8xl lg:text-8xl m-b:4 font-bold">
           About
         </h2>

@@ -76,7 +76,7 @@ export default function SharedLayoutAnimation() {
   const [selectedTab, setSelectedTab] = useState(TabData[0]);
 
   return (
-    <div style={container} className="m-4">
+    <div style={container} className="m-4 xl:w-[800px]">
       <nav className="bg-[#3A3F2D] rounded-t-[10px] border-b border-b-[#a49e8e80] h-[56px]">
         <ul style={tabsContainer}>
           {TabData.map((item) => (
@@ -114,13 +114,12 @@ export default function SharedLayoutAnimation() {
       </main>
     </div>
   );
-}
+};
 
 /**
  * ==============   Styles   ================
  */
 const container: React.CSSProperties = {
-  width: "100%",
   height: "60vh",
   // maxHeight: 360,
   borderRadius: 10,

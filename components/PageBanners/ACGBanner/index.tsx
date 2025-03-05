@@ -8,7 +8,7 @@ import {
   animate,
 } from "framer-motion";
 import Image from "next/image";
-import ACG from "../../../public/ACG-Logo.png";
+import ACG from "../../../public/projectLogos/acgLogo.png";
 
 const COLORS = ["#D8BF9D", "#007EBC"];
 const ACGBanner = () => {
@@ -68,7 +68,7 @@ const ACGBanner = () => {
                 className="bg-[#F4A950] p-2 w-2/3 rounded-2xl m-2"
               >
                 <a
-                  href="https://pocket-profs-a5-styleguide.vercel.app/"
+                  href="https://steamcommunity.com/sharedfiles/filedetails/?id=3247582700"
                   target="_blank"
                 >
                   <p className="text-2xl xl:text-4xl">On Steam Workshop!</p>

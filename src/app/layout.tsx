@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Transition from "../../components/Transition";
+import Transition from "../../components/transition";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({

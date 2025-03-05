@@ -8,9 +8,9 @@ import {
 } from "react-icons/si";
 import FadeIn from "@/app/utils/fadein";
 
-export default function Section1() {
+export default function AboutApp() {
   return (
-    <FadeIn className="Tools-nd-Stuff justify-center w-full bg-[#a49e8e80] rounded-lg items-center m-4 mb-0 lg:m-auto lg:ml-4 p-4 flex flex-col">
+    <FadeIn className="toolsNdStuff justify-center w-full bg-[#a49e8e80] rounded-lg items-center m-4 mb-0 lg:m-auto lg:ml-4 p-4 flex flex-col">
       <div className="">
         <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-2 m-4 desktop:p-4">
           Tools Used
@@ -54,4 +54,4 @@ export default function Section1() {
       </div>
     </FadeIn>
   );
-}
+};

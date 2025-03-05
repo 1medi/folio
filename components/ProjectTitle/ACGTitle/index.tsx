@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import First from "/public/ACG-Logo.png";
+import ACGLogo from "../../../public/projectLogos/acgLogo.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Title = () => {
+const ACGTitle = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -31,7 +31,7 @@ const Title = () => {
                 padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
             >
-              <Image src={First.src} height={128} width={128} alt="aether" />
+              <Image src={ACGLogo} height={128} width={128} alt="aether" />
             </motion.div>
 
             <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
@@ -52,4 +52,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default ACGTitle;

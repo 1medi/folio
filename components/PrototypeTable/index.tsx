@@ -2,8 +2,8 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import HifiCarousel from "../Aether/HifiCarousel";
-import LofiCarousel from "../Aether/LofiCarousel";
+import HifiCarousel from "../aether/hifiCarousel";
+import LofiCarousel from "../aether/lofiCarousel";
 
 const TabData = [
   {
@@ -28,7 +28,7 @@ const TabData = [
   },
 ];
 
-export default function SharedLayoutAnimation() {
+export default function PrototypeTable() {
   const [selectedTab, setSelectedTab] = useState(TabData[0]);
 
   return (

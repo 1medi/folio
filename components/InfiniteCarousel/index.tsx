@@ -1,10 +1,10 @@
 import { useMotionValue, animate, motion } from "framer-motion";
-import Card from "../Card";
+import Card from "../card";
 import useMeasure from "react-use-measure";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function Carousel() {
+export default function HomeCarousel() {
   const images = [
     {
       src: "/carouselImages/qnc.png",
@@ -104,4 +104,4 @@ export default function Carousel() {
       </div>
     </div>
   );
-}
+};

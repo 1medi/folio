@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import PPHome from "../../../public/Pocket-Prof/pphome.png"
+import PPHome from "../../../public/pocketProf/ppHome.png"
 import Image from "next/image";
 import React from "react";
 
-const Phone: React.FC = () => {
+const PPPhone: React.FC = () => {
   return (
     <section 
     className=" place-content-center p-12 md:scale-125  ">
-      <FloatingPhone />
+      <PPFloatingPhone />
     </section>
   );
 };
 
-const FloatingPhone = () => {
+const PPFloatingPhone = () => {
   return (
     <div
       style={{
@@ -37,14 +37,14 @@ const FloatingPhone = () => {
         }}
         className="relative h-96 w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-[3px] pt-[3px]"
       >
-        <HeaderBar />
-        <Screen />
+        <PPHeaderBar />
+        <PPScreen />
       </motion.div>
     </div>
   );
 };
 
-const HeaderBar = () => {
+const PPHeaderBar = () => {
   return (
     <>
       <div className="absolute left-[50%] top-2.5 z-10 h-2 w-16 -translate-x-[50%] rounded-md bg-neutral-900"></div>
@@ -56,7 +56,7 @@ const HeaderBar = () => {
   );
 };
 
-const Screen = () => {
+const PPScreen = () => {
   return (
     <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
       {/* Example logo from logoispum */}
@@ -64,11 +64,8 @@ const Screen = () => {
 src={PPHome}
 alt="phone"
 />
-
-      {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
-      {/* <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-violet-500" /> */}
     </div>
   );
 };
 
-export default Phone;
+export default PPPhone;

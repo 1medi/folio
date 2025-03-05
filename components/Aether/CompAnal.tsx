@@ -4,12 +4,12 @@ import Quillbot from "../../public/Logos/quillbot.png";
 import PDFai from "../../public/Logos/pdfai.jpg";
 import FadeIn from "@/app/utils/fadein";
 
-export default function Section2() {
+export default function CompAnal() {
 
   return (
     <>
       <FadeIn
-        className="Comp-Anal p-4 m-4 bg-[#a49e8e80]  rounded-lg  xl:mb-8"
+        className="compAnalysis p-4 m-4 bg-[#a49e8e80]  rounded-lg  xl:mb-8"
       >
         <h2 className="text-2xl text-center  xl:text-3xl  bg-[#3A3F2D] rounded-lg m-4 p-4">
           Competitive Analysis
@@ -25,7 +25,7 @@ export default function Section2() {
               />
               <h1 className="text-3xl font-semibold desktop:text-5xl">ChatGPT</h1>
             </div>
-            <p className="text-center desktop:text-2xl">
+            <p className="text-left desktop:text-2xl">
               A large language model that can be used to help answer questions
               as well as clarifying text that may need alternate way of
               explaining. This technology can scan Images, simplify paragraphs
@@ -43,7 +43,7 @@ export default function Section2() {
               />
               <h1 className="text-3xl font-semibold desktop:text-5xl">PDF.ai</h1>
             </div>
-            <p className="text-center desktop:text-2xl">
+            <p className="text-left desktop:text-2xl">
               PDF.ai is an AI-powered tool designed to interact with and analyze
               PDF documents, allowing users to ask questions, extract data, and
               generate summaries, making document comprehension and research
@@ -62,7 +62,7 @@ export default function Section2() {
               />
               <h1 className="text-3xl font-semibold desktop:text-5xl">Quillbot</h1>
             </div>
-            <p className="text-center desktop:text-2xl">
+            <p className="text-left desktop:text-2xl">
               Started in 2017 as an app to help students improve their english
               when writing. Since then, it has evolved into a AI-powered writing
               platform. They are also partnered with 150 universities. They have
@@ -75,4 +75,4 @@ export default function Section2() {
       </FadeIn>
     </>
   );
-}
+};
