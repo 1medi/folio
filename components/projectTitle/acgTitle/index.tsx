@@ -9,7 +9,7 @@ const ACGTitle = () => {
 
   return (
     <>
-      <Link href="/ACG">
+      <Link href="/acg">
         <motion.div
           className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
           onMouseEnter={() => setIsHovered(true)}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import Hifi1 from "../../../public/Aether/aescreen1.jpeg"
+import Hifi1 from "../../../public/aether/aescreen1.jpeg"
 import Image from "next/image";
 
 const HifiPhone1 = () => {

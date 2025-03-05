@@ -8,7 +8,7 @@ const LBTitle = () => {
 
   return (
     <>
-      <Link href="/Lutong-Bahay">
+      <Link href="/lutongBahay">
         <motion.div
           className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
           onMouseEnter={() => setIsHovered(true)}

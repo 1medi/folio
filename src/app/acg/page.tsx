@@ -7,10 +7,10 @@ import NextVideo from "next-video";
 import AcgV from "../../../videos/acgpromo.mp4";
 import Lofi from "../../../videos/lofi.mp4";
 import Image from "next/image";
-import ACGColors from "/public/ACG/colors.png";
-import ACGMeasurements from "/public/ACG/measurements.png";
-import ACGType from "/public/ACG/typography.png";
-import ACGLogo from "/public/ACG/logo.png";
+import ACGColors from "/public/acg/colors.png";
+import ACGMeasurements from "/public/acg/measurements.png";
+import ACGType from "/public/acg/typography.png";
+import ACGLogo from "/public/acg/logo.png";
 import FadeIn from "../utils/fadein";
 
 const ACG = () => {

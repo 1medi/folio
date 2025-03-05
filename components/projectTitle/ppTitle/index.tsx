@@ -8,7 +8,7 @@ const PPTitle = () => {
 
   return (
     <>
-      <Link href="/Pocket-Prof">
+      <Link href="/pocketProf">
         <motion.div
           className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
           onMouseEnter={() => setIsHovered(true)}
