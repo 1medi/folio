@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import sgMail from "@sendgrid/mail";
 import { render } from "@react-email/render";
-import { ContactEmail } from "../../../../emails/ContactEmail";
+import { ContactEmail } from "../../../../emails/contactEmail";
 import { createElement } from "react";
 import { ContactFormType } from "../../../../components/contact/interfaces";
 
