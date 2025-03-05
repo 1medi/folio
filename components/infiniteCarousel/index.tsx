@@ -14,21 +14,21 @@ export default function HomeCarousel() {
         "A fun and engaging project featuring a quirky duck and chicken duo.",
     },
     {
-      src: "/carouselImages/ChuffCity2.png",
+      src: "/carouselImages/chuffCity2.png",
       title: "Chuff City Posters",
       a: "/Projects/ChuffCity",
       description:
         "The iterations of the Chuff City project, showcasing all design concepts.",
     },
     {
-      src: "/carouselImages/DigitalMagazine.png",
+      src: "/carouselImages/digitalMagazine.png",
       title: "Cycladic Blueprint (Digital)",
       a: "https://indd.adobe.com/view/d1ad75cd-d214-414b-9a49-784fc55dd04f",
       description:
         "A digital magazine exploring the iconic architecture of the Cyclades.",
     },
     {
-      src: "/carouselImages/GradeyDick.png",
+      src: "/carouselImages/gradeyDick.png",
       title: "Gradey Dick Graphic",
       a: "/Projects/GradeyDick",
       description:
