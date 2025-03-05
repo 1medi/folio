@@ -68,7 +68,7 @@ export default function PrototypeTable() {
       </main>
     </div>
   );
-}
+};
 
 /**
  * ==============   Styles   ================
