@@ -72,7 +72,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="w-full p-2 bg-[#004f2d] text-white rounded hover:bg-[#0b3021]"
         >
           Submit
         </button>

@@ -77,6 +77,7 @@ const Banner = () => {
           transition={{ delay: 1.5 }}
         >
           <motion.a
+          id="github"
             href="https://github.com/1medi"
             target="_blank"
             rel="noopener noreferrer"
@@ -90,6 +91,7 @@ const Banner = () => {
             </motion.div>
           </motion.a>
           <motion.a
+          id="linkedin"
             href="https://www.linkedin.com/in/madi-tabon/"
             target="_blank"
             rel="noopener noreferrer"
@@ -102,6 +104,7 @@ const Banner = () => {
             </motion.div>
           </motion.a>
           <motion.a
+          id="resume"
             href="/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
