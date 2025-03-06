@@ -7,13 +7,13 @@ export default function LogoComparison() {
         <img
           className="bg-slate-500 block w-full lg:h-[550px]"
           slot="first"
-          src="/aether/appOld.png"
+          src="/aether/appOld.webp"
         />
         <figcaption className="text-2xl text-black">Before</figcaption>
         <img
           className=" block w-full lg:h-[550px]"
           slot="second"
-          src="/aether/appNew.png"
+          src="/aether/appNew.webp"
         />
         <figcaption>After</figcaption>
       </ImgComparisonSlider>

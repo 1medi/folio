@@ -1,7 +1,7 @@
 import { Open_Sans } from "next/font/google";
 import { Italiana } from "next/font/google";
 import Image from "next/image";
-import AetherSolo from "../../public/aether/aetherSolo.png"
+import AetherSolo from "../../public/aether/aetherSolo.webp"
 import FadeIn from "@/app/utils/fadein";
 
 const OpenSans = Open_Sans({ subsets: ["latin"] });

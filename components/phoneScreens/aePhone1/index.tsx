@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import Ae1 from "../../../public/aether/aeScreen1.jpeg"
+import Ae1 from "../../../public/aether/aeScreen1.webp"
 import Image from "next/image";
 
 const AePhone1 = () => {

@@ -40,6 +40,10 @@ export default function AboutApp() {
             <SiMongodb className="inline-block mr-2" />
             Mongo DB
           </li>
+          <li className="text-2xl lg:text-xl p-2">
+            <SiMongodb className="inline-block mr-2" />
+            Render
+          </li>
         </ul>
       </div>
       <div className="md:w-1/2 xl:m-0 xl:w-auto">
