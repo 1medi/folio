@@ -17,7 +17,6 @@ const transition = {
   ease: [0, 0.71, 0.2, 1.01],
 };
 const COLORS = ["#1E150A", "#004f2d", "#000000"];
-const colors = ["#C9C19F", "#EDF7D2", "#EDF7D2", "#EB5160"];
 
 const Banner = () => {
   const color = useMotionValue(COLORS[0]);
@@ -77,7 +76,7 @@ const Banner = () => {
           transition={{ delay: 1.5 }}
         >
           <motion.a
-          id="github"
+            id="github"
             href="https://github.com/1medi"
             target="_blank"
             rel="noopener noreferrer"
@@ -91,7 +90,7 @@ const Banner = () => {
             </motion.div>
           </motion.a>
           <motion.a
-          id="linkedin"
+            id="linkedin"
             href="https://www.linkedin.com/in/madi-tabon/"
             target="_blank"
             rel="noopener noreferrer"
@@ -104,8 +103,8 @@ const Banner = () => {
             </motion.div>
           </motion.a>
           <motion.a
-          id="resume"
-            href="/Resume.pdf"
+            id="resume"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 100 }}
@@ -144,4 +143,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
