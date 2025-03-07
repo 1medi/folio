@@ -8,15 +8,15 @@ import Image from "next/image";
 const items = [
   {
     id: 0,
-    src: "/ChuffCity/v1.webp",
+    src: "/chuffCity/v1.webp",
   },
   {
     id: 1,
-    src: "/ChuffCity/v2.webp",
+    src: "/chuffCity/v2.webp",
   },
   {
     id: 2,
-    src: "/ChuffCity/v3.webp",
+    src: "/chuffCity/v3.webp",
   },
 ];
 type Item = {

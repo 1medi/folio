@@ -31,7 +31,6 @@ export default function GradeyDick() {
               <Image
                 src={Gradey}
                 alt="Gradey Dick"
-
                 className="w-[500px] xl:w-[600px] desktop:w-[700px]"
               />
             <div className="text-center m-4 xl:m-8 flex flex-col">
