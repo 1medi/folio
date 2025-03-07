@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Persona1 from "../../public/persona/persona1.webp";
+import Persona1 from "../../public/aether/persona/persona1.webp";
 import SharedTable from "../personaTable";
 import FadeIn from "@/app/utils/fadein";
 

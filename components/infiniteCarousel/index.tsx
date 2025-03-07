@@ -7,28 +7,28 @@ import Link from "next/link";
 export default function HomeCarousel() {
   const images = [
     {
-      src: "/carouselImages/qnc.png",
+      src: "/carouselImages/qnc.webp",
       title: "Quack n' Cluck",
       a: "/projects/quack",
       description:
         "A fun and engaging project featuring a quirky duck and chicken duo.",
     },
     {
-      src: "/carouselImages/chuffCity2.png",
+      src: "/carouselImages/chuffCity2.webp",
       title: "Chuff City Posters",
       a: "/projects/chuffCity",
       description:
         "The iterations of the Chuff City project, showcasing all design concepts.",
     },
     {
-      src: "/carouselImages/digitalMagazine.png",
+      src: "/carouselImages/digitalMagazine.webp",
       title: "Cycladic Blueprint (Digital)",
       a: "https://indd.adobe.com/view/d1ad75cd-d214-414b-9a49-784fc55dd04f",
       description:
         "A digital magazine exploring the iconic architecture of the Cyclades.",
     },
     {
-      src: "/carouselImages/gradeyDick.png",
+      src: "/carouselImages/gradeyDick.webp",
       title: "Gradey Dick Graphic",
       a: "/projects/gradeyDick",
       description:
