@@ -30,9 +30,7 @@ export default function Home() {
       </div>
       <div className="snap-start">
         <Contact />
-      </div>
-      <div className="snap-start">
-      <Footer />
+        <Footer />
       </div>
 
     </main>
