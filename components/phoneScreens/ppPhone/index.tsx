@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
-import PPHome from "../../../public/pocketProf/ppHome.png"
+import PPHome from "../../../public/pocketProf/ppHome.webp"
 import Image from "next/image";
 import React from "react";
 

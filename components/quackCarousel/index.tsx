@@ -8,19 +8,19 @@ import Image from "next/image";
 const items = [
   {
     id: 0,
-    src: "/quack/quack.png",
+    src: "/quack/quack.webp",
   },
   {
     id: 1,
-    src: "/quack/quack2.png",
+    src: "/quack/quack2.webp",
   },
   {
     id: 2,
-    src: "/quack/quack3.png",
+    src: "/quack/quack3.webp",
   },
   {
     id: 3,
-    src: "/quack/quack4.png",
+    src: "/quack/quack4.webp",
   },
 ];
 type Item = {

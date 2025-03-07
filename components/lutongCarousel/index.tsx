@@ -8,19 +8,19 @@ import Image from "next/image";
 const items = [
   {
     id: 0,
-    src: "/lutongBahay/mainMenu.png",
+    src: "/lutongBahay/mainMenu.webp",
   },
   {
     id: 1,
-    src: "/lutongBahay/recipes.png",
+    src: "/lutongBahay/recipes.webp",
   },
   {
     id: 2,
-    src: "/lutongBahay/sharing.png",
+    src: "/lutongBahay/sharing.webp",
   },
   {
     id: 3,
-    src: "/lutongBahay/shoppinglist.png",
+    src: "/lutongBahay/shoppinglist.webp",
   },
 ];
 type Item = {

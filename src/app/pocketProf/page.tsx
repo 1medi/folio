@@ -4,7 +4,7 @@ import Footer from "../../../components/footer";
 import { motion } from "framer-motion";
 import PPBanner from "../../../components/pageBanners/ppBanner";
 import Image from "next/image";
-import PPSitemap from "../../../public/pocketProf/ppSitemap.png";
+import PPSitemap from "../../../public/pocketProf/ppSitemap.webp";
 import PPPhone from "../../../components/phoneScreens/ppPhone";
 import PPNav from "../../../components/comparisonSliders/ppNav";
 import PPMain from "../../../components/comparisonSliders/ppMain";

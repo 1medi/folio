@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AetherLogo from "../../../public/projectLogos/aetherLogo.png";
+import AetherLogo from "../../../public/projectLogos/aetherLogo.webp";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";

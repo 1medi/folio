@@ -3,7 +3,7 @@ import Header from "../../../components/header";
 import Footer from "../../../components/footer";
 import { motion } from "framer-motion";
 import LBBanner from "../../../components/pageBanners/lbBanner";
-import FramerCarousel from "../../../components/framerCarousel";
+import LutongCarousel from "../../../components/lutongCarousel";
 import FadeIn from "../utils/fadein";
 const LutongBahay = () => {
 
@@ -110,7 +110,7 @@ const LutongBahay = () => {
             </FadeIn>
           </div>
         </motion.section>
-        <FramerCarousel />
+        <LutongCarousel />
         
       </main>
       <div className="snap-start">

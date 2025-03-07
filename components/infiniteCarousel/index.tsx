@@ -14,7 +14,7 @@ export default function HomeCarousel() {
         "A fun and engaging project featuring a quirky duck and chicken duo.",
     },
     {
-      src: "/carouselImages/chuffCity2.webp",
+      src: "/chuffCity/v1.webp",
       title: "Chuff City Posters",
       a: "/projects/chuffCity",
       description:

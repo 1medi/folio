@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Lutong from "../../../public/projectLogos/lutongBahayLogo.png";
+import Lutong from "../../../public/projectLogos/lutongBahayLogo.webp";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ACGLogo from "../../../public/projectLogos/acgLogo.png"
+import ACGLogo from "../../../public/projectLogos/acgLogo.webp"
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";

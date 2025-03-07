@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PPOscar from "../../../public/projectLogos/pocketProfLogo.png";
+import PPOscar from "../../../public/projectLogos/pocketProfLogo.webp";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
