@@ -8,7 +8,7 @@ import {
   animate,
 } from "framer-motion";
 import Image from "next/image";
-import ACG from "../../../public/projectLogos/acgLogo.png";
+import ACG from "../../../public/projectLogos/acgLogo.webp";
 
 const COLORS = ["#D8BF9D", "#007EBC"];
 const ACGBanner = () => {

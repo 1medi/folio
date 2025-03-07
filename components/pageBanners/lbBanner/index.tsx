@@ -7,7 +7,7 @@ import {
   useTransform,
   animate,
 } from "framer-motion";
-import LBLogo from "../../../public/projectLogos/lutongBahayLogo.png";
+import LBLogo from "../../../public/projectLogos/lutongBahayLogo.webp";
 import Image from "next/image";
 
 const COLORS = [" #10254E", "#E98704", "#F0AB1A"]; // Shades from the mascot

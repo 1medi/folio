@@ -8,7 +8,7 @@ import {
   animate,
 } from "framer-motion";
 import Image from "next/image";
-import OscarLogo from "../../../public/projectLogos/pocketProfLogo.png";
+import OscarLogo from "../../../public/projectLogos/pocketProfLogo.webp";
 
 const COLORS = ["#5C47CC", "#8572F4", "#F2E9FF"]; // Shades from the mascot
 const PPBanner = () => {

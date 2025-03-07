@@ -7,7 +7,7 @@ import {
   useTransform,
   animate,
 } from "framer-motion";
-import AELogo from "../../../public/projectLogos/aetherLogo.png";
+import AELogo from "../../../public/projectLogos/aetherLogo.webp";
 import Image from "next/image";
 const COLORS = ["#5E86A0", "#1B425E", "#A7C6DD"]; // Shades from the mascot
 const AEBanner = () => {
