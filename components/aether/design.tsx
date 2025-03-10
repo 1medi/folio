@@ -8,7 +8,7 @@ export default function Design() {
       <h2 className="text-3xl text-center md:text-left bg-[#3A3F2D] rounded-lg p-4">
         Design Decisions
       </h2>
-      <p className="text-center xl:text-left p-4 text-lg">
+      <p className="text-left p-4 text-lg">
         Whether it be the logo, blog or application, Aether underwent many
         shifts in creative direction
       </p>
@@ -64,7 +64,7 @@ export default function Design() {
           <div className="inner flex flex-col justify-center items-center p-4">
             <h2 className="font-bold text-3xl">Prototype</h2>
             <iframe
-              className="border border-solid border-gray-200 w-[350px] h-[450px] xl:w-[600px] xl:h-[450px] desktop:w-[1400px] desktop:h-[800px]"
+              className="border border-solid border-gray-200 w-[350px] h-[450px] xl:w-[600px] xl:h-[450px] desktop:w-[1200px] desktop:h-[800px]"
               src="https://embed.figma.com/design/eKUiV3gWInupozNnMRm1EY/Aether-Prototype?node-id=2750-6684&embed-host=share&hide-ui=1&footer=false"
               allowFullScreen
             ></iframe>

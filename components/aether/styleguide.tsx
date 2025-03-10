@@ -24,7 +24,7 @@ export default function Section6() {
                 Logo
               </h2>
               <div className="flex flex-col lg:flex-row">
-                <p className="lg:m-8 xl:text-xl xl:w-2/3 text-center">
+                <p className="lg:m-8 xl:text-xl xl:w-2/3 text-left">
                   This is a combination of a document and a compass. The
                   document represent the app’s function of assisting with form
                   completion and paperwork. The compass represents the guidance
