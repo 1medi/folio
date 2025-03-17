@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Transition from "../../components/transition";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Loading from "./utils/loading"
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Suspense fallback={<Loading/>}>
         <Transition>{children}</Transition>
+        </Suspense>
         <SpeedInsights/>
       </body>
     </html>
