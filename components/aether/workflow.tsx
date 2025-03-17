@@ -15,10 +15,29 @@ const Workflow = () => {
           ></iframe>
           <div className="p-4 m-auto">
             <h1 className="text-center xl:text-4xl font-medium">Key Flows</h1>
-            <ul className="text-left text-xl p-2 desktop:text-2xl">
-              <li className="xl:p-2 desktop:p-4 desktop:text-2xl">Upload and scanning documents</li>
-              <li className=" xl:p-2 desktop:p-4">Viewing and editing </li>
-              <li className=" xl:p-2 desktop:p-4">Creating profiles for elderly</li>
+            <ul className="text-left p-2 desktop:text-2xl">
+              <li className=" xl:p-2 text-xl xl:text-2xl  desktop:p-4">Login & Profile Creation</li>
+              <p className="xl:text-md">
+                Purpose: Allows users to log in and create a profile for elderly
+                individuals.
+              </p>
+              <li className="xl:p-2 text-xl xl:text-2xl  desktop:p-4 desktop:text-2xl">
+                Managing Elderly Profiles
+              </li>
+              <p>Purpose: Users can add, view, and edit elderly profiles.</p>
+              <li className=" xl:p-2 desktop:p-4 text-xl xl:text-2xl ">
+                Document Upload & Scanning{" "}
+              </li>
+              <p>
+                Purpose: Upload or scan documents for review and processing.
+              </p>
+              <li className=" xl:p-2 desktop:p-4 text-xl xl:text-2xl ">
+                Document Editing & AI Assistance
+              </li>
+              <p>
+                Purpose: Users refine extracted text, resolve confusion, and
+                paraphrase content.
+              </p>
             </ul>
           </div>
         </div>

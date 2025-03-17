@@ -2,7 +2,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/react";
 import { FiBatteryCharging, FiWifi } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-export default function LogoComparison() {
+export default function LogoComparison3() {
   function HeaderBar() {
     return (
       <>
@@ -36,7 +36,7 @@ export default function LogoComparison() {
           <figure slot="first" className="relative m-0">
             <img
               className="bg-slate-500 block w-full lg:h-[550px]"
-              src="/aether/appOld.webp"
+              src="/aether/appOld3.webp"
             />
             <figcaption className="absolute top-[90%] left-3 -translate-y-1/2 bg-white border border-gray-400 rounded-xl text-[#2e3452] opacity-80 p-3 leading-none">
               Before
@@ -45,7 +45,7 @@ export default function LogoComparison() {
           <figure slot="second" className="relative m-0">
             <img
               className=" block w-full lg:h-[550px]"
-              src="/aether/appNew.webp"
+              src="/aether/appNew3.webp"
             />
             <figcaption className="absolute top-[10%] right-3 -translate-y-1/2 bg-white border border-gray-400 rounded-xl text-[#2e3452] opacity-80 p-3 leading-none">
               After

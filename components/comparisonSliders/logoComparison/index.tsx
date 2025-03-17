@@ -2,7 +2,7 @@ import { ImgComparisonSlider } from "@img-comparison-slider/react";
 
 export default function LogoComparison() {
   return (
-    <div className="m-4">
+    <div className="m-2">
       <ImgComparisonSlider>
         <figure slot="first" className="relative m-0">
           <img

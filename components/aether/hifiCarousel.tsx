@@ -4,30 +4,26 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import Image from "next/image";
-import HifiPhone from "../phoneScreens/hifiPhone";
-import HifiPhone2 from "../phoneScreens/hifiPhone2";
+import AppComparison from "../comparisonSliders/aeAppComparison"
+import AppComparison2 from "../comparisonSliders/aeAppComparison2"
+import AppComparison3 from "../comparisonSliders/aeAppComparison3"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Importing arrow icons
 
 const items: Item[] = [
   {
     id: 0,
-    src: HifiPhone,
-    description: "this describes the first slide",
+    src: AppComparison,
+    description: "We went with a color change to improve contrast and decluttered the UI",
   },
   {
     id: 1,
-    src: HifiPhone2,
+    src: AppComparison2,
     description: "this describes the second slide",
   },
   {
     id: 2,
-    src: HifiPhone,
-    description: "this describes the third slide",
-  },
-  {
-    id: 3,
-    src: HifiPhone2,
-    description: "this describes the fourth slide",
+    src: AppComparison3,
+    description: "Instead of inline simplification, we decided to create a bottam modal to display all paraphrases within the image / file.",
   },
 ];
 
@@ -55,7 +51,7 @@ function HifiCarousel() {
     <>
       <motion.div
         layoutId={"activeItems"}
-        className="hifiCarousel rounded-md w-fit mt-16 pb-4 gap-2 items-center cursor-auto"
+        className="hifiCarousel rounded-md w-fit mt-8 pb-4 gap-2 items-center cursor-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <AnimatePresence mode="popLayout" initial={false}>
@@ -127,7 +123,7 @@ function HifiCarousel() {
                   duration: 0.2,
                 },
               }}
-              className="mt-12"
+              className="text-center"
             >
               {activeItem.description}
             </motion.figcaption>

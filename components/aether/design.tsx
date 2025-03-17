@@ -1,6 +1,7 @@
 import LogoComparison from "../comparisonSliders/logoComparison";
 import AppComparison from "../comparisonSliders/aeAppComparison";
 import FadeIn from "@/app/utils/fadein";
+import HifiCarousel from "./hifiCarousel";
 
 export default function Design() {
   return (
@@ -24,7 +25,7 @@ export default function Design() {
           <div className="app">
             <h1 className="text-3xl font-semibold text-center p-4">App</h1>
             <div className="App flex justify-center items-center">
-              <AppComparison />
+              <HifiCarousel />
             </div>
           </div>
         </div>

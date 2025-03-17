@@ -2,7 +2,7 @@ import NextVideo from "next-video";
 import AetherPromo from "../../videos/aether-final-ad.mp4";
 import AetherMockup from "../../videos/aether_app_mockup.mp4";
 import FadeIn from "@/app/utils/fadein";
-
+import Brochure from "./brochure"
 export default function Section7() {
   return (
     <>
@@ -10,7 +10,10 @@ export default function Section7() {
         <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
           Marketing
         </h2>
-        <div className="flex flex-col lg:grid lg:grid-cols-2 justify-around">
+        <h3 className="flex justify-center items-center text-2xl xl:pt-4">
+          Videos
+        </h3>
+        <div className="flex flex-col lg:grid lg:grid-cols-2 justify-around p-4">
           <div className="promoVideos md:m-4 flex flex-col justify-center items-center">
             <p className="text-center text-xl lg:mx-24 lg:my-8 p-2">
               On top of the various aspects of designing and developing the core
@@ -18,7 +21,7 @@ export default function Section7() {
               including physical goods such as: Brochures, Tote Bags and even a
               commerical!
             </p>
-            <div className="flex items-center justify-center min-h-[200px] min-w-[300px] md:h-[400px] md:w-[500px] p-4 rounded-xl"> 
+            <div className="flex items-center justify-center min-h-[200px] min-w-[300px] md:h-[400px] md:w-[500px] p-4 rounded-xl">
               <NextVideo
                 className="m-4"
                 style={{
@@ -51,7 +54,12 @@ export default function Section7() {
             </div>
           </div>
         </div>
+        <h3 className="flex justify-center items-center text-2xl p-4">Brochure</h3>
+        <div className="flex justify-center items-center w-full">
+        <Brochure/>
+        </div>
+
       </FadeIn>
     </>
   );
-};
+}

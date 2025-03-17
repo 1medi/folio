@@ -2,38 +2,32 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 const items = [
   {
     id: 0,
-    src: "/quack/quack.webp",
+    src: "/zootJuice/zootJuice1.webp",
+    alt: "Berries and Cherries Zoot Juice can"
   },
   {
     id: 1,
-    src: "/quack/quack2.webp",
+    src: "/zootJuice/zootJuice2.webp",
+    alt: "Yuzu Lemon Zoot Juice can"
   },
   {
     id: 2,
-    src: "/quack/quack3.webp",
-  },
-  {
-    id: 3,
-    src: "/quack/quack4.webp",
-  },
+    src: "/zootJuice/zootJuice3.webp",
+    alt: "Moscow Mule Zoot Juice can"
+  }
 ];
-type Item = {
-  id: string;
-  imgSrc: string;
-  title: string;
-  description: string;
-};
 
-export default function QuackCarousel() {
+export default function ZootJuiceCarousel() {
   const [activeItem, setActiveItem] = useState(items[0]);
   const [width, setWidth] = useState(0);
   const carousel = useRef(null);
+  
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, [carousel]);
@@ -42,7 +36,7 @@ export default function QuackCarousel() {
     <>
       <motion.div
         layoutId={"activeItems"}
-        className="rounded-md w-fit m-4 pb-4 gap-2 items-center cursor-auto "
+        className="rounded-md w-fit m-4 pb-4 gap-2 items-center cursor-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <>
@@ -52,7 +46,7 @@ export default function QuackCarousel() {
                 {tab.id === activeItem.id && (
                   <motion.figure
                     key={tab?.id}
-                    className="bg-[#3A3F2D]  border  rounded-md p-4 backdrop-blur-sm"
+                    className="p-4 backdrop-blur-sm"
                   >
                     <motion.div
                       initial={{ opacity: 0 }}
@@ -78,8 +72,8 @@ export default function QuackCarousel() {
                         src={activeItem.src}
                         width={1000}
                         height={1000}
-                        alt="preview_img"
-                        className=" object-contain h-[600px] desktop:h-[800px] mx-auto rounded-md"
+                        alt={activeItem.alt}
+                        className="object-contain h-[600px] desktop:h-[800px] mx-auto rounded-md"
                       />
                     </motion.div>
                   </motion.figure>
@@ -96,9 +90,9 @@ export default function QuackCarousel() {
             dragConstraints={{ right: 0, left: -width }}
             dragTransition={{ bounceDamping: 30 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="flex  "
+            className="flex"
           >
-            {items.slice(0, 8)?.map((itemData, index) => {
+            {items.map((itemData, index) => {
               return (
                 <motion.div
                   key={itemData.id}
@@ -109,7 +103,7 @@ export default function QuackCarousel() {
                     src={itemData?.src}
                     width={400}
                     height={400}
-                    alt="img"
+                    alt={itemData.alt}
                     className="w-28 h-16 object-cover cursor-pointer relative z-[2] rounded-md pointer-events-none"
                   />
                   {itemData?.id === activeItem?.id && (
@@ -132,4 +126,4 @@ export default function QuackCarousel() {
       </motion.div>
     </>
   );
-};
+}
