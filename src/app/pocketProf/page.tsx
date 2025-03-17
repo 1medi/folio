@@ -45,7 +45,7 @@ const PocketProf = () => {
           </FadeIn>
 
           <div className="flex flex-col lg:flex-row m-4">
-            <FadeIn className="about p-8 lg:w-1/2 bg-[#a49e8e80] my-2 md:my-4 md:my-auto rounded-lg lg:mr-4 ">
+            <FadeIn className="about p-8 lg:w-1/2 bg-[#a49e8e80] my-2 md:my-auto rounded-lg lg:mr-4 ">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 What is Pocket Prof?
               </h2>
@@ -59,7 +59,7 @@ const PocketProf = () => {
               </p>
             </FadeIn>
 
-            <FadeIn className="proj-ideation lg:w-1/2 p-8 bg-[#a49e8e80]  my-2  md:my-4 md:my-auto rounded-lg lg:ml-4">
+            <FadeIn className="proj-ideation lg:w-1/2 p-8 bg-[#a49e8e80]  my-2  md:my-auto rounded-lg lg:ml-4">
               <h2 className="text-3xl text-center bg-[#3A3F2D] rounded-lg p-4">
                 Identifying The Issue
               </h2>
@@ -103,7 +103,7 @@ const PocketProf = () => {
                   <h1 className="text-center lg:text-2xl font-bold">
                     Overview
                   </h1>
-                  <ul className="list-disc text-center m-4">
+                  <ul className=" text-center m-4">
                     <li className="font-semibold">Participants: 5</li>
                     <li className="font-semibold">Completed: April 2024</li>
                   </ul>
@@ -122,43 +122,43 @@ const PocketProf = () => {
                     Questions
                   </h1>
                   <ul className="list-decimal">
-                    <li>
+                    <li className="p-2">
                       Navigate through the on-boarding steps and reach the ‘New
                       Subject’ page.
                     </li>
-                    <li>
+                    <li className="p-2">
                       On the ‘New Subject’ page, navigate to the ‘art/creative’
                       section and create a goal list for a basic guitar course.
                     </li>
-                    <li>Visit the profile page and change the user name.</li>
-                    <li>
+                    <li className="p-2">Visit the profile page and change the user name.</li>
+                    <li className="p-2">
                       Add a goal individually, then add multiple goals to your
                       account.
                     </li>
-                    <li>
+                    <li className="p-2">
                       Navigate to the settings page, switch to dark mode, and
                       adjust the font size to large.
                     </li>
-                    <li>Complete a quiz and review your results.</li>
+                    <li className="p-2">Complete a quiz and review your results.</li>
                   </ul>
                 </div>
                 <div className=" m-4 p-4 ">
                   <h1 className="text-center lg:text-2xl font-bold">
                     Key Takeaways
                   </h1>
-                  <ul className="list-decimal">
-                    <li>
+                  <ul className="">
+                    <li className="p-2">
                       We resized and changed colours to improve visibility
                     </li>
-                    <li>
+                    <li className="p-2">
                       For better clarity, we improved the design of the icons on
                       the Navigation bar and reduced the number from 4 to 3.
                     </li>
-                    <li>
+                    <li className="p-2">
                       For better navigation and flow, we made the “New subject”
                       page to homepage.
                     </li>
-                    <li>
+                    <li className="p-2">
                       This usability testing helped us point several areas for
                       improvement. We aim to improve the design and flow of our
                       app by incorporating the suggested recommendations so that

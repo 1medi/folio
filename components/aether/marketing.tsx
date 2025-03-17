@@ -10,7 +10,7 @@ export default function Section7() {
         <h2 className="text-3xl bg-[#3A3F2D] rounded-lg text-center md:text-right p-4">
           Marketing
         </h2>
-        <h3 className="flex justify-center items-center text-2xl xl:pt-4">
+        <h3 className="flex justify-center items-center text-2xl p-2 xl:pt-4">
           Videos
         </h3>
         <div className="flex flex-col lg:grid lg:grid-cols-2 justify-around p-4">
@@ -54,7 +54,7 @@ export default function Section7() {
             </div>
           </div>
         </div>
-        <h3 className="flex justify-center items-center text-2xl p-4">Brochure</h3>
+        <h3 className="flex justify-center items-center text-2xl p-2">Brochure</h3>
         <div className="flex justify-center items-center w-full">
         <Brochure/>
         </div>

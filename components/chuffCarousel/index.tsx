@@ -107,6 +107,7 @@ export default function FramerCarousel() {
                     height={400}
                     alt="img"
                     className="w-28 h-16 object-cover cursor-pointer relative z-[2] rounded-md pointer-events-none"
+                    priority
                   />
                   {itemData?.id === activeItem?.id && (
                     <motion.div
@@ -117,7 +118,7 @@ export default function FramerCarousel() {
                           ease: "easeOut",
                         },
                       }}
-                      className="absolute top-0 left-0 h-full w-full dark:bg-gray-100 bg-gray-800 rounded-md"
+                      className="absolute  top-0 left-0 h-full w-full dark:bg-gray-100 bg-gray-800 rounded-md"
                     ></motion.div>
                   )}
                 </motion.div>

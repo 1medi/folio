@@ -82,7 +82,7 @@ export default function ZootJuiceCarousel() {
             </section>
           ))}
         </>
-        <div className="flex justify-center items-center gap-8 mt-4">
+        <div className="flex justify-center items-center gap-8 mt-4 overflow-hidden w-full">
           <motion.div
             ref={carousel}
             drag="x"

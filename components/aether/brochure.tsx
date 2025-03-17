@@ -65,7 +65,7 @@ export default function QuackCarousel() {
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
-                        className={`absolute left-[-60px] top-1/2 text-black ${activeItem.id === 0 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+                        className={`absolute left-[-40px] top-1/2 text-black ${activeItem.id === 0 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
                         onClick={() =>
                           activeItem.id !== 0 && setActiveItem(items[0])
                         }
@@ -74,8 +74,8 @@ export default function QuackCarousel() {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="60"
-                          height="60"
+                          width="48"
+                          height="48"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
@@ -92,12 +92,12 @@ export default function QuackCarousel() {
                         width={1000}
                         height={1000}
                         alt="preview_img"
-                        className=" object-contain w-full h-[600px] desktop:h-[800px] mx-auto rounded-md"
+                        className=" object-contain w-full  desktop:h-[800px] mx-auto rounded-md"
                       />
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
-                        className={`absolute right-[-60px] top-1/2  text-black ${activeItem.id === items.length - 1 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+                        className={`absolute right-[-40px] top-1/2  text-black ${activeItem.id === items.length - 1 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
                         onClick={() =>
                           activeItem.id !== items.length - 1 &&
                           setActiveItem(items[1])
@@ -107,8 +107,8 @@ export default function QuackCarousel() {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="60"
-                          height="60"
+                          width="48"
+                          height="48"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
