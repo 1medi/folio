@@ -11,7 +11,7 @@ export default function ZootJuice() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <FadeIn>
+    <>
       <Header />
       <main className="mt-12 xl:mt-20 min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <Link
@@ -47,6 +47,7 @@ export default function ZootJuice() {
         </div>
       </main>
       <Footer />
-    </FadeIn>
+    </>
+    
   );
 }
