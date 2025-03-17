@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["video.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/utils/fadein.jsx", "components/MotionSlider/Context.jsx"],
+  "include": ["video.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/utils/fadein.jsx", "components/MotionSlider/Context.jsx", "src/app/utils/loading.jsx"],
   "exclude": ["node_modules"]
 }
