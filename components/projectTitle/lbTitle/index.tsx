@@ -20,7 +20,7 @@ const LBTitle = () => {
           transition={{ ease: "backInOut" }}
         >
           <div className="flex flex-row flex-wrap relative justify-center items-center">
-            <h1 className="font-bold mt-2 pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
+            <h1 className="font-bold mt-2 pr-0.5 sm:text-lg sm:p-2 md:text-4xl desktop:text-7xl">
               Lutong
             </h1>
             <motion.div
@@ -33,7 +33,7 @@ const LBTitle = () => {
             >
               <Image src={Lutong.src} height={512} width={512} alt="lutong bahay" priority />
             </motion.div>
-            <h1 className="font-bold mt-2 pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
+            <h1 className="font-bold mt-2 pl-0.5 sm:text-lg sm:p-2 md:text-4xl desktop:text-7xl">
               Bahay
             </h1>
           </div>

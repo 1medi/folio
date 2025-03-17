@@ -1,17 +1,17 @@
 "use client";
-import Header from "../../../../components/header";
-import Footer from "../../../../components/footer";
-import ZootJuiceCarousel from "../../../../components/zootJuiceCarousel";
+import Header from "../../../components/header";
+import Footer from "../../../components/footer";
+import ZootJuiceCarousel from "../../../components/zootJuiceCarousel";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import FadeIn from "../../utils/fadein"
+import FadeIn from "../utils/fadein"
 
 export default function ZootJuice() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <>
+    <FadeIn>
       <Header />
       <main className="mt-12 xl:mt-20 min-h-screen flex flex-col items-center justify-center p-4 m-auto">
         <Link
@@ -47,6 +47,6 @@ export default function ZootJuice() {
         </div>
       </main>
       <Footer />
-    </>
+    </FadeIn>
   );
 }

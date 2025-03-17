@@ -20,7 +20,7 @@ const PPTitle = () => {
           transition={{ ease: "backInOut" }}
         >
           <div className="flex flex-row flex-wrap relative justify-center items-center">
-            <h1 className="font-bold pr-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
+            <h1 className="font-bold pr-0.5 sm:text-lg sm:p-2 md:text-4xl desktop:text-7xl">
               Pocket
             </h1>
             <motion.div
@@ -38,7 +38,7 @@ const PPTitle = () => {
                 priority
               />
             </motion.div>
-            <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl lg:text-5xl xl:8xl">
+            <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl desktop:text-7xl">
               Prof
             </h1>
           </div>

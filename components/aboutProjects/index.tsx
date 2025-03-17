@@ -3,13 +3,14 @@ import AeTitle from "../projectTitle/aeTitle";
 import ACGTitle from "../projectTitle/acgTitle";
 import LBTitle from "../projectTitle/lbTitle";
 import PPTitle from "../projectTitle/ppTitle";
+import ZootTitle from "../projectTitle/zootTitle"
 
 export default function AboutProjects() {
   return (
-    <div className="mb-12">
+    <div className="">
       <h1
         id="projects"
-        className="text-8xl font-bold text-center m-auto pt-16 pb-16"
+        className="text-7xl font-bold text-center m-auto pt-8 pb-8"
       >
         Projects
       </h1>
@@ -23,6 +24,9 @@ export default function AboutProjects() {
         <hr />
         <PPTitle />
         <hr />
+        <ZootTitle/>
+        <hr />
+
       </section>
     </div>
   );

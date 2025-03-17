@@ -1,41 +1,45 @@
 import React, { useState } from "react";
-import ACGLogo from "../../../public/projectLogos/acgLogo.webp"
-import Image from "next/image";
+import Zoot from "../../../public/projectLogos/zootJuiceLogo.webp";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
-const ACGTitle = () => {
+const zootTitle = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
-      <Link href="/acg">
+      <Link href="/zootJuice">
         <motion.div
           className="title-container p-2 flex-wrap relative justify-center items-center flex flex-col  no-underline"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           animate={{
-            backgroundColor: isHovered ? "#DD8143" : "",
+            backgroundColor: isHovered ? "#656384" : "",
           }}
           transition={{ ease: "backInOut" }}
         >
           <div className="flex flex-row flex-wrap relative justify-center items-center">
             <h1 className="font-bold pr-0.5 sm:text-lg sm:p-2 md:text-4xl desktop:text-7xl">
-              Awesome Card
+              Zoot
             </h1>
             <motion.div
               animate={{
-                width: isHovered ? "128px" : "0rem",
-                height: isHovered ? "56px" : "0rem",
+                width: isHovered ? "6rem" : "0rem",
                 opacity: isHovered ? "100%" : "0%",
                 padding: isHovered ? "0rem 0.75rem" : "0rem",
               }}
             >
-              <Image src={ACGLogo} height={128} width={128} alt="acg" priority />
+              <Image
+                src={Zoot.src}
+                height={512}
+                width={512}
+                alt="Zoot Juice"
+                priority
+              />
             </motion.div>
-
             <h1 className="font-bold pl-0.5 sm:text-lg sm:p-2 md:text-4xl desktop:text-7xl">
-              Game (ACG)
+              Juice
             </h1>
           </div>
           <motion.p
@@ -52,5 +56,4 @@ const ACGTitle = () => {
   );
 };
 
-export default ACGTitle;
-
+export default zootTitle;

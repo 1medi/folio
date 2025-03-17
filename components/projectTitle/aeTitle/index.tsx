@@ -20,7 +20,7 @@ const AETitle = () => {
           transition={{ ease: "backInOut" }}
         >
           <div className="flex flex-row p-2 flex-wrap relative justify-center items-center">
-            <h1 className="font-bold p-2 sm:text-lg md:text-4xl lg:text-5xl xl:8xl">
+            <h1 className="font-bold p-2 sm:text-lg md:text-4xl desktop:text-7xl">
               Aether
             </h1>
             <motion.div

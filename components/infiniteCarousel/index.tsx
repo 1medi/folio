@@ -34,13 +34,6 @@ export default function HomeCarousel() {
       description:
         "A dynamic graphic representation of basketball player Gradey Dick.",
     },
-    {
-      src: "/carouselImages/zootJuiceMock.webp",
-      title: "Zoot Juice",
-      a: "/projects/zootJuice",
-      description:
-        "Brand Ideation and design for a cannabis infused beverage",
-    },
   ];
 
   const links = ["/"];
