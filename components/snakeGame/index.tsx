@@ -80,16 +80,16 @@ export default function Snake() {
 
   const handleKeyPress = (event: KeyboardEvent<HTMLDivElement>) => {
   
-    if (event.key === "ArrowUp" && direction !== "DOWN") {
+    if (event.key === "w" && direction !== "DOWN") {
       setDirection("UP");
     }
-    if (event.key === "ArrowDown" && direction !== "UP") {
+    if (event.key === "s" && direction !== "UP") {
       setDirection("DOWN");
     }
-    if (event.key === "ArrowLeft" && direction !== "RIGHT") {
+    if (event.key === "a" && direction !== "RIGHT") {
       setDirection("LEFT");
     }
-    if (event.key === "ArrowRight" && direction !== "LEFT") {
+    if (event.key === "d" && direction !== "LEFT") {
       setDirection("RIGHT");
     }
   };

@@ -53,7 +53,7 @@ const Banner = () => {
       </div>
       {showGame && (
         <FadeIn>
-          <div className="z-[99] absolute bg-black w-screen h-full">
+          <div className="z-[99] absolute flex justify-center items-center bg-black w-screen h-full">
             <SnakeGame />
           </div>
         </FadeIn>

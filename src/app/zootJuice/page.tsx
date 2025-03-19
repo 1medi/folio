@@ -45,7 +45,7 @@ export default function ZootJuice() {
             </div>
           </div>
         </div>
-
+        <SnakeGame/>
       </main>
       <Footer />
     </>
