@@ -5,7 +5,7 @@ import ZootJuiceCarousel from "../../../components/zootJuiceCarousel";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import FadeIn from "../utils/fadein"
+import SnakeGame from "../../../components/snakeGame";
 
 export default function ZootJuice() {
   const [isHovered, setIsHovered] = useState(false);
@@ -45,6 +45,7 @@ export default function ZootJuice() {
             </div>
           </div>
         </div>
+
       </main>
       <Footer />
     </>

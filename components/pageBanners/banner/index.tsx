@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   motion,
   useMotionTemplate,
@@ -9,7 +9,10 @@ import {
 } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFileAlt, FaArrowDown } from "react-icons/fa";
 import Tile from "../../tile";
-
+import SnakeGame from "../../snakeGame";
+import FadeIn from "@/app/utils/fadein";
+import Oscar from "../../../public/projectLogos/pocketProfLogo.webp"
+import Image from "next/image";
 const duration = 1;
 const transition = {
   duration: 0.8,
@@ -19,6 +22,12 @@ const transition = {
 const COLORS = ["#1E150A", "#004f2d", "#000000"];
 
 const Banner = () => {
+  const [showGame, setShowGame] = useState(false);
+
+  const toggleGame = () => {
+    setShowGame((prev) => !prev);
+  };
+
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, ${COLORS[1]} 30%, ${color}`;
   useEffect(() => {
@@ -30,8 +39,25 @@ const Banner = () => {
     });
   }, []);
 
+
   return (
     <main className="w-full h-full relative overflow-hidden">
+      <div
+        onClick={toggleGame}
+        className={`
+        absolute p-2 rounded
+        ${showGame ? "bg-green-400 top-[710px] left-[25px] z-[999]" : "text-[8px] cursor-pointer"}
+      `}
+      >
+        {showGame ? "Close Snake Game" : "wat this?"}
+      </div>
+      {showGame && (
+        <FadeIn>
+          <div className="z-[99] absolute bg-black w-screen h-full">
+            <SnakeGame />
+          </div>
+        </FadeIn>
+      )}
       <motion.section
         className="about-section w-full grid grid-cols-10 h-screen overflow-y-clip"
         style={{
