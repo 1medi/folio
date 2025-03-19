@@ -7,7 +7,7 @@ import ZootTitle from "../projectTitle/zootTitle"
 
 export default function AboutProjects() {
   return (
-    <div className="">
+    <div className="h-screen my-8">
       <h1
         id="projects"
         className="text-7xl font-bold text-center m-auto pt-8 pb-8"

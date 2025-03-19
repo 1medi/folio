@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   motion,
   useMotionTemplate,
@@ -23,9 +23,17 @@ const COLORS = ["#1E150A", "#004f2d", "#000000"];
 
 const Banner = () => {
   const [showGame, setShowGame] = useState(false);
+  const gameRef = useRef<HTMLDivElement>(null); // Create a ref for the game area
 
   const toggleGame = () => {
     setShowGame((prev) => !prev);
+    if (!showGame) {
+      setTimeout(() => {
+        if (gameRef.current) {
+          gameRef.current.focus(); // Set focus to the game area when shown
+        }
+      }, 0); // Delay focus slightly
+    }
   };
 
   const color = useMotionValue(COLORS[0]);
@@ -38,6 +46,12 @@ const Banner = () => {
       repeatType: "mirror",
     });
   }, []);
+
+  useEffect(() => {
+    if (gameRef.current && showGame) {
+      gameRef.current.focus(); // Set focus to the game area when shown
+    }
+  }, [showGame]);
 
 
   return (
@@ -53,10 +67,11 @@ const Banner = () => {
       </div>
       {showGame && (
         <FadeIn>
-          <div className="z-[99] absolute flex justify-center items-center bg-black w-screen h-full">
+          <div ref={gameRef} autoFocus className="z-[99] absolute flex justify-center items-center bg-black w-screen h-full">
             <SnakeGame />
           </div>
         </FadeIn>
+
       )}
       <motion.section
         className="about-section w-full grid grid-cols-10 h-screen overflow-y-clip"
