@@ -11,8 +11,7 @@ import { FaGithub, FaLinkedin, FaFileAlt, FaArrowDown } from "react-icons/fa";
 import Tile from "../../tile";
 import SnakeGame from "../../snakeGame";
 import FadeIn from "@/app/utils/fadein";
-import Oscar from "../../../public/projectLogos/pocketProfLogo.webp"
-import Image from "next/image";
+
 const duration = 1;
 const transition = {
   duration: 0.8,

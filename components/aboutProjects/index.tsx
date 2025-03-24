@@ -10,7 +10,7 @@ export default function AboutProjects() {
     <div className="h-screen my-8">
       <h1
         id="projects"
-        className="text-7xl font-bold text-center m-auto pt-8 pb-8"
+        className="text-7xl font-bold text-center m-auto pt-8 pb-8 desktop:pt-16 desktop:pb-16 desktop:text-8xl"
       >
         Projects
       </h1>
