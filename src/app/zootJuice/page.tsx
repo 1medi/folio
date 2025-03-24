@@ -5,7 +5,7 @@ import ZootJuiceCarousel from "../../../components/zootJuiceCarousel";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
-
+import DielineCarousel from "../../../components/dielines/dielineCarousel";
 export default function ZootJuice() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -43,6 +43,10 @@ export default function ZootJuice() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="w-screen">
+          <h2 className="text-3xl font-bold xl:text-6xl text-center">Dielines</h2>
+        <DielineCarousel/>
         </div>
       </main>
       <Footer />
