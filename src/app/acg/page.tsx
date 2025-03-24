@@ -111,9 +111,9 @@ const ACG = () => {
               Styleguide
             </h2>
 
-            <div className="flex p-4 flex-col w-full justify-center items-center lg:flex-row">
-              <div className="Colors flex-col justify-center items-center m-auto lg:w-1/2 lg:m-16">
-                <div className="photo-container w-[220px] m-auto lg:w-[400px] flex xl:w-[450px]">
+            <div className="flex p-4 flex-col w-full justify-center items-center lg:grid lg:grid-cols-2 lg:gap-4">
+              <div className="Colors flex-col justify-center items-center m-auto lg:m-16">
+                <div className="photo-container w-full  m-4 flex">
                   <Image
                     src={ACGColors}
                     alt="ACG color palette"
@@ -123,14 +123,12 @@ const ACG = () => {
                 <h2 className="font-bold p-2 xl:text-2xl desktop:p-4 text-center ">
                   Core Colors
                 </h2>
-                <ul className="w-50 m-auto text-center p-4 desktop:text-2xl desktop:w-full">
+                <ul className="w-full text-center p-4 desktop:text-2xl ">
                   <li className="p-2 desktop:p-4">
-                    {" "}
                     <span className="font-bold">#C1121F (Bright Red)</span> :
                     For bold accents and energetic highlights.
                   </li>
                   <li className="p-2 desktop:p-4">
-                    {" "}
                     <span className="font-bold">#FDF0D5 (Cream)</span> : A
                     neutral base for balance and warmth.
                   </li>
@@ -139,16 +137,15 @@ const ACG = () => {
                     contrast and reliability.
                   </li>
                   <li className="p-2 desktop:p-4">
-                    {" "}
                     <span className="font-bold"> #DB9B39 (Gold)</span> : Adds
                     sophistication and premium vibes.
                   </li>
                 </ul>
               </div>
 
-              <div className="everythingElse m-auto w-full lg:w-1/2">
-                <div className=" flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container w-[220px] lg:w-[400px] flex m-4 xl:w-[450px]">
+
+                <div className="flex flex-col justify-center m-12 items-center">
+                  <div className="photo-container flex m-4 ">
                     <Image
                       src={ACGMeasurements}
                       alt="ACG measurements guide"
@@ -158,40 +155,35 @@ const ACG = () => {
                   <h2 className="font-bold p-2 xl:text-2xl desktop:p-4 text-center ">
                     Measurements
                   </h2>
-                  <ul className="w-50 text-center m-4 desktop:text-2xl desktop:w-full">
+                  <ul className="w-full text-center m-4 desktop:text-2xl">
                     <li className="p-2 desktop:p-4">
-                      {" "}
                       <span className="font-bold">#C1121F (Bright Red)</span>:
                       For bold accents and energetic highlights.{" "}
                     </li>
                     <li className="p-2 desktop:p-4">
-                      {" "}
                       <span className="font-bold">#FDF0D5 (Cream)</span>: A
                       neutral base for balance and warmth.{" "}
                     </li>
                     <li className="p-2 desktop:p-4">
-                      {" "}
                       <span className="font-bold">#2274A5 (Deep Blue)</span>:
                       For contrast and reliability.
                     </li>
                     <li className="p-2 desktop:p-4">
-                      {" "}
                       <span className="font-bold">#DB9B39 (Gold)</span>: Adds
                       sophistication and premium vibes.
                     </li>
                   </ul>
                 </div>
 
-                <div className=" flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container w-[220px] lg:w-[400px] flex m-4 xl:w-[450px]">
+                <div className="flex flex-col justify-center m-12 items-center">
+                  <div className="photo-container">
                     <Image
                       src={ACGType}
                       alt="ACG typography"
                       className="rounded-lg m-2 w-full"
                     />
                   </div>
-
-                  <p className="w-[220px] text-center m-4 lg:w-[400px] xl:w-[450px] desktop:text-2xl desktop:w-full">
+                  <p className="w-full text-center desktop:text-2xl">
                     Dragon Hunter gives off inviting but serious at the same
                     time. It combines the classic fantasy style with a
                     modernized, approachable look.
@@ -199,21 +191,20 @@ const ACG = () => {
                 </div>
 
                 <div className="flex flex-col justify-center m-12 items-center">
-                  <div className="photo-container w-[220px] lg:w-[400px] flex m-4 xl:w-[450px]">
+                  <div className="photo-container ">
                     <Image
                       src={ACGLogo}
                       alt="ACG logo"
                       className="w-full rounded-lg m-2"
                     />
                   </div>
-                  <p className="w-[220px] text-center m-4 lg:w-[400px] xl:w-[450px] desktop:text-2xl desktop:w-full">
+                  <p className="w-full text-center m-4 desktop:text-2xl ">
                     The winged cards and the "ACG: Aspect of Elements" logo
                     blend themes of imagination and strategy, possibly alluding
                     to collectible card games or a design process inspired by
                     game-like creativity.
                   </p>
                 </div>
-              </div>
             </div>
           </FadeIn>
         </motion.section>
