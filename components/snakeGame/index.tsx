@@ -1,6 +1,10 @@
 "use client";
 
-import { KeyboardEvent, useEffect, useState } from "react";
+import { KeyboardEvent, useEffect, useState ,useRef} from "react";
+import Bee from "../../public/beeTwerk.gif";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import FadeIn from "@/app/utils/fadein";
 
 const GRID_WIDTH = 36;
 const GRID_HEIGHT = 18;
@@ -22,6 +26,8 @@ export default function Snake() {
   const [direction, setDirection] = useState<Direction>("RIGHT");
   const [gameOver, setGameOver] = useState<boolean>(false);
   const [isGameStarted, setIsGameStarted] = useState<boolean>(true); // Start game immediately
+  const inputRef = useRef(null);
+
 
   const generateFood = () => {
     const x = Math.floor(Math.random() * GRID_WIDTH);
@@ -72,8 +78,11 @@ export default function Snake() {
   };
 
   useEffect(() => {
+    inputRef.current.focus();
     if (isGameStarted) {
+
       const interval = setInterval(moveSnake, 60);
+      
       return () => clearInterval(interval);
     }
   }, [snake, direction, isGameStarted]); // Added isGameStarted to dependencies
@@ -102,10 +111,14 @@ export default function Snake() {
   };
 
   const restartGame = () => {
-    setSnake([{ y: 0, x: 2 }, { y: 0, x: 1 }, { y: 0, x: 0 }]);
-    generateFood(); 
-    setDirection("RIGHT"); 
-    setGameOver(false); 
+    setSnake([
+      { y: 0, x: 2 },
+      { y: 0, x: 1 },
+      { y: 0, x: 0 },
+    ]);
+    generateFood();
+    setDirection("RIGHT");
+    setGameOver(false);
   };
 
   return (
@@ -113,20 +126,36 @@ export default function Snake() {
       <div
         tabIndex={0}
         onKeyDown={handleKeyPress}
-        autoFocus
         className="grid grid-cols-20 grid-rows-20 border m-[14px]"
+        ref={inputRef}
       >
         {gameOver && (
           <div className="absolute h-full inset-0 flex flex-col justify-center items-center bg-black ">
-            <h1 className="text-8xl font-bold text-red-500">GAME OVER</h1>
-            <button onClick={restartGame}>Play Again!</button>
+            <FadeIn>
+              <div className="flex items-center justify-center flex-col">
+                <Image src={Bee} alt="twerk" className="absolute z-0" />
+                <h1 className="z-10 text-8xl font-bold text-red-500">
+                  GAME OVER
+                </h1>
+                <motion.button
+                  whileHover={{
+                    scale: 1.2,
+                    transition: { duration: 1 },
+                  }}
+                  className="z-10 bg-green-800 p-2 rounded-xl"
+                  onClick={restartGame}
+                >
+                  Play Again!
+                </motion.button>
+              </div>
+            </FadeIn>
           </div>
         )}
         {Array.from({ length: GRID_HEIGHT }).map((_, y) => (
           <div autoFocus className="flex " key={y}>
             {Array.from({ length: GRID_WIDTH }).map((_, x) => (
               <div
-              autoFocus
+                autoFocus
                 className={`w-10 h-10 border border-gray-400
                 ${snake.some((snakePart) => snakePart.x === x && snakePart.y === y) && "bg-green-500"}
                 ${food.x === x && food.y === y && "bg-red-500"}
