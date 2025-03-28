@@ -133,7 +133,7 @@ export default function Snake() {
           <div className="absolute h-full inset-0 flex flex-col justify-center items-center bg-black ">
             <FadeIn>
               <div className="flex items-center justify-center flex-col">
-                <Image src={Bee} alt="twerk" className="absolute z-0" />
+                <Image src={Bee} alt="twerk" className="absolute z-0" unoptimized />
                 <h1 className="z-10 text-8xl font-bold text-red-500">
                   GAME OVER
                 </h1>
