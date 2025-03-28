@@ -6,8 +6,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import FadeIn from "@/app/utils/fadein";
 
-const GRID_WIDTH = 36;
-const GRID_HEIGHT = 18;
+const GRID_WIDTH = 32;
+const GRID_HEIGHT = 16;
 
 type Point = {
   x: number;
@@ -123,11 +123,12 @@ export default function Snake() {
   };
 
   return (
-    <>
+    <div className="flex flex-col">
+      <h1 className="text-center p-4 text-4xl">snek game</h1>
       <div
         tabIndex={0}
         onKeyDown={handleKeyPress}
-        className="grid grid-cols-20 grid-rows-20 border m-[14px]"
+        className="grid grid-cols-20 grid-rows-20 border"
         ref={inputRef}
       >
         {gameOver && (
@@ -167,6 +168,6 @@ export default function Snake() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

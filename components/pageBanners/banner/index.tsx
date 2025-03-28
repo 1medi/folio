@@ -66,7 +66,7 @@ const Banner = () => {
       </div>
       {showGame && (
         <FadeIn>
-          <div ref={gameRef} autoFocus className="z-[99] absolute flex justify-center items-center bg-black w-screen h-full">
+          <div ref={gameRef} autoFocus className="z-[99] absolute flex p-24 justify-center items-center bg-black w-screen h-full">
             <SnakeGame />
           </div>
         </FadeIn>
