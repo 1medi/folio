@@ -26,7 +26,7 @@ export default function Snake() {
   const [direction, setDirection] = useState<Direction>("RIGHT");
   const [gameOver, setGameOver] = useState<boolean>(false);
   const [isGameStarted, setIsGameStarted] = useState<boolean>(true); // Start game immediately
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLDivElement>(null);
 
 
   const generateFood = () => {
@@ -78,14 +78,15 @@ export default function Snake() {
   };
 
   useEffect(() => {
-    inputRef.current.focus();
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
     if (isGameStarted) {
-
       const interval = setInterval(moveSnake, 60);
-      
       return () => clearInterval(interval);
     }
-  }, [snake, direction, isGameStarted]); // Added isGameStarted to dependencies
+  }, [snake, direction, isGameStarted]);
+  
 
   useEffect(() => {
     if (isGameStarted) {
