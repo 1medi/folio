@@ -1,10 +1,10 @@
 "use client";
 
-import { KeyboardEvent, useEffect, useState ,useRef} from "react";
+import { KeyboardEvent, useEffect, useState, useRef } from "react";
 import Bee from "../../public/beeTwerk.gif";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import FadeIn from "@/app/utils/fadein";
+import FadeIn from "../../src/app/utils/fadein";
 
 const GRID_WIDTH = 32;
 const GRID_HEIGHT = 16;
@@ -25,9 +25,9 @@ export default function Snake() {
   const [food, setFood] = useState<Point>({ x: 0, y: 0 });
   const [direction, setDirection] = useState<Direction>("RIGHT");
   const [gameOver, setGameOver] = useState<boolean>(false);
-  const [isGameStarted, setIsGameStarted] = useState<boolean>(true); // Start game immediately
+  const [isGameStarted, setIsGameStarted] = useState<boolean>(true);
+  const [score, setScore] = useState<number>(0);
   const inputRef = useRef<HTMLDivElement>(null);
-
 
   const generateFood = () => {
     const x = Math.floor(Math.random() * GRID_WIDTH);
@@ -70,6 +70,7 @@ export default function Snake() {
 
     if (snakeHead.x === food.x && snakeHead.y === food.y) {
       generateFood();
+      setScore(score + 1); // Increment score
     } else {
       newSnake.pop();
     }
@@ -86,7 +87,6 @@ export default function Snake() {
       return () => clearInterval(interval);
     }
   }, [snake, direction, isGameStarted]);
-  
 
   useEffect(() => {
     if (isGameStarted) {
@@ -120,11 +120,24 @@ export default function Snake() {
     generateFood();
     setDirection("RIGHT");
     setGameOver(false);
+    setScore(0); // Reset score
   };
+
 
   return (
     <div className="flex flex-col">
-      <h1 className="text-center p-4 text-4xl">snek game</h1>
+      <div className="flex flex-row justify-around">
+        <h1
+        className="text-center p-4 text-4xl"
+        >
+          snek game
+        </h1>
+        <h1 className="text-center p-4 text-4xl">
+          <strong>WASD</strong> Keys to move the snake!
+        </h1>
+        <h1 className="text-center p-4 text-4xl">Score: {score}</h1>
+      </div>
+
       <div
         tabIndex={0}
         onKeyDown={handleKeyPress}
@@ -135,10 +148,19 @@ export default function Snake() {
           <div className="absolute h-full inset-0 flex flex-col justify-center items-center bg-black ">
             <FadeIn>
               <div className="flex items-center justify-center flex-col">
-                <Image src={Bee} alt="twerk" className="absolute z-0" unoptimized />
+                <Image
+                  src={Bee}
+                  alt="twerk"
+                  className="absolute z-0"
+                  unoptimized
+                />
                 <h1 className="z-10 text-8xl font-bold text-red-500">
                   GAME OVER
                 </h1>
+                <h2 className="z-10 text-4xl p-4">
+                  Your Score:{" "}
+                  <strong className="text-green-700">{score}!</strong>
+                </h2>
                 <motion.button
                   whileHover={{
                     scale: 1.2,

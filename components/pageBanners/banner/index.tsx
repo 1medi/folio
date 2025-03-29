@@ -59,6 +59,7 @@ const Banner = () => {
         onClick={toggleGame}
         className={`
         absolute p-2 rounded
+        cursor-pointer
         ${showGame ? "bg-green-400 top-[710px] left-[25px] z-[999]" : "text-[8px] cursor-pointer"}
       `}
       >
