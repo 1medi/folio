@@ -72,7 +72,7 @@ const PPBanner = () => {
                 transition={{ ease: "backInOut" }}
                 className="bg-violet-900 p-2 rounded-2xl m-4 w-1/2 "
               >
-                <a href="https://www.pocketprof.online/" target="_blank">
+                <a href="https://pocketprof.vercel.app/" target="_blank">
                   <p className="text-4xl">Live App</p>
                 </a>
               </motion.div>
