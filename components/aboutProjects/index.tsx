@@ -4,7 +4,7 @@ import ACGTitle from "../projectTitle/acgTitle";
 import LBTitle from "../projectTitle/lbTitle";
 import PPTitle from "../projectTitle/ppTitle";
 import ZootTitle from "../projectTitle/zootTitle"
-
+import BCecosystemsTitle from "../projectTitle/bcEcosystemsTitle"
 export default function AboutProjects() {
   return (
     <div className="h-screen my-8">
@@ -26,6 +26,7 @@ export default function AboutProjects() {
         <hr />
         <ZootTitle/>
         <hr />
+        <BCecosystemsTitle/>
 
       </section>
     </div>
